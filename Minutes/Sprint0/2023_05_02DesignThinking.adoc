@@ -1,0 +1,44 @@
+= Protokoll 02.05.2023 (Design Thinking)
+
+== Teilnehmer
+* Benedikt Beigang (beng)
+* Luca Noack (luck)
+* Jegani Amine (jene)
+* Chantal Bley (chey)
+* Pascal Fabian Dittes (paes)
+* Luca Niklas Franke (luke)
+* Christoph Neidahl (chhl)
+* Finn Johann Romeis (fiis)
+
+== Agenda
+
+=== Organisation
+
+
+
+=== Design Thinking
+
+****
+**Phase 4**
+
+* Mit welchen Werkzeugen können wir unser Ziel erreichen?
+* Alternativen
+* Ideen sammeln
+* Brainstorming / Think outside the box
+****
+
+****
+**Phase 5**
+
+* Mockup's bauen für jeden einzelnen Lösungsansatz
+* nur das Nötigste pro Mockup (Figma), dass die Lösung visualisiert
+* keine Standartfunktionen (Schriftgröße, etc.)
+****
+
+****
+**Phase 6**
+
+* Kunden Ergebnis zeigen
+* Falls gut: mit Entwicklung beginnen
+* Falls schlecht/nicht ideal: Prototyping wiederholen 
+****

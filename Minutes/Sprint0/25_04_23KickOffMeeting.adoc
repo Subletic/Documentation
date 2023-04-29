@@ -1,0 +1,97 @@
+= Protokoll 25.04.2023 (Kick off Meeting)
+
+== Teilnehmer
+- Benedikt Beigang (beng)
+- Luca Noack (luck)
+- Jegani Amine (jene)
+- Chantal Bley (chey)
+- Pascal Fabian Dittes (paes)
+- Luca Niklas Franke (luke)
+- Christoph Neidahl (chhl)
+- Finn Johann Romeis (fiis)
+
+== Zusammenfassung
+
+In diesem Meeting konnte sich das Team gegenseitig Vorstellen und Kennenlernen. Es wurde ein gemeinsames Verständnis aufgebaut wie das Projekt abläuft. Dazu zählt neben terminlichen Dingen, eine kleine Einführung in den SCRUM-Prozess und Git. Besprochen wurden verschiedene Rollen, die CI/CD Pipeline und andere Dinge bei denen die Bachelor noch Unklarheiten haben. Anschließend wurde ein wenig "gebrainstormed" was für Ideen und Vorstellungen die Entwickler haben bezüglich des Projekts. Zum Schluss hat das Team als Teambuilding-Maßnahme die Abend in einem Lokal ausklingen lassen.
+
+== Inhalt
+
+**Team kennenlernen**
+
+* Interessen
+* Platzierung des Projektthemas / Motivation für Projekt
+* Zeitslots für das Projekt
+* Betriebssysteme
+
+|===
+| Name | Studiengang | Programmiersprachen | Projektplatzierung | Anderes
+| Chantal | MIB | C++, Java | 2. | hat schon eine Ausbildung gemacht
+| Finn | MIB | C++, Java | 1. | Interesse an Barrierefreiheit
+| Pascal | INB | C++, Java, Python | 1. | 
+| Luca | INB | C++, Java, Android/Kotlin, WorldPress | 1. |
+| Amine | INB | C++, Java, JS, | 2. | kommt aus Marokko, hat schon in Frankreich gelebt, ist Erfahrender da er schon Studium hinter sich hat
+| Christoph | INB | C/C++, Java, Lua,  | 1. | hat schon eine Ausbildung zum Fachinformatiker gemacht, Interesse an Musikanwendungen
+|===
+
+**Allgemeines Verständnis über Projekt aufbauen**
+
+****
+**Fragen**
+
+* Was ist Ziel des Projekts?
+* Was machen die Bachelor?
+* Was machen die Master?
+* Sprintphasen
+* Kommunikation und Zwischenmenschliches
+* Kundenmeeting begleiten?
+****
+
+****
+**Ergebnisse**
+
+* Bachelor werden wenn Zeit ist mitkommen
+* Später einer pro Meeting mit Kunden
+* Erste Gespräche was unser Projekt ist und wie das aussehen kann
+****
+
+****
+**Fragen an den Kunden**
+
+* Klärung wie untertitel funktionieren mit video
+* Was kommt bei uns an, wo schicken wir das eigentlich in 
+* Wie viel Zeit haben wir die Untertitel zu bearbeiten, bzw. wie viel kommt da an?
+* Gibt es Testdaten/Streams?
+* Von wo kommen die Daten?
+* Gibt es Features die schon so verlangt werden?
+* Wäre 16 Uhr auch ok?
+****
+
+****
+**Erste Ideen**
+
+* Phonetische ähnliche Wörter mit einbeziehen
+* Einstellungen wie viel Zeit man hat, Schriftgröße, etc.
+****
+
+**Anfangssorgen**
+
+* Gibt es Wünsche bezüglich Technologien, Discord, etc.?
+* Gibt es andere Dinge die wir beachten müssen?
+
+=> UnitTests-Workshop wird benötigt
+
+**Was für Workshops werden benötigt?**
+
+- [ ] Git
+- [x] CI/CD
+- [x] UnitTests
+- [ ] agiles Arbeiten
+- [ ] UML
+
+**Git einrichten**
+
+- GitLab Gruppe anlegen
+- Email richtig setzten
+- als Entwickler assignen
+- Branching erklären
+
