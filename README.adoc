@@ -1,6 +1,10 @@
-# Documentation
+= Documentation
 
 This repository contains the Documentation of the Project
 
-* 
+**Table of Content**
+
+* Minutes of the meetings
+* Glossary
+* Instructions
 
