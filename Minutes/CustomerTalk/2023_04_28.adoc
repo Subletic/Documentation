@@ -1,0 +1,218 @@
+= Protokoll 28.04.2023 (Kundenmeeting_00)
+
+== Teilnehmer
+* Benedikt Beigang (beng)
+* Luca Noack (luck)
+* Chantal Bley (chey)
+* Finn Romeis (fiis)
+
+== Allgemeine Informationen von Philipp an uns
+* wenn Philipp im Urlaub ist können andere Kollegen übernehmen
+* kurz vor Abgabe des MVP werden zwei Termine einberufen
+* Wöchentliche Termine über Google-Meet zu selben Uhrzeit (jeden Freitag immer 14:30), werden die gängie Praxis werden
+* DSGVO ist essenziell und darf nicht verfehlt werden (bei unsicherheiten können wir ihn immer fragen)
+* GRUNDIG ist nur der Dienstleister, potenzielle Kunden sind z.B. der Landtag in NRW
+
+
+== Agenda
+
+
+=== Fragen
+****
+**Input**
+
+* Wer sind die Kunden?
+- Kunden sind teils stenographen, oder erst anwender z.B. Landtag NRW
+
+* Was muss der MVP an Funktionen besitzen
+- anpassbarkeit beim Spulen (paar sekunden zu rückspringen, soll möglich sein)
+- mittels fußschalter zeit zurück springen, Hardware hierfür bekommen wir gesendet
+- MVP, soll die Möglichkeit besitzten 10-15 sekunden zurückspringen in der Übersetzung
+
+* Was kommt bei uns an? (dateiformat?)
+- OGM/WMV, hierbei müssen wir die Techno-Recherche betreiben
+- anpassung an die Verbreitesten Formate ist wichtig
+
+* Von wo kommt es?
+- von Extern, es wird als Stream in der Software ankommen
+
+* Ist sichergestellt, dass nur eine Person spricht?
+- Nein, es gibt mehrere Sprächer, Spracherkennung erkennt automatisch wer der Sprecher ist. Für uns ist dies erkennbar -> feedback mittels JASON-Datei
+
+* Wie liegt der Stream technisch bei uns vor?
+- Live stream im Docker druchläuft spracherkennung -> wir bekommen datei des videos + JASON-Datei + Sprecherkennung
+ 
+
+
+* Wie gut kann die Spracherkennungs-Software unterschiedliche Personen auseinander halten?
+- Sehr gut
+
+
+* Wie hoch ist die erkennungswahrscheinlichkeit unterschiedlicher Sprecher bei schlechter Audio?
+- 80%, hängt aber immer von den Äußeren Faktoren ab
+- diese Information bzw dieser Wert der Sicherheit bei Erkennung befindet sich auch in der JSON-Datei als Wert
+
+* Gibt es Testdaten/Streams mit schwierigen Untertiteln?
+
+* Werden halbe Sätze geschickt?
+
+* was sind klassische Fehler?
+
+* Was sind Herausfoderungen?
+- jedes neu Hinzugefügte Wort muss ein Timestemp haben
+
+
+****
+
+****
+**Output**
+
+* Wo schicken wir das Video hin?
+- nach Backend soll es gemerged werden mit dem video zusammen frimeln und dann ins Video zurück an den Streaming service, im Ursprünglichen format
+
+* Gibt es Daten wie sicher sich die StT-Software bei der Generierung ist?
+
+* Was muss sonst noch beachtet werden?
+- jedes wort besitzt einen Timestemp, lösung muss dafür gefunden werden, dass beim ersetzen eines Wortes der Timestemp übertragen wird (ist zustand: Wort gelöscht = Timestemp gelöscht)
+- Gägnigste Fehler müssen wir selbst ermitteln
+
+****
+
+****
+**Anwendung**
+
+* Wie soll die Eingabe erfolgen?
+- *Orientieren an der bestehenden Software*
+- default einstellung
+- short cuts
+- Fußeingabe nice to have
+
+Zum orientieren einfach einen *GO speech* free acount erstellen
+- Philipp schaltet uns das dann auf Premium, hierfür E-Mail an Ihn schicken
+
+* Sitzt die Person welche mit der Software arbeitet am gleichen ort mit dem "Stream"?
+- sitzt immer wo anders, muss deshalb *audio hören*
+- audio ist ausreichend
+- video ist nice to have
+
+
+* Wie viel Zeit haben wir die Untertitel zu bearbeiten (Timeframe)
+- Eine unsere Aufgaben wie viel zeit benötigt man zum bearbeiten des Untertitel
+- Live testing, was ist machbar
+- Bene: "60 Sekunden sind machbar"
+
+* Wie viel soll zeitgleich bearbeitbar sein?
+- Nichts
+
+* Wie lange dauert die Bearbeitung
+
+* Was sind die wichtigsten Editor-funktionen?
+** Text-Cursor
+** mit oder ohne Maus
+** Löschen, Schreiben
+
+* Ist es notwendig Video zu sehen?
+- nein
+****
+
+****
+**Äußere Rahmenbedingungen**
+
+* DSGVO was müssen wir beachten?
+- Server in Deutschland
+- bei weiteren Fragen bezüglich library ihn fragen bei unsicherheit
+
+
+* Zielgruppe?
+** geschulte Personen (Stenographen, etc.)
+** Content-Creator (Consumer)
+** Eingeschränkte Personen (Farbenblind)
+* Testpersonen?
+- Livetest geben
+* Müssen auch mehrere die Software parallel bearbeiten?
+- Nein
+* Ist der Nutzer anwesend beim Dreh/Aufnahme?
+- Nein
+****
+
+---
+---
+---
+
+=== Erste Ideen und Vorschläge:
+
+****
+* Timeframe/Buffer mit Untertiteln + Audio in dem man einfach vorspulen und zurückspulen kann
+* Markierung des aktuellen aktiven Untertitels
+* eventuell Analyse ob bestimmte Wörter oder Wortgruppen korrigiert werden sollten
+** Phonetisch ähnliche Wörter mit einbeziehen -> wie?
+** Historie von korrigierten Wörtern auf Basis, dessen Vorschläge in Zukunft gemacht werden können
+** Auf Basis des Wissens des Users was der Inhalt ist (Dialekte, Interview oder Debatte), vorprogrammieren um Wörter automatisch zu markieren/auszutauschen
+* Taste zum Umschalten zwischen Tastatur/Cursor und Vorschläge
+* Fallback falls bearbeiteter Untertitel geschickt wird/aus dem Timeframe fällt
+
+**(Komfort)-Features**
+
+* Timeframe
+* Schriftgröße
+* White/Darkmode
+* Scrollrichtung der Untertitel
+* Farbenblind
+* Login (evt. mit Rollen, Tokens?)
+* Touch notwendig bzw. Mobile?
+
+
+Die ersten Ideen wurden von Bene per Bildschirmübertragung gezeigt und vom Kunden als
+****
+
+---
+---
+---
+
+=== Gewonnene Erkenntnisse
+
+
+* keine Ristrection wegen Programmiersprache, aber Empfehlung/wunsch
+- Angular -> für Front-End
+- C# -> für Backend
+- Vereinfacht es das Projekt später einzubauen
+
+* Buffer einstellungen und reines Editieren im Textprogramm ist erwünscht
+
+* rück- und vorspulen ist essenziell
+
+* wort tracking im weitern Gang, schwierige Wörter tracking
+
+* URL zum Stream, wie funktioniert die Verifizierung
+- wird abgeklärt
+- Plan es soll durch den docker container laufen
+
+---
+---
+---
+
+
+=== Weitere wünsche an die Software (zukunftsmusik):
+
+****
+
+* Zusammenfassungstool einbauen
+- Zitat Philipp: "ist weiterhergeholt"
+- Alefapha oder luminus hierfür verwenden
+- könnte man eine API einbauen arbeiten auf deutschen Servern
+
+* Mehrere Zeilen bei den untertiteln
+- Werbung einblendung 
+- Öffentlicher Verwaltung
+- weitere Informationen anzeigen 
+
+* Übersetzung von Untertiteln
+- erst verbessern und dann übersetzen oder erst übersetzen und dann verbessern?
+- Luminus besitzt übersetzung
+
+
+
+* Erkenntnisse:
+- Deepl ist DSGVO konform
+
+****
