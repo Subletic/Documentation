@@ -1,52 +1,58 @@
 == Rollen und Personen
 
-****
-**Product Owner (Benedikt)**
+=== Product Owner (Benedikt)
 
 Ein Product Owner (PO) ist eine zentrale Rolle in der agilen Software-Entwicklung. Der Product Owner ist dafür verantwortlich, die Anforderungen des Kunden oder der Benutzer zu verstehen und diese in eine Prioritätenliste, die sogenannte "Product Backlog", zu übersetzen. Er oder sie arbeitet eng mit dem Entwicklungsteam zusammen, um sicherzustellen, dass die Produkteigenschaften und Funktionen gemäß den Anforderungen des Kunden entwickelt werden. Der Product Owner stellt auch sicher, dass das Team sich auf die wichtigsten Aufgaben konzentriert und dass das Endprodukt den höchsten Kundennutzen bietet.
 
-**Artefakte / Aufgaben**
+|=== 
+| **Artefakte / Aufgaben**
+| Schreiben der Tickets
+| Pflege des Product Backlogs
+| Vorbereiten der nicht technischen Meetings
+| Vorbereiten des Protokolls für die Meetings
+| Leitet Kundenmeetings, Planning, Review
+|===
 
-* Schreiben der Tickets
-* Pflege des Product Backlogs
-* Vorbereiten der nicht technischen Meetings
-* Vorbereiten des Protokolls für die Meetings
-* Leitet Kundenmeetings, Planning, Review
+---
+---
+---
 
-****
-
-****
-**Scrum Master (Benedikt)**
+=== Scrum Master (Benedikt)
 
 Der Scrum Master ist dafür verantwortlich, sicherzustellen, dass das Scrum-Team die Scrum-Praktiken korrekt anwendet und Hindernisse beseitigt, die den Fortschritt des Teams beeinträchtigen. Er oder sie fördert die Zusammenarbeit zwischen den Teammitgliedern und sorgt dafür, dass die Meetings wie das Daily Scrum oder Sprint Review effektiv und produktiv sind. Der Scrum Master fungiert auch als Coach für das Team, um sicherzustellen, dass sie ihre Ziele erreichen und sich kontinuierlich verbessern.
 
-**Artefakte / Aufgaben**
+|=== 
+| **Artefakte / Aufgaben**
+| Leitet und bereitet Retrospektive vor
+| Ansprechpartner für allgemeine Konflikte
+| Workshops
+|===
 
-* Leitet und bereitet Retrospektive vor
-* Ansprechpartner für allgemeine Konflikte
-* Workshops
+---
+---
+---
 
-****
-
-****
-**Software Architekt (Luca N.)**
+=== Software Architekt (Luca N.)
 
 Ein Softwarearchitekt ist dafür verantwortlich, die grundlegende Struktur und das Design einer Software-Anwendung zu planen und zu entwerfen. Er oder sie definiert die Systemkomponenten, ihre Schnittstellen und ihre Zusammenhänge, um sicherzustellen, dass das System effektiv und effizient funktioniert und den Anforderungen des Kunden oder der Benutzer entspricht. Der Softwarearchitekt trifft wichtige Entscheidungen über die Technologie um sicherzustellen, dass das Endprodukt gut wartbar, skalierbar und erweiterbar ist.
 
-**Artefakte / Aufgaben**
+|===
+| **Artefakte / Aufgaben**
+| Pflegt die technische Dokumentation des Projekts
+| Ansprechpartner für technische Konflikte
+| Sorgt für wohldefinierte Schnittstellen
+|===
 
-* Pflegt die technische Dokumentation des Projekts
-* Ansprechpartner für technische Konflikte
-* Sorgt für wohldefinierte Schnittstellen
-****
+---
+---
+---
 
-****
-**Quality Assurance (Luca N.)**
+=== Quality Assurance (Luca N.)
 
 Ein Quality Assurance (QA) ist für die Qualitätssicherung von Produkten oder Dienstleistungen zuständig. Dies beinhaltet das Definieren von Qualitätsstandards und -prozessen, um sicherzustellen, dass das Endprodukt den Anforderungen des Kunden oder der Benutzer entspricht. Ein QA-Experte prüft die Software, um sicherzustellen, dass sie frei von Fehlern, Bugs und anderen Mängeln sind, die die Benutzererfahrung beeinträchtigen könnten.
 
-**Artefakte / Aufgaben**
-
-* Codereviews
-* Approved Mergerequests
-****
+|===
+| **Artefakte / Aufgaben**
+| Codereviews
+| Approved Mergerequests
+|===
