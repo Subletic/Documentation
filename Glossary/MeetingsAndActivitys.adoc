@@ -1,0 +1,57 @@
+== Meetings und Aktivitäten
+
+=== Sprint Planning Meeting
+
+Ein Meeting, bei dem das Team den Inhalt des nächsten Sprints plant. Es beinhaltet die Auswahl von Aufgaben aus dem Product Backlog und die Zuweisung von Aufgaben an Teammitglieder.
+
+---
+---
+---
+
+=== Daily (Stand-up Meeting)
+
+Ein kurzes tägliches Meeting, bei dem das Team den Fortschritt, die Herausforderungen und die nächste Schritte bespricht. Es hilft dem Team, auf Kurs zu bleiben und Hindernisse zu identifizieren.
+
+---
+---
+---
+
+=== Weekly (Stand-up Meeting)
+
+Ein Meeting, bei dem das Team den Fortschritt, die Herausforderungen und die nächste Schritte bespricht. Es findet wöchentlich statt und dauert etwa 1h in dem jeder Entwickler ca. 10 Min hat zu berichten. Es hilft dem Team, auf Kurs zu bleiben und Hindernisse zu identifizieren.
+
+---
+---
+---
+
+=== Pair Programming
+
+---
+---
+---
+
+Eine Praktik, bei der zwei Entwickler zusammenarbeiten, um eine Aufgabe zu erledigen. Einer schreibt den Code, während der andere den Code liest, Feedback gibt und Probleme löst.
+
+---
+---
+---
+
+=== Code Review
+
+Ein Prozess, bei dem andere Entwickler den Code prüfen, um sicherzustellen, dass er den Standards entspricht und keine Fehler enthält.
+
+---
+---
+---
+
+=== Sprint Review
+
+Der Sprint Review ist ein wichtiger Bestandteil des Scrum-Prozesses und findet am Ende eines jeden Sprints statt. Es ist eine Veranstaltung, bei der das #Scrum-Team, der Product Owner und die Stakeholder# zusammenkommen, um das Inkrement des Produkts zu überprüfen und zu bewerten. Während des Sprint Reviews #demonstriert das Entwicklungsteam das fertiggestellte Produktinkrement# und der Product Owner erklärt, welche Elemente des Product Backlogs erledigt wurden und welche noch ausstehen. Es ist auch eine Gelegenheit für die Stakeholder, #Feedback# zu geben und #Fragen# zu stellen. 
+
+---
+---
+---
+
+=== Retrospektive
+
+Eine Retrospektive ist eine regelmäßige Überprüfung, die im Rahmen des Scrum-Prozesses durchgeführt wird, um das Team zu #reflektieren# und sich auf die #kontinuierliche Verbesserung# zu konzentrieren. Während der Retrospektive kommt das Scrum-Team zusammen, um zu diskutieren, was gut funktioniert hat, was nicht gut funktioniert hat und was verbessert werden kann. Das Ziel ist es, Erkenntnisse zu gewinnen und #Maßnahmen zu ergreifen#, um die Leistung des Teams zu verbessern und die Prozesse zu optimieren.
