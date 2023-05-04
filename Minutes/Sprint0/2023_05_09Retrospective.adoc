@@ -1,4 +1,4 @@
-= Protokoll .05.2023 (Retrospektive)
+= Protokoll 09.05.2023 (0. Sprint Retrospektive)
 
 == Teilnehmer
 * Benedikt Beigang (beng)

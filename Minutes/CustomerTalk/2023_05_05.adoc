@@ -1,9 +1,9 @@
-= Protokoll dd.mm.2023 (...)
+= Protokoll 05.05.2023 (Kundenmeeting_01)
 
 == Teilnehmer
 * Benedikt Beigang (beng)
 * Luca Noack (luck)
-* Amine Jegani (jene)
+* Jegani Amine (jene)
 * Chantal Bley (chey)
 * Pascal Fabian Dittes (paes)
 * Luca Niklas Franke (luke)
@@ -20,7 +20,7 @@ Startzeit/Endzeit:
 
 ****
 
-=== Weekly / Review / Design Thinking / Workshop / Customer Meeting
+=== Customer Meeting
 
 ****
 
