@@ -11,48 +11,60 @@
 
 == Agenda
 
+* Startzeit/Endzeit: 13:45-16:45
+
 === Organisation
 
-* stackeholder: both, höppner, kunde (platis)
-* Heutiges Meeting von Bachelor organisiert (Review-Teil)
-* order produktleitorganisation da alles rein vom opal
+****
+* Stakeholder sind außer Kunden auch Both und Höppner
+* Kunden
+** wer kommt zum Kundenmeeting? => Finn
+** unter welche Lizenz?
+** bei ffmpeg wird OpenSource
+** auch wichtig mit welchem codec wird video geschickt => bestimmte codecs andere Lizenz
+****
 
-Kunde:
-* wer kommt?
-* unter welche lizenz?
-* bei ffmpeg wird opensource
-* auch wichtig mit welchem codec wird video geschickt --> bestimmte codecs andere lizenz
+=== Review der Technologierecherche
 
-
-=== Technorecherche-Review
-
+****
 * Pascal -> Alternativen
 ** Aegisub für Videodateien Untertitel bearbeiten
+** Für Videodateien meist kostenlos
+** Für Livestreams keine auffindbare Software
 
 * Luca -> C#
 ** gut für team geeignet da ähnlich zu java
 ** Multi-OS -> wichtig für Christoph da Linux-Nutzer
-** einfürung in c# muss tiefer sein -> bei unitTest-workshop muss
 
-* chantal -> angular
+* Chantal -> angular
 ** erste kleine einführung mit miniprogramm
-** weitere bessere ausarbeitung bin nächstes meeting
 
-* amine -> angular/c#/asp.net/https
-** restapi müssen im team weiter erklärt werden
-** frontend -> frontend, frontend -> backend, aber nicht backend -> frontend
-** wir müssen nochmal genauer erklären wie asp.net und angular zusammenarbeiten
-** bzw. Ticket für aufbau der asp.net und angular struktur
+* Amine -> angular/c#/asp.net/https
+** REST-API müssen im team weiter erklärt werden
+** nativ kann nicht vom Backend aus zum Frontend geschickt werden, => Lösung zB WebSocket
+** bzw. Ticket für Aufbau der asp.net und angular Struktur
 ** plan B mit java+python und vue.js
 
-* finn -> statische quellcodeanalyse
+* Finn -> statische quellcodeanalyse
 ** in ci/cd oder auch in der ide
-** finn empfiehlt _Roslyn Analyzers_ da es auf C# zugeschnitten ist
-** es ist zu klären ob dies auch mit angular funktioniert, dazu wird es ein followup geben
+** Finn empfiehlt _Roslyn Analyzers_ da es auf C# zugeschnitten ist
 
-* christoph -> ffmpeg
-** lizens -> open source aber wenn verwendet unterliegt projekt den selben regeln
-** weitere erklärung zu lizenzfragen
-** erklärung was ein ?demuxxer? ist
-** ticket welches untertitelformat verwenden wir? unterschiede?
-** kann man in c# über die cli ffmpeg verwenden
+* Christoph -> ffmpeg
+** Lizenz -> open source aber wenn verwendet unterliegt Projekt den selben regeln
+** weitere Erklärung zu lizenzfragen
+** Erklärung was ein Demuxer ist
+****
+
+== ToDos
+
+****
+* Es wird eine tiefer gehende Einleitung in C# benötigt, dies soll während des UnitTest-Workshops am 06.05.2023 erfolgen
+* Bis zum nächsten Meeting wird Chantal eine tiefere Ausarbeitung anfertigen zu Angular und diese am 09.05.2023 dem Team präsentieren
+* Wir benötigen ein praktische Einarbeitung in die Funktionsweise von Angular und ASP.NET, wie findet die Kommunikation statt (REST)?
+* Evt. Websockets o.ä. um Daten aus dem Backend zum Frontend zu streamen
+* Finn will der Frage nachgehen in wie weit _Roslyn Analyzers_ auch mit Angular arbeiten kann
+* Wie verwenden wir FFmpeg in C# am besten => Lizenzen unterscheiden sich je nach Einbindung
+* Welches Untertitelformat wollen wir verwenden (Unterschiede)?
+* Unter welche Lizenz soll unser Projekt laufen?
+* Mit welchem Codec wird Video geschickt => bestimmte Codecs haben andere Lizenz
+****
