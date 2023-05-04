@@ -1,0 +1,81 @@
+= Protokoll 04.05.2023 (Technologie-Recherche Review)
+
+== Teilnehmer
+* Benedikt Beigang (beng)
+* Jegani Amine (jene)
+* Chantal Bley (chey)
+* Pascal Fabian Dittes (paes)
+* Luca Niklas Franke (luke)
+* Christoph Neidahl (chhl)
+* Finn Johann Romeis (fiis)
+
+== Agenda
+
+* Startzeit/Endzeit: 13:45-16:45
+
+=== Organisation
+
+****
+* wer kommt zum Kundenmeeting? 
+** => Finn
+****
+
+=== Review der Technologierecherche
+
+****
+* Pascal -> Alternativen
+** Aegisub für Videodateien Untertitel bearbeiten
+** Für Videodateien meist kostenlos
+** Für Livestreams keine auffindbare Software
+
+* Luca -> C#
+** gut für team geeignet da ähnlich zu java
+** Multi-OS -> wichtig für Christoph da Linux-Nutzer
+
+* Chantal -> angular
+** erste kleine einführung mit miniprogramm
+
+* Amine -> angular/c#/asp.net/https
+** REST-API müssen im team weiter erklärt werden
+** nativ kann nicht vom Backend aus zum Frontend geschickt werden, => Lösung zB WebSocket
+** bzw. Ticket für Aufbau der asp.net und angular Struktur
+** plan B mit java+python und vue.js
+
+* Finn -> statische quellcodeanalyse
+** in ci/cd oder auch in der ide
+** Finn empfiehlt _Roslyn Analyzers_ da es auf C# zugeschnitten ist
+
+* Christoph -> ffmpeg
+** Lizenz -> open source aber wenn verwendet unterliegt Projekt den selben regeln
+** weitere Erklärung zu lizenzfragen
+** Erklärung was ein Demuxer ist
+** bei Nutzung von FFmpeg wird Projekt unter bestimmten Umständen automatisch OpenSource
+****
+
+== Fragen an den Kunden
+
+****
+* unter welche Lizenz soll die Software veröffentlicht werden?
+* auch wichtig mit welchem codec wird video geschickt -> bestimmte codecs andere Lizenz
+****
+
+== Fragen an die Betreuer
+
+****
+* Wer sind unsere Stakeholder?
+** => Kunde, Both, Höppner
+****
+
+== ToDos
+
+****
+* Es wird eine tiefer gehende Einleitung in C# benötigt, dies soll während des UnitTest-Workshops am 06.05.2023 erfolgen
+* Bis zum nächsten Meeting wird Chantal eine tiefere Ausarbeitung anfertigen zu Angular und diese am 09.05.2023 dem Team präsentieren
+* Wir benötigen ein praktische Einarbeitung in die Funktionsweise von Angular und ASP.NET, wie findet die Kommunikation statt (REST)?
+* Evt. Websockets o.ä. um Daten aus dem Backend zum Frontend zu streamen
+* Finn will der Frage nachgehen in wie weit _Roslyn Analyzers_ auch mit Angular arbeiten kann
+* Wie verwenden wir FFmpeg in C# am besten => Lizenzen unterscheiden sich je nach Einbindung
+* Welches Untertitelformat wollen wir verwenden (Unterschiede)?
+* Unter welche Lizenz soll unser Projekt laufen?
+* Mit welchem Codec wird Video geschickt => bestimmte Codecs haben andere Lizenz
+****
