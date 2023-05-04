@@ -1,0 +1,51 @@
+= Protokoll dd.mm.2023 (...)
+
+== Teilnehmer
+* Benedikt Beigang (beng)
+* Luca Noack (luck)
+* Jegani Amine (jene)
+* Chantal Bley (chey)
+* Pascal Fabian Dittes (paes)
+* Luca Niklas Franke (luke)
+* Christoph Neidahl (chhl)
+* Finn Johann Romeis (fiis)
+
+== Agenda
+
+Startzeit/Endzeit: 
+
+=== Organisation
+
+****
+
+****
+
+=== Weekly / Review / Design Thinking / etc.
+
+****
+
+****
+
+== Erkenntnisse
+
+****
+
+****
+
+== Fragen an die Betreuer
+
+****
+
+****
+
+== Fragen an den Kunden
+
+****
+
+****
+
+== ToDos
+
+****
+
+****

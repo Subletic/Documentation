@@ -1,15 +1,32 @@
-= Protokoll 02.05.2023 (Des)
+= Protokoll 02.05.2023 (2. Design Thinking)
 
 == Teilnehmer
 * Benedikt Beigang (beng)
 * Luca Noack (luck)
+* Jegani Amine (jene)
 * Chantal Bley (chey)
-* Finn
-* Alle
-
+* Pascal Fabian Dittes (paes)
+* Luca Niklas Franke (luke)
+* Christoph Neidahl (chhl)
+* Finn Johann Romeis (fiis)
 
 == Agenda
 Startzeit/Endzeit: 17:15 - 20:30
+
+=== Organisation
+
+****
+* Kundenmeeting zusammenfassen
+* GitLab Timetracking erwähnen
+** Befehl: `/spend 1h30m yyyy-mm-dd comment`
+** Auch Meeting-Zeit abrechnen
+** Arbeitsfortschritt, Probleme, etc. als Kommentar in das Issue
+* Issue-Board und Tickets erklären
+* Über Relevanz von UnitTest-Workshop zu diesem Zeitpunkt reden
+* Diskussion über Name
+** Fluit Verba (Fließende Wörter)
+** SubVeritas (Untere/Tiefere Wahrheit)
+****
 
 === Weekly
 
@@ -29,14 +46,14 @@ Christoph:
 
 Finn:
 
-* Sonacube, recherche über die Hauptwebseite
+* SonaCube, recherche über die Hauptwebseite
 * wäre gerne bei der Pipeline Entwicklung dabei
-* möchte nach Möglichkeit gerne erstmal ein Thema recherchieren
+* möchte nach Möglichkeit gerne erst mal ein Thema recherchieren
 
 Amine:
 
-* wie können wir mit C# aspdotnet Arbeiten
-* erkenntniss wir brauchen Protokollarbeit:
+* wie können wir mit C# ASP.NET Arbeiten
+* Erkenntnisse wir brauchen Protokollarbeit:
         * arbeiten mit einer Restfull_API 
 * definition of Done verstanden
 
@@ -56,13 +73,13 @@ Finn:
 
 ****
 
-== Erkenntnise
+== Erkenntnisse
 ****
 
 * Tickets müssen mit Teammitgliedern erstellt werden
 * Start und Endzeiten sollen per Protokoll mit erfasst werden
 * Vorspulen ist ungleich Beschleunigtes Abspielen
-* Spulen, sprunghafte bewegung in der Audio
+* Spulen, sprunghafte Bewegung in der Audio
 
 * Scrollbarkeit des Textes muss gegeben sein
 
@@ -77,7 +94,7 @@ Notwendige Funktionen:
 
 * Audiospur
 
-Notwendige Erkenntniss:
+Notwendige Erkenntnisse:
 
 * Diskussionen bezüglich richtig oder falsch ist nicht Zielführend, wichtig ist viele Ideen zu sammeln
 

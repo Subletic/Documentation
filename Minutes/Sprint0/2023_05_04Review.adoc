@@ -16,12 +16,8 @@
 === Organisation
 
 ****
-* Stakeholder sind außer Kunden auch Both und Höppner
-* Kunden
-** wer kommt zum Kundenmeeting? => Finn
-** unter welche Lizenz?
-** bei ffmpeg wird OpenSource
-** auch wichtig mit welchem codec wird video geschickt => bestimmte codecs andere Lizenz
+* wer kommt zum Kundenmeeting? 
+** => Finn
 ****
 
 === Review der Technologierecherche
@@ -53,6 +49,21 @@
 ** Lizenz -> open source aber wenn verwendet unterliegt Projekt den selben regeln
 ** weitere Erklärung zu lizenzfragen
 ** Erklärung was ein Demuxer ist
+** bei Nutzung von FFmpeg wird Projekt unter bestimmten Umständen automatisch OpenSource
+****
+
+== Fragen an den Kunden
+
+****
+* unter welche Lizenz soll die Software veröffentlicht werden?
+* auch wichtig mit welchem codec wird video geschickt -> bestimmte codecs andere Lizenz
+****
+
+== Fragen an die Betreuer
+
+****
+* Wer sind unsere Stakeholder?
+** => Kunde, Both, Höppner
 ****
 
 == ToDos
