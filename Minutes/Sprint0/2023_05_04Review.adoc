@@ -1,0 +1,58 @@
+= Protokoll 04.05.2023 (Technologie-Recherche Review)
+
+== Teilnehmer
+* Benedikt Beigang (beng)
+* Jegani Amine (jene)
+* Chantal Bley (chey)
+* Pascal Fabian Dittes (paes)
+* Luca Niklas Franke (luke)
+* Christoph Neidahl (chhl)
+* Finn Johann Romeis (fiis)
+
+== Agenda
+
+=== Organisation
+
+* stackeholder: both, höppner, kunde (platis)
+* Heutiges Meeting von Bachelor organisiert (Review-Teil)
+* order produktleitorganisation da alles rein vom opal
+
+Kunde:
+* wer kommt?
+* unter welche lizenz?
+* bei ffmpeg wird opensource
+* auch wichtig mit welchem codec wird video geschickt --> bestimmte codecs andere lizenz
+
+
+=== Technorecherche-Review
+
+* Pascal -> Alternativen
+** Aegisub für Videodateien Untertitel bearbeiten
+
+* Luca -> C#
+** gut für team geeignet da ähnlich zu java
+** Multi-OS -> wichtig für Christoph da Linux-Nutzer
+** einfürung in c# muss tiefer sein -> bei unitTest-workshop muss
+
+* chantal -> angular
+** erste kleine einführung mit miniprogramm
+** weitere bessere ausarbeitung bin nächstes meeting
+
+* amine -> angular/c#/asp.net/https
+** restapi müssen im team weiter erklärt werden
+** frontend -> frontend, frontend -> backend, aber nicht backend -> frontend
+** wir müssen nochmal genauer erklären wie asp.net und angular zusammenarbeiten
+** bzw. Ticket für aufbau der asp.net und angular struktur
+** plan B mit java+python und vue.js
+
+* finn -> statische quellcodeanalyse
+** in ci/cd oder auch in der ide
+** finn empfiehlt _Roslyn Analyzers_ da es auf C# zugeschnitten ist
+** es ist zu klären ob dies auch mit angular funktioniert, dazu wird es ein followup geben
+
+* christoph -> ffmpeg
+** lizens -> open source aber wenn verwendet unterliegt projekt den selben regeln
+** weitere erklärung zu lizenzfragen
+** erklärung was ein ?demuxxer? ist
+** ticket welches untertitelformat verwenden wir? unterschiede?
+** kann man in c# über die cli ffmpeg verwenden
