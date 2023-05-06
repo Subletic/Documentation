@@ -3,7 +3,7 @@
 == Teilnehmer
 * Benedikt Beigang (beng)
 * Luca Noack (luck)
-* Jegani Amine (jene)
+* Amine Jegani (jene)
 * Chantal Bley (chey)
 * Pascal Fabian Dittes (paes)
 * Luca Niklas Franke (luke)
