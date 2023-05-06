@@ -76,7 +76,11 @@ public void MyMethod_Test()
 * Ternärer Operator
 * `is (not)`
 * Nutzt Interfaces
+* Readonly
+* regions
 * Linq und Lambda-Funktionen
+* Standardwerte in Parameter
+* Arrays
 * Vererbung mit `:`
 * F2 - Umbenennung von Variablen
 * Alt + Arrow - Zeile verschieben
