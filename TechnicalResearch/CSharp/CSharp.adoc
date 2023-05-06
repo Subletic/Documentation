@@ -1,0 +1,84 @@
+= C# Technorecherche
+
+== Überblick
+* Objektorientiert
+* Typisiert
+* Anwendungen werden in .NET ausgeführt
+* C-Like -> Nah an Java/C++ Syntax (sollte für uns also kein Problem darstellen)
+* Plattformunabhängig (.NET läuft auf Win/Mac/Linux)
+* IDEs: VS Code, Visual Studio, Rider, ...
+
+== Sprach-Features
+* Garbage Collection (Automatische Freigabe von Speicher)
+* Lambda Ausdrücke
+* NULL-Safety über Compilerwarnungen und Nullable Types
+* Unterstützung für asynchrone Prozesse (ähnlich zu async/await in JS)
+* Namespaces
+* Generics
+* OO-Features wie Vererbung, Interfaces, etc.
+* ...
+
+
+=== Beispiel 1
+Hello World Programm
+
+[source,csharp]
+----
+using System;
+
+class Hello
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World");
+    }
+}
+----
+
+=== Beispiel 2
+Programm, was den Nutzer nach seinem Namen und Alter fragt und dann eine Begrüßung ausgibt.
+
+[source,csharp]
+----
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        Console.WriteLine("What is your name?");
+        string name = Console.ReadLine();
+        Console.WriteLine("Hello, " + name + "!");
+        int age = GetAge();
+        Console.WriteLine("You are " + age + " years old.");
+    }
+
+    static int GetAge() {
+        Console.WriteLine("What is your age?");
+        string input = Console.ReadLine();
+        int age;
+        while (!int.TryParse(input, out age)) {
+            Console.WriteLine("Invalid age, please try again.");
+            input = Console.ReadLine();
+        }
+        return age;
+    }
+}
+----
+
+== Libraries
+* FFmpeg
+** nativ keine direkte Unterstützung
+** Wrapper wie z.B. *https://github.com/cmxl/FFmpeg.NET[FFmpeg.NET]* ermöglichen jedoch die Nutzung
+* ASP.NET
+** Webframework für .NET
+** Genutzt um Webseiten, Webanwendungen oder Webservices zu entwickeln
+** ASP.NET erweitert .NET um bspw. templating syntax, routing, etc.
+** Unterstützt C#, F# oder Visual Basic
+* NUnit
+** Unit-Testing Framework für .NET
+** Analog zu bspw. JUnit in Java
+
+== Einschätzung
+* C# ist sehr nah an uns bereits bekannten Sprachen wie Java/C++
+* Syntax sollte keine große Umstellung darstellen
+* Grundlegend sind alle wichtigsten Libraries vorhanden, die für unser Projekt benötigt werden
+* Workflow für Fullstack-Anwendung für die meisten unbekannt, ASP.NET wird wahrscheinlich die größere Hürde darstellen
