@@ -2,8 +2,7 @@
 
 == Teilnehmer
 * Benedikt Beigang (beng)
-* Luca Noack (luck)
-* Jegani Amine (jene)
+* Amine Jegani (jene)
 * Chantal Bley (chey)
 * Pascal Fabian Dittes (paes)
 * Luca Niklas Franke (luke)
@@ -40,7 +39,8 @@ Startzeit/Endzeit: 15:00
 
 **Schreiben der Tests**
 
-* TDD
+* Unterschiedliche Vorgehensweisen möglich
+** Test-Last Development vs. Test-Driven-Development
 * Setup und Tests
 * Naming-Scheme von UnitTests
 * Arrange / Act / Assert
@@ -79,28 +79,11 @@ public void MyMethod_Test()
 * Readonly
 * regions
 * Linq und Lambda-Funktionen
+* NullTypes (`?`,`!`)
 * Standardwerte in Parameter
 * Arrays
 * Vererbung mit `:`
 * F2 - Umbenennung von Variablen
 * Alt + Arrow - Zeile verschieben
-
-****
-
-== Erkenntnisse
-
-****
-
-****
-
-== Fragen an den Kunden
-
-****
-
-****
-
-== ToDos
-
-****
 
 ****
