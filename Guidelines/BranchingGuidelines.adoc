@@ -54,3 +54,11 @@ In unseren Repositories wollen wir mit Feature-Branching arbeiten. Folgende Bran
 * Kann durch jeden Erstellt werden
 * Beispiel: `hotfix/wrongDeploymentServerURL`
 ****
+
+== Merge-Requests
+
+Ist z.B. ein Feature von einem Entwickler fertiggestellt worden, muss eine Merge-Request erstellt werden. Alternativ kann auch schon nach dem Erstellen des Branches eine Merge-Request gestellt werden, jedoch muss dann diese als `Draft` markiert werden. Außerdem muss falls möglich im Namen das Issue/Ticket welches bearbeitet wurde eingefügt werden. Ein Merge-Request könnte dann wie folgt aussehen:
+
+* Falls bereit zum mergen: `#26 Added Button for Playback-Speed`
+* Vorangelegte Merge-Request: `Draft: #26 Added Button for Playback-Speed`
+ 
