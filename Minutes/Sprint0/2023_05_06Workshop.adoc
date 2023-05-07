@@ -1,0 +1,89 @@
+= Protokoll 06.05.2023 (C# und Nunit Workshop)
+
+== Teilnehmer
+* Benedikt Beigang (beng)
+* Amine Jegani (jene)
+* Chantal Bley (chey)
+* Pascal Fabian Dittes (paes)
+* Luca Niklas Franke (luke)
+* Christoph Neidahl (chhl)
+* Finn Johann Romeis (fiis)
+
+== Agenda
+
+Startzeit/Endzeit: 15:00
+
+=== Organisation
+
+****
+* Wie erstellt man Branches und MergeRequests
+* Wie installiert man die https://dotnet.microsoft.com/en-us/de/download[.NET-SDK]
+* Wie installiert man https://code.visualstudio.com/[Visual Studio Code]
+****
+
+=== Workshop
+
+****
+
+**Einrichten**
+
+* Anlegen der richtigen Ordnerstruktur
+* Anlegen einer neuen Konsolen-App
+** `dotnet new console`
+** `dotnet run`
+* Anlegen eines neuen Nunit-Projekts
+** `dotnet new nunit`
+** `dotnet test`
+* CodeRunner fürs Debuggen
+
+
+**Schreiben der Tests**
+
+* Unterschiedliche Vorgehensweisen möglich
+** Test-Last Development vs. Test-Driven-Development
+* Setup und Tests
+* Naming-Scheme von UnitTests
+* Arrange / Act / Assert
+* Assert-Methoden (EqualTo, Exception, Less)
+* MockUp am Beispiel eines einzulesenden Files (_Moq_)
+
+```csharp
+public void MyMethod(string fileString)
+{
+    // ...
+}
+
+[Test]
+public void MyMethod_Test()
+{
+    // Arrange
+    string expectedFileString = "file contents";
+    var mockFileString = new Mock<string>();
+    mockFileString.Setup(x => x).Returns(expectedFileString);
+
+    // Act
+    MyMethod(mockFileString.Object);
+
+    // Assert
+    // ...
+}
+```
+
+**CSharp und andere Kleinigkeiten**
+
+* foreach
+* kurze Getter and Setter
+* Ternärer Operator
+* `is (not)`
+* Nutzt Interfaces
+* Readonly
+* regions
+* Linq und Lambda-Funktionen
+* NullTypes (`?`,`!`)
+* Standardwerte in Parameter
+* Arrays
+* Vererbung mit `:`
+* F2 - Umbenennung von Variablen
+* Alt + Arrow - Zeile verschieben
+
+****
