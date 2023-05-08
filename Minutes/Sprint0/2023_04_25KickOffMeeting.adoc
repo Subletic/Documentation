@@ -1,4 +1,6 @@
 = Protokoll 25.04.2023 (Kick off Meeting)
+Benedikt Beigang
+:toc:
 
 == Teilnehmer
 - Benedikt Beigang (beng)

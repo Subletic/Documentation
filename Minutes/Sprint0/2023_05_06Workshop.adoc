@@ -1,4 +1,6 @@
 = Protokoll 06.05.2023 (C# und Nunit Workshop)
+Benedikt Beigang
+:toc:
 
 == Teilnehmer
 * Benedikt Beigang (beng)
@@ -11,7 +13,7 @@
 
 == Agenda
 
-Startzeit/Endzeit: 15:00
+Startzeit/Endzeit: 15:00 - 16-30
 
 === Organisation
 

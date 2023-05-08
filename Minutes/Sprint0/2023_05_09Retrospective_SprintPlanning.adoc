@@ -1,4 +1,6 @@
 = Protokoll 09.05.2023 (0. Sprint Retrospektive und 1.1 Sprint Planning)
+Benedikt Beigang, Luca Noack
+:toc:
 
 == Teilnehmer
 * Benedikt Beigang (beng)
@@ -16,10 +18,8 @@
 
 * Professoren Sprints werden durch die erste Zahl beschrieben
 * Die internen Sprints werde durch die zweite Zahl beschrieben
-
-* Readme muss Both Abgaben enthalten
-* Milestones vergeben und Sprintbenennung einbauen
-
+* Chantal wird eine tiefere Ausarbeitung zu Angular anfertigen und heute präsentieren
+* Update Finn:  in wie weit _Roslyn Analyzers_ auch mit Angular arbeiten kann
 * Kunde Meeting nicht am Freitag aber dann Mittwoch danach aber dann 90 min evt. 
 
 **Ideen für Rollen**
@@ -28,38 +28,37 @@
 * Backend/Frontend
 * Protokoll
 
-**Fragen an die Betreuer**
-
-* The latter belong to the Deliverables Map. was bedeutet das?
-* was ist mit Quality Expectations gemeint?
-* Ordner für Projektleitdokumentation auf englisch bzw auch der Inhalt auf englisch?
-
 === Retro
 
 * Was hat mich geärgert?
 * Was hat mich an einer anderen Person beeindruckt? / Interessante Beobachtung?
 
 === Sprint Planning
+* Milestones vergeben und Sprint-NamingScheme einbauen
 
-* Angular Materials, etc.
-* Ausgearbeitetes Wireframe
-* Backend Repo
-* Frontend Repo 
-* Testframeworks einbauen
-* CI/CD Codeanalyse einbauen
-* GitLab getrenntes Backend und Frontend verbinden bzw. deployen
-* Personas für Zuschauer / Anwender
+* Tickets
+** Ausgearbeitetes Wireframe
+** Personas für Zuschauer / Anwender
+** Backend Repo (ASP.NET 7)
+** Frontend Repo (Angular) 
+** CI/CD statische Codeanalyse einbauen
+*** Frontend-Testframeworks einbauen
+** Wir benötigen ein praktische Einarbeitung in die Funktionsweise von Angular und ASP.NET, wie findet die Kommunikation statt (REST)?
+*** GitLab getrenntes Backend und Frontend verbinden bzw. deployen
+---
+* Optionale
+** Evt. Websockets o.ä. um Daten aus dem Backend zum Frontend zu streamen
+** Wie verwenden wir FFmpeg in C# am besten => Lizenzen unterscheiden sich je nach Einbindung
+** Welches Untertitelformat wollen wir verwenden (Unterschiede)?
+** Angular Materials und andere Libraries für UI 
+
+== Fragen an die Betreuer
+
+* The latter belong to the Deliverables Map. was bedeutet das?
+* was ist mit Quality Expectations gemeint?
+* Ordner für Projektleitdokumentation auf englisch bzw auch der Inhalt auf englisch?
+* Wie verhält es sich mit Kunden / Personas / Stakeholdern in UserStorys?
 
 == ToDos
 
-****
-* Es wird eine tiefer gehende Einleitung in C# benötigt, dies soll während des UnitTest-Workshops am 06.05.2023 erfolgen
-* Bis zum nächsten Meeting wird Chantal eine tiefere Ausarbeitung anfertigen zu Angular und diese am 09.05.2023 dem Team präsentieren
-* Wir benötigen ein praktische Einarbeitung in die Funktionsweise von Angular und ASP.NET, wie findet die Kommunikation statt (REST)?
-* Evt. Websockets o.ä. um Daten aus dem Backend zum Frontend zu streamen
-* Finn will der Frage nachgehen in wie weit _Roslyn Analyzers_ auch mit Angular arbeiten kann
-* Wie verwenden wir FFmpeg in C# am besten => Lizenzen unterscheiden sich je nach Einbindung
-* Welches Untertitelformat wollen wir verwenden (Unterschiede)?
-* Unter welche Lizenz soll unser Projekt laufen?
-* Mit welchem Codec wird Video geschickt => bestimmte Codecs haben andere Lizenz
-****
+
