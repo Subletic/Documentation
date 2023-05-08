@@ -1,0 +1,19 @@
+== Health Register
+
+Das Health Register wird durch das Projektmanagement gepflegt und an
+jedem Sprintende aktualisiert.
+
+\{check the items by true or false}
+
+[cols=",",options="header",]
+|===
+|item |score
+|Was a sponsor appointed to the project from the beginning? |
+|Is the sponsor involved in high-level aspects of the project? |
+|Is there an effective setup for the project documents? |
+|Are there enough key team members appointed to the project? |
+|Were key team members actively involved in planning the project? |
+|Is the Project Description well formed and useful? |
+|Is the Follow-Up Register well formed and useful? |
+|Is the issue Register current, well formed and useful? |
+|===

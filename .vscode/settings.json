@@ -1,25 +1,25 @@
 {
-        "cSpell.words": [
-                "Aegisub",
-                "Bley",
-                "Chantal",
-                "Demuxer",
-                "Dittes",
-                "dotnet",
-                "Höppner",
-                "HTWK",
-                "Jegani",
-                "Livestreams",
-                "Neidahl",
-                "Noack",
-                "Nunit",
-                "Platis",
-                "Qube",
-                "refaktorisiert",
-                "Romeis",
-                "streamen",
-                "Testbarkeit",
-                "Timeboxing",
-                "Wireframe"
-        ]
+    "cSpell.words": [
+        "Aegisub",
+        "Bley",
+        "Chantal",
+        "Demuxer",
+        "Dittes",
+        "dotnet",
+        "Höppner",
+        "HTWK",
+        "Jegani",
+        "Livestreams",
+        "Neidahl",
+        "Noack",
+        "Nunit",
+        "Platis",
+        "Qube",
+        "refaktorisiert",
+        "Romeis",
+        "streamen",
+        "Testbarkeit",
+        "Timeboxing",
+        "Wireframe"
+    ]
 }

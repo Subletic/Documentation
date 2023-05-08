@@ -1,0 +1,44 @@
+== Roles and Responsibilities
+
+Dieses Dokument wird durch das Projekmanagement gepflegt. Jede
+Änderung/Erweiterung ist ein Änderungsantrag und muss im Issue-Register
+vermerkt werden.
+
+Jedes Teammitglied bekommt eine Rolle zugewiesen und
+Verantwortlichkeiten.
+
+Das Vernachlässigen von Verantwortlichkeiten stellt ein Risiko dar, und
+sollte im Follow-Up-Register behandelt werden. Tritt ein solches Risiko
+ein ist ein Vermerk im Issue-Register zu führen.
+
+[cols=",,",options="header",]
+|===
+|Teammitglied |Rolle |Verantwortlichkeiten
+| Luca Noack | Software Architekt | Hat die Softwarearchitektur im Blick und steht für technische Fragestellungen als erstes zur Verfügung
+| | | Entwirft die grobe Schnittstellenbeschreibung
+| | | Hilft komplizierte Mergerequests aufzulösen
+| |  Quality Assurance | Reviewed den Code der Entwickler
+| | | Einhalten und Pflege der CI/CD Pipeline
+| | Anderes | Vorbereiten, Schreiben, Nachbereiten der Protokolle
+| | | Projekt-Planung und Organisation
+
+
+| Benedikt Beigang | Product Owner | Führen der Projektleitdokumentation
+| | | Erstellen der UserStorys, DefinitionOfDone's, Issues im Gitlab
+| | | Leiten der Kunden Meetings
+| | | Erster Ansprechpartner bei Fragen an den Kunden bzw. Produkt
+| | Scrum-Master | Gewährleistung der Einhaltung des agilen Manifestes und Ansprechpartner bei allen Fragen die nicht die technische Seite des Projektes betreffen
+| | | Leiten und Vorbereiten der Retrospektive
+| | | Vorbereiten und Leiten von benötigten Workshops
+| | Anderes | Vorbereiten, Schreiben, Nachbereiten der Protokolle
+| | | Projekt-Planung und Organisation
+
+
+| Finn Romeis | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
+| Chantal Bley | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
+| Amine Jegani | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
+| Pascal Fabian | DittesDeveloper | Programmiertechnische Umsetzung, infolge von Tickets/Issues
+| Luca Niklas Franke| Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
+| Christoph Neidahl | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
+|===
+

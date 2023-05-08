@@ -1,0 +1,56 @@
+== Project Description
+
+**Live Stream Editor zur Korrektur von Untertiteln**
+
+=== Purpose and Expected Benefits
+
+****
+A short description of why you're going to do the project, and what
+benefits it has for your organization.
+****
+
+Im Rahmen des Softwareprojekts und Projekt-Management-Praktikum soll den Beteiligten Studierenden die Möglichkeit geboten werden an der Entwicklung einer Software von an Anfang bis Ende zu partizipieren. Unser Projekt entsteht zusammen mit der _Grundig Business GmbH & Co. KG_ (gbs). Es soll ein Livestream-Editor konzipiert und Entwickelt werden der es erlaubt Untertitel live zu korrigieren. Bislang hat sich die _gbs_ mit der KI-gestützten Sprachsynthese von Livemitschnitten beschäftigt und dafür das Tool _GoSpeech_ geschaffen. Unser Tool soll nun die Möglichkeit bieten die Schwachstellen von _GoSpeech_ einfach, schnell und intuitiv zu korrigieren, um dem Zuschauer den perfekten Untertitel bieten zu können. Dabei sollen im besonderen beeinträchtigte Menschen mitgedacht werden - auf Anwender und Zuschauer Seite.
+
+=== Expected Cost and Duration
+
+****
+Also mention the source of these constraints: Are they internal
+preferences, or contractual obligations? How flexible and negotiable are
+they? How would changes to the duration and cost of the project impact
+the business?
+****
+
+Das Projekt hat eine zeitliche Einschränkung von 1 Jahr, wobei effektiv davon nur 6 Monate genutzt werden können. Grund dafür sind die Semesterferien bei dene auszugehen ist das die Entwicklung pausiert. Darüber hinaus sind alle Beteiligten nicht Vollzeit am Entwicklern da sie durch andere Module des Studiums gebunden sind. So lässt sich Zeit als wertvollste Ressource identifizieren. 
+
+Positiv hervorzuheben ist dass die Entwickler nicht bezahlt werden müssen, da sie das Projekt im Rahmen des Studiums belegt haben. Wir erwarten ein erstes Minimal-Viable-Product nach drei Monaten, bzw. Ende Juni/Anfang Juli 2023. Zu diesem Zeitpunkt soll die minimalste Umsetzung des Tools entstanden sein, sodass sich in den Folgemonaten auf weitere für den Kunden relevante Features konzentriert werden kann.
+
+=== Requirements and Quality Expectations
+
+****
+Make sure you focus on major requirements and quality expectations,
+and not on the functions, feature, or scope characteristics that can
+satisfy those requirements. The latter belong to the Deliverables Map.
+****
+
+Der Kunde gibt den Entwicklern Spielraum verschiedene Ansätze auszuprobieren, da er selbst keine fertige Konzeption der Software vorlegt. Jedoch gibt es spezifischere Anforderungen die der Kunde wünscht. Dazu zählt, dass das Produkt der DSGVO-Verordnung entspricht, sodass die Software in Deutschland betrieben werden darf. Zusätzlich wünscht der Kunde die Verwendung von ASP.NET in Verbindung mit Angular, da er so in der Lage ist nach dem Software-Projekt das Tool leicht in seine Systeme zu integrieren.
+
+=== Stakeholder List
+
+****
+List all the stakeholders (people who have an interest in the project
+and can impact it), and extra information when needed (e.g., their
+reporting requirements). Get back to this document and update it as soon
+as you identify a new stakeholder.
+****
+
+* Philipp Platis
+** großen Architektur-Entscheidungen
+** wichtigen Design-Entscheidungen
+** Änderungen die die Projektvision betreffen
+** Termine bei denen die Anwesenheit der Stackholder nötig oder möglich ist
+* Prof. Andreas Both
+** Änderungen die die Projektvision betreffen
+** Termine bei denen die Anwesenheit der Stackholder nötig oder möglich ist
+* M.Sc Tobias Höppner
+** Änderungen die die Projektvision betreffen
+** Termine bei denen die Anwesenheit der Stackholder nötig oder möglich ist
