@@ -1,0 +1,26 @@
+== Follow up register
+
+Das Follow up Register wird durch das Projektmanagement gepflegt.
+
+Im Follow up register werden Ereignisse aufgezeichnet, die den
+Projektverlauf entscheidend beinflussen können. Erkannte Risiken werden
+aufgezeichnet und Lösungswege und Verantwortliche benannt. Dies dient
+dem Lernen aus Erfahrung.
+
+from P3.Express:
+
+We should manage risks, issues, and change requests proactively. When
+you identify a new item, you should record it in the Follow-Up Register
+immediately. Then, assign its follow-up activities to a custodian (one
+of the team members) and start planning responses for the item. You must
+be continuously in contact with team members and other stakeholders to
+identify risks and issues.
+
+Das betrifft alle im Issueregister identifizierten Risiken und Änderungen.
+
+[cols=",,,,,,,",options="header",]
+|===
+|Cause |Effect |Impact |Response |Custodian |Identification (Date)
+|Occurence (Date) |Closure (Date)
+| | | | | | | |
+|===

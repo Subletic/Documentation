@@ -26,7 +26,17 @@ Eine klare und spezifische Erklärung darüber, wann ein Arbeitsprodukt als fert
 
 === Sprint
 
-Ein Zeitrahmen von in der Regel zwei Wochen, in dem das Team ein bestimmtes Ziel erreichen soll.
+Ein Zeitrahmen von in der Regel zwei Wochen, in dem das Team ein bestimmtes Ziel erreichen soll. 
+
+**Namens-Schema**
+
+Ein Sprint ist immer mit zwei Zahlen markiert. Die erste Zahl gibt Aufschluss darüber welcher Sprint aus Sicht der Professoren gerade läuft. Die zweite Zahl ist eine Ergänzung zur Ersten und definiert in welchem Sprint innerhalb des "Professoren Sprints" wir uns befinden.
+
+|===
+| **Beispiel: Sprint_02_1**
+| **02** => Zweiter Sprint aus Professoren-Sicht (Dauer von vier Wochen)
+| **1** => Erster Sprint des zweiten Professoren-Sprints, also dritter Sprint aus Entwickler-Sicht (Dauer von zwei Wochen)
+|===
 
 ---
 ---

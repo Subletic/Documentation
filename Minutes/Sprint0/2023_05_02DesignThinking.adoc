@@ -1,9 +1,11 @@
 = Protokoll 02.05.2023 (2. Design Thinking)
+Luca Noack
+:toc:
 
 == Teilnehmer
 * Benedikt Beigang (beng)
 * Luca Noack (luck)
-* Jegani Amine (jene)
+* Amine Jegani (jene)
 * Chantal Bley (chey)
 * Pascal Fabian Dittes (paes)
 * Luca Niklas Franke (luke)

@@ -1,0 +1,125 @@
+= Protokoll 05.05.2023 (Kundenmeeting_01)
+Finn Romeis
+:toc:
+
+== Teilnehmer
+* Benedikt Beigang (beng)
+* Luca Noack (luck)
+* Finn Johann Romeis (fiis)
+
+== Informationen von Philipp an uns
+* wir kriegen zwei Fußschalter zum Experimentieren zugesandt (dafür müssen wir ihm noch die Adresse schicken) (diese funktionieren nur mit Chromium-Anwendungen!)
+* wie schon erwähnt schaltet er uns gerne für die GoSpeech Software frei, dafür die E-Mail Adressen an ihn weiterleiten
+* er bietet uns einen Besuch der Örtlichkeiten in Bayreuth an, z.B. in den Semesterferien
+* sollte es weiterhin Schwierigkeiten geben, dass die INBs nicht an den Meetings teilnehmen können, kann er sich ein Kennenlern-Meeting vorstellen (halbe Stunde)
+* Mitarbeiter des Landtags NRW haben großes Interesse an Pilot Projekt mit unserer Software, könnten also ein Gespräch organisieren für Use-Case-Spezifikation und Sicherheitsbedenken
+
+== Agenda
+
+Startzeit/Endzeit: 14:32 / 15:20
+
+=== Fragen
+
+---
+==== Lizenzierung
+* Unter welcher Lizenz soll unsere Software veröffentlicht werden?
+** (!)
+
+* Hat die Benutzung von FFMpeg durch die Lizenz eine besondere Auswirkung?
+** (!)
+
+---
+==== Dateiformat
+* Mit welchem Codec werden das Video und das Audio gesendet?
+** (!)
+
+---
+==== Zugang und Weitergabe 
+* Wenn die URL zum Stream eingefügt wurde, ist dann eine Authentifizierung notwendig?
+** dazu kann noch keine Aussage getroffen werden
+
+* Wie soll die Weitergabe an den nächsten Nutzer erfolgen (wie soll der nächste "Prüfer/Kontrolleur" die Information erhalten, dass er nun mit der Bearbeitung an der Reihe ist)?
+** für alles offen
+** Vorstellung von Philipp: Bei Benutzer eins zählt die Software von 30 an herunter bis zur Ablösung, bei Benutzer zwei das gleiche als Countdown, wann dieser dran ist
+
+** Nachfrage zu vorheriger Fragestellung: Darf der Countdown nur angezeigt werden, wenn die nächste Person bereit ist? 
+*** Zweiter Client soll Abfrage "Bist du bereit? Ja/Nein" bekommen, so lange Nein verlängert sich der Countdown bei Erstem Client um je 1 Minute
+*** Clientwechsel sieht er erstmal in der Zukunft
+
+---
+==== Springen und Geschwindigkeit
+* Wie genau soll das Springen innerhalb des Textes erfolgen?
+** (!) an aktueller Software orientieren 
+
+* Wenn wir im Text zurückspringen, springt dann das Audio auch wieder an die entsprechende Position vom Wort? 
+** optimal wäre es, wenn Audio zum Korrigieren nicht springt, aber wenn man mit bestimmter Tastenkombination springt, dann soll auch das Audio springen -> zwei Modi
+
+* Wie soll gesprungen werden? Also durch Spulen, Springen, 'Sprinten'?
+** "Am sinnvollsten ist es, hart 5 Sekunden zurückzuspringen" (oder anderer Timeframe)
+** hierzu sollte es eine Einstellungsmöglichkeit geben, wie groß die Sekundensprungzahl ist
+
+* Benötigt man eine Audiogeschwindigkeitsanpassung?
+** es ist wichtiger, die Geschwindigkeit runterzustellen als hoch
+** typische Einstellungen wären für einen Livestream z.B. 0.7 oder 0.8
+** "Änderung der Geschwindigkeit ist auf jeden Fall relevant"
+** Nachfrage: Dadurch verliert man Zeit?
+*** Ja, daher muss man mit 2min Puffer rechnen + es gibt Sprechpausen
+*** höhere Geschwindigkeit trotzdem praktisches Feature
+** Nachfrage: Automatisches Spulen, wenn in Verzug?
+*** eine Warnmeldung wäre relevanter
+*** hier auch wieder Konzepte entwickeln und schauen, was am besten funktioniert
+
+---
+==== Untertiteldarstellung 
+* Sind die Untertitel, die wir im Programm als Päckchen darstellen auch die, die in finaler Form in einer Gruppe/Päkchen landen?
+** hierzu proof of concept machen und es erstmal so angehen, wie in Frage beschrieben
+
+* Wie soll die Generierung der neusten Untertitel erfolgen?
+** Hängt von der Performance ab, vermutlich wären ganze Sätze besser
+** Jedes Wort einzeln trotzdem ausprobieren als Lösung
+
+---
+== Konzepte
+=== Grundansatz graue Bearbeitungsbox
+* sehr gut
+* wir sollen schauen, wie man das weiterverarbeiten kann, also mit Fixierung der Textbox o.ä.
+
+=== Chantals / Lucas Ansatz
+* Befürchtung, dass es zu unübersichtlich wird
+
+=== Amines Ansatz mit Confidence-Werten
+* "Sehr, sehr gute Idee"
+* farbliche Markierung bei niedrigen Confidence-Werten 
+
+=== Aktuell gesprochenes Wort
+* gesprochene Wörter sollen fett markiert werden, wie in GoSpeech
+
+=== Scrollbar
+* in GoSpeech kann man auch schon mit Mausrad Scrollen, also vermutlich das
+
+=== Zeitstrahlleiste unten
+* wäre gut, auch für Wiedererkennbarkeit
+* "cool wäre auch eine farbliche Markierung des Sprechenden" (wie in GoSpeech)
+
+---
+== Zusammenfassung: Was sind die wichtigsten Features?
+
+* aktuelles Wort fett markieren
+* Zurückspringmöglichkeit (festlegbar, 5 / 7 / 10 Sekunden)
+* Abspielgeschwindigkeit (festgelegt, 0.7 / 0.8 usw.)
+* Unten der Zeitstrahl (mit Sprechern oder ohne)
+* Graues Kästchen "Genau hier befindet man sich"
+* Hoch- und Runterscrollen
+* Confidence-Level muss nicht, aber wäre nth (mit farblicher Markierung oder was technisch am besten wäre)
+
+** (später noch erwähnt): Das ganze Projekt sollte unter einem Inklusionsrahmen aufgezogen werden, bietet sich an
+
+---
+== Organisatorisches
+
+* Meetings bleiben erstmal 14:30 Freitags
+* Kennenlernmeeting wäre möglich, auch mal Abends ("Mittwoch 20 Uhr oder so")
+* (!) Nächste Woche Freitag geht nicht
+* Die zwei Wochen danach ist er im Urlaub (bis 29.05)
+* Möglichkeit, Meetings auf den 17.05 davor und/oder auf den Dienstag (30.05) zu legen
+* grobe Absprache, Meeting am 17.05 zu machen (15:00 würde bei Philipp und Bene passen)

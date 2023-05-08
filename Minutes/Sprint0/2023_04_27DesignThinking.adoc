@@ -1,9 +1,11 @@
 = Protokoll 27.04.2023 (Design Thinking)
+Benedikt Beigang
+:toc:
 
 == Teilnehmer
 * Benedikt Beigang (beng)
 * Luca Noack (luck)
-* Jegani Amine (jene)
+* Amine Jegani (jene)
 * Chantal Bley (chey)
 * Pascal Fabian Dittes (paes)
 * Luca Niklas Franke (luke)

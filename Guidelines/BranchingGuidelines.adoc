@@ -1,0 +1,64 @@
+= Branching
+
+In unseren Repositories wollen wir mit Feature-Branching arbeiten. Folgende Branches existieren:
+
+== Long-Term-Branches
+****
+**main**
+
+* Der `main`-Branch repräsentiert die stabile Version des Codes, der für die Produktion bereit ist, bzw. dem Kunden ausgeliefert werden darf.
+* Änderungen im `main`-Branch sollten nur durchgeführt werden, wenn sie als vollständig getestet und bereit für die Veröffentlichung gelten.
+* Mergeerlaubnis hat ausschließlich der `dev`-Branch durch den Software-Architekten falls alle Feature für diese Iteration vollständig sind oder ein Hotfix notwendig ist. Dazu muss jedoch die Pipeline erfolgreich Durchlaufen im `dev`-Branch.
+****
+
+****
+**dev**
+
+* Der `dev`-Branch ist der Hauptentwicklungsbranch, der als Integrationsebene für Features, Bugfixes und Hotfixes dient.
+* Änderungen im `dev`-Branch sollten regelmäßig in den `main`-Branch zusammengeführt werden, um sicherzustellen, dass der `main`-Branch immer den aktuellen stabilen Code enthält.
+* Mergeerlaubnis haben alle `feature`-, `bug`-, `hotfix`-Branches der Entwickler solange folgende Bedingungen erfüllt sind:
+** Pipeline läuft auf dem `feature`-, `bug`-, `hotfix`-Branch erfolgreich durch
+** Es gibt keine Merge-Konflikte
+** Der Code wurde durch die Quality-Assurance:
+*** reviewed
+*** mögliche Code-Vorschläge in Form der https://de.wikipedia.org/wiki/MoSCoW-Priorisierung[MoSCoW method] umgesetzt (**MU**st, **S**hould, **CO**uld, **W**ont't)
+*** in der Merge-Request approved
+****
+
+== Short-Term-Branches
+
+****
+**feature**
+
+* Für die Entwicklung neuer Features sollte für jedes Feature ein separater `feature`-Branch erstellt werden, der den Namen des Features trägt.
+* Der `feature`-Branch sollte vom aktuellen Stand des `dev`-Branches abgezweigt werden und nach Abschluss des Features in den `dev`-Branch zusammengeführt werden.
+* Die Entwicklung im `feature`-Branch sollte isoliert (durch einen Entwickler) stattfinden, um Konflikte mit anderen Features zu minimieren.
+* Kann durch jeden Erstellt werden
+* Beispiel: `feature/subtitleCanvas`
+****
+
+****
+**bug**
+
+* Wenn ein Bug gefunden wird, der außerhalb der normalen Entwicklung bearbeitet werden muss, sollte ein separater `bug`-Branch mit dem Namen des Bugs erstellt werden.
+* Der `bug`-Branch sollte vom aktuellen Stand des `dev`-Branches abgezweigt werden und nach Behebung des Bugs in den `dev`-Branch zusammengeführt werden.
+* Kann durch jeden Erstellt werden
+* Beispiel: `bug/incorrectColorDisplayed`
+****
+
+****
+**hotfix**
+
+* Wenn ein kritischer Fehler in der Produktionsumgebung gefunden wird, sollte ein Hotfix erstellt werden, um den Fehler schnell zu beheben.
+* Der `hotfix`-Branch sollte vom aktuellen Stand des `main`-Branches abgezweigt werden und nach Behebung des Fehlers sowohl in den `main`-Branch als auch in den `dev`-Branch zusammengeführt werden.
+* Kann durch jeden Erstellt werden
+* Beispiel: `hotfix/wrongDeploymentServerURL`
+****
+
+== Merge-Requests
+
+Ist z.B. ein Feature von einem Entwickler fertiggestellt worden, muss eine Merge-Request erstellt werden. Alternativ kann auch schon nach dem Erstellen des Branches eine Merge-Request gestellt werden, jedoch muss dann diese als `Draft` markiert werden. Außerdem muss falls möglich im Namen das Issue/Ticket welches bearbeitet wurde eingefügt werden. Ein Merge-Request könnte dann wie folgt aussehen:
+
+* Falls bereit zum mergen: `#26 Added Button for Playback-Speed`
+* Vorangelegte Merge-Request: `Draft: #26 Added Button for Playback-Speed`
+ 

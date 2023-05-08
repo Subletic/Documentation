@@ -1,9 +1,11 @@
 = Protokoll 25.04.2023 (Kick off Meeting)
+Benedikt Beigang
+:toc:
 
 == Teilnehmer
 - Benedikt Beigang (beng)
 - Luca Noack (luck)
-- Jegani Amine (jene)
+- Amine Jegani (jene)
 - Chantal Bley (chey)
 - Pascal Fabian Dittes (paes)
 - Luca Niklas Franke (luke)

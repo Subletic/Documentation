@@ -1,8 +1,10 @@
 = Protokoll 04.05.2023 (Technologie-Recherche Review)
+Benedikt Beigang
+:toc:
 
 == Teilnehmer
 * Benedikt Beigang (beng)
-* Jegani Amine (jene)
+* Amine Jegani (jene)
 * Chantal Bley (chey)
 * Pascal Fabian Dittes (paes)
 * Luca Niklas Franke (luke)

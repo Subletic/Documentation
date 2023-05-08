@@ -1,0 +1,26 @@
+== Technorecherche
+
+*Alternative Lösungen und andere Produkte*
+
+* viele Möglichkeiten Untertitel von Videos zubearbeiten
+    - z.B. Jubler (Java)
+    - Subtitle Edit
+    - Aegisub (C++)
+    - Media.io (mit KI Unterstützung)
+    - YouTube-Studio
+
+verschiedenste Software ermöglicht es Untertitel zu bearbeiten, zu erstellen oder zu entfernen
+
+*Media.io*
+
+* meist einlesen der Videodatei über einen URL-Link oder durch direktes Einlesen der Datei vom eigenen Rechner
+  - Schriftart anpassen, Schriftgröße ändern
+  - fette, kursive oder unterschrichene Schrift
+  - Farbanpassungen
+  - Groß- und Kleinschreibung
+  - Bündigkeit der Untertitel
+
+*Live*
+
+* für Livestreaming nur automatische Untertitelerzeugung
+  mit Hilfe von Spracherkennung

@@ -1,9 +1,11 @@
 = Protokoll dd.mm.2023 (...)
+...Author...
+:toc:
 
 == Teilnehmer
 * Benedikt Beigang (beng)
 * Luca Noack (luck)
-* Jegani Amine (jene)
+* Amine Jegani (jene)
 * Chantal Bley (chey)
 * Pascal Fabian Dittes (paes)
 * Luca Niklas Franke (luke)
@@ -20,7 +22,7 @@ Startzeit/Endzeit:
 
 ****
 
-=== Weekly / Review / Design Thinking / etc.
+=== Weekly / Review / Design Thinking / Workshop / Customer Meeting
 
 ****
 
