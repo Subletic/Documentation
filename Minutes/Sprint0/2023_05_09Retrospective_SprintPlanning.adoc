@@ -1,5 +1,5 @@
-= Protokoll 09.05.2023 (0. Sprint Retrospektive und 1.1 Sprint Planning)
-Benedikt Beigang, Luca Noack
+= Protokoll 09.05.2023 (1. Retrospektive und Sprint_01_1  Planning)
+Benedikt Beigang
 :toc:
 
 == Teilnehmer
@@ -20,7 +20,9 @@ Benedikt Beigang, Luca Noack
 * Die internen Sprints werde durch die zweite Zahl beschrieben
 * Chantal wird eine tiefere Ausarbeitung zu Angular anfertigen und heute präsentieren
 * Update Finn:  in wie weit _Roslyn Analyzers_ auch mit Angular arbeiten kann
-* Kunde Meeting nicht am Freitag aber dann Mittwoch danach aber dann 90 min evt. 
+* Kunde Meeting nicht am Freitag, aber dann Mittwoch danach aber dann 90 min um 14:30 Uhr. 
+* Weekly am Samstag bzw. wann wird  gearbeitet in der Regel?
+* GoSpeech-Account anlegen und Mail-Adressen an uns senden
 
 **Ideen für Rollen**
 
@@ -30,8 +32,20 @@ Benedikt Beigang, Luca Noack
 
 === Retro
 
-* Was hat mich geärgert?
-* Was hat mich an einer anderen Person beeindruckt? / Interessante Beobachtung?
+==== Allgemeine Fragen
+
+* Icebreaker
+** Was war das Beste des bisherigen (gemeinschaftlichen) Arbeitens bzw. hat am meisten Spaß gemacht?
+** Was ist das letzte Spiel das du gespielt hast oder der letzter Film den du gesehen hast?
+** Was hat dich genervt oder aufgehalten?
+** Nenne einen Fact über deine Stadt/Dorf den nur Einheimische kennen?
+* Persönliche Stärke und Schwäche
+* Continue / Change / New Ideas / Appreciate
+* Future Self, was wollt ihr bis Ende des Semesters erreicht haben, wie wollt ihr euch entwickeln?
+
+==== Abgeleitete Problempunkte und deren Lösungsstrategien
+
+=== Nachtrag Technologie-Recherche
 
 === Sprint Planning
 * Milestones vergeben und Sprint-NamingScheme einbauen
@@ -50,13 +64,17 @@ Benedikt Beigang, Luca Noack
 ** Evt. Websockets o.ä. um Daten aus dem Backend zum Frontend zu streamen
 ** Wie verwenden wir FFmpeg in C# am besten => Lizenzen unterscheiden sich je nach Einbindung
 ** Welches Untertitelformat wollen wir verwenden (Unterschiede)?
-** Angular Materials und andere Libraries für UI 
+** Angular Materials und andere Libraries für UI
+
+=== Produkt Vision
+
+* Falls noch Zeit ist
 
 == Fragen an die Betreuer
 
 * The latter belong to the Deliverables Map. was bedeutet das?
-* was ist mit Quality Expectations gemeint?
-* Ordner für Projektleitdokumentation auf englisch bzw auch der Inhalt auf englisch?
+* Was ist mit Quality Expectations gemeint?
+* Ordner für Projektleitdokumentation auf Englisch bzw. auch der Inhalt auf Englisch?
 * Wie verhält es sich mit Kunden / Personas / Stakeholdern in UserStorys?
 
 == ToDos
