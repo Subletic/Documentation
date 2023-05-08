@@ -1,4 +1,6 @@
 = Protokoll 28.04.2023 (Kundenmeeting_00)
+Luca Noack
+:toc:
 
 == Teilnehmer
 * Benedikt Beigang (beng)

@@ -1,4 +1,6 @@
 = Protokoll 27.04.2023 (Design Thinking)
+Benedikt Beigang
+:toc:
 
 == Teilnehmer
 * Benedikt Beigang (beng)
