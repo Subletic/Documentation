@@ -1,4 +1,6 @@
 = Glossar
+Benedikt Beigang
+:toc:
 
 include::Rolls.adoc[]
 
