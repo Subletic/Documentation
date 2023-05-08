@@ -21,6 +21,8 @@ Benedikt Beigang, Luca Noack
 * Chantal wird eine tiefere Ausarbeitung zu Angular anfertigen und heute präsentieren
 * Update Finn:  in wie weit _Roslyn Analyzers_ auch mit Angular arbeiten kann
 * Kunde Meeting nicht am Freitag aber dann Mittwoch danach aber dann 90 min evt. 
+* Weekly am Samstag bzw. wann wird  gearbeitet in der Regel?
+* GoSpeech-Account anlegen und Mail-Adressen an uns senden
 
 **Ideen für Rollen**
 
