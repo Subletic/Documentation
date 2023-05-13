@@ -25,18 +25,11 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 
 [cols=",,,,,,,,",options="header",]
 |===
-|Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/Schweregrad
-|aufgetreten am |erstellt durch |Reaktion |Verantwortlicher |Abschluss
-am
-|Prpgrammiersprache unbekannt |Problem |Team |dringend |30.4.23 |Hans
-Mustermann |Schulung geplant |Helga Musterfrau |offen
+|Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/Schweregrad |aufgetreten am |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
-|Änderung der API |Spezifikationsabweichung |Produkt |mittel |27.4.23
-|hans Mustermann |Ticket erstellt |Hans Mustermann |28.4.23
 
-|Responsibility geändert zu Verantworlich für Website
-|Spezifikationsabweichung |Team |leicht |25.4.23 |Helga Musterfrau
-|Roles/Responsibilieties geändert |Helge Musterfrau |27.4.23
-
-| | | | | | | | |
+| Wunsch des Kunden Angular und ASP.NET zu verwenden | Spezifikationsabweichung | Produkt | leicht | 28.04.2023 | Kunden | mit genannten Technologien arbeiten | @bbeigang @lnoack | geschossen
+| Keine Erfahrung mit C# bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @bbeigang | geschlossen
+| Keine Erfahrung mit ASP.NET bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @ajegani | offen
+| Keine Erfahrung mit Angular bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @lnoack | offen
 |===

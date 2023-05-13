@@ -1,0 +1,32 @@
+= Live Stream Editor zur Korrektur von Untertiteln
+
+[options="header", style="width:100%"]
+|===
+| Benedikt Beigang | Luca Noack | Amine Jegani | Chantal Bley | Pascal Fabian Dittes | Luca Niklas Franke | Christoph Neidahl | Finn Johann Romeis
+| link:https://gitlab.imn.htwk-leipzig.de/bbeigang[@bbeigang] | link:https://gitlab.imn.htwk-leipzig.de/lnoack[@lnoack] | link:https://gitlab.imn.htwk-leipzig.de/ajegani[@ajegani] | link:https://gitlab.imn.htwk-leipzig.de/cbley[@cbley] | link:https://gitlab.imn.htwk-leipzig.de/pdittes[@pdittes] | link:https://gitlab.imn.htwk-leipzig.de/lfranke2[@lfranke2] | link:https://gitlab.imn.htwk-leipzig.de/cneidahl[@cneidahl] | link:https://gitlab.imn.htwk-leipzig.de/fromeis[@fromeis]
+|===
+
+== Organisation
+
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/Minutes/Minutes[Protokolle] 
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/Glossary/FullGlossary[Glossar] 
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/Guidelines/Guidelines[Guidelines]
+* link:https://miro.com/welcome/M2p4VzBIbXdDeWRkNVJEY0NadHExdlNsbnhjOGJVVFhYRFhZbFFSNzVpV0oyemdxeVZsdTNvY2ZoMFBBNTBTM3wzMDc0NDU3MzU4MTY3MTYyOTQ2fDE=?share_link_id=575748469940[Miro Boards]
+
+
+== Design Thinking
+
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/TechnicalResearch/TechnicalResearch[Technologie Recherche]
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/DesignThinking/ProblemDefinition[Problem Definition]
+* link:https://miro.com/app/board/uXjVMLZFsig=/[Produktvision]
+
+== Projektleitdokumentation
+
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/ProjectLeadDocumentation/project_description[Projektbeschreibung]
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/ProjectLeadDocumentation/roles_and_responsibilities[Rollen]
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/ProjectLeadDocumentation/challenge_register[Challenge Register]
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/ProjectLeadDocumentation/follow_up_register[Follow Up Register]
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/ProjectLeadDocumentation/health_register[Health Register]
+* link:/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/ProjectLeadDocumentation/product_backlog[Product Backlog]
+
+== Zeitplan

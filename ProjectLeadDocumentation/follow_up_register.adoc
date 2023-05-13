@@ -3,7 +3,7 @@
 Das Follow up Register wird durch das Projektmanagement gepflegt.
 
 Im Follow up register werden Ereignisse aufgezeichnet, die den
-Projektverlauf entscheidend beinflussen können. Erkannte Risiken werden
+Projektverlauf entscheidend beeinflussen können. Erkannte Risiken werden
 aufgezeichnet und Lösungswege und Verantwortliche benannt. Dies dient
 dem Lernen aus Erfahrung.
 
@@ -16,11 +16,12 @@ of the team members) and start planning responses for the item. You must
 be continuously in contact with team members and other stakeholders to
 identify risks and issues.
 
-Das betrifft alle im Issueregister identifizierten Risiken und Änderungen.
+Das betrifft alle im Challenge-Register identifizierten Risiken und Änderungen.
 
 [cols=",,,,,,,",options="header",]
 |===
-|Cause |Effect |Impact |Response |Custodian |Identification (Date)
-|Occurence (Date) |Closure (Date)
-| | | | | | | |
+|Cause |Effect |Impact |Response |Custodian |Identification (Date) | Occurence (Date) | Closure (Date)
+| Keine Erwähnung der Betreffenden Person in Kommentar unter Issue | zu spätes reagieren auf Frage in Issue | Impulse für kommendes Meeting konnten nicht mit eingebunden werden | Erwähnung der Wichtigkeit des Verlinkens einer Person beim Schreiben von Kommentaren und Beschreibungen wenn diese andere Teammitglieder betreffen | Team | 11.05.2023 | 09.05.2023 | 11.05.
+| Fehlende Interaktivität in Workshops | Entwickler haben nur begrenzt von Workshop profitiert | schlechtere Kenntnis des Techstacks | kommende Workshops Interaktiver machen | @bbeigang, @lnoack | 09.05.2023 | 06.05.2023 | offen
+| Schwammige Aufgabenverteilung der Master, da Rollen nicht klar definiert | Unklare Zuständigkeiten | unnötige Verzögerungen bei Problemen, Entscheidungen und Fragen | klarere Trennung der Aufgabenverteilung durch Rollenbeschreibungen | @bbeigang, @lnoack | 05.05.2023 | 05.05.2023 | 06.05.2023
 |===

@@ -1,0 +1,18 @@
+= Product Backlog
+:toc:
+
+Im Produkt Backlog werden in Form von User Stories die funktionalen und nicht-funktionalen Anforderungen des Kunden dokumentiert.
+
+[options="header"]
+|===
+| User Story #1: _Example_
+| Als Entwickler/Kunde/Anwender/Stakeholder...
+
+|möchte ich...
+
+|sodass...
+|===
+
+---
+
+include::UserStories/Sprint_01_DesignThinking.asciidoc[]

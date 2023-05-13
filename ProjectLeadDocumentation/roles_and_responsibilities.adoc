@@ -37,7 +37,7 @@ ein ist ein Vermerk im Issue-Register zu führen.
 | Finn Romeis | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
 | Chantal Bley | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
 | Amine Jegani | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
-| Pascal Fabian | DittesDeveloper | Programmiertechnische Umsetzung, infolge von Tickets/Issues
+| Pascal Fabian Dittes | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
 | Luca Niklas Franke| Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
 | Christoph Neidahl | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
 |===
