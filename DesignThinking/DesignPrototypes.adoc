@@ -1,4 +1,70 @@
 = Design Prototypes
 
+Zu Wireframe 1:
 
 image:Prototypes/WF2_1.png
+
+	- Wireframe aufbereiten überprüfen mit Kunden
+	- Wireframes machen
+	- Wireframes + Kundenanforderungen -> welche hat er bestätigt und welche nicht und warum?
+		○ Als adoc welches er haben will
+Das haben wir uns dabei gedacht 
+
+|===
+| Positiv vom Kunden angemerkt | Negativ vom Kunden angemerkt
+
+|*Grauebearbeitungsbox* positiv angemerkt, da besser erkenntlich wo wir uns im Text befinden|
+|*Fett druck vom gesprochenem Wort* gibt dem Anwender einen eindruck wo im Text man sich befindet|
+|*Zeitstrahlleiste* gibt dem Anwender einen eindruck wo im Text man sich befindet|
+|*Live* Signalisierung das man auf dem aktuellsten Stand ist|
+|===
+
+---
+Zu Wireframe 2:
+
+image:Prototypes/WF2_2.png
+
+|===
+| Positiv vom Kunden angemerkt | Negativ vom Kunden angemerkt
+
+|*Fett druck vom gesprochenem Wort* gibt dem Anwender einen eindruck wo im Text man sich befindet|*Wartepunkte* wirken wie ein deplaziertes Objekt
+||*Fehlen der Grauebearbeitungsbox* fehlen ist negativ aufgefallen
+|===
+
+---
+Zu Wireframe 3:
+
+image:Prototypes/WF2_3.png
+
+|===
+| Positiv vom Kunden angemerkt | Negativ vom Kunden angemerkt
+
+|*Scrollbar* positiv angemerkt, da man schnell durch den Text scrollen kann|*leere* Wirkt als wäre nicht wirklich was in der Software
+||*Warteschlange* wirkt zu präsent das die anderen Bearbeiter warten
+|===
+
+---
+Zu Wireframe 4:
+
+image:Prototypes/WF2_4.png
+
+|===
+| Positiv vom Kunden angemerkt | Negativ vom Kunden angemerkt
+
+|*farbliche Herforhebung bei niedrigen Confidence-Werten* sehr Positiv, da für den Anwender sehr einfach erkenntlich wird ob wo eine kontrolle notwendig ist|*tasten* es fehlen tasten welche zum Springen benutzt werden können
+|*Scrollbar* positiv angemerkt, da man schnell durch den Text scrollen kann|
+|===
+
+
+
+---
+Zu Wireframe 5:
+
+image:Prototypes/WF2_5.png
+
+|===
+| Positiv vom Kunden angemerkt | Negativ vom Kunden angemerkt
+
+|*Zeitstrahlleiste* gibt dem Anwender einen eindruck wo im Text man sich befindet|*Aufbau* wirkt zu unübersichtlich man verliert sich zu schnell
+||*Rote Sprungtaste* wirkt nicht intuitiv sondern übertrieben und nicht geplant
+|===
