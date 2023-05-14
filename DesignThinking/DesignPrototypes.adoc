@@ -2,7 +2,7 @@
 
 Zu Wireframe 1:
 
-image:Prototypes/WF2_1.png
+image:Prototypes/WF2_1.png[alt="Unused Code"]
 
 	- Wireframe aufbereiten überprüfen mit Kunden
 	- Wireframes machen
