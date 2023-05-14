@@ -22,7 +22,7 @@ Das haben wir uns dabei gedacht
 ---
 Zu Wireframe 2:
 
-image:Prototypes/WF2_2.png
+image:Prototypes/WF2_2.png[alt="Unused Code"]
 
 |===
 | Positiv vom Kunden angemerkt | Negativ vom Kunden angemerkt
@@ -34,7 +34,7 @@ image:Prototypes/WF2_2.png
 ---
 Zu Wireframe 3:
 
-image:Prototypes/WF2_3.png
+image:Prototypes/WF2_3.png[alt="Unused Code"]
 
 |===
 | Positiv vom Kunden angemerkt | Negativ vom Kunden angemerkt
@@ -46,7 +46,7 @@ image:Prototypes/WF2_3.png
 ---
 Zu Wireframe 4:
 
-image:Prototypes/WF2_4.png
+image:Prototypes/WF2_4.png[alt="Unused Code"]
 
 |===
 | Positiv vom Kunden angemerkt | Negativ vom Kunden angemerkt
@@ -60,7 +60,7 @@ image:Prototypes/WF2_4.png
 ---
 Zu Wireframe 5:
 
-image:Prototypes/WF2_5.png
+image:Prototypes/WF2_5.png[alt="Unused Code"]
 
 |===
 | Positiv vom Kunden angemerkt | Negativ vom Kunden angemerkt
