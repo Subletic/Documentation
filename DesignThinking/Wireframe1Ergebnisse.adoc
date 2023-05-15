@@ -93,3 +93,8 @@ image::./Prototypes/Wireframe_1/Scrollbar fürs Audio + Geschwindigkeit + -.png[
 === Farbliche Unterscheidung Sprecher (Textblatt)
 
 image::./Prototypes/Wireframe_1/Sprechermarkierung auf Textblatt.png[]
+
+___
+https://www.figma.com/file/LTqpaZIrBg6V28l1GN3tUB/Untitled?type=design&t=sEA9eVFHbdY1OZwZ-1[Link zum Figma-Board, auf dem wir alle Wireframes gemeinsam erstellt haben.^]
+
+Kurze Anmerkung: Die vertikale Aufteilung sind relevante Features, die dargestellt werden, horizontale Frames sind mögliche Alternativen zu (bestehenden) Features.
