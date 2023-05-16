@@ -4,25 +4,25 @@
 
 [options="header"]
 |===
-| User Story #3: Kundenzufriedenheit
+| Kundenzufriedenheit
 | Als Kunde möchte ich eine dauerhaft getestete und ausführbare Software haben, sodass die Software von hoher Qualität ist.
 |===
 
 [options="header"]
 |===
-| User Story #5 Personas
+| Personas
 | Als Entwickler benötige ich verschiedene Personas, sodass ich mir die Person für die ich meinen Code schreibe vorstellen kann. Sie soll mir dabei helfen bei Entscheidungen die ich treffen muss, die Beste für den Kunden zu treffen.
 |===
 
 [options="header"]
 |===
-| User Story #8 Untertitelformat
+| Untertitelformat
 | Als Entwickler muss ich wissen welches Untertitelformat ich verwenden soll, sodass ich das Format verwende dass am Besten zu unserem Projekt passt.
 |===
 
 [options="header"]
 |===
-| User Story #9 UI-Frameworks
+| UI-Frameworks
 | Als Entwickler möchte ich ein Angular UI Framework verwenden, sodass ich schneller Entwickeln und die Software ausliefern kann. Dazu benötige ich eine Übersicht über notwenigen Bibliotheken und wie ich diese verwende.
 |===
 
@@ -30,31 +30,31 @@
 
 [options="header"]
 |===
-| User Story #1: Entwicklungsumgebung
+| Entwicklungsumgebung
 | Als Entwickler benötige ich eine Entwicklungsumgebung, sodass ich die vom Kunden gestellten Anforderungen umsetzten kann. 
 |===
 
 [options="header"]
 |===
-| User Story #2: Codequalität
+| Codequalität
 | Als Entwickler möchte ich laufend sicher sein können, dass mein geschriebener Code von guter Qualität ist, sodass mein Kunde das bestmögliche Produkt erhält.
 |===
 
 [options="header"]
 |===
-| User Story #4 Wireframe
+| Wireframe
 | Als Projektsponsor möchte ich ein Wireframe erstellen lassen, sodass, ich mir die Nutzererfahrung frühstmöglich greifbar machen kann. Das Wireframe sollte eine klare Struktur aufweisen und die Benutzerfreundlichkeit berücksichtigen. Es dient als Grundlage für die weitere Entwicklung des Frontends.
 |===
 
 [options="header"]
 |===
-| User Story #6 Backend-Frontend Schnittstelle
+| Backend-Frontend Schnittstelle
 | Als Entwickler benötige ich ein Verständis davon wie das Frontend mit dem Backend kommuniziert, sodass ich die vom Kunden geforderten Funktionalitäten implementieren kann.
 |===
 
 [options="header"]
 |===
-| User Story #7 Backend zu Frontend Kommunikation
+| Backend zu Frontend Kommunikation
 | Als Entwickler benötige ich eine Methode die es mir erlaubt vom Backend aus Daten ans Frontend zu schicken, sodass ich in der Lage bin die vom Kunden gewünschten Echtzeitdaten in die Anwendung zu streamen. 
 |===
 
