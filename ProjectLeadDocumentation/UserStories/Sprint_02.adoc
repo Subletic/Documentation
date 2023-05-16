@@ -5,4 +5,3 @@
 ---
 
 === Funktionale Anforderungen
-
