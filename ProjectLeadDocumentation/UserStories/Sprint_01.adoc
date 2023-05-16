@@ -62,15 +62,15 @@
 | Als Entwickler es sollten Livetests mit Testpersonen durchgeführt werden, um die Funktionalität zu überprüfen.
 |===
 
-[options="header"]
-|===
-| Spulgeschwindigkeit
-| Als Anwender möchte ich die Möglichkeit haben, die Audiogeschwindigkeit anzupassen, um sie bei Bedarf zu verlangsamen. Eine Änderung der Geschwindigkeit ist definitiv relevant, da es für die Verständlichkeit und die genaue Transkription des Audios hilfreich ist.
-|===
-
 ---
 
 === Funktionale Anforderungen
+
+[options="header"]
+|===
+| Spulgeschwindigkeit
+| Als Anwender möchte ich die Möglichkeit haben, die Audiogeschwindigkeit anzupassen, sodass ich das Gesagte in der Audio besser verstehen kann.
+|===
 
 [options="header"]
 |===
