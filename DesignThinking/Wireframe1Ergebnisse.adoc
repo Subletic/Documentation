@@ -23,7 +23,7 @@ image::./Prototypes/Wireframe_1/Geschwindigkeitsregler.png[]
 
 === Lautstärkeregler
 
-image::./Prototypes/Wireframe_1/Lautstärkeregler.png[]
+image::./Prototypes/Wireframe_1/Lautstaerkeregler.png[]
 
 === Pause + Zurückspringen on-click
 
@@ -31,37 +31,37 @@ image::./Prototypes/Wireframe_1/Lautstärkeregler.png[]
 
 * Idee: Animationsübergang zwischen Play- und Pause-Symbol, siehe z.B. Youtube
 
-image::./Prototypes/Wireframe_1/Pause und Zurück-Press.png[]
+image::./Prototypes/Wireframe_1/Pause_und_Zurück-Press.png[]
 
 ==== Alternative 2
 
-image::./Prototypes/Wireframe_1/Pause und Zurück-Press _ Alternative 2.png[]
+image::./Prototypes/Wireframe_1/Pause_und_Zurück-Press_Alternative 2.png[]
 
 ==== Alternative 3
 
 * anderer Schatten (nur teamrelevant)
 
-image::./Prototypes/Wireframe_1/Pause und Zurück-Press _ Alternative 1.png[]
+image::./Prototypes/Wireframe_1/Pause_und_Zurück-Press_Alternative 1.png[]
 
 == Beispiel für Text, der in zwei Minuten gesprochen wird
 
-image::./Prototypes/Wireframe_1/Standard (2 Minuten Text).png[]
+image::./Prototypes/Wireframe_1/Standard_(2_Minuten_Text).png[]
 
 == Ende der Bearbeitungszeit
 
 * Zusätzliche Frage: Kann man den Text im roten Bereich noch bearbeiten oder ist es nur ein Reminder, welcher Abschnitt als letztes raus ist?
 
-image::./Prototypes/Wireframe_1/Ende (Text oben).png[]
+image::./Prototypes/Wireframe_1/Ende_(Text_oben).png[]
 
 === ...Markierung auch in Audioleiste?
 
-image::./Prototypes/Wireframe_1/Ende (Audio).png[]
+image::./Prototypes/Wireframe_1/Ende_(Audio).png[]
 
 == Anfang der Bearbeitungszeit
 
 * Zusätzliche Frage: In diesem Fall keine graue Textbox. Sollte diese ab der ersten Markierung immer vorhanden sein oder kann man sie auch wegklicken, z.B. durch klick auf Bereich außerhalb des Textblatts?
 
-image::./Prototypes/Wireframe_1/Anfang (Text unten).png[]
+image::./Prototypes/Wireframe_1/Anfang_(Text_unten).png[]
 
 == Alternative Ideen
 
@@ -70,11 +70,11 @@ image::./Prototypes/Wireframe_1/Anfang (Text unten).png[]
 * aktuell gesprochenes Wort wird durch grauen Strich in Audioleiste repräsentiert
 * Zusätzliche Frage: Kann dieser mit der Maus gezogen werden?
 
-image::./Prototypes/Wireframe_1/Balken aktuelle Position.png[]
+image::./Prototypes/Wireframe_1/Balken_aktuelle_Position.png[]
 
 === Alternative zur Confidence-Level Markierung
 
-image::./Prototypes/Wireframe_1/Confidence-Level Markierung _ Alternative.png[]
+image::./Prototypes/Wireframe_1/Confidence-Level_Markierung_Alternative.png[]
 
 === Scrollbar innerhalb der Audioleiste & Geschwindigkeit +/-
 
@@ -88,11 +88,11 @@ image::./Prototypes/Wireframe_1/Confidence-Level Markierung _ Alternative.png[]
 * Wird vermutlich oft über Hotkeys verändert
 * für Maus-Benutzer one-click veränderung der Geschwindigkeit statt two-click über Menüleiste
 
-image::./Prototypes/Wireframe_1/Scrollbar fürs Audio + Geschwindigkeit + -.png[]
+image::./Prototypes/Wireframe_1/Scrollbar_fuer_Audio_+_Geschwindigkeit_+-.png[]
 
 === Farbliche Unterscheidung Sprecher (Textblatt)
 
-image::./Prototypes/Wireframe_1/Sprechermarkierung auf Textblatt.png[]
+image::./Prototypes/Wireframe_1/Sprechermarkierung_auf_Textblatt.png[]
 
 ___
 https://www.figma.com/file/LTqpaZIrBg6V28l1GN3tUB/Untitled?type=design&t=sEA9eVFHbdY1OZwZ-1[Link zum Figma-Board, auf dem wir alle Wireframes gemeinsam erstellt haben.^]
