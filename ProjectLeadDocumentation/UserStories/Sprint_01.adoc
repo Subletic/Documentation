@@ -52,12 +52,6 @@
 
 [options="header"]
 |===
-| Unterschiedliche Lokalitätsdifferenz
-| Als Anwender möchte ich in der Lage sein, die Software von einem anderen Standort aus zu bedienen und dabei den Audio-Stream zu hören.
-|===
-
-[options="header"]
-|===
 | Benutzergruppen
 | Die Software sollte für geschulte Personen, Content-Creator und eingeschränkte Personen (Farbenblindheit) zugänglich sein.
 |===
@@ -77,6 +71,18 @@
 ---
 
 === Funktionale Anforderungen
+
+[options="header"]
+|===
+| Unterschiedliche Lokalität
+| Als Anwender möchte ich in der Lage sein, die Software von einem anderen Standort aus zu bedienen, sodass ich bequem von überall aus arbeiten kann.
+|===
+
+[options="header"]
+|===
+| Hören der Audio
+| Als Anwender möchte ich den Audio-Stream hören, sodass ich bewerten kann ob ein Untertitel und das gesprochene zusammen passt.
+|===
 
 [options="header"]
 |===
@@ -162,11 +168,10 @@
 | Als Kunde möchte ich, dass das MVP die gängigsten Videoformate unterstützt, damit ich meine Dateien problemlos hochladen kann.
 |===
 
-
 [options="header"]
 |===
 | Spulen/Springen
-| Als Anwender möchte ich die Möglichkeit haben, das Spulen anzupassen, um einige Sekunden zurückzuspringen.
+| Als Anwender möchte ich die Möglichkeit haben in der Audio um einige Sekunden zu springen, sodass ich falls ich etwas nicht gut verstanden habe, den Abschnitt nochmal hören kann.
 |===
 
 
