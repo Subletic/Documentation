@@ -35,13 +35,13 @@ image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press.png[]
 
 ==== Alternative 2
 
-image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press_Alternative 2.png[]
+image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press_Alternative_2.png[]
 
 ==== Alternative 3
 
 * anderer Schatten (nur teamrelevant)
 
-image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press_Alternative 1.png[]
+image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press_Alternative_1.png[]
 
 == Beispiel für Text, der in zwei Minuten gesprochen wird
 
@@ -88,7 +88,7 @@ image::./Prototypes/Wireframe_1/Confidence-Level_Markierung_Alternative.png[]
 * Wird vermutlich oft über Hotkeys verändert
 * für Maus-Benutzer one-click veränderung der Geschwindigkeit statt two-click über Menüleiste
 
-image::./Prototypes/Wireframe_1/Scrollbar_fuer_Audio_+_Geschwindigkeit_+-.png[]
+image::./Prototypes/Wireframe_1/Scrollbar_fuer_Audio_und_Geschwindigkeit_+-.png[]
 
 === Farbliche Unterscheidung Sprecher (Textblatt)
 
