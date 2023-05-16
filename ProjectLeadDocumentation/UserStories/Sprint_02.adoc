@@ -20,6 +20,37 @@
 | Als Entwickler bei der gbs möchte ich, dass ASP.NET als Backend verwendet wird, sodass ich die entstandene Software leichter in die bestehende Software der gbs einbauen kann.
 |===
 
+
+[options="header"]
+|===
+| Zeitstempel
+| Als Anwender sollte jedes neu hinzugefügte Wort in der Spracherkennung einen eigenen Zeitstempel bekommen, diese erleichtert es die Genauigkeit der Transkription zu gewährleisten.
+|===
+
+[options="header"]
+|===
+| Unterschiedliche Lokalitätsdifferenz
+| Als Anwender möchte ich in der Lage sein, die Software von einem anderen Standort aus zu bedienen und dabei den Audio-Stream zu hören.
+|===
+
+[options="header"]
+|===
+| Benutzergruppen
+| Die Software sollte für geschulte Personen, Content-Creator und eingeschränkte Personen (Farbenblindheit) zugänglich sein.
+|===
+
+[options="header"]
+|===
+| Ausführliche Testabdeckung
+| Als Entwickler es sollten Livetests mit Testpersonen durchgeführt werden, um die Funktionalität zu überprüfen.
+|===
+
+[options="header"]
+|===
+| Spulgeschwindigkeit
+| Als Anwender möchte ich die Möglichkeit haben, die Audiogeschwindigkeit anzupassen, um sie bei Bedarf zu verlangsamen. Eine Änderung der Geschwindigkeit ist definitiv relevant, da es für die Verständlichkeit und die genaue Transkription des Audios hilfreich ist.
+|===
+
 === Funktionale Anforderungen
 
 [options="header"]
@@ -72,6 +103,13 @@
 
 [options="header"]
 |===
-| 
-| 
+| Videoformat unterstützung
+| Als Kunde möchte ich, dass das MVP die gängigsten Videoformate unterstützt, damit ich meine Dateien problemlos hochladen kann.
+|===
+
+
+[options="header"]
+|===
+| Spulen/Springen
+| Als Anwender möchte ich die Möglichkeit haben, das Spulen anzupassen, um einige Sekunden zurückzuspringen.
 |===
