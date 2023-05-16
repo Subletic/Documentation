@@ -5,7 +5,7 @@
 [options="header"]
 |===
 | DSGVO Konformität
-| Als Kunde (gbs) möchte ich dass die Entwicklete Software DSGVO-konform ist, sodass ich die Software in Deutschland betreiben darf.
+| Als Kunde (gbs) möchte ich dass die entwicklete Software DSGVO-konform ist, sodass ich die Software in Deutschland betreiben darf.
 |===
 
 [options="header"]
@@ -20,7 +20,6 @@
 | Als Entwickler bei der gbs möchte ich, dass ASP.NET als Backend verwendet wird, sodass ich die entstandene Software leichter in die bestehende Software der gbs einbauen kann.
 |===
 
-
 [options="header"]
 |===
 | Zeitstempel
@@ -29,8 +28,14 @@
 
 [options="header"]
 |===
-| Unterschiedliche Lokalitätsdifferenz
-| Als Anwender möchte ich in der Lage sein, die Software von einem anderen Standort aus zu bedienen und dabei den Audio-Stream zu hören.
+| Corporate Identity
+| Als gbs möchte ich die _Corporate Identity_ bewahren. Deshalb sollen in der Software die selben Farben verwendet werden, sodass ersichtlich ist dass es sich um ein Produkt der gbs handelt.
+|===
+
+[options="header"]
+|===
+| Farbschema wie GoSpeech
+| Als Anwender möchte ich, dass die Farbgestaltung ähnlich ist zu _GoSpeech_, sodass ich unterschwellig weiß, dass ich ein Produkt von der gbs benutze.
 |===
 
 [options="header"]
@@ -41,8 +46,14 @@
 
 [options="header"]
 |===
+| Übersichtlichkeit der Untertitel
+| Als Anwender muss die Darstellung schlicht sein, sodass ich beim Lesen und Korrigieren den Überblick behalte und nicht abgelenkt werde.
+|===
+
+[options="header"]
+|===
 | Ausführliche Testabdeckung
-| Als Entwickler es sollten Livetests mit Testpersonen durchgeführt werden, um die Funktionalität zu überprüfen.
+| Als Entwickler benötige ich Livetests mit Testpersonen, sodass ich die Features die ich impelementiert habe testen kann.
 |===
 
 [options="header"]
@@ -51,7 +62,25 @@
 | Als Anwender möchte ich die Möglichkeit haben, die Audiogeschwindigkeit anzupassen, um sie bei Bedarf zu verlangsamen. Eine Änderung der Geschwindigkeit ist definitiv relevant, da es für die Verständlichkeit und die genaue Transkription des Audios hilfreich ist.
 |===
 
+[options="header"]
+|===
+| Anwendungsaufbau wie GoSpeech
+| Als Anwender möchte ich eine ähnlichen Aufbau der Anwendung wie GoSpeech, sodass ich mich schneller zurechtfinde.
+|===
+
 === Funktionale Anforderungen
+
+[options="header"]
+|===
+| Unterschiedliche Lokalitätsdifferenz
+| Als Anwender möchte ich in der Lage sein, die Software von einem anderen Standort aus zu bedienen, sodass ich von überall bequem arbeiten kann.
+|===
+
+[options="header"]
+|===
+| Unterschiedliche Lokalitätsdifferenz
+| Als Anwender möchte ich die Audio hören können, sodass ich besser einschätzen ob die Untertitelung korrekt ist.
+|===
 
 [options="header"]
 |===
@@ -103,13 +132,43 @@
 
 [options="header"]
 |===
-| Videoformat unterstützung
-| Als Kunde möchte ich, dass das MVP die gängigsten Videoformate unterstützt, damit ich meine Dateien problemlos hochladen kann.
+| Videoformat Unterstützung
+| Als Kunde möchte ich, dass das MVP die gängigsten Videoformate unterstützt, sodass ich meine Dateien problemlos hochladen kann.
 |===
 
 
 [options="header"]
 |===
-| Spulen/Springen
-| Als Anwender möchte ich die Möglichkeit haben, das Spulen anzupassen, um einige Sekunden zurückzuspringen.
+| Springen in Audio
+| Als Anwender möchte ich die Möglichkeit haben, in der Audio einige Sekunden zu springen, sodass ich falls ich ein gesprchens Wort nicht gut verstanden habe dieses nocheinmal hören kann.
+|===
+
+[options="header"]
+|===
+| Visualisierung der Audiospur
+| Als Anwender möchte ich sehen können wie die Audiospur aussieht, sodass ich diese als Navigationsausgangspunkt nutzen kann.
+|===
+
+[options="header"]
+|===
+| Optionen
+| Als Anwender benötge ich die Möglichkeit Optionen einzustellen, sodass ich in der Lage bin Einstellung bezüglich der Software vorzunehmen.
+|===
+
+[options="header"]
+|===
+| Variable Sprungdistanz in Audio
+| Als Anwender möchte ich einstellen können wie viele Sekunden ich in der Audio springen möchte, sodass ich die Software besser an meinen Workflow anpassen kann. 
+|===
+
+[options="header"]
+|===
+| Unterstützung eines Pedals
+| Als Stenograf:in nutze ich bei meiner bisherigen Arbeit ein Pedal mit der ich in der Audio zurückspringen kann. Ich möchte mein Pedal auch in der neuen Software nutzen können, sodass ich mich nicht umgewöhnen muss.
+|===
+
+[options="header"]
+|===
+| Unterstützung einer Daumentastatur
+| Als Stenograf:in nutze ich bei meiner bisherigen Arbeit eine Daumentastatur mit der ich in der Audio zurückspringen kann. Ich möchte mein Pedal auch in der neuen Software nutzen können, sodass ich mich nicht umgewöhnen muss.
 |===
