@@ -1,0 +1,173 @@
+== User Stories erstellt in Sprint 1 
+
+=== Nicht-Funktionale Anforderungen
+
+[options="header"]
+|===
+| Kundenzufriedenheit
+| Als Kunde möchte ich eine dauerhaft getestete und ausführbare Software haben, sodass die Software von hoher Qualität ist.
+|===
+
+[options="header"]
+|===
+| Personas
+| Als Entwickler benötige ich verschiedene Personas, sodass ich mir die Person für die ich meinen Code schreibe vorstellen kann. Sie soll mir dabei helfen bei Entscheidungen die ich treffen muss, die Beste für den Kunden zu treffen.
+|===
+
+[options="header"]
+|===
+| Untertitelformat
+| Als Entwickler muss ich wissen welches Untertitelformat ich verwenden soll, sodass ich das Format verwende dass am Besten zu unserem Projekt passt.
+|===
+
+[options="header"]
+|===
+| UI-Frameworks
+| Als Entwickler möchte ich ein Angular UI Framework verwenden, sodass ich schneller Entwickeln und die Software ausliefern kann. Dazu benötige ich eine Übersicht über notwenigen Bibliotheken und wie ich diese verwende.
+|===
+
+[options="header"]
+|===
+| DSGVO Konformität
+| Als Kunde (gbs) möchte ich dass die Entwicklete Software DSGVO-konform ist, sodass ich die Software in Deutschland betreiben darf.
+|===
+
+[options="header"]
+|===
+| Angular als Frontend
+| Als Entwickler bei der gbs möchte ich, dass Angular als Frontend verwendet wird, sodass ich die entstandene Software leichter in die bestehende Software der gbs einbauen kann.
+|===
+
+[options="header"]
+|===
+| ASP.NET als Backend
+| Als Entwickler bei der gbs möchte ich, dass ASP.NET als Backend verwendet wird, sodass ich die entstandene Software leichter in die bestehende Software der gbs einbauen kann.
+|===
+
+[options="header"]
+|===
+| Zeitstempel
+| Als Anwender sollte jedes neu hinzugefügte Wort in der Spracherkennung einen eigenen Zeitstempel bekommen, diese erleichtert es die Genauigkeit der Transkription zu gewährleisten.
+|===
+
+[options="header"]
+|===
+| Unterschiedliche Lokalitätsdifferenz
+| Als Anwender möchte ich in der Lage sein, die Software von einem anderen Standort aus zu bedienen und dabei den Audio-Stream zu hören.
+|===
+
+[options="header"]
+|===
+| Benutzergruppen
+| Die Software sollte für geschulte Personen, Content-Creator und eingeschränkte Personen (Farbenblindheit) zugänglich sein.
+|===
+
+[options="header"]
+|===
+| Ausführliche Testabdeckung
+| Als Entwickler es sollten Livetests mit Testpersonen durchgeführt werden, um die Funktionalität zu überprüfen.
+|===
+
+[options="header"]
+|===
+| Spulgeschwindigkeit
+| Als Anwender möchte ich die Möglichkeit haben, die Audiogeschwindigkeit anzupassen, um sie bei Bedarf zu verlangsamen. Eine Änderung der Geschwindigkeit ist definitiv relevant, da es für die Verständlichkeit und die genaue Transkription des Audios hilfreich ist.
+|===
+
+---
+
+=== Funktionale Anforderungen
+
+[options="header"]
+|===
+| Entwicklungsumgebung
+| Als Entwickler benötige ich eine Entwicklungsumgebung, sodass ich die vom Kunden gestellten Anforderungen umsetzten kann. 
+|===
+
+[options="header"]
+|===
+| Codequalität
+| Als Entwickler möchte ich laufend sicher sein können, dass mein geschriebener Code von guter Qualität ist, sodass mein Kunde das bestmögliche Produkt erhält.
+|===
+
+[options="header"]
+|===
+| Wireframe
+| Als Projektsponsor möchte ich ein Wireframe erstellen lassen, sodass, ich mir die Nutzererfahrung frühstmöglich greifbar machen kann. Das Wireframe sollte eine klare Struktur aufweisen und die Benutzerfreundlichkeit berücksichtigen. Es dient als Grundlage für die weitere Entwicklung des Frontends.
+|===
+
+[options="header"]
+|===
+| Backend-Frontend Schnittstelle
+| Als Entwickler benötige ich ein Verständis davon wie das Frontend mit dem Backend kommuniziert, sodass ich die vom Kunden geforderten Funktionalitäten implementieren kann.
+|===
+
+[options="header"]
+|===
+| Backend zu Frontend Kommunikation
+| Als Entwickler benötige ich eine Methode die es mir erlaubt vom Backend aus Daten ans Frontend zu schicken, sodass ich in der Lage bin die vom Kunden gewünschten Echtzeitdaten in die Anwendung zu streamen. 
+|===
+
+[options="header"]
+|===
+| Sichtbarkeit der erstellten Untertitel
+| Als Anwender muss ich die Untertitel sehen können, sodass ich diese korrigieren kann. 
+|===
+
+[options="header"]
+|===
+| Übersichtlichkeit der Untertitel
+| Als Anwender muss die Darstellung schlicht sein, sodass ich beim Lesen und Korrigieren den Überblick behalte und nicht abgelenkt werde.
+|===
+
+[options="header"]
+|===
+| Sichtbarkeit von wahrscheinlich fehlerhaften Wörtern
+| Als Anwender benötige ich eine farbliche Markierung, welche Wörter wahrscheinlich fehlerhaft sind, sodass ich diese leichter identifizieren kann. 
+|===
+
+[options="header"]
+|===
+| Audio-Geschwindigkeits Einstellung
+| Als Anwender benötige ich die Funktionalität, während des Bearbeitens in der Audio zurückzuspringen, sodass ich falls ich unaufmerksam war oder ein Wort schlecht ausgesprochen wurde, das Gesagte nocheinmal hören kann.
+|===
+
+[options="header"]
+|===
+| Positionsmarker in Audiospur
+| Als Anwender möchte ich wissen wo ich in der Audiospur bin, sodass ich schneller überblicken kann wie weit ich hinter der aktuellen Audioposition bin und ein Gefühl für die verbleibende Zeit habe.
+|===
+
+[options="header"]
+|===
+| Positionsmarker in Text
+| Als Anwender möchte ich wissen an welcher Stelle die Audio gerade ist im Text, sodass ich mich leichter orientieren kann.
+|===
+
+[options="header"]
+|===
+| Anhalten der Audio
+| Als Anwender möchte ich in der Lage sein die Audio anzuhalten, sodass ich die Audio besser kontrolieren kann.
+|===
+
+[options="header"]
+|===
+| Bearbeitungsfunktion der Untertitel
+| Als Anwender möchte ich in der Lage sein die angezeigten Untertitel bearbeiten zu können, sodass die korrigierten Untertitel für die Zuschauer sichtbar sind.
+|===
+
+[options="header"]
+|===
+| Videoformat unterstützung
+| Als Kunde möchte ich, dass das MVP die gängigsten Videoformate unterstützt, damit ich meine Dateien problemlos hochladen kann.
+|===
+
+
+[options="header"]
+|===
+| Spulen/Springen
+| Als Anwender möchte ich die Möglichkeit haben, das Spulen anzupassen, um einige Sekunden zurückzuspringen.
+|===
+
+
+

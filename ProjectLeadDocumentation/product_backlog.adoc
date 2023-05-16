@@ -15,6 +15,6 @@ Im Produkt Backlog werden in Form von User Stories die funktionalen und nicht-fu
 
 ---
 
-include::UserStories/Sprint_02.adoc[]
+include::UserStories/Sprint_01.adoc[]
 
-include::UserStories/Sprint_01_DesignThinking.adoc[]
+include::UserStories/Sprint_02.adoc[]
