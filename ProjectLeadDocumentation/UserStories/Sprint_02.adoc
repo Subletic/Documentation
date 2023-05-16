@@ -41,7 +41,7 @@
 [options="header"]
 |===
 | Benutzergruppen
-| Die Software sollte für geschulte Personen, Content-Creator und eingeschränkte Personen (Farbenblindheit) zugänglich sein.
+| Die Software sollte für geschulte Personen (Stenografen), Content-Creator (Leihen) und eingeschränkte Personen (zB Farbenblinde) zugänglich sein.
 |===
 
 [options="header"]
