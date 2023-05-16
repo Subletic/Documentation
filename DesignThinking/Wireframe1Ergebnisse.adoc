@@ -31,17 +31,17 @@ image::./Prototypes/Wireframe_1/Lautstaerkeregler.png[]
 
 * Idee: Animationsübergang zwischen Play- und Pause-Symbol, siehe z.B. Youtube
 
-image::./Prototypes/Wireframe_1/Pause_und_Zurück-Press.png[]
+image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press.png[]
 
 ==== Alternative 2
 
-image::./Prototypes/Wireframe_1/Pause_und_Zurück-Press_Alternative 2.png[]
+image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press_Alternative 2.png[]
 
 ==== Alternative 3
 
 * anderer Schatten (nur teamrelevant)
 
-image::./Prototypes/Wireframe_1/Pause_und_Zurück-Press_Alternative 1.png[]
+image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press_Alternative 1.png[]
 
 == Beispiel für Text, der in zwei Minuten gesprochen wird
 
