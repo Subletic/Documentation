@@ -15,6 +15,22 @@ Das Layout bietet die wichtigsten Kernfunktionen unserer Anwendung. Hier nochmal
 * Confidence-Level -> **Verschiedene Färbung bei kritischen Wörter, Skala Gelb - Orange - Rot**
 * Das ganze Projekt sollte unter einem Inklusionsrahmen aufgezogen werden -> **Verschiedene Farbschemata für Confidence-Werte + große Schriftgröße + schwarz auf weiß**
 
+== Ende der Bearbeitungszeit
+
+* Zusätzliche Frage: Kann man den Text im roten Bereich noch bearbeiten oder ist es nur ein Reminder, welcher Abschnitt als letztes raus ist?
+
+image::./Prototypes/Wireframe_1/Ende_(Text_oben).png[]
+
+=== ...Markierung auch in Audioleiste?
+
+image::./Prototypes/Wireframe_1/Ende_(Audio).png[]
+
+== Anfang der Bearbeitungszeit
+
+* Zusätzliche Frage: In diesem Fall keine graue Textbox. Sollte diese ab der ersten Markierung immer vorhanden sein oder kann man sie auch wegklicken, z.B. durch klick auf Bereich außerhalb des Textblatts?
+
+image::./Prototypes/Wireframe_1/Anfang_(Text_unten).png[]
+
 == Button-on-Press
 
 === Geschwindigkeitsregler
@@ -46,22 +62,6 @@ image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press_Alternative_1.png[]
 == Beispiel für Text, der in zwei Minuten gesprochen wird
 
 image::./Prototypes/Wireframe_1/Standard_(2_Minuten_Text).png[]
-
-== Ende der Bearbeitungszeit
-
-* Zusätzliche Frage: Kann man den Text im roten Bereich noch bearbeiten oder ist es nur ein Reminder, welcher Abschnitt als letztes raus ist?
-
-image::./Prototypes/Wireframe_1/Ende_(Text_oben).png[]
-
-=== ...Markierung auch in Audioleiste?
-
-image::./Prototypes/Wireframe_1/Ende_(Audio).png[]
-
-== Anfang der Bearbeitungszeit
-
-* Zusätzliche Frage: In diesem Fall keine graue Textbox. Sollte diese ab der ersten Markierung immer vorhanden sein oder kann man sie auch wegklicken, z.B. durch klick auf Bereich außerhalb des Textblatts?
-
-image::./Prototypes/Wireframe_1/Anfang_(Text_unten).png[]
 
 == Alternative Ideen
 
