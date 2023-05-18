@@ -21,4 +21,4 @@
 * link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/main/DesignThinking/DesignPrototypes.adoc[Design Prototypen]
 * link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/main/ProjectLeadDocumentation/product_backlog.adoc[User Stories aus dem Design Thinking (Sprint_01)]
 * link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/TechnicalResearch/TechnicalResearch[Technologie Recherche]
-* link:https://miro.com/app/board/uXjVMLZFsig=/[Produktvision]
+* link:https://miro.com/app/board/uXjVMJfkJ9U=/[Produktvision]
