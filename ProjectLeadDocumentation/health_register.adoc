@@ -12,7 +12,7 @@ jedem Sprintende aktualisiert.
 |Is the sponsor involved in high-level aspects of the project? | true
 |Is there an effective setup for the project documents? | true
 |Are there enough key team members appointed to the project? | true
-|Were key team members actively involved in planning the project? | ???
+|Were key team members actively involved in planning the project? | true
 |Is the Project Description well formed and useful? | true
 |Is the Follow-Up Register well formed and useful? | true
 |Is the Challenge Register current, well formed and useful? | true
