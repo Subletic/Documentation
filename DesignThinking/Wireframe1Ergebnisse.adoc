@@ -1,0 +1,100 @@
+= Ausgereiftes Wireframe für Kunden 
+
+== Standard-Layout
+
+image::./Prototypes/Wireframe_1/Standard.png[]
+
+Das Layout bietet die wichtigsten Kernfunktionen unserer Anwendung. Hier nochmal die Auflistung an Funktionen, die dieses Overlay erfüllen muss: 
+
+* aktuelles Wort fett markieren -> in diesem Fall **Regel**
+* Zurückspringmöglichkeit (festlegbar, 5 / 7 / 10 Sekunden) -> Tastenkombination bzw. **Doppelpfeile links unten (vor- und zurück)**
+* Abspielgeschwindigkeit (festgelegt, 0.7 / 0.8 usw.) -> **dritter Button von rechts**
+* Unten der Zeitstrahl (mit Sprechern oder ohne) -> **Audioleiste in der Mitte, mit Sprecher (Farbunterscheidung)**
+* Graues Kästchen "Genau hier befindet man sich" -> **Sowohl auf Textblatt, als auch in Audio (Meinung erfragen)**
+* Hoch- und Runterscrollen -> **Scrollbar und Mausrad**
+* Confidence-Level -> **Verschiedene Färbung bei kritischen Wörter, Skala Gelb - Orange - Rot**
+* Das ganze Projekt sollte unter einem Inklusionsrahmen aufgezogen werden -> **Verschiedene Farbschemata für Confidence-Werte + große Schriftgröße + schwarz auf weiß**
+
+== Ende der Bearbeitungszeit
+
+* Zusätzliche Frage: Kann man den Text im roten Bereich noch bearbeiten oder ist es nur ein Reminder, welcher Abschnitt als letztes raus ist?
+
+image::./Prototypes/Wireframe_1/Ende_(Text_oben).png[]
+
+=== ...Markierung auch in Audioleiste?
+
+image::./Prototypes/Wireframe_1/Ende_(Audio).png[]
+
+== Anfang der Bearbeitungszeit
+
+* Zusätzliche Frage: In diesem Fall keine graue Textbox. Sollte diese ab der ersten Markierung immer vorhanden sein oder kann man sie auch wegklicken, z.B. durch klick auf Bereich außerhalb des Textblatts?
+
+image::./Prototypes/Wireframe_1/Anfang_(Text_unten).png[]
+
+== Button-on-Press
+
+=== Geschwindigkeitsregler
+
+image::./Prototypes/Wireframe_1/Geschwindigkeitsregler.png[]
+
+=== Lautstärkeregler
+
+image::./Prototypes/Wireframe_1/Lautstaerkeregler.png[]
+
+=== Pause + Zurückspringen on-click
+
+==== Alternative 1 
+
+* Idee: Animationsübergang zwischen Play- und Pause-Symbol, siehe z.B. Youtube
+
+image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press.png[]
+
+==== Alternative 2
+
+image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press_Alternative_2.png[]
+
+==== Alternative 3
+
+* anderer Schatten (nur teamrelevant)
+
+image::./Prototypes/Wireframe_1/Pause_und_Zurueck-Press_Alternative_1.png[]
+
+== Beispiel für Text, der in zwei Minuten gesprochen wird
+
+image::./Prototypes/Wireframe_1/Standard_(2_Minuten_Text).png[]
+
+== Alternative Ideen
+
+=== Markierung aktuelles Wort in Audioleiste
+
+* aktuell gesprochenes Wort wird durch grauen Strich in Audioleiste repräsentiert
+* Zusätzliche Frage: Kann dieser mit der Maus gezogen werden?
+
+image::./Prototypes/Wireframe_1/Balken_aktuelle_Position.png[]
+
+=== Alternative zur Confidence-Level Markierung
+
+image::./Prototypes/Wireframe_1/Confidence-Level_Markierung_Alternative.png[]
+
+=== Scrollbar innerhalb der Audioleiste & Geschwindigkeit +/-
+
+==== Scrollbar
+
+* Idee: für zusätzliches Gefühl, wo der aktuelle Textausschnitt in der gesamten Audio einzuordnen ist zusätzliche Scrollbar-Kopie über Audioleiste
+* diese kann auch bewegt werden und ist mit der anderen verbunden, so das ein links/rechts Scrollen da für eine Bewegung des Textausschnitts sorgt
+
+==== Geschwindigkeit
+
+* Wird vermutlich oft über Hotkeys verändert
+* für Maus-Benutzer one-click veränderung der Geschwindigkeit statt two-click über Menüleiste
+
+image::./Prototypes/Wireframe_1/Scrollbar_fuer_Audio_und_Geschwindigkeit_+-.png[]
+
+=== Farbliche Unterscheidung Sprecher (Textblatt)
+
+image::./Prototypes/Wireframe_1/Sprechermarkierung_auf_Textblatt.png[]
+
+___
+https://www.figma.com/file/LTqpaZIrBg6V28l1GN3tUB/Untitled?type=design&t=sEA9eVFHbdY1OZwZ-1[Link zum Figma-Board, auf dem wir alle Wireframes gemeinsam erstellt haben.^]
+
+Kurze Anmerkung: Die vertikale Aufteilung sind relevante Features, die dargestellt werden, horizontale Frames sind mögliche Alternativen zu (bestehenden) Features.
