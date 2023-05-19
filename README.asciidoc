@@ -6,6 +6,8 @@
 | link:https://gitlab.imn.htwk-leipzig.de/bbeigang[@bbeigang] | link:https://gitlab.imn.htwk-leipzig.de/lnoack[@lnoack] | link:https://gitlab.imn.htwk-leipzig.de/ajegani[@ajegani] | link:https://gitlab.imn.htwk-leipzig.de/cbley[@cbley] | link:https://gitlab.imn.htwk-leipzig.de/pdittes[@pdittes] | link:https://gitlab.imn.htwk-leipzig.de/lfranke2[@lfranke2] | link:https://gitlab.imn.htwk-leipzig.de/cneidahl[@cneidahl] | link:https://gitlab.imn.htwk-leipzig.de/fromeis[@fromeis]
 |===
 
+Unsere Dokumentation, Ergebnisse des Design-Thinkings, Guidelines, Glossar, Produktvision, etc. ist in unserem https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/home[Wiki] zu finden.
+
 == Projektleitdokumentation
 
 * link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/main/ProjectLeadDocumentation/project_description.adoc[Projektbeschreibung]
