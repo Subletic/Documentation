@@ -134,13 +134,25 @@
 
 [options="header"]
 |===
-| Sichtbarkeit der erstellten Untertitel
-| Als Anwender muss ich die Untertitel sehen können, sodass ich diese korrigieren kann. 
+| Sichtbarkeit der Sprechblasen
+| Als Anwender muss ich die Sprechblasen sehen können, sodass ich diese korrigieren kann. 
 |===
 
 [options="header"]
 |===
-| Übersichtlichkeit der Untertitel
+| Aufteilung in Sprechblasen
+| Als Anwender möchte ich die ankommenden gesprochenen Sätze, in gut überblickbaren Häppchen, sogenannte Sprechblasen, visualisiert bekommen, sodass ich leichter alles gesagt überblicken kann.
+|===
+
+[options="header"]
+|===
+| Aufbau und Ablauf der Untertitel-Pipeline
+| Als Untertitel-Pipeline der Software benötige ich eine klaren Aufbau und einen gut geplanten Ablauf, sodass zu jedem Zeitpunkt der Verarbeitung der Daten klar wie die Daten weiterverarbeitet werden müssen.
+|===
+
+[options="header"]
+|===
+| Übersichtlichkeit
 | Als Anwender muss die Darstellung schlicht sein, sodass ich beim Lesen und Korrigieren den Überblick behalte und nicht abgelenkt werde.
 |===
 
@@ -188,7 +200,7 @@
 
 [options="header"]
 |===
-| Spulen/Springen
+| Springen in Audio
 | Als Anwender möchte ich die Möglichkeit haben in der Audio um einige Sekunden zu springen, sodass ich falls ich etwas nicht gut verstanden habe, den Abschnitt nochmal hören kann.
 |===
 
@@ -270,3 +282,8 @@
 | Als erfahrener Anwender möchte ich sämtliche Befehle hauptsächlich mit der Tastatur ausführen können und nur wenige Funktionen (wie Lautstärke/Geschwindigkeit/Einstellungen ändern) alternativ mit der Maus anklicken können, sodass ich möglichst zeitsparend arbeiten kann, indem beide Hände auf der Tastatur bleiben können.
 |===
 
+[options="header"]
+|===
+| Verwendung von USB-Schnittstellen
+| Als Anwender der USB-Geräte die von der Software unterstützt werden, verwende möchte, benötige ich ein Einstellungsmöglichkeiten um mein Gerät in der Software zu konfigurieren.
+|===
