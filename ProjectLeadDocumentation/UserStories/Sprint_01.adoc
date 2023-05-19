@@ -285,5 +285,5 @@
 [options="header"]
 |===
 | Verwendung von USB-Schnittstellen
-| Als Anwender der USB-Geräte die von der Software unterstützt werden, verwende möchte, benötige ich ein Einstellungsmöglichkeiten um mein Gerät in der Software zu konfigurieren.
+| Als Anwender der USB-Geräte verwenden möchte, benötige ich Einstellungsmöglichkeiten um mein Gerät in der Software zu konfigurieren.
 |===
