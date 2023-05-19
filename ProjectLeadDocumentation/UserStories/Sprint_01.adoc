@@ -62,6 +62,24 @@
 | Als Entwickler es sollten Livetests mit Testpersonen durchgeführt werden, um die Funktionalität zu überprüfen.
 |===
 
+[options="header"]
+|===
+| Hotkeys
+| Als erfahrener GoSpeech-Anwender möchte ich möglichst die selben Hotkeys wie in der Ursprungsanwendung verwenden können, um meine etablierten Arbeitsabläufe in der neuen Anwendung fortsetzen zu können.
+|===
+
+[options="header"]
+|===
+| Confidence-Werte
+| Als unerfahrener Anwender möchte ich in der Lage sein zu verstehen, warum manche Wörter im Text farbig markiert sind, sodass ich mir das Programm und seine Funktionalität schnell erschließen kann.
+|===
+
+[options="header"]
+|===
+| Untertitelgenerierung
+| Als Anwender möchte ich, dass die neu generierten Untertitel so angezeigt werden, dass sie sowohl möglichst aktuell sind als auch mein Arbeitserlebnis nicht durch Reizüberflutung beeinträchtigen, um ein optimales Arbeitserlebnis zu ermöglichen.
+|===
+
 ---
 
 === Funktionale Anforderungen
@@ -99,13 +117,13 @@
 [options="header"]
 |===
 | Wireframe
-| Als Projektsponsor möchte ich ein Wireframe erstellen lassen, sodass, ich mir die Nutzererfahrung frühstmöglich greifbar machen kann. Das Wireframe sollte eine klare Struktur aufweisen und die Benutzerfreundlichkeit berücksichtigen. Es dient als Grundlage für die weitere Entwicklung des Frontends.
+| Als Projektsponsor möchte ich ein Wireframe erstellen lassen, sodass, ich mir die Nutzererfahrung frühestmöglich greifbar machen kann. Das Wireframe sollte eine klare Struktur aufweisen und die Benutzerfreundlichkeit berücksichtigen. Es dient als Grundlage für die weitere Entwicklung des Frontends.
 |===
 
 [options="header"]
 |===
 | Backend-Frontend Schnittstelle
-| Als Entwickler benötige ich ein Verständis davon wie das Frontend mit dem Backend kommuniziert, sodass ich die vom Kunden geforderten Funktionalitäten implementieren kann.
+| Als Entwickler benötige ich ein Verständnis davon wie das Frontend mit dem Backend kommuniziert, sodass ich die vom Kunden geforderten Funktionalitäten implementieren kann.
 |===
 
 [options="header"]
@@ -135,7 +153,7 @@
 [options="header"]
 |===
 | Audio-Geschwindigkeits Einstellung
-| Als Anwender benötige ich die Funktionalität, während des Bearbeitens in der Audio zurückzuspringen, sodass ich falls ich unaufmerksam war oder ein Wort schlecht ausgesprochen wurde, das Gesagte nocheinmal hören kann.
+| Als Anwender benötige ich die Funktionalität, während des Bearbeitens in der Audio zurückzuspringen, sodass ich falls ich unaufmerksam war oder ein Wort schlecht ausgesprochen wurde, das Gesagte noch einmal hören kann.
 |===
 
 [options="header"]
@@ -153,7 +171,7 @@
 [options="header"]
 |===
 | Anhalten der Audio
-| Als Anwender möchte ich in der Lage sein die Audio anzuhalten, sodass ich die Audio besser kontrolieren kann.
+| Als Anwender möchte ich in der Lage sein die Audio anzuhalten, sodass ich die Audio besser kontrollieren kann.
 |===
 
 [options="header"]
@@ -174,5 +192,81 @@
 | Als Anwender möchte ich die Möglichkeit haben in der Audio um einige Sekunden zu springen, sodass ich falls ich etwas nicht gut verstanden habe, den Abschnitt nochmal hören kann.
 |===
 
+[options="header"]
+|===
+| Lautstärke der Audio
+| Als Anwender möchte ich die Möglichkeit haben die Lautstärke der Audio anzupassen, sodass ich sie je nach Lautstärke des Sprechers oder nach eigenem Hörempfinden diese regulieren kann.
+|===
 
+[options="header"]
+|===
+| Bearbeitungszeit
+| Als Anwender möchte ich wissen, wann bearbeitete Untertitel den Editor verlassen, sodass ich meine Änderungen rechtzeitig vornehmen kann.
+|===
+
+[options="header"]
+|===
+| Texthervorhebung
+| Als Anwender möchte ich wissen, welchen Untertitelblock ich aktuell bearbeite, sodass ich mich besser orientieren kann.
+|===
+
+[options="header"]
+|===
+| Differenzierung der Sprecher
+| Als Anwender muss ich in der Lage sein unterschiedliche, fehlerhaft erkannte Sprecher zu korrigieren, sodass diese später in den Untertiteln korrekt dargestellt werden.
+|===
+
+[options="header"]
+|===
+| Sprungweite
+| Als erfahrener GoSpeech-Anwender möchte ich die Sekundenzahl, die beim Vor- und Zurückspringen gesprungen wird selbst auf meinen präferierten Wert einstellen können, damit ich möglichst effizient arbeiten kann.
+|===
+
+[options="header"]
+|===
+| Darstellung des Wechselns der Sprecher
+| Als auf Untertitel angewiesener Zuschauer möchte ich in der Lage sein, Wechsel der Sprecher in den ausgespielten Untertiteln zu erkennen, damit ich das Gesprochene möglichst gut und realistisch nachvollziehen kann.
+|===
+
+[options="header"]
+|===
+| Fußschalter
+| Als erfahrener Anwender mit Fußschalter möchte ich diese im Programm verwenden können, um möglichst effizient meine etablierten Arbeitsabläufen fortzusetzen.
+|===
+
+[options="header"]
+|===
+| Hotkey-Übersicht
+| Als Anwender möchte ich vom Tool eine Auskunft bekommen, welche Hotkeys man verwenden kann, um die Effizienz meiner Arbeit so gut wie möglich zu maximieren.
+|===
+
+[options="header"]
+|===
+| Handschalter
+| Als eine physisch eingeschränkte Person, die auf einen Handschalter angewiesen ist, möchte ich das Programm uneingeschränkt nutzen können, sodass ich unabhängig von meinen individuellen Bedürfnissen mit der Software arbeiten kann.
+|===
+
+[options="header"]
+|===
+| Graue Bearbeitungsbox
+| Als Anwender möchte ich die Option haben, die graue Bearbeitungsbox nicht anzuzeigen, sodass ich während der Untertitelbearbeitung nicht abgelenkt werde.
+|===
+
+[options="header"]
+|===
+| Confidence-Werte
+| Als Kunde (gbs) möchte ich, dass im Programm die Confidence-Werte verarbeitet werden, sodass die Information nicht ungenutzt bleibt und damit wir einen USP (unique selling point) für mögliche Anwender haben.
+|===
+
+[options="header"]
+|===
+| Geschwindigkeitsänderung
+| Als Anwender möchte ich die Abspielgeschwindigkeit des Audios sowohl über ein Pop-Up-Menü, eine "+" und "-" Taste und über Hotkeys anpassen können, sodass ich möglichst frei entscheiden kann, wie sich mein Arbeitsfluss gestaltet.
+|===
+
+[options="header"]
+|===
+| Bedienung
+| Als erfahrener Anwender möchte ich sämtliche Befehle hauptsächlich mit der Tastatur ausführen können und nur wenige Funktionen (wie Lautstärke/Geschwindigkeit/Einstellungen ändern) alternativ mit der Maus anklicken können, sodass ich möglichst zeitsparend arbeiten kann, indem beide Hände auf der Tastatur bleiben können.
+|===
 
