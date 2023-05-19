@@ -11,34 +11,71 @@ Das Vernachlässigen von Verantwortlichkeiten stellt ein Risiko dar, und
 sollte im Follow-Up-Register behandelt werden. Tritt ein solches Risiko
 ein ist ein Vermerk im Issue-Register zu führen.
 
-[cols=",,",options="header",]
+[options="header"]
 |===
-|Teammitglied |Rolle |Verantwortlichkeiten
-| Luca Noack | Software Architekt | Hat die Softwarearchitektur im Blick und steht für technische Fragestellungen als erstes zur Verfügung
-| | | Entwirft die grobe Schnittstellenbeschreibung
-| | | Hilft komplizierte Mergerequests aufzulösen
-| |  Quality Assurance | Reviewed den Code der Entwickler
-| | | Einhalten und Pflege der CI/CD Pipeline
-| | Anderes | Vorbereiten, Schreiben, Nachbereiten der Protokolle
-| | | Projekt-Planung und Organisation
+| Rolle | Verantwortlichkeiten
+| Software Architekt 
+a| 
+* Hat die Softwarearchitektur im Blick und steht für technische Fragestellungen als erstes zur Verfügung
+* Entwirft die grobe Schnittstellenbeschreibung
+* Hat die Einhaltung der Anforderungen im Blick
+* Hilft komplizierte Merge-Requests aufzulösen
 
 
-| Benedikt Beigang | Product Owner | Führen der Projektleitdokumentation
-| | | Erstellen der UserStorys, DefinitionOfDone's, Issues im Gitlab
-| | | Leiten der Kunden Meetings
-| | | Erster Ansprechpartner bei Fragen an den Kunden bzw. Produkt
-| | Scrum-Master | Gewährleistung der Einhaltung des agilen Manifestes und Ansprechpartner bei allen Fragen die nicht die technische Seite des Projektes betreffen
-| | | Leiten und Vorbereiten der Retrospektive
-| | | Vorbereiten und Leiten von benötigten Workshops
-| | Anderes | Vorbereiten, Schreiben, Nachbereiten der Protokolle
-| | | Projekt-Planung und Organisation
+| Product Owner 
+a|
+* Hält Kontakt mit dem Kunden
+* Vertritt den Kunden im Team und ist bei Fragen an den Kunden erste Ansprechpartner
+* Befüllt und priorisiert das Product-Backlog
+* Führen der Projektleitdokumentation
+* Leiten der Kunden Meetings
+* Verwaltet die Dokumentation, samt Issues (Board), Projektleitdokumentation, Protokolle, etc.
 
 
-| Finn Romeis | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
-| Chantal Bley | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
-| Amine Jegani | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
-| Pascal Fabian Dittes | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
-| Luca Niklas Franke| Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
-| Christoph Neidahl | Developer | Programmiertechnische Umsetzung, infolge von Tickets/Issues
+| SCRUM-Master 
+a|
+* Hat die Stimmung im Team im Blick und räumt Schwierigkeiten der Entwickler aus dem Weg (Team-Coach)
+* Gewährleistung der Einhaltung des agilen Manifestes (Timeboxing, SCRUM, etc.) 
+* Ansprechpartner bei allen Fragen die nicht technische Details oder Fragen an den Kunden sind
+* Vorbereiten und Leiten  der Retrospektive um Team weiterzuentwickeln
+
+
+| Quality-Assurance
+a|
+* Erstellt Codereviews für die Entwickler mit der MoSCoW-Methode
+* Behält die CI/CD-Pipeline und deren Einhaltung im Blick
+* Verantwortlich für Einhaltung der Dokumentationsvorschriften
+
+
+| Projektleiter
+a|
+* Projekt-Planung und Organisation
+* Verantwortlich für schwerwiegende Projektentscheidungen
+* Hat Veto-Recht
+
+
+| Developer
+a|
+* Teilnahme an _Team-Meetings_
+* Programmiertechnische Umsetzung, infolge von _Tickets/Issues_
+* _Selbstständige_ Entwicklungsarbeit und Aufgabenzuteilung innerhalb des Team
+* _Informieren des Teams_ zu Projektfortschritt, bei Problemen und Entscheidungen die getroffen werden müssen in Issue-Kommentaren, Discord oder im Weekly
+* Einhalten der vom Team festgelegten _Definition of Done's_
+* Präsentieren der entwickelten Features im _Review_
+* _Dokumentieren_ des geschriebenen Codes
+* Schreiben von _Unit-Tests_ zu den implementierten Funktionalitäten
+* Erstellung von _Protokollen_
 |===
 
+[options="header"]
+|===
+| Teammitglied | Rolle 
+| Benedikt Beigang | Product Owner, SCRUM-Master, Projektleiter
+| Luca Noack | Software Architekt, Quality Assurance, Projektleiter
+| Finn Romeis | Developer 
+| Chantal Bley | Developer 
+| Amine Jegani | Developer
+| Pascal Fabian Dittes | Developer
+| Luca Niklas Franke| Developer 
+| Christoph Neidahl | Developer
+|===

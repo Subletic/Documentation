@@ -5,7 +5,7 @@ Im Produkt Backlog werden in Form von User Stories die funktionalen und nicht-fu
 
 [options="header"]
 |===
-| User Story #1: _Example_
+| _"NameOfUserStory"_
 | Als Entwickler/Kunde/Anwender/Stakeholder...
 
 |möchte ich...
