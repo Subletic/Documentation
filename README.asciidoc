@@ -14,11 +14,3 @@
 * link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/main/ProjectLeadDocumentation/follow_up_register.adoc[Follow Up Register]
 * link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/main/ProjectLeadDocumentation/health_register.adoc[Health Register]
 * link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/main/ProjectLeadDocumentation/product_backlog.adoc[Product Backlog]
-
-== Design Thinking
-
-* link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/main/DesignThinking/ProblemDefinition.adoc[Problemdefinition]
-* link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/main/DesignThinking/DesignPrototypes.adoc[Design Prototypen]
-* link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/main/ProjectLeadDocumentation/product_backlog.adoc[User Stories aus dem Design Thinking (Sprint_01)]
-* link:https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/TechnicalResearch/TechnicalResearch[Technologie Recherche]
-* link:https://miro.com/app/board/uXjVMJfkJ9U=/[Produktvision]
