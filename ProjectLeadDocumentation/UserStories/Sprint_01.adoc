@@ -140,6 +140,12 @@
 
 [options="header"]
 |===
+| Editierbarkeit der Sprechblasen
+| Als Anwender muss ich die Sprechblasen bearbeiten können können, sodass ich diese korrigieren kann. 
+|===
+
+[options="header"]
+|===
 | Aufteilung in Sprechblasen
 | Als Anwender möchte ich die ankommenden gesprochenen Sätze, in gut überblickbaren Häppchen, sogenannte Sprechblasen, visualisiert bekommen, sodass ich leichter alles gesagt überblicken kann.
 |===
