@@ -20,7 +20,7 @@
 
 [options="header"]
 |===
-| Sichbarkeit von Sprechblasen in der GUI
+| Sichtbarkeit von Sprechblasen in der GUI
 | Als Anwender möchte ich die Sprechblasen in der GUI dargestellt bekommen, sodass ich diese korrigieren kann.
 |===
 
@@ -32,6 +32,6 @@
 
 [options="header"]
 |===
-| Interne Datenstrukur der Sprechblasen im Backend
+| Interne Datenstruktur der Sprechblasen im Backend
 | Als API-Schnittstelle im Backend, benötige ich Zugriff auf die Sprechblasen, sodass ich neue erstellen, bearbeiten und weiterschicken kann.
 |===
