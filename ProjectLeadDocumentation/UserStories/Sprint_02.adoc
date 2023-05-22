@@ -6,3 +6,32 @@
 
 === Funktionale Anforderungen
 
+[options="header"]
+|===
+| Mock-Server
+| Als Entwickler benötige ich einen Mock-Server, sodass ich testen kann ob empfangene Untertitel korrekt in der internen Datenstruktur aufgenommen und weiterverarbeitet werden.
+|===
+
+[options="header"]
+|===
+| Backend API für Untertitel und Sprechblasen
+| Als Frontend benötige ich Schnittstellen im Backend zur Annahme und Weitergabe der Untertitel und Sprechblasen, sodass ich die Untertitel darstellen kann. 
+|===
+
+[options="header"]
+|===
+| Sichbarkeit von Sprechblasen in der GUI
+| Als Anwender möchte ich die Sprechblasen in der GUI dargestellt bekommen, sodass ich diese korrigieren kann.
+|===
+
+[options="header"]
+|===
+| Entgegennahme der Daten der einer Sprechblase
+| Als GUI benötige ich die Daten einer Sprechblase (Wörter, Sprecher, Timestamp, Confidence, etc.), sodass ich diese darstellen kann.
+|===
+
+[options="header"]
+|===
+| Interne Datenstrukur der Sprechblasen im Backend
+| Als API-Schnittstelle im Backend, benötige ich Zugriff auf die Sprechblasen, sodass ich neue erstellen, bearbeiten und weiterschicken kann.
+|===
