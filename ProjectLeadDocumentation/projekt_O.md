@@ -5,9 +5,9 @@
 | [bbeigang](https://gitlab.imn.htwk-leipzig.de/bbeigang) | [lnoack](https://gitlab.imn.htwk-leipzig.de/lnoack) | [ajegani](https://gitlab.imn.htwk-leipzig.de/ajegani) | [cbley](https://gitlab.imn.htwk-leipzig.de/cbley) | [pdittes](https://gitlab.imn.htwk-leipzig.de/pdittes) | [lfranke2](https://gitlab.imn.htwk-leipzig.de/lfranke2) | [cneidahl](https://gitlab.imn.htwk-leipzig.de/cneidahl) | [fromeis](https://gitlab.imn.htwk-leipzig.de/fromeis) |
 
 Dieser Link:
-[https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation](https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation) 
+[https://gitlab.imn.htwk-leipzig.de/projekt2023-o-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation](https://gitlab.imn.htwk-leipzig.de/projekt2023-o-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation) 
 führt zum Repo unserer Dokumentation, in der unsere Projektleitdokumentation, die exportierten Issues, sowie unser Product Backlog mit den User Stories liegen.
 
 Dieser Link:
-[https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/home](https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/home) 
+[https://gitlab.imn.htwk-leipzig.de/projekt2023-o-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/home](https://gitlab.imn.htwk-leipzig.de/projekt2023-o-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/home) 
 führt zu unserem Wiki in dem unter anderem die Ergebnisse unseres Design Thinkings liegen. Dazu zählt die Problemdefinition, die Design Prototypen und ein Link zu unserer Produktvision als Miro Board.
