@@ -5,7 +5,5 @@
 **Anmerkungen**
 
 
-**SP:**
-
 
 **DoD**
