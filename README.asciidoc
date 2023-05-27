@@ -26,7 +26,7 @@
 | link:https://gitlab.dit.htwk-leipzig.de/pascal_fabian.dittes[@pascal_fabian.dittes]
 |===
 
-Unsere Dokumentation, **Ergebnisse des Design-Thinkings**, Guidelines, Glossar, Produktvision, etc. ist in unserem https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/wikis/home[Wiki] zu finden.
+Unsere Dokumentation, **Ergebnisse des Design-Thinkings**, Guidelines, Glossar, Produktvision, etc. ist in unserem https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/home[Wiki] zu finden.
 
 == Projektleitdokumentation
 
