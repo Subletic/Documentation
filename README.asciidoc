@@ -1,9 +1,29 @@
 = Live Stream Editor zur Korrektur von Untertiteln
 
-[options="header", style="width:100%"]
+[options="header", cols="^,^", style="width:100%", align="center"]
 |===
-| Benedikt Beigang | Luca Noack | Amine Jegani | Chantal Bley | Pascal Fabian Dittes | Luca Niklas Franke | Christoph Neidahl | Finn Johann Romeis
-| link:https://gitlab.imn.htwk-leipzig.de/bbeigang[@bbeigang] | link:https://gitlab.imn.htwk-leipzig.de/lnoack[@lnoack] | link:https://gitlab.imn.htwk-leipzig.de/ajegani[@ajegani] | link:https://gitlab.imn.htwk-leipzig.de/cbley[@cbley] | link:https://gitlab.imn.htwk-leipzig.de/pdittes[@pdittes] | link:https://gitlab.imn.htwk-leipzig.de/lfranke2[@lfranke2] | link:https://gitlab.imn.htwk-leipzig.de/cneidahl[@cneidahl] | link:https://gitlab.imn.htwk-leipzig.de/fromeis[@fromeis]
+2+| Projektleiter
+| Benedikt Beigang
+| Luca Noack
+| link:https://gitlab.dit.htwk-leipzig.de/benedikt.beigang[@benedikt.beigang]
+| link:https://gitlab.dit.htwk-leipzig.de/luca.noack[@luca.noack]
+|===
+
+[options="header", cols="^,^,^,^,^,^", style="width:100%"]
+|===
+6+| Entwickler
+| Finn Johann Romeis
+| Luca Niklas Franke 
+| Chantal Bley 
+| Christoph Neidahl 
+| Amine Jegani 
+| Pascal Fabian Dittes 
+| link:https://gitlab.dit.htwk-leipzig.de/finn_johann.romeis[@finn_johann.romeis]
+| link:https://gitlab.dit.htwk-leipzig.de/lfranke2[@lfranke2] 
+| link:https://gitlab.dit.htwk-leipzig.de/chantal.bley[@chantal.bley] 
+| link:https://gitlab.dit.htwk-leipzig.de/christoph.neidahl[@christoph.neidahl] 
+| link:https://gitlab.dit.htwk-leipzig.de/amine.jegani[@amine.jegani] 
+| link:https://gitlab.dit.htwk-leipzig.de/pascal_fabian.dittes[@pascal_fabian.dittes]
 |===
 
 Unsere Dokumentation, **Ergebnisse des Design-Thinkings**, Guidelines, Glossar, Produktvision, etc. ist in unserem https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/wikis/home[Wiki] zu finden.
