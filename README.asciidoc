@@ -5,8 +5,8 @@
 2+| Projektleiter
 | Benedikt Beigang
 | Luca Noack
-| link:https://gitlab.dit.htwk-leipzig.de/benedikt.beigang[@benedikt.beigang]
-| link:https://gitlab.dit.htwk-leipzig.de/luca.noack[@luca.noack]
+| link:https://gitlab.dit.htwk-leipzig.de/benedikt.beigang[@bbeigang]
+| link:https://gitlab.dit.htwk-leipzig.de/luca.noack[@lnoack]
 |===
 
 [options="header", cols="^,^,^,^,^,^", style="width:100%"]
@@ -20,9 +20,9 @@
 | Pascal Fabian Dittes 
 | link:https://gitlab.dit.htwk-leipzig.de/finn_johann.romeis[@finn_johann.romeis]
 | link:https://gitlab.dit.htwk-leipzig.de/lfranke2[@lfranke2] 
-| link:https://gitlab.dit.htwk-leipzig.de/chantal.bley[@chantal.bley] 
+| link:https://gitlab.dit.htwk-leipzig.de/chantal.bley[@cbley] 
 | link:https://gitlab.dit.htwk-leipzig.de/christoph.neidahl[@christoph.neidahl] 
-| link:https://gitlab.dit.htwk-leipzig.de/amine.jegani[@amine.jegani] 
+| link:https://gitlab.dit.htwk-leipzig.de/amine.jegani[@ajegani] 
 | link:https://gitlab.dit.htwk-leipzig.de/pascal_fabian.dittes[@pascal_fabian.dittes]
 |===
 
