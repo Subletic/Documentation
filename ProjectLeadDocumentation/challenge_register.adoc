@@ -30,6 +30,8 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 
 | Wunsch des Kunden Angular und ASP.NET zu verwenden | Spezifikationsabweichung | Produkt | leicht | 28.04.2023 | Kunden | mit genannten Technologien arbeiten | @bbeigang @lnoack | geschossen
 | Keine Erfahrung mit C# bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @bbeigang | geschlossen
-| Keine Erfahrung mit ASP.NET bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @ajegani | offen
-| Keine Erfahrung mit Angular bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @lnoack | offen
+| Keine Erfahrung mit ASP.NET bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @ajegani | geschlossen
+| Keine Erfahrung mit Angular bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Unterstützung durch @lnoack, da er Vorkenntnisse hat | @lnoack | offen
+| GitLab-Instanz auf neuem Server, mögliche Inkonsistenz oder andere Probleme | Bedenken | Quellcode-Basis und Dokumentation | mittel | 27.05.2023 | Projektleiter | Umzug auf neue Instanz | @bbeigang | offen
+| Angular-Pipeline crasht nach GitLab Umzug durchgängig | Problem | Quellcode-Basis | hoch | 27.05.2023 | @fromeis | Fixen der Pipeline | @lnoack | offen
 |===

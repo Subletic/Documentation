@@ -24,4 +24,7 @@ Das betrifft alle im Challenge-Register identifizierten Risiken und Änderungen.
 | Keine Erwähnung der Betreffenden Person in Kommentar unter Issue | zu spätes reagieren auf Frage in Issue | Impulse für kommendes Meeting konnten nicht mit eingebunden werden | Erwähnung der Wichtigkeit des Verlinkens einer Person beim Schreiben von Kommentaren und Beschreibungen wenn diese andere Teammitglieder betreffen | Team | 11.05.2023 | 09.05.2023 | 11.05.2023
 | Fehlende Interaktivität in Workshops | Entwickler haben nur begrenzt von Workshop profitiert | schlechtere Kenntnis des Techstacks | kommende Workshops Interaktiver machen | @bbeigang, @lnoack | 09.05.2023 | 06.05.2023 | offen
 | Schwammige Aufgabenverteilung der Master, da Rollen nicht klar definiert | Unklare Zuständigkeiten | unnötige Verzögerungen bei Problemen, Entscheidungen und Fragen | klarere Trennung der Aufgabenverteilung durch Rollenbeschreibungen | @bbeigang, @lnoack | 05.05.2023 | 05.05.2023 | 06.05.2023
+| Andere GitLab Instanz soll verwendet werden | Umzug der Projektgruppe mit allen Repos | Umzug könnte zu Inkonsistenzen oder anderen Problemen führen | Informieren aller Beteiligten über Umzug und Anweisung was jede Person machen muss um die Gefahr der Inkonsistenz gering zu halten | @bbeigang | 27.05.2023 | 27.05.2023 | ??.??.2023
+| Angular-Pipeline crasht nach GitLab Umzug durchgängig | Entwickler können keinen Code Mergen | Verzögerung der Entwicklung | schnelle Reparatur der Pipeline | @lnoack | 27.05.2023 | 27.05.2023 | ??.??.2023
+
 |===
