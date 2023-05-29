@@ -23,7 +23,7 @@
 | link:https://gitlab.dit.htwk-leipzig.de/chantal.bley[@cbley] 
 | link:https://gitlab.dit.htwk-leipzig.de/christoph.neidahl[@christoph.neidahl] 
 | link:https://gitlab.dit.htwk-leipzig.de/amine.jegani[@ajegani] 
-| link:https://gitlab.dit.htwk-leipzig.de/pascal_fabian.dittes[@pascal_fabian.dittes]
+| link:https://gitlab.dit.htwk-leipzig.de/pascal_fabian.dittes[@pdittes]
 |===
 
 Unsere Dokumentation, **Ergebnisse des Design-Thinkings**, Guidelines, Glossar, Produktvision, etc. ist in unserem https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/home[Wiki] zu finden.
