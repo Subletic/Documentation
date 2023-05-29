@@ -33,5 +33,5 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 | Keine Erfahrung mit ASP.NET bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @ajegani | geschlossen
 | Keine Erfahrung mit Angular bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Unterstützung durch @lnoack, da er Vorkenntnisse hat | @lnoack | offen
 | GitLab-Instanz auf neuem Server, mögliche Inkonsistenz oder andere Probleme | Bedenken | Quellcode-Basis und Dokumentation | mittel | 27.05.2023 | Projektleiter | Umzug auf neue Instanz | @bbeigang | offen
-| Angular-Pipeline crasht nach GitLab Umzug durchgängig | Problem | Quellcode-Basis | hoch | 27.05.2023 | @fromeis | Fixen der Pipeline | @lnoack | offen
+| Angular-Pipeline crasht nach GitLab Umzug durchgängig | Problem | Quellcode-Basis | hoch | 27.05.2023 | @fromeis | Fixen der Pipeline | @lnoack | geschlossen
 |===
