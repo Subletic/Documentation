@@ -18,7 +18,7 @@
 | Christoph Neidahl 
 | Amine Jegani 
 | Pascal Fabian Dittes 
-| link:https://gitlab.dit.htwk-leipzig.de/finn_johann.romeis[@fromeis]
+| link:https://gitlab.dit.htwk-leipzig.de/fromeis[@fromeis]
 | link:https://gitlab.dit.htwk-leipzig.de/lfranke2[@lfranke2] 
 | link:https://gitlab.dit.htwk-leipzig.de/chantal.bley[@cbley] 
 | link:https://gitlab.dit.htwk-leipzig.de/christoph.neidahl[@cneidahl] 
