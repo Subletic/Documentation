@@ -1,0 +1,23 @@
+Title,Description,Issue ID,URL,State,Author,Author Username,Assignee,Assignee Username,Confidential,Locked,Due Date,Created At (UTC),Updated At (UTC),Closed At (UTC),Milestone,Weight,Labels,Time Estimate,Time Spent,Epic ID,Epic Title
+Anlegen der Backend-Repositories,"Als Entwickler benötige ich eine Entwicklungsumgebung, sodass ich die vom Kunden gestellten Anforderungen umsetzten kann.
+---
+Wir benötigen ein ASP.NET 7 Repositiory in unserem GitLab in dem wir arbeiten können.
+
+**Anmerkungen**
+
+- Unsere [Branching-Guidelines](https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/Guidelines/Guidelines) geben aufschluss darüber welche Einstellungen sinnvoll sein könnten.
+
+- in Zusammenarbeit mit @cbley und @fromeis 
+- Alle Ergebnisse sind in folgender [AsciiDoc-Datei](https://gitlab.imn.htwk-leipzig.de/projekt2023-o-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/TechnicalDocumentation/Doku_Anlegen_der_Repositories)
+
+**DoD**
+- [x] Backend / ASP.NET 7
+- [x] Einrichten der CI/CD Pipeline 
+   - [x] Bauen
+   - [x] Testen
+- [x] Rausfinden was sinnvolle Settings sind und entsprechend einstellen
+- [x] Visual Studio und Visual Studio Code testen und vergleichen
+- [x] Kurzer Bericht wie man mindestes eine IDE verwendet mit diesem Repo
+- [x] Linux-Nutzer mitdenken, Bericht ergänzen was Entwickler die Linux nutzen bedenken und einstellen müssen
+- [x] gitignore
+- [x] gitattributes",17,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/17,Closed,Benedikt Beigang,bbeigang,"Chantal Bley, Finn Johann Romeis","cbley, fromeis",No,No,2023-05-16,2023-05-09 18:10:55,2023-05-27 10:55:37,2023-05-23 15:23:51,🛠Sprint_01_1,2,Backend,0,0,,
