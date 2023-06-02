@@ -1,0 +1,55 @@
+{
+  "message": "AddTranscript",
+  "metadata": {
+    "start_time": 0.0,
+    "end_time": 0.9488123643240011,
+    "transcript": "One two three."
+  },
+  "results": [
+    {
+      "alternatives": [
+        {
+          "confidence": 1.0,
+          "content": "One"
+        }
+      ],
+      "start_time": 0.47999998927116394,
+      "end_time": 0.5399999618530273,
+      "type": "word"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 1.0,
+          "content": "to"
+        }
+      ],
+      "start_time": 0.6091238623430891,
+      "end_time": 0.7498992613545260,
+      "type": "word"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 0.96,
+          "content": "three"
+        }
+      ],
+      "start_time": 0.8022338627780892,
+      "end_time": 0.9488123643240011,
+      "type": "word"
+    },
+    {
+      "alternatives": [
+        {
+          "confidence": 1.0,
+          "content": "."
+        }
+      ],
+      "start_time": 0.9488123643240011,
+      "end_time": 0.9488123643240011,
+      "type": "punctuation",
+      "is_eos": true
+    }
+  ]
+}
