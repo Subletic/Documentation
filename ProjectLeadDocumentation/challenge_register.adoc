@@ -23,15 +23,17 @@ reagiert wird.
 Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 Änderungen der Produktvision und RoadMaps.
 
-[cols=",,,,,,,,",options="header",]
+[cols=",,,,,,,,",options="header"]
 |===
-|Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/Schweregrad |aufgetreten am |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
+|Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/ + 
+Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
+| | | | | | | | | 
+| Notwendige Datenstruktur um im Frontend Confidence-Werte zu visualisieren, stellt sich als komplizierter heraus als gedacht, und gefährdet vollständige Funktionalität des MVPs | Problem | MVP | hoch | 03.06.2023 | @fromeis | Visualisierte Confidence-Werte werden aus MVP genommen | @bbeigang | offen
 
-| Wunsch des Kunden Angular und ASP.NET zu verwenden | Spezifikationsabweichung | Produkt | leicht | 28.04.2023 | Kunden | mit genannten Technologien arbeiten | @bbeigang @lnoack | geschossen
 | Keine Erfahrung mit C# bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @bbeigang | geschlossen
-| Keine Erfahrung mit ASP.NET bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @ajegani | geschlossen
-| Keine Erfahrung mit Angular bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Unterstützung durch @lnoack, da er Vorkenntnisse hat | @lnoack | offen
-| GitLab-Instanz auf neuem Server, mögliche Inkonsistenz oder andere Probleme | Bedenken | Quellcode-Basis und Dokumentation | mittel | 27.05.2023 | Projektleiter | Umzug auf neue Instanz | @bbeigang | offen
-| Angular-Pipeline crasht nach GitLab Umzug durchgängig | Problem | Quellcode-Basis | hoch | 27.05.2023 | @fromeis | Fixen der Pipeline | @lnoack | geschlossen
+| Keine Erfahrung mit ASP.NET bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @ajegani | offen
+| Keine Erfahrung mit Angular bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @lnoack | offen
+| Wunsch des Kunden Angular und ASP.NET zu verwenden | Spezifikations- + 
+abweichung | Produkt | leicht | 28.04.2023 | Kunden | mit genannten Technologien arbeiten | @bbeigang @lnoack | geschossen
 |===
