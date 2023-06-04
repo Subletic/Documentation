@@ -8,7 +8,7 @@ Es gibt 3 Arten von Challenges:
 Baseline. z.B Der Benutzervertreter möchte die Kapazität eines Produkts
 von 100 auf 150 Anwender erhöhen. -> ist immer mit den Stakeholdern
 abzustimmen und zu dokumentieren.
-. Spezifikationsabweichung / off-specification Ein im Rahmen des
+. Spezifikations-Abweichung / off-specification Ein im Rahmen des
 projekts zu erfüllende Anforderung, die derzeit nicht (bzw.
 voraussichtlich nicht) erfüllt wird. z.B. Mitteilung eines Lieferanten,
 dass er ein Produkt nicht liefern kann.
@@ -28,12 +28,14 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 |Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/ + 
 Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
-| | | | | | | | | 
-| Notwendige Datenstruktur um im Frontend Confidence-Werte zu visualisieren, stellt sich als komplizierter heraus als gedacht, und gefährdet vollständige Funktionalität des MVPs | Problem | MVP | hoch | 03.06.2023 | @fromeis | Visualisierte Confidence-Werte werden aus MVP genommen | @bbeigang | offen
+| @cneidahl kommt nicht zu digitalen Meetings und informiert nicht selbständig über Bearbeitungsstand seiner Issues, es sind auch keine Aktivitäten im GitLab beobachtbar | Problem | Erreichen des MVPs | mittel | 03.06.2023 | @bbeigang | Anpassung der Velocity und des MVPs, Erkundigung bei @cneidahl | @bbeigang | offen
+
+| Notwendige Datenstruktur um im Frontend Confidence-Werte zu visualisieren, stellt sich als komplizierter heraus als gedacht, und gefährdet vollständige Funktionalität des MVPs | Spezifikations-Abweichung | Erreichen des MVPs | hoch | 03.06.2023 | @fromeis | Visualisierte Confidence-Werte werden aus MVP genommen | @bbeigang | offen
+
+| Unser Kunde hat uns Zugang zu Schnittstellenbeschreibung gegeben, die jedoch von einigen Annahmen die wir getroffen haben abweicht, wir erhalten nicht den Video/Audio-Stream und die Transkription zusammen, sondern müssen den Stream gesondert empfangen und an den Endpunkt bei Speechmatics schicken, um die Transkription zu erhalten | Spezifikations-Abweichung | Produkt | mittel | 02.06.2023 | @bbeigang | Weiterer Endpunkt wird implementiert | @lnoack | offen
 
 | Keine Erfahrung mit C# bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @bbeigang | geschlossen
 | Keine Erfahrung mit ASP.NET bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @ajegani | offen
 | Keine Erfahrung mit Angular bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @lnoack | offen
-| Wunsch des Kunden Angular und ASP.NET zu verwenden | Spezifikations- + 
-abweichung | Produkt | leicht | 28.04.2023 | Kunden | mit genannten Technologien arbeiten | @bbeigang @lnoack | geschossen
+| Wunsch des Kunden Angular und ASP.NET zu verwenden | Spezifikations-Abweichung | Produkt | leicht | 28.04.2023 | Kunden | mit genannten Technologien arbeiten | @bbeigang @lnoack | geschossen
 |===
