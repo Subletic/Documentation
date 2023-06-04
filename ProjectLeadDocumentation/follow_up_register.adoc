@@ -18,7 +18,7 @@ identify risks and issues.
 
 Das betrifft alle im Challenge-Register identifizierten Risiken und Änderungen.
 
-[cols=",,,,,,,",options="header",]
+[cols=",,,,,,,",options="header"]
 |===
 |Cause |Effect |Impact |Response |Custodian |Identification (Date) | Occurence (Date) | Closure (Date)
 

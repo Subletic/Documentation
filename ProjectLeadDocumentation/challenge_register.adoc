@@ -28,9 +28,9 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 |Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/ + 
 Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
-| @cneidahl kommt nicht zu digitalen Meetings und informiert nicht selbständig über Bearbeitungsstand seiner Issues, es sind auch keine Aktivitäten im GitLab beobachtbar | Problem | Erreichen des MVPs | mittel | 03.06.2023 | @bbeigang | Anpassung der Velocity und des MVPs, Erkundigung bei @cneidahl | @bbeigang | offen
+| @cneidahl kommt nicht zu digitalen Meetings und informiert nicht selbständig über Bearbeitungsstand seiner Issues, es sind auch keine Aktivitäten im GitLab beobachtbar | Problem | Produkt | mittel | 03.06.2023 | @bbeigang | Anpassung der Velocity und des MVPs, Erkundigung bei @cneidahl | @bbeigang | offen
 
-| Notwendige Datenstruktur um im Frontend Confidence-Werte zu visualisieren, stellt sich als komplizierter heraus als gedacht, und gefährdet vollständige Funktionalität des MVPs | Spezifikations-Abweichung | Erreichen des MVPs | hoch | 03.06.2023 | @fromeis | Visualisierte Confidence-Werte werden aus MVP genommen | @bbeigang | offen
+| Notwendige Datenstruktur um im Frontend Confidence-Werte zu visualisieren, stellt sich als komplizierter heraus als gedacht, und gefährdet vollständige Funktionalität des MVPs | Spezifikations-Abweichung | Produkt | hoch | 03.06.2023 | @fromeis | Visualisierte Confidence-Werte werden aus MVP genommen | @bbeigang | offen
 
 | Unser Kunde hat uns Zugang zu Schnittstellenbeschreibung gegeben, die jedoch von einigen Annahmen die wir getroffen haben abweicht, wir erhalten nicht den Video/Audio-Stream und die Transkription zusammen, sondern müssen den Stream gesondert empfangen und an den Endpunkt bei Speechmatics schicken, um die Transkription zu erhalten | Spezifikations-Abweichung | Produkt | mittel | 02.06.2023 | @bbeigang | Weiterer Endpunkt wird implementiert | @lnoack | offen
 
