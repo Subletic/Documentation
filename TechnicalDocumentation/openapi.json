@@ -1,235 +1,340 @@
 {
-    "openapi": "3.0.0",
-    "info": {
-      "version": "1.0.2",
-      "title": "API-Endpunkte",
-      "license": {
-        "name": "MIT"
-      }
-    },
-    "servers": [
-      {
-        "url": "http://petstore.swagger.io/v1"
-      }
-    ],
-    "paths": {
-      "/Speechbubble": {
-        "put": {
-          "summary": "Update changed Speechbubble",
-          "operationId": "udpateSpeechBubble",
-          "tags": [
-            "Speechbubble"
-          ],
-          "responses": {
-            "200": {
-              "description": "A paged array of pets",
-              "headers": {
-                "x-next": {
-                  "description": "A link to the next page of responses",
-                  "schema": {
-                    "type": "string"
-                  }
-                }
-              },
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Speechbubble"
-                  }
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.2",
+    "title": "API-Endpunkte",
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://petstore.swagger.io/v1"
+    }
+  ],
+  "paths": {
+    "/Speechbubble": {
+      "put": {
+        "summary": "Update changed Speechbubble",
+        "operationId": "updateSpeechBubble",
+        "tags": [
+          "Speechbubble"
+        ],
+        "responses": {
+          "200": {
+            "description": "A paged array of pets",
+            "headers": {
+              "x-next": {
+                "description": "A link to the next page of responses",
+                "schema": {
+                  "type": "string"
                 }
               }
             },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Speechbubble"
                 }
               }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Upload": {
+      "put": {
+        "summary": "Update changed Speechbubble",
+        "operationId": "updateSpeechBubble",
+        "tags": [
+          "Speechbubble"
+        ],
+        "responses": {
+          "200": {
+            "description": "A paged array of pets",
+            "headers": {
+              "x-next": {
+                "description": "A link to the next page of responses",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Speechbubble"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Audio": {
+      "put": {
+        "summary": "Update audio file",
+        "operationId": "updateAudio",
+        "tags": [
+          "Audio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Audio file updated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AudioFile"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Video": {
+      "put": {
+        "summary": "Update video file",
+        "operationId": "updateVideo",
+        "tags": [
+          "Video"
+        ],
+        "responses": {
+          "200": {
+            "description": "Video file updated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VideoFile"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "WordToken": {
+        "type": "object",
+        "required": [
+          "word",
+          "confidence",
+          "timestamp",
+          "speaker"
+        ],
+        "properties": {
+          "word": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number"
+          },
+          "timestamp": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "speaker": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "Speechbubble": {
+        "type": "object",
+        "required": [
+          "id",
+          "speaker",
+          "start",
+          "end",
+          "SpeechbubbleContent"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "speaker": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "start": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "end": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "SpeechbubbleContent": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WordToken"
             }
           }
         }
       },
-      "/Upload":{
-        "put": {
-          "summary": "Update changed Speechbubble",
-          "operationId": "udpateSpeechBubble",
-          "tags": [
-            "Speechbubble"
-          ],
-          "responses": {
-            "200": {
-              "description": "A paged array of pets",
-              "headers": {
-                "x-next": {
-                  "description": "A link to the next page of responses",
-                  "schema": {
-                    "type": "string"
-                  }
-                }
-              },
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Speechbubble"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
-                }
-              }
+      "SpeechbubbleChain": {
+        "type": "object",
+        "required": [
+          "Speechbubbles"
+        ],
+        "properties": {
+          "Speechbubbles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Speechbubble"
             }
           }
         }
-      }
-    },
-    "components": {
-      "schemas": {
-        "WordToken": {
-          "type": "object",
-          "required": [
-            "word",
-            "confidence",
-            "timestamp",
-            "speaker"
-          ],
-          "properties": {
-            "word": {
-              "type": "string"
-            },
-            "confidence": {
-              "type": "number"
-            },
-            "timestamp": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "speaker": {
-                "type": "integer",
-                "format": "int32"
-              }
-          }
-        },
-        "Speechbubble": {
-          "type": "object",
-          "required": [
-            "id",
-            "speaker",
-            "start",
-            "end",
-            "SpeechbubbleContent"
-          ],
-          "properties": {
-            "id": {
-              "type": "integer",
-              "format": "int64"
-            },
-            "speaker": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "start": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "end": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "SpeechbubbleContent": {
-              "type": "array",
-              "items": {
-                "$ref": "#/components/schemas/WordToken"
-              }
-            }
-          }
-        },
-        "SpeechbubbleChain": {
-          "type": "object",
-          "required": [
-            "Speechbubbles"
-          ],
-          "properties": {
-            "Speechbubbles": {
-              "type": "array",
-              "items": {
-                "$ref": "#/components/schemas/Speechbubble"
-              }
-            }
-          }
-        },
-        "Error": {
-          "type": "object",
-          "required": [
-            "code",
-            "message"
-          ],
-          "properties": {
-            "code": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "message": {
-              "type": "string"
-            }
-          }
-        },
-        "DeleteSpeechbuble": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "integer",
-                "format": "int32"
-              }
-            }
+      },
+      "Error": {
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
           },
-          "UpdateSpeechbuble": {
-            "type": "object",
-            "required": [
-                "id",
-                "speaker",
-                "start",
-                "end",
-                "UpdatedSpeechbubbleContent"
-              ],
-              "properties": {
-                "id": {
-                  "type": "integer",
-                  "format": "int64"
-                },
-                "speaker": {
-                  "type": "integer",
-                  "format": "int32"
-                },
-                "start": {
-                  "type": "integer",
-                  "format": "int32"
-                },
-                "end": {
-                  "type": "integer",
-                  "format": "int32"
-                },
-                "UpdatedSpeechbubbleContent": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WordToken"
-                  }
-                }
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "DeleteSpeechbuble": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "UpdateSpeechbuble": {
+        "type": "object",
+        "required": [
+          "id",
+          "speaker",
+          "start",
+          "end",
+          "UpdatedSpeechbubbleContent"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "speaker": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "start": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "end": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "UpdatedSpeechbubbleContent": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WordToken"
+            }
+          }
+        }
+      },
+      "AudioFile": {
+        "type": "object",
+        "required": [
+          "id",
+          "filename",
+          "duration"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "filename": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number"
+          }
+        }
+      },
+      "VideoFile": {
+        "type": "object",
+        "required": [
+          "id",
+          "filename",
+          "duration",
+          "resolution"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "filename": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number"
+          },
+          "resolution": {
+            "type": "string"
           }
         }
       }
     }
   }
-  
+}
