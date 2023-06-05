@@ -51,48 +51,6 @@
             }
           }
         }
-      },
-      "/pets/{petId}": {
-        "get": {
-          "summary": "Info for a specific pet",
-          "operationId": "showPetById",
-          "tags": [
-            "pets"
-          ],
-          "parameters": [
-            {
-              "name": "petId",
-              "in": "path",
-              "required": true,
-              "description": "The id of the pet to retrieve",
-              "schema": {
-                "type": "string"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Expected response to a valid request",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Speechbubble"
-                  }
-                }
-              }
-            },
-            "default": {
-              "description": "unexpected error",
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/Error"
-                  }
-                }
-              }
-            }
-          }
-        }
       }
     },
     "components": {
@@ -197,7 +155,41 @@
                 "format": "int32"
               }
             }
+          },
+          "UpdateSpeechbuble": {
+            "type": "object",
+            "required": [
+                "id",
+                "speaker",
+                "start",
+                "end",
+                "UpdatedSpeechbubbleContent"
+              ],
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "format": "int64"
+                },
+                "speaker": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "start": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "end": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "UpdatedSpeechbubbleContent": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WordToken"
+                  }
+                }
           }
+        }
       }
     }
   }
