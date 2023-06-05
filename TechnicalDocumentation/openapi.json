@@ -4,7 +4,7 @@
     "version": "1.0.4",
     "title": "API-Endpunkte",
     "license": {
-      "name": "MIT"
+      "name": "Lizenz: MIT"
     }
   },
   "servers": [
@@ -74,6 +74,69 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Speechbubble"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/AudioStream": {
+      "put": {
+        "summary": "Contains audio file for frontend",
+        "operationId": "AudioStream",
+        "tags": [
+          "AudioStream"
+        ],
+        "responses": {
+          "200": {
+            "description": "Audio file updated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AudioStream"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/AudiowithJumping": {
+      "put": {
+        "summary": "Contains jumping in audio file",
+        "operationId": "jumpAudio",
+        "tags": [
+          "Audio",
+          "jumpAudio"
+        ],
+        "responses": {
+          "200": {
+            "description": "Audio file updated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/jumpAudio"
                 }
               }
             }
@@ -207,8 +270,26 @@
             "format": "int32"
           },
           "speaker": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/speaker"
+            }
+          }
+        }
+      },
+      "speaker": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
             "type": "integer",
             "format": "int32"
+          },
+          "name": {
+            "type": "string"
           }
         }
       },
@@ -227,8 +308,10 @@
             "format": "int64"
           },
           "speaker": {
-            "type": "integer",
-            "format": "int32"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/speaker"
+            }
           },
           "start": {
             "type": "integer",
@@ -303,8 +386,10 @@
             "format": "int64"
           },
           "speaker": {
-            "type": "integer",
-            "format": "int32"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/speaker"
+            }
           },
           "start": {
             "type": "integer",
@@ -319,6 +404,80 @@
             "items": {
               "$ref": "#/components/schemas/WordToken"
             }
+          }
+        }
+      },
+      "AudioStream": {
+        "type": "object",
+        "required": [
+          "id",
+          "start",
+          "end",
+          "speed",
+          "duration",
+          "speaker"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "start": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "end": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "speed": {
+            "type": "number"
+          },
+          "duration": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "speaker": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/speaker"
+            }
+          }
+        }
+      },
+      "jumpAudio": {
+        "type": "object",
+        "required": [
+          "id",
+          "start",
+          "end",
+          "speed",
+          "duration",
+          "liveTime"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "start": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "end": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "speed": {
+            "type": "number"
+          },
+          "duration": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "liveTime": {
+            "type": "integer",
+            "format": "int64"
           }
         }
       },
@@ -368,7 +527,7 @@
           }
         }
       },
-      "Subtitle": {
+      "SubtitleFile": {
         "type": "object",
         "required": [
           "id",
