@@ -192,7 +192,7 @@
               "id"
             ],
             "properties": {
-              "code": {
+              "id": {
                 "type": "integer",
                 "format": "int32"
               }
