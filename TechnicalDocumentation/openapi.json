@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "version": "1.0.2",
+    "version": "1.0.4",
     "title": "API-Endpunkte",
     "license": {
       "name": "MIT"
@@ -22,7 +22,7 @@
         ],
         "responses": {
           "200": {
-            "description": "A paged array of pets",
+            "description": "A array of words ",
             "headers": {
               "x-next": {
                 "description": "A link to the next page of responses",
@@ -61,7 +61,7 @@
         ],
         "responses": {
           "200": {
-            "description": "A paged array of pets",
+            "description": "A updated array of words",
             "headers": {
               "x-next": {
                 "description": "A link to the next page of responses",
@@ -136,6 +136,37 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/VideoFile"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Subtitle": {
+      "put": {
+        "summary": "Update subtitle file",
+        "operationId": "updateSubtitle",
+        "tags": [
+          "Subtitle"
+        ],
+        "responses": {
+          "200": {
+            "description": "Subtitle file updated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubtitleFile"
                 }
               }
             }
