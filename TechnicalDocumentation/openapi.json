@@ -298,8 +298,8 @@
         "required": [
           "id",
           "speaker",
-          "start",
-          "end",
+          "start_time",
+          "end_time",
           "SpeechbubbleContent"
         ],
         "properties": {
@@ -313,11 +313,11 @@
               "$ref": "#/components/schemas/speaker"
             }
           },
-          "start": {
+          "start_time": {
             "type": "integer",
             "format": "int32"
           },
-          "end": {
+          "end_time": {
             "type": "integer",
             "format": "int32"
           },
@@ -376,8 +376,8 @@
         "required": [
           "id",
           "speaker",
-          "start",
-          "end",
+          "start_time",
+          "end_time",
           "UpdatedSpeechbubbleContent"
         ],
         "properties": {
@@ -391,11 +391,11 @@
               "$ref": "#/components/schemas/speaker"
             }
           },
-          "start": {
+          "start_time": {
             "type": "integer",
             "format": "int32"
           },
-          "end": {
+          "end_time": {
             "type": "integer",
             "format": "int32"
           },
@@ -411,8 +411,8 @@
         "type": "object",
         "required": [
           "id",
-          "start",
-          "end",
+          "start_time",
+          "end_time",
           "speed",
           "duration",
           "speaker"
@@ -422,11 +422,11 @@
             "type": "integer",
             "format": "int64"
           },
-          "start": {
+          "start_time": {
             "type": "integer",
             "format": "int32"
           },
-          "end": {
+          "end_time": {
             "type": "integer",
             "format": "int32"
           },
@@ -449,8 +449,8 @@
         "type": "object",
         "required": [
           "id",
-          "start",
-          "end",
+          "start_time",
+          "end_time",
           "speed",
           "duration",
           "liveTime"
@@ -460,11 +460,11 @@
             "type": "integer",
             "format": "int64"
           },
-          "start": {
+          "start_time": {
             "type": "integer",
             "format": "int32"
           },
-          "end": {
+          "end_time": {
             "type": "integer",
             "format": "int32"
           },
