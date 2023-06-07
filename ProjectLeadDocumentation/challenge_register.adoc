@@ -28,6 +28,8 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 |Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/ + 
 Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
+| pipeline hängt sich beim linting auf im Frontend dies verhindert aktuell das mergen auf das Frontend repo | Problem | Pipeline | hoch | 07.06.2023 | @lnoack | behebung des fehlers der Pipeline | @lnoack | offen
+
 | @cneidahl kommt nicht zu digitalen Meetings und informiert nicht selbständig über Bearbeitungsstand seiner Issues, es sind auch keine Aktivitäten im GitLab beobachtbar | Problem | Produkt | mittel | 03.06.2023 | @bbeigang | Anpassung der Velocity und des MVPs, Erkundigung bei @cneidahl | @bbeigang | offen
 
 | Fehlerhafte bearbeitung eines Ticket. Es wurde in Javascript und nicht in Typescript programmiert, dies hatte zur folge dass sich die Entwicklung verzögert hatte.  | Spezifikations-Abweichung | Produkt | hoch | 04.06.2023 | @fromeis | Übersetzung des Javascript programmes nach Typescript, dies hat auch andere Probleme gelöst | @fromeis | 05.06.2023
