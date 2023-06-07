@@ -30,6 +30,8 @@ Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortli
 
 | @cneidahl kommt nicht zu digitalen Meetings und informiert nicht selbständig über Bearbeitungsstand seiner Issues, es sind auch keine Aktivitäten im GitLab beobachtbar | Problem | Produkt | mittel | 03.06.2023 | @bbeigang | Anpassung der Velocity und des MVPs, Erkundigung bei @cneidahl | @bbeigang | offen
 
+| Fehlerhafte bearbeitung eines Ticket. Es wurde in Javascript und nicht in Typescript programmiert, dies hatte zur folge dass sich die Entwicklung verzögert hatte.  | Spezifikations-Abweichung | Produkt | hoch | 04.06.2023 | @fromeis | Übersetzung des Javascript programmes nach Typescript, dies hat auch andere Probleme gelöst | @fromeis | 05.06.2023
+
 | Notwendige Datenstruktur um im Frontend Confidence-Werte zu visualisieren, stellt sich als komplizierter heraus als gedacht, und gefährdet vollständige Funktionalität des MVPs | Spezifikations-Abweichung | Produkt | hoch | 03.06.2023 | @fromeis | Visualisierte Confidence-Werte werden aus MVP genommen | @bbeigang | offen
 
 | Unser Kunde hat uns Zugang zu Schnittstellenbeschreibung gegeben, die jedoch von einigen Annahmen die wir getroffen haben abweicht, wir erhalten nicht den Video/Audio-Stream und die Transkription zusammen, sondern müssen den Stream gesondert empfangen und an den Endpunkt bei Speechmatics schicken, um die Transkription zu erhalten | Spezifikations-Abweichung | Produkt | mittel | 02.06.2023 | @bbeigang | Weiterer Endpunkt wird implementiert | @lnoack | offen
