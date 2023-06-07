@@ -1,0 +1,488 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "API-Fontstylepunkte",
+      "license": {
+        "name": "Lizenz: MIT"
+      }
+    },
+    "servers": [
+      {
+        "url": "http://petstore.swagger.io/v1"
+      }
+    ],
+    "paths": {
+      "/fontStyleChanged": {
+        "put": {
+          "summary": "Update changed Fontstyle",
+          "operationId": "fontstyle",
+          "tags": [
+            "fontstyle",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "update of fontstyle",
+              "headers": {
+                "x-next": {
+                  "description": "A link to the next page of responses",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/fontSizeChanged": {
+        "put": {
+          "summary": "Update changed of fontsize",
+          "operationId": "updatefontsize",
+          "tags": [
+            "fontsize",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "changed fontsize",
+              "headers": {
+                "x-next": {
+                  "description": "A link to the next page of responses",
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              },
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/fontColor": {
+        "put": {
+          "summary": "Update of fontcolor",
+          "operationId": "fontcolor",
+          "tags": [
+            "fontcolor",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "changed fontcolor, also interessting for doing the confidence visability",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/highlightColor": {
+        "put": {
+          "summary": "change color highlighting",
+          "operationId": "highlightColor",
+          "tags": [
+            "highlightcolor",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "Change the highlighting of a color",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/bold": {
+        "put": {
+          "summary": "Update bold",
+          "operationId": "updateBold",
+          "tags": [
+            "bold",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "change fontweight to bold",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/italic": {
+        "put": {
+          "summary": "Update italic",
+          "operationId": "updateItalic",
+          "tags": [
+            "italic",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "change word format to italic",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/underline": {
+        "put": {
+          "summary": "Update underline of word",
+          "operationId": "updateUnderline",
+          "tags": [
+            "underline",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "update underline of text, important for highlighting of unsure words",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/strike": {
+        "put": {
+          "summary": "Update strike",
+          "operationId": "updateStrike",
+          "tags": [
+            "strike",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "update strike of the text in german: schlag",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/subscript": {
+        "put": {
+          "summary": "Update subscript of text",
+          "operationId": "updateSubscript",
+          "tags": [
+            "subscript",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "update of subscript",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/superscript": {
+        "put": {
+          "summary": "Update superscript",
+          "operationId": "updateSuperscript",
+          "tags": [
+            "superscript",
+            "style"
+          ],
+          "responses": {
+            "200": {
+              "description": "update superscript",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/call"
+                  }
+                }
+              }
+            },
+            "default": {
+              "description": "unexpected error",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "call": {
+            "type": "array",
+            "required": [
+              "insert",
+              "attributes"
+            ],
+            "properties": {
+              "class": {
+                "type": "string"
+              },
+              "attributes": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/attributes"
+                }
+              },
+              "end": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          },
+        "timestamp": {
+          "type": "array",
+          "required": [
+            "class",
+            "start",
+            "end"
+          ],
+          "properties": {
+            "class": {
+              "type": "string"
+            },
+            "start": {
+                "type": "integer",
+                "format": "int32"
+            },
+            "end": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        },
+        "attributes": {
+          "type": "array",
+          "required": [
+            "marker",
+            "timestamp"
+          ],
+          "properties": {
+            "marker": {
+              "type": "object",
+              "items": {
+                "$ref": "#/components/schemas/marker"
+              }
+            },
+            "timestamp": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/timestamp"
+              }
+            }
+          }
+        },
+        "marker": {
+            "type": "object",
+            "cancontain": [
+              "font",
+              "size",
+              "color",
+              "background",
+              "bold",
+              "italic",
+              "underline",
+              "strike",
+              "script"
+            ],
+            "properties": {
+              "font": {
+                "type": "string"
+              },
+              "size": {
+                  "type": "string"
+              },
+              "color": {
+                "type": "string"
+              },
+              "backgroundcolor": {
+                "type": "string"
+              },
+              "bold": {
+                "type": "boolean",
+                "description": "Specifies if the item is available or not."
+              },
+              "italic": {
+                "type": "boolean",
+                "description": "Specifies if the item is available or not."
+              },
+              "underline": {
+                "type": "boolean",
+                "description": "Specifies if the item is available or not."
+              },
+              "strike": {
+                "type": "boolean",
+                "description": "Specifies if the item is available or not."
+              },
+              "sub": {
+                "type": "string"
+              },
+              "super": {
+                "type": "string"
+              }
+            }
+          },
+          "Error": {
+            "type": "object",
+            "required": [
+                "code",
+                "message"
+                ],
+                "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                }
+                }
+            }
+        }
+    }
+}
+  
