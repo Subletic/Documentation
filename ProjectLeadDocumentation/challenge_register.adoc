@@ -28,6 +28,8 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 |Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/ + 
 Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
+| @bbeigang übernimmt offiziell die Leitung aller Meetings, da die bisherige Dynamik des Teams und deren Aufgaben dies ergeben hat bzw. es bislang so gewesen ist | Änderungsantrag | @bbeigang | niedrig | 08.06.2023 | @bbeigang | keine | @bbeigang | 08.06.2023
+
 | pipeline hängt sich beim linting auf im Frontend dies verhindert aktuell das mergen auf das Frontend repo | Problem | Pipeline | hoch | 07.06.2023 | @lnoack | behebung des fehlers der Pipeline | @lnoack | offen
 
 | @cneidahl kommt nicht zu digitalen Meetings und informiert nicht selbständig über Bearbeitungsstand seiner Issues, es sind auch keine Aktivitäten im GitLab beobachtbar | Problem | Produkt | mittel | 03.06.2023 | @bbeigang | Anpassung der Velocity und des MVPs, Erkundigung bei @cneidahl | @bbeigang | offen

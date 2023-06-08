@@ -37,7 +37,8 @@ a|
 * Hat die Stimmung im Team im Blick und räumt Schwierigkeiten der Entwickler aus dem Weg (Team-Coach)
 * Gewährleistung der Einhaltung des agilen Manifestes (Timeboxing, SCRUM, etc.) 
 * Ansprechpartner bei allen Fragen die nicht technische Details oder Fragen an den Kunden sind
-* Vorbereiten und Leiten  der Retrospektive um Team weiterzuentwickeln
+* Vorbereiten und Leiten der Retrospektive um Team weiterzuentwickeln
+* Leiten aller anderen Meetings
 
 
 | Quality-Assurance
