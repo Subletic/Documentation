@@ -18,8 +18,8 @@ ein ist ein Vermerk im Issue-Register zu führen.
 a| 
 * Hat die Softwarearchitektur im Blick und steht für technische Fragestellungen als erstes zur Verfügung
 * Entwirft die grobe Schnittstellenbeschreibung
-* Hat die Einhaltung der Anforderungen im Blick
 * Hilft komplizierte Merge-Requests aufzulösen
+* Kümmert sich um Deployment bzw. Auslieferung unserer Software
 
 
 | Product Owner 
@@ -27,9 +27,10 @@ a|
 * Hält Kontakt mit dem Kunden
 * Vertritt den Kunden im Team und ist bei Fragen an den Kunden erste Ansprechpartner
 * Befüllt und priorisiert das Product-Backlog
+* Grobe Voraus-Planung der Sprints und deren Ziele (Genauer Planung erfolgt durch Team) 
 * Führen der Projektleitdokumentation
 * Leiten der Kunden Meetings
-* Verwaltet die Dokumentation, samt Issues (Board), Projektleitdokumentation, Protokolle, etc.
+* Schreibt und verwaltet die Dokumentation, samt Issues (Board), Projektleitdokumentation, Protokolle, Wiki, etc.
 
 
 | SCRUM-Master 
@@ -38,7 +39,7 @@ a|
 * Gewährleistung der Einhaltung des agilen Manifestes (Timeboxing, SCRUM, etc.) 
 * Ansprechpartner bei allen Fragen die nicht technische Details oder Fragen an den Kunden sind
 * Vorbereiten und Leiten der Retrospektive um Team weiterzuentwickeln
-* Leiten aller anderen Meetings
+* Leiten aller Meetings außer Kundenmeeting
 
 
 | Quality-Assurance
@@ -53,6 +54,7 @@ a|
 * Projekt-Planung und Organisation
 * Verantwortlich für schwerwiegende Projektentscheidungen
 * Hat Veto-Recht
+* Hat die Einhaltung der Anforderungen im Blick
 
 
 | Developer
