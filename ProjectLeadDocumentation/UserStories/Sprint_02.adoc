@@ -2,6 +2,14 @@
 
 === Nicht-Funktionale Anforderungen
 
+[options="header"]
+|===
+| Kundenzufriedenheit
+| Als Kunde möchte ich eine dauerhaft getestete und ausführbare Software haben, sodass die Software von hoher Qualität ist.
+| documentation#93, documentation#94, documentation#26, frontend#10, documentation#74, frontend#19
+|===
+
 ---
 
 === Funktionale Anforderungen
+
