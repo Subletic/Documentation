@@ -2,8 +2,8 @@
 
 Im Produkt Backlog werden in Form von User Stories die funktionalen und nicht-funktionalen Anforderungen des Kunden dokumentiert.
 
-* link:live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/UserStories/Sprint_01.adoc[Sprint_01]
-* link:live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/UserStories/Sprint_02.adoc[Sprint_02]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/UserStories/Sprint_01.adoc[Sprint_01]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/UserStories/Sprint_02.adoc[Sprint_02]
 
 == Beispiel UserStory:
 
