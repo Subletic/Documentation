@@ -10,10 +10,9 @@
 |===
 | Kundenzufriedenheit
 | Als Kunde möchte ich eine dauerhaft getestete und ausführbare Software haben, sodass die Software von hoher Qualität ist.
-| link:{$doku}93[documentation#93], link:{$doku}94[documentation#94], link:{$doku}26[documentation#26], link:{$doku}74[documentation#74], link:{$frontend}10[frontend#10], link:{$frontend}19[frontend#19]
+| link:{doku}93[documentation#93], link:{doku}94[documentation#94], link:{doku}26[documentation#26], link:{doku}74[documentation#74], link:{frontend}10[frontend#10], link:{frontend}19[frontend#19]
 |===
 
 ---
 
 === Funktionale Anforderungen
-
