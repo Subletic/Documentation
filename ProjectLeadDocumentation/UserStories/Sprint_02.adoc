@@ -2,17 +2,129 @@
 :frontend: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/
 :backend: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/
 
-== User Stories erstellt in Sprint 2 
+= User Stories erstellt in Sprint 2 
+:toc:
 
-=== Nicht-Funktionale Anforderungen
+== Nicht-Funktionale Anforderungen
 
 [options="header"]
 |===
-| Kundenzufriedenheit
+| Getestete und Lauffähige Software
 | Als Kunde möchte ich eine dauerhaft getestete und ausführbare Software haben, sodass die Software von hoher Qualität ist.
-| link:{doku}93[documentation#93], link:{doku}94[documentation#94], link:{doku}26[documentation#26], link:{doku}74[documentation#74], link:{frontend}10[frontend#10], link:{frontend}19[frontend#19]
+a| 
+* link:{doku}93[Erstellung des Deployments als Docker-File]
+* link:{doku}94[Deployment einrichten auf Deployment-Server]
+* link:{doku}26[Statische Codeanalyse in die CI/CD-Pipeline einbauen]
+* link:{doku}74[Projekt Migration von altem zu neuen GitLab]
+* link:{doku}7[Technical Research - Statische Quellcode-Analyse]
+* link:{frontend}10[CI Failed #10606]
+* link:{frontend}19[Job Failed #13003 Pipeline Linting]
+* link:{doku}17[CI/CD Pipeline einrichten für das Testrepo]
+|===
+
+[options="header"]
+|===
+| Entwicklungsumgebung
+| Als Entwickler benötige ich eine Entwicklungsumgebung, sodass ich die vom Kunden gestellten Anforderungen umsetzten kann.
+a| 
+* link:{frontend}9[Anlegen des Frontend-Repositories]
+* link:{backend}17[Anlegen der Backend-Repositories]
+* link:{mock-server}1[Mock-Server erstellen]
+|===
+
+[options="header"]
+|===
+| Untertitelgenerierung
+| Als Anwender möchte ich, dass die neu generierten Untertitel so angezeigt werden, dass sie sowohl möglichst aktuell sind, als auch mein Arbeitserlebnis nicht durch Reizüberflutung beeinträchtigen, um ein optimales Arbeitserlebnis zu ermöglichen.
+a| ???
+
+|===
+
+[options="header"]
+|===
+| Codequalität
+| Als Entwickler möchte ich laufend sicher sein können, dass mein geschriebener Code von guter Qualität ist, sodass mein Kunde das bestmögliche Produkt erhält.
+a|
+* link:{doku}26[Statische Codeanalyse in die CI/CD-Pipeline einbauen]
+* link:{doku}7[Technical Research - Statische Quellcode-Analyse]
+* link:{frontend}10[CI Failed #10606]
+* link:{frontend}19[Job Failed #13003 Pipeline Linting]
+* link:{doku}17[CI/CD Pipeline einrichten für das Testrepo]
+|===
+
+[options="header"]
+|===
+| Übersichtlichkeit
+| Als Anwender muss die Darstellung schlicht sein, sodass ich beim Lesen und Korrigieren den Überblick behalte und nicht abgelenkt werde.
+a|
+* link:{frontend}4[Erstes Design des Frontends realisieren]
 |===
 
 ---
 
-=== Funktionale Anforderungen
+== Funktionale Anforderungen
+
+
+[options="header"]
+|===
+| Confidence-Werte
+| Als Kunde (gbs) möchte ich, dass im Programm die Confidence-Werte verarbeitet werden, sodass die Information nicht ungenutzt bleibt und damit wir einen USP (unique selling point) für mögliche Anwender haben.
+| Als Anwender möchte ich, dass im Programm Wörter die wahrscheinlich fehlerhaft sind (Confidence-Werte) in Form einer farbigen Markierung dieser Wörter, sodass ich leicht erkennen kann welche Wörter am wahrscheinlichsten korrigiert werden müssen, und wann Sektionen im Text kommen die viel Korrektur erfordern.
+a|
+* link:{frontend}2[Sprechblasen in Grafische Benutzeroberfläche]
+* link:{frontend}17[Grundlegende Bearbeitungsfunktionen innerhalb Sprechblase]
+* link:{frontend}3[API Endpunkt - Neue Sprechblase (Frontend-Sicht)]
+
+(Da das Färben von Wörtern in Textboxen sich schwieriger als gedacht herausgestellt hat, mussten wir zusätzliche Arbeit in die oben genannten Issues stecken)
+|===
+
+[options="header"]
+|===
+| Sichtbarkeit der Sprechblasen
+| Als Anwender muss ich die Sprechblasen sehen können, sodass ich diese korrigieren kann. 
+a|
+* link:{frontend}4[Erstes Design des Frontends realisieren]
+* link:{frontend}2[Sprechblasen in Grafische Benutzeroberfläche]
+* link:{frontend}3[API Endpunkt - Neue Sprechblase (Frontend-Sicht)]
+* link:{backend}11[API Endpunkt - Neue Sprechblase (Backend-Sicht)]
+* link:{backend}5[Speicherung und Verarbeitung von Untertiteln/Sprechblasen im Backend]
+* link:{backend}12[API Endpunkt - WebSocket Endpunkt von Speechmatics abbonieren]
+|===
+
+[options="header"]
+|===
+| Editierbarkeit der Sprechblasen
+| Als Anwender muss ich die Sprechblasen bearbeiten können können, sodass ich die Untertitel korrigieren kann. 
+a|
+* link:{frontend}5[API Endpunkt - Aktualisierung einer Sprechblase (Frontend-Sicht)]
+* link:{backend}9[API Endpunkt - Aktualisierung einer Sprechblase (Backend-Sicht)]
+* link:{backend}17[Grundlegende Bearbeitungsfunktionen innerhalb Sprechblase]
+|===
+
+[options="header"]
+|===
+| Aufteilung in Sprechblasen
+| Als Anwender möchte ich die ankommenden gesprochenen Sätze, in gut überblickbaren Häppchen, sogenannte Sprechblasen, visualisiert bekommen, sodass ich leichter alles gesagte überblicken kann.
+a|
+* link:{backend}5[Speicherung und Verarbeitung von Untertiteln/Sprechblasen im Backend]
+|===
+
+[options="header"]
+|===
+| Aufbau und Ablauf der Untertitel-Pipeline
+| Als Untertitel-Pipeline der Software benötige ich eine klaren Aufbau und einen gut geplanten Ablauf, sodass zu jedem Zeitpunkt der Verarbeitung der Daten klar ist wie die Daten weiterverarbeitet werden müssen.
+a|
+* link:{backend}18[Background Service - Sprechblasen-Buffer Verwaltung]
+|===
+
+[options="header"]
+|===
+| Texthervorhebung
+| Als Anwender möchte ich wissen, welchen Untertitelblock ich aktuell bearbeite, sodass ich mich besser orientieren kann.
+|===
+
+[options="header"]
+|===
+| Graue Bearbeitungsbox
+| Als Anwender möchte ich die Option haben, die graue Bearbeitungsbox nicht anzuzeigen, sodass ich während der Untertitelbearbeitung nicht abgelenkt werde.
+|===

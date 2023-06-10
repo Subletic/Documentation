@@ -1,7 +1,11 @@
 = Product Backlog
-:toc:
 
 Im Produkt Backlog werden in Form von User Stories die funktionalen und nicht-funktionalen Anforderungen des Kunden dokumentiert.
+
+* link:UserStories/Sprint_01[Sprint_01]
+* link:UserStories/Sprint_02[Sprint_02]
+
+== Beispiel UserStory:
 
 [options="header"]
 |===
@@ -15,6 +19,4 @@ Im Produkt Backlog werden in Form von User Stories die funktionalen und nicht-fu
 
 ---
 
-include::UserStories/Sprint_01.adoc[]
 
-include::UserStories/Sprint_02.adoc[]

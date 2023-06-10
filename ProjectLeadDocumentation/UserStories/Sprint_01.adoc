@@ -1,10 +1,13 @@
-== User Stories erstellt in Sprint 1 
+= User Stories erstellt in Sprint 1 
+:toc:
 
-=== Nicht-Funktionale Anforderungen
+== Nicht-Funktionale Anforderungen
+
+=== Technische Sicht
 
 [options="header"]
 |===
-| Kundenzufriedenheit
+| Getestete und Lauffähige Software
 | Als Kunde möchte ich eine dauerhaft getestete und ausführbare Software haben, sodass die Software von hoher Qualität ist.
 |===
 
@@ -28,12 +31,6 @@
 
 [options="header"]
 |===
-| DSGVO Konformität
-| Als Kunde (gbs) möchte ich dass die Entwicklete Software DSGVO-konform ist, sodass ich die Software in Deutschland betreiben darf.
-|===
-
-[options="header"]
-|===
 | Angular als Frontend
 | Als Entwickler bei der gbs möchte ich, dass Angular als Frontend verwendet wird, sodass ich die entstandene Software leichter in die bestehende Software der gbs einbauen kann.
 |===
@@ -42,6 +39,14 @@
 |===
 | ASP.NET als Backend
 | Als Entwickler bei der gbs möchte ich, dass ASP.NET als Backend verwendet wird, sodass ich die entstandene Software leichter in die bestehende Software der gbs einbauen kann.
+|===
+
+=== Anwender-/Kunden-Sicht
+
+[options="header"]
+|===
+| DSGVO Konformität
+| Als Kunde (gbs) möchte ich dass die Entwicklete Software DSGVO-konform ist, sodass ich die Software in Deutschland betreiben darf.
 |===
 
 [options="header"]
@@ -58,7 +63,7 @@
 
 [options="header"]
 |===
-| Ausführliche Testabdeckung
+| Live-Tests mit Testpersonen
 | Als Entwickler es sollten Livetests mit Testpersonen durchgeführt werden, um die Funktionalität zu überprüfen.
 |===
 
@@ -70,7 +75,7 @@
 
 [options="header"]
 |===
-| Confidence-Werte
+| Confidence-Werte erklären
 | Als unerfahrener Anwender möchte ich in der Lage sein zu verstehen, warum manche Wörter im Text farbig markiert sind, sodass ich mir das Programm und seine Funktionalität schnell erschließen kann.
 |===
 
@@ -80,9 +85,11 @@
 | Als Anwender möchte ich, dass die neu generierten Untertitel so angezeigt werden, dass sie sowohl möglichst aktuell sind als auch mein Arbeitserlebnis nicht durch Reizüberflutung beeinträchtigen, um ein optimales Arbeitserlebnis zu ermöglichen.
 |===
 
+
 ---
 
-=== Funktionale Anforderungen
+
+== Funktionale Anforderungen
 
 [options="header"]
 |===
@@ -141,7 +148,7 @@
 [options="header"]
 |===
 | Editierbarkeit der Sprechblasen
-| Als Anwender muss ich die Sprechblasen bearbeiten können können, sodass ich diese korrigieren kann. 
+| Als Anwender muss ich die Sprechblasen bearbeiten können können, sodass ich die Untertitel korrigieren kann.
 |===
 
 [options="header"]
@@ -153,7 +160,7 @@
 [options="header"]
 |===
 | Aufbau und Ablauf der Untertitel-Pipeline
-| Als Untertitel-Pipeline der Software benötige ich eine klaren Aufbau und einen gut geplanten Ablauf, sodass zu jedem Zeitpunkt der Verarbeitung der Daten klar wie die Daten weiterverarbeitet werden müssen.
+| Als Untertitel-Pipeline der Software benötige ich eine klaren Aufbau und einen gut geplanten Ablauf, sodass zu jedem Zeitpunkt der Verarbeitung der Daten klar ist wie die Daten weiterverarbeitet werden müssen.
 |===
 
 [options="header"]
@@ -190,12 +197,6 @@
 |===
 | Anhalten der Audio
 | Als Anwender möchte ich in der Lage sein die Audio anzuhalten, sodass ich die Audio besser kontrollieren kann.
-|===
-
-[options="header"]
-|===
-| Bearbeitungsfunktion der Untertitel
-| Als Anwender möchte ich in der Lage sein die angezeigten Untertitel bearbeiten zu können, sodass die korrigierten Untertitel für die Zuschauer sichtbar sind.
 |===
 
 [options="header"]
@@ -272,8 +273,14 @@
 
 [options="header"]
 |===
-| Confidence-Werte
+| Confidence-Werte verwenden
 | Als Kunde (gbs) möchte ich, dass im Programm die Confidence-Werte verarbeitet werden, sodass die Information nicht ungenutzt bleibt und damit wir einen USP (unique selling point) für mögliche Anwender haben.
+|===
+
+[options="header"]
+|===
+| Confidence-Werte visualisieren
+| Als Anwender möchte ich, dass im Programm Wörter die wahrscheinlich fehlerhaft sind (Confidence-Werte) in Form einer farbigen Markierung dieser Wörter, sodass ich leicht erkennen kann welche Wörter am wahrscheinlichsten korrigiert werden müssen, und wann Sektionen im Text kommen die viel Korrektur erfordern.
 |===
 
 [options="header"]
