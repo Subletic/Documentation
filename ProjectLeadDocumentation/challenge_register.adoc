@@ -28,6 +28,8 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 |Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/ + 
 Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
+| Erneut auftretende Speicherplatzprobleme in der Ci/Cd-Pipeline, halten die Developer von ihrer Arbeit ab. | Problem | @all | hoch | 11.06.2023 | @lnoack | Immer wieder Anpassung der Pipeline, jetzt noch zusätzliches in verbindung setzten mit den Admins der GitLab Insanz | @lnoack | offen
+
 | @lnoack kümmert sich um das Deployment unserer Software und die Kommunikation mit den System-Administration | Änderungsantrag | @lnoack | niedrig | 09.06.2023 | @lnoack | keine | @lnoack | 09.06.2023
 
 | @bbeigang übernimmt offiziell die Leitung aller Meetings, da die bisherige Dynamik des Teams und deren Aufgaben dies ergeben hat bzw. es bislang so gewesen ist | Änderungsantrag | @bbeigang | niedrig | 08.06.2023 | @bbeigang | keine | @bbeigang | 08.06.2023
