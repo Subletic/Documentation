@@ -22,7 +22,7 @@ Das betrifft alle im Challenge-Register identifizierten Risiken und Änderungen.
 |===
 |Cause |Effect |Impact |Response |Custodian |Identification (Date) | Occurence (Date) | Closure (Date)
 
-| unbegründetes Nichterscheinen und fehlende Kommunikation bezüglich Fortschritt der Issues bei @cneidahl | Schlechte Planbarkeit | Verzögerung der Entwicklung  | Konfrontieren des Teammitglieds | @bbeigang | 03.06.2023 | 03.06.2023 | ??.??.2023
+| unbegründetes Nichterscheinen und fehlende Kommunikation bezüglich Fortschritt der Issues bei @cneidahl | Schlechte Planbarkeit | Verzögerung der Entwicklung  | Konfrontieren bzw. Nachfragen des Grundes | @bbeigang | 03.06.2023 | 03.06.2023 | 14.06.2023
 
 | Fehleinschätzung der Komplexität von der Erstellung der Datenverwaltung im Frontend zur Visualisierung der Confidence-Werte | Längere Entwicklungszeit | Gefährdung des Erreichens des MVPs | Anpassung des MVPs | @bbeigang | 03.06.2023 | 03.06.2023 | 07.06.2023
 
