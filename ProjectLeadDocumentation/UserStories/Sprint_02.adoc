@@ -94,7 +94,7 @@ a|
 [options="header"]
 |===
 | Sichtbarkeit der Sprechblasen
-| Als Anwender muss ich die Sprechblasen sehen können, sodass ich diese korrigieren kann. 
+| Als Anwender muss ich die Sprechblasen sehen können (in einer FIFO-Liste), sodass ich diese korrigieren kann. 
 a|
 * link:{frontend}4[Erstes Design des Frontends realisieren]
 * link:{frontend}2[Sprechblasen in Grafische Benutzeroberfläche]
