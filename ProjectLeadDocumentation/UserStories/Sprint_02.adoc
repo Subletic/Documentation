@@ -36,14 +36,13 @@ a|
 |===
 | Untertitelgenerierung
 | Als Anwender möchte ich, dass die neu generierten Untertitel so angezeigt werden, dass sie sowohl möglichst aktuell sind, als auch mein Arbeitserlebnis nicht durch Reizüberflutung beeinträchtigen, um ein optimales Arbeitserlebnis zu ermöglichen.
-a| ???
-
+a| link:{frontend}5[Anlegen des Frontend-Repositories]
 |===
 
 [options="header"]
 |===
 | Codequalität
-| Als Entwickler möchte ich laufend sicher sein können, dass mein geschriebener Code von guter Qualität ist, sodass mein Kunde das bestmögliche Produkt erhält.
+| Als Entwickler möchte ich laufend sicher sein können, dass mein geschriebener Code von guter Qualität ist, sodass mein Kunde das bestmögliche Produkt erhält. Deshalb möchte ich dass laufend eine CI/CD Pipeline, meinen neuen Code prüft. 
 a|
 * link:{doku}26[Statische Codeanalyse in die CI/CD-Pipeline einbauen]
 * link:{doku}7[Technical Research - Statische Quellcode-Analyse]
@@ -55,15 +54,29 @@ a|
 [options="header"]
 |===
 | Übersichtlichkeit
-| Als Anwender muss die Darstellung schlicht sein, sodass ich beim Lesen und Korrigieren den Überblick behalte und nicht abgelenkt werde.
+| Als Anwender muss die Darstellung schlicht sein, sodass ich beim Lesen und Korrigieren den Überblick behalte und nicht abgelenkt werde. Dabei kann sich an dem Design von _GoSpeech_ orientiert werden.
 a|
-* link:{frontend}4[Erstes Design des Frontends realisieren]
+* link:{frontend}3[API Endpunkt - Neue Sprechblase (Frontend-Sicht)]
+* link:{frontend}5[API Endpunkt - Aktualisierung einer Sprechblase (Frontend-Sicht)]
 |===
 
----
+[options="header"]
+|===
+| Docker-File
+| Als Stakeholder möchte ich die Software als Docker-Container zur Verfügung gestellt bekommen, sodass ich diese leicht Testen kann.
+a|
+* link:{backend}93[Erstellung des Deployments als Docker-File]
+|===
+
+[options="header"]
+|===
+| Anlegen einer GitLab Action
+| Als Entwickler möchte ich dass nicht jeder meiner Pushes ein neues Deployment auslöst, sodass ich den Server unnötig belaste und auch nur fertiger Code deployed wird.
+a|
+* link:{backend}100[Anlegen einer GitLab Action]
+|===
 
 == Funktionale Anforderungen
-
 
 [options="header"]
 |===
@@ -115,16 +128,4 @@ a|
 | Als Untertitel-Pipeline der Software benötige ich eine klaren Aufbau und einen gut geplanten Ablauf, sodass zu jedem Zeitpunkt der Verarbeitung der Daten klar ist wie die Daten weiterverarbeitet werden müssen.
 a|
 * link:{backend}18[Background Service - Sprechblasen-Buffer Verwaltung]
-|===
-
-[options="header"]
-|===
-| Texthervorhebung
-| Als Anwender möchte ich wissen, welchen Untertitelblock ich aktuell bearbeite, sodass ich mich besser orientieren kann.
-|===
-
-[options="header"]
-|===
-| Graue Bearbeitungsbox
-| Als Anwender möchte ich die Option haben, die graue Bearbeitungsbox nicht anzuzeigen, sodass ich während der Untertitelbearbeitung nicht abgelenkt werde.
 |===

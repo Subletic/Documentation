@@ -42,7 +42,7 @@ Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortli
 
 | Notwendige Datenstruktur um im Frontend Confidence-Werte zu visualisieren, stellt sich als komplizierter heraus als gedacht, und gefährdet vollständige Funktionalität des MVPs | Spezifikations-Abweichung | Produkt | hoch | 03.06.2023 | @fromeis | Visualisierte Confidence-Werte werden aus MVP genommen | @bbeigang | 07.06.2023
 
-| Unser Kunde hat uns Zugang zu Schnittstellenbeschreibung gegeben, die jedoch von einigen Annahmen die wir getroffen haben abweicht, wir erhalten nicht den Video/Audio-Stream und die Transkription zusammen, sondern müssen den Stream gesondert empfangen und an den Endpunkt bei Speechmatics schicken, um die Transkription zu erhalten | Spezifikations-Abweichung | Produkt | mittel | 02.06.2023 | @bbeigang | Weiterer Endpunkt wird implementiert | @lnoack | in Bearbeitung
+| Unser Kunde hat uns Zugang zu Schnittstellenbeschreibung gegeben, die jedoch von einigen Annahmen die wir getroffen haben abweicht, wir erhalten nicht den Video/Audio-Stream und die Transkription zusammen, sondern müssen den Stream gesondert empfangen und an den Endpunkt bei Speechmatics schicken, um die Transkription zu erhalten | Spezifikations-Abweichung | Produkt | mittel | 02.06.2023 | @bbeigang | Weiterer Endpunkt wird implementiert | @lnoack | 15.06.2023
 
 | Keine Erfahrung mit C# bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @bbeigang | geschlossen
 | Keine Erfahrung mit ASP.NET bei den Entwicklern | Problem | Team | mittel | 02.05.2023 | Entwickler | Workshops | @ajegani | geschlossen

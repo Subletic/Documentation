@@ -25,12 +25,12 @@ a|
 | Product Owner 
 a|
 * Hält Kontakt mit dem Kunden
-* Vertritt den Kunden im Team und ist bei Fragen an den Kunden erste Ansprechpartner
+* Vertritt den Kunden im Team und ist bei Fragen an den Kunden erster Ansprechpartner
 * Befüllt und priorisiert das Product-Backlog
 * Grobe Voraus-Planung der Sprints und deren Ziele (Genauer Planung erfolgt durch Team) 
 * Führen der Projektleitdokumentation
 * Leiten der Kunden Meetings
-* Schreibt und verwaltet die Dokumentation, samt Issues (Board), Projektleitdokumentation, Protokolle, Wiki, etc.
+* Schreibt und verwaltet die Dokumentation, samt Issues (Board), Projektleitdokumentation, Protokolle, Wiki, Übersichten, etc.
 
 
 | SCRUM-Master 
