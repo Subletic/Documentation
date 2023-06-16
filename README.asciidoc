@@ -1,12 +1,12 @@
-= Live Stream Editor zur Korrektur von Untertiteln
+= Gruppe O - Live Stream Editor zur Korrektur von Untertiteln
 
 [options="header", cols="^,^", style="width:100%", align="center"]
 |===
 2+| Projektleiter
 | Benedikt Beigang
 | Luca Noack
-| link:https://gitlab.dit.htwk-leipzig.de/benedikt.beigang[@bbeigang]
-| link:https://gitlab.dit.htwk-leipzig.de/luca.noack[@lnoack]
+| link:https://gitlab.dit.htwk-leipzig.de/bbeigang[@bbeigang]
+| link:https://gitlab.dit.htwk-leipzig.de/lnoack[@lnoack]
 |===
 
 [options="header", cols="^,^,^,^,^,^", style="width:100%"]
@@ -20,13 +20,13 @@
 | Pascal Fabian Dittes 
 | link:https://gitlab.dit.htwk-leipzig.de/fromeis[@fromeis]
 | link:https://gitlab.dit.htwk-leipzig.de/lfranke2[@lfranke2] 
-| link:https://gitlab.dit.htwk-leipzig.de/chantal.bley[@cbley] 
-| link:https://gitlab.dit.htwk-leipzig.de/christoph.neidahl[@cneidahl] 
-| link:https://gitlab.dit.htwk-leipzig.de/amine.jegani[@ajegani] 
-| link:https://gitlab.dit.htwk-leipzig.de/pascal_fabian.dittes[@pdittes]
+| link:https://gitlab.dit.htwk-leipzig.de/cbley[@cbley] 
+| link:https://gitlab.dit.htwk-leipzig.de/cneidahl[@cneidahl] 
+| link:https://gitlab.dit.htwk-leipzig.de/ajegani[@ajegani] 
+| link:https://gitlab.dit.htwk-leipzig.de/pdittes[@pdittes]
 |===
 
-Unsere Dokumentation, **Ergebnisse des Design-Thinkings**, Guidelines, Glossar, Produktvision, etc. ist in unserem https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/home[Wiki] zu finden.
+Unsere Dokumentation, Ergebnisse des Design-Thinkings, Guidelines, Glossar, Produktvision, etc. ist in unserem https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/home[Wiki] zu finden.
 
 == Projektleitdokumentation
 
