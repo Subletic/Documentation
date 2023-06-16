@@ -1,0 +1,31 @@
+Title,Description,Issue ID,URL,State,Author,Author Username,Assignee,Assignee Username,Confidential,Locked,Due Date,Created At (UTC),Updated At (UTC),Closed At (UTC),Milestone,Weight,Labels,Time Estimate,Time Spent,Epic ID,Epic Title
+API Endpunkt - Neue Sprechblase (Frontend-Sicht),"Als GUI möchte ich, dass das Frontend neue Sprechblasen entgegennimmt, wenn sich der Zustand im Backend entsprechend ändert, sodass neue Sprechblasen erscheinen. 
+
+**Anmerkungen**
+* Es existiert schon eine Dummy-Methode die vom Backend angesprochen wird, und demonstriert wie die Daten entgegengenommen werden.
+
+**DoD**
+- [x] Neue Sprechblasen vom Backend werden entgegengenommen
+- [x] Neue Sprechblasen werden im Frontend visualisiert
+- [x] Confidence-Werte werden abgebildet durch Färben der jeweiligen Wörtern",3,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/3,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,,2023-05-22 08:49:59,2023-06-16 16:13:20,2023-06-14 18:57:51,✏Sprint_02_2,2,Frontend,0,29400,77,Sichtbarkeit
+API Endpunkt - Aktualisierung einer Sprechblase (Frontend-Sicht),"Als Frontend möchte ich wenn eine Sprechblase Editiert wurde, die Änderungen an das Backend geschickt werden, sodass der Zustand im Backend aktuell bleibt.
+
+---
+
+**Anmerkungen**
+- Der Auslöser für den Call ist sobald der Nutzer aus der Box klickt
+- Falls die Box aus dem Buffer fliegt, wird der geänderte Inhalt verworfen
+
+**DoD**
+- [x] Wenn eine Sprechblase bearbeitet wurde, wird die aktualisierte Sprechblase zurück ins Backend geschickt
+- [x] OnFocusOut-Event o.ä. wir verwendet, um einen Rest-Call auszulösen
+- [x] Methode die Frontendobjekte in ein DTO umwandelt
+- [x] Der eigentliche Rest-Call ans Backend wird ausgeführt 
+- [x] UnitTests für die Umwandlung",5,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/5,Closed,Benedikt Beigang,bbeigang,"Chantal Bley, Finn Johann Romeis","cbley, fromeis",No,No,,2023-05-23 18:02:53,2023-06-16 16:12:19,2023-06-14 18:57:40,✏Sprint_02_2,3,Frontend,0,97500,79,Bearbeiten/Navigieren
+Job Failed #13003 Pipeline Linting,"Job [#13003](https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/jobs/13003) failed for 4d9e8b9cf29b9f811784e008d56de6ce72349f8b:
+
+No Space left on the device
+
+**DoD**
+- [x] Pipeline läuft wieder im Frontend durch",19,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/19,Closed,Luca Noack,lnoack,"Luca Noack, Luca Niklas Franke","lnoack, lfranke2",No,No,2023-06-09,2023-06-08 10:01:23,2023-06-08 19:32:37,2023-06-08 19:26:30,✏Sprint_02_2,3,In dev,0,23400,,
+Job Failed #14312,"Again and no space problem with the ci job, this time in the while the pipeline is in the building job",20,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/20,Closed,Luca Noack,lnoack,Luca Noack,lnoack,No,No,2023-06-11,2023-06-11 16:34:42,2023-06-14 19:17:40,2023-06-14 19:17:39,✏Sprint_02_2,2,"Frontend,In dev",0,2220,,
