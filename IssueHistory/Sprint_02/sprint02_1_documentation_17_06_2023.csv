@@ -1,0 +1,103 @@
+Title,Description,Issue ID,URL,State,Author,Author Username,Assignee,Assignee Username,Confidential,Locked,Due Date,Created At (UTC),Updated At (UTC),Closed At (UTC),Milestone,Weight,Labels,Time Estimate,Time Spent,Epic ID,Epic Title
+Schnittstellen-Beschreibung,"Wir benötigen eine Schnittstellen-Beschreibung, damit jeder Entwickler unabhängig vom Fortschritt anderer Schnittstellen, an seinen eigenen arbeiten kann.
+
+
+[Quick Link](https://gitlab.imn.htwk-leipzig.de/projekt2023-o-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/TechnicalDocumentation/DataTransferObjects)
+
+**DoD**
+
+- [x] Es wurden für die bisher als notwendig identifizierten Data Transfer Objects eine Beschreibung dieser ins Wiki geschrieben
+- [x] Es wurde für DTOs Feedback von den Developern gegeben",73,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/73,Closed,Benedikt Beigang,bbeigang,"Benedikt Beigang, Luca Noack","bbeigang, lnoack",No,No,,2023-05-25 10:25:08,2023-06-01 13:59:33,2023-05-26 12:02:02,👓Sprint_02_1,2,Documentation,0,6300,,
+Technical Spike - 24.05.2023,"Anlegen des Protokolls für das Sprint Planning am 24.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst, die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_02_1/2023_05_24TechnicalSpike) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",55,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/55,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-23 20:01:47,2023-06-02 21:01:30,2023-05-29 14:53:39,👓Sprint_02_1,2,"Documentation,Meeting",0,64800,,
+Sprint Planning - 23.05.2023,"Anlegen des Protokolls für das Sprint Planning am 23.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_02_1/2023_05_23SprintPlanning) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",40,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/40,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-19 12:47:33,2023-06-02 21:00:35,2023-05-24 17:20:50,👓Sprint_02_1,2,"Documentation,Meeting",0,82800,,
+Projekt Migration von altem zu neuen GitLab,"Als Entwickler wollen wir die neuen Funktionen der neuen GitLab Instanz nutzten und müssen dazu das gesammte Projekt-Gruppe umziehen, sodass wir produktiver arbeiten können.
+
+---
+
+**DoD**
+- [x] Gruppe und Repos umgezogen
+- [x] Alle Links angepasst
+   - [x] Member Links
+   - [x] repo links
+   - [x] wiki links
+- [x] Allen Issues Weights gegebenm, die schon Storypunkte hatten
+- [x] Templates angepasst
+- [x] SSH Tutorial
+- [x] Alte Gruppe Archivieren
+- [x] Stakeholder informiert",74,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/74,Closed,Benedikt Beigang,bbeigang,"Benedikt Beigang, Luca Noack","bbeigang, lnoack",No,No,2023-06-06,2023-05-27 08:06:44,2023-06-04 14:18:17,2023-06-04 14:18:17,👓Sprint_02_1,3,"Backend,Documentation,Frontend",0,19800,,
+Issue Export nach Migration fixen,"Als Stakeholder möchte ich eine CSV haben die alle vergangenen Issues enthält, sodass ich diese nachträglich einsehen kann. Dazu muss nach der Migration des GitLabs die csv neu exportiert werden, sowie vorher allen issues ein milestone gegeben werden.
+
+---
+
+**DoD**
+- [x] Allen Issues einen Milestone gegeben
+- [x] CSV neu exportiert und in der Projektleitdokumentation abgelegt",75,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/75,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,2023-06-06,2023-05-27 08:22:27,2023-05-31 16:46:30,2023-05-31 16:46:30,👓Sprint_02_1,1,Documentation,0,2700,,
+Weekly - 27.05.2023,"Anlegen des Protokolls für das Weekly am 27.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_02_1/2023_05_27Weekly) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",77,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/77,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-27 11:59:42,2023-06-02 21:02:28,2023-05-27 14:26:58,👓Sprint_02_1,3,"Documentation,Meeting",0,42900,,
+Fix /spend time der Mitglieder,,79,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/79,Closed,Luca Noack,lnoack,Luca Noack,lnoack,No,No,,2023-05-29 15:02:35,2023-05-31 16:20:19,2023-05-30 15:17:45,👓Sprint_02_1,1,Documentation,0,0,,
+Weekly - 30.05.2023,"Anlegen des Protokolls für das Weekly am 30.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_02_1/2023_05_30Weekly) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",80,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/80,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-30 20:02:01,2023-06-02 21:03:08,2023-06-02 14:37:29,👓Sprint_02_1,2,"Documentation,Meeting",0,48000,,
+CustomerTalk_03 - 02.06.2023,"Anlegen des Protokolls für das Kundenmeeting am 02.06.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/CustomerTalk/2023_06_02) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",81,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/81,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-30 20:04:36,2023-06-02 21:03:40,2023-06-02 14:36:05,👓Sprint_02_1,2,"Documentation,Meeting",0,10200,,
+Weekendly - 03.06.2023,"Anlegen des Protokolls für das Weekendly am 03.06.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_02_1/2023_06_03Weekendly) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",82,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/82,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-30 20:07:05,2023-06-03 21:01:09,2023-06-03 14:59:39,👓Sprint_02_1,2,"Documentation,Meeting",0,28800,,
+Review und Retrospektive - 06.06.2023,"Anlegen des Protokolls in Form vom Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_02_1/2023_06_06Review_Retrospective) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",83,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/83,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-30 20:10:32,2023-06-11 14:29:22,2023-06-08 19:45:31,👓Sprint_02_1,2,"Documentation,Meeting",0,64800,,
+Anlegen einer Schnittstellenbeschreibung mit OpenAPI,"Als Entwickler möchte ich transparent sehen können, wie die Schnittstellen die ich zum Lösen meiner Aufgaben benötige aussehen, sodass ich meine zu entwickelnden Features schnell implementieren kann.
+
+---
+
+**Anmerkungen**
+- Eine [Test-Datei](https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/feature/api/TechnicalDocumentation/openapi.json) existiert schon samt Branch.
+- Endpunkte für Kommunikation von Backend und Frontend kann nicht so einfach als REST-Endpunkt dargestellt werden, es muss ein Workaround sich überlegt werden
+
+**DoD**
+- [x] Es wurden alle benötigten Endpunkte definiert in einer openapi.json Datei.
+- [x] WordToken
+- [x] Speechbubble
+- [x] DeleteSpeechbubble",84,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/84,Closed,Benedikt Beigang,bbeigang,Luca Noack,lnoack,No,No,,2023-05-30 20:32:15,2023-06-07 11:35:50,2023-06-06 12:34:26,👓Sprint_02_1,3,"Documentation,In review",0,7200,,
+Einpflegen der Änderungsvorschlägen von @lfranke2,"Im Review sind weitere Erkenntnisse über die Anforderungen unserer Schnittstellen herausgekommen, sodass unsere DTOs strukturell angepasst werden müssen. Die Änderungen müssen ins Git eingepflegt werden, damit alle Developer schnell auf die neuen Informationen zugreifen können.
+
+**DoD**
+- [x] Die DTOs wurden angepasst",85,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/85,Closed,Luca Noack,lnoack,Luca Noack,lnoack,No,No,,2023-05-31 11:25:04,2023-06-01 13:59:19,2023-05-31 14:20:09,👓Sprint_02_1,1,Documentation,0,120,,
+Dokumentation des Pilotens,"Als Entwicklungsteam und Stakeholder möchte ich eine Dokumentation über die Funktionalitäten im Piloten haben, damit alle Beteiligeten die selbe Vorstellung teilen, welche Funktionalitäten der Pilot beinhaltet.
+
+**DoD**
+- [x] Es wurde eine adoc-Datei im Wiki angelegt, die den Piloten definiert.
+- [x] Es existiert eine Visualisierung unserer Endpoints und der Identitäten die Kommunizieren.",86,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/86,Closed,Luca Noack,lnoack,Benedikt Beigang,bbeigang,No,No,,2023-05-31 11:32:22,2023-06-04 09:31:22,2023-06-02 19:02:11,👓Sprint_02_1,2,Documentation,0,5400,,

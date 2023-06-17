@@ -1,0 +1,125 @@
+Title,Description,Issue ID,URL,State,Author,Author Username,Assignee,Assignee Username,Confidential,Locked,Due Date,Created At (UTC),Updated At (UTC),Closed At (UTC),Milestone,Weight,Labels,Time Estimate,Time Spent,Epic ID,Epic Title
+Technical Research - Techstack,"Der Kunde benutzt auf seiner Seite **ASP.NET 6 (C#)** als Backend und **Angular (JS)** als Frontend. Er profitiert von einem ähnlichen Techstack, da ihm dies ermöglicht unsere Software leicht einzubauen. Es ist wichtig Einschätzen zu können, ob dieser Techstack **für unsere Entwickler bewältigbar** ist oder eine zu große Hürde darstellt.
+
+- [x] Die Recherche hat ein gutes Bild gegeben, ob der gewünschte Techstack von unseren Entwicklern in der vorhanden Zeit erlernbar ist
+- [x] Das Team hat eine Entscheidung getroffen, ob der vom Kunden vorgeschlagene Techstack verwendet werden kann oder nach anderen, einfacheren Technologien recherchiert werden muss.",8,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/8,Closed,Benedikt Beigang,bbeigang,Luca Noack,lnoack,No,No,2023-05-09,2023-04-29 14:25:09,2023-05-31 11:06:53,2023-05-11 08:05:09,👋Sprint_01_0,,Research,0,7200,,
+CI/CD Pipeline einrichten für das Testrepo,"Damit sichergestellt ist das die letzte Version unserer Software zu jedem Zeitpunkt für den Kunden deployed ist, sowie von hochwertiger Qualität ist, wird eine CI/CD Pipeline benötigt. Wir benötigen also ein Verständis davon wie man eine CI/CD Pipeline aufbaut. Dazu soll als Spielwiese das Testrepo genutzt werden.
+
+**DoD**
+- [x] CI/CD Pipeline für unsere Testumgebung
+* - [x] Build
+* - [x] Test",17,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/17,Closed,Benedikt Beigang,bbeigang,Luca Noack,lnoack,No,No,,2023-04-29 15:59:50,2023-06-01 19:13:26,2023-05-10 14:28:32,👋Sprint_01_0,,"Backend,Frontend",0,36000,,
+Technical Research - Angular,"Der Kunde verwendet auf seiner Seite Angular für sein Frontend. Für Ihn wäre eine Integration unserer Software einfach, wenn wir ebenfalls auf Angular setzten. Jedoch ist ebenfalls zu berücksichtigen, ob unser Team erfahren genug ist sich in Angular zügig einzuarbeiten im Vergleich zu anderen Frameworks.
+
+**DoD**
+- [x] Es wurde eine AsciiDoc-Datei erstellt in der die Ergbnisse prägnant formuliert sind.
+- [x] Es wurde ein einfaches Angular-Test-Projekt angelegt (lokal reicht), das demonstriert wie mit Angular gearbeitet wird.
+- [x] Es wurde eine leichte Funktionalität wie zB das Erstellen eines Buttons, der seine Farbe ändert beim Drücken, demonstriert.
+- [x] Es wurde eine Einschätzung gegeben wie schwer und geeignet Angular für unsere Zwecke ist.
+- [x] Die Ergebnisse wurden dem Team in der Review der Techno-Recherche präsentiert (ca. 10 Minuten).
+
+- Alle Ergebnisse sind in folgender [AsciiDoc-Datei](https://gitlab.imn.htwk-leipzig.de/projekt2023-o-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/TechnicalResearch/Angular)",10,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/10,Closed,Benedikt Beigang,bbeigang,Chantal Bley,cbley,No,No,2023-05-09,2023-04-29 14:44:27,2023-06-01 19:11:04,2023-05-10 11:24:00,👋Sprint_01_0,,"Frontend,Research",0,30600,,
+2. DesignThinking - 02.05.2023,"Anlegen des Protokolls für das Design-Thinking am 02.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_01_0/2023_05_02DesignThinking) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",18,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/18,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-01 06:48:24,2023-06-02 20:37:45,2023-05-04 19:50:31,👋Sprint_01_0,2,"Documentation,Meeting",0,82500,,
+Meeting (Review der TechnoRecherche) - 04.05.23,"Anlegen des Protokolls für die Review der Technorecherche am 02.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_01_0/2023_05_04Review) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",19,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/19,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-04 13:25:06,2023-06-02 20:38:25,2023-05-04 18:54:00,👋Sprint_01_0,2,"Documentation,Meeting",0,63000,,
+Wiki Migration,"Bislang wurden die Dokumente in das Repo hochgeladen. Diese Dateien sollen nun in das GitLab Wiki migriert werden.
+
+**DoD**
+- [x] Alle Datein sind Rüberkopiert worden
+- [x] Es wurden schöne Hauptseiten erstellt und die Links angepasst sodass diese funktionieren",23,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/23,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-08 18:58:20,2023-05-27 07:10:07,2023-05-08 20:58:46,👋Sprint_01_0,2,Documentation,0,10800,,
+CustomerTalk_01 - 05.05.2023,"Anlegen des Protokolls für das Kundenmeeting_01 (mit Philipp Platis) am 05.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/CustomerTalk/2023_05_05) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",22,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/22,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-05 13:34:14,2023-06-02 20:56:01,2023-05-07 12:20:03,👋Sprint_01_0,2,"Documentation,Meeting",0,14400,,
+C# and UnitTest Workshop - 06.05.2023,"Anlegen des Protokolls für den C# und UnitTest Workshop am 06.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_01_0/2023_05_06Workshop) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",21,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/21,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-04 20:07:48,2023-06-02 20:54:49,2023-05-07 12:14:43,👋Sprint_01_0,2,"Documentation,Meeting",0,41400,,
+Technical Research - Statische Quellcode-Analyse,"Um auch langfristig eine gute Codebasis zu haben, ist es wichtig von Anfang an den geschriebenen Code zu testen und zu bewerten.
+Dabei können Statische-Quellcode-Analysen helfen (zB SonarQube). Ziel soll es sein dem Team eine leicht einzubindene Analyse-Software zu zeigen, wie man diese verwendet und was sie für Vor- und Nachteile bietet im Vergleich zu anderen.
+
+Alle Ergebnisse sind in folgender [AsciiDoc-Datei](https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/TechnicalResearch/StatischeQuellcodeAnalyse)
+
+**DoD**
+- [x] Es wurde eine AsciiDoc-Datei erstellt in der die Ergbnisse prägnant formuliert sind.
+- [x] Es wurde ein Pro/Kontra Vergleich durchgeführt.
+- [x] Es gibt eine Schilderung wie die Software in unsere GitLab CI/CD Pipeline eingebunden werden kann.
+- [x] Die Ergebnisse wurden dem Team in der Review der Techno-Recherche präsentiert (ca. 10 Minuten).",7,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/7,Closed,Benedikt Beigang,bbeigang,Finn Johann Romeis,fromeis,No,No,2023-05-04,2023-04-29 14:17:23,2023-06-02 20:25:48,2023-05-04 20:03:40,👋Sprint_01_0,,Research,0,13800,,
+Technical Research - Verwendbarkeit von FFMpeg,"Es ist eine wichtige Grundvorraussetzung für unsere Software, Videos einzulesen, Untertitel zu bearbeiten, und die Audiospur zu manipulieren. Dabei kann die Bibliothek FFMpeg uns helfen. Wir benötigen dazu eine kleine Demonstration, dass die genannten Editierfunktionen leicht in einer Programmiersprache umsetzbar sind.
+
+**DoD**
+- [x] Es wurde eine AsciiDoc-Datei erstellt in der die Ergbnisse prägnant demonstriert werden.
+- [x] Es wurde demonstriert wie Video-(streams) einglesen werden können.
+- [x] Es wurde demonstriert wie Untertitel bearbeitet werden können.
+- [x] Es wurde demonstriert wie Audiospuren manipuliert werden können.
+- [x] Die Ergebnisse wurden dem Team in der Review der Techno-Recherche präsentiert (ca. 10 Minuten).",6,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/6,Closed,Benedikt Beigang,bbeigang,Christoph Neidahl,cneidahl,No,No,2023-05-04,2023-04-29 13:55:05,2023-05-30 15:28:19,2023-05-04 20:03:23,👋Sprint_01_0,,Research,0,12600,,
+Technical Research - ASP.NET,"Unser Kunde verwendet aus seiner Seite ASP.NET 6. Da unser Kunde unser Software im besten Fall verwenden möchte, wäre es praktisch für Ihn, wenn wir auf die gleiche Technologie setzten. Jedoch ist es auch wichtig, dass unser Entwicklerteam in der Lage ist, sich schnell in die Technologie einzuarbeiten. Es ist eine Bewertung notwenig, um entscheiden zu können die Technologie für unsere Zwecke verwendbar ist und vom Team schnell erlernt werden kann.
+
+**DoD**
+- [x] Es wurde eine AsciiDoc-Datei erstellt in der die Ergbnisse prägnant formuliert sind.
+- [x] Es wurde ein kleines ASP.NET Projekt erstellt (lokal reicht) das demonstriert wie ein ASP.NET Projekt aufgebaut ist und funktioniert. (Da ASP.NET ein sehr großes Framework ist muss sich auf das bewältigbare im Rahmen der Zeit beschränkt werden.)
+- [x] Es wurde recherchiert ob und wie ASP.NET zusammen mit Angular verwendet werden kann. Dazu kann sich mit dem Bearbeiter des Issues #10 zusammengetan werden, der sich mit Angular beschäftigt.
+- [x] Es wurde eine Einschätzung gegeben wie schwer und geeignet ASP.NET für unsere Zwecke ist.
+- [x] Die Ergebnisse wurden dem Team in der Review der Techno-Recherche präsentiert (ca. 10 Minuten).",11,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/11,Closed,Benedikt Beigang,bbeigang,AMINE JEGANI,ajegani,No,No,2023-05-04,2023-04-29 14:56:51,2023-05-30 08:29:04,2023-05-04 13:23:54,👋Sprint_01_0,,"Backend,Research",0,0,,
+Technical Research - Alternative Software/Frameworks/Libraries,"Wir benötigen einen Überblick welche Technologien und Lösungen bereits existieren. 
+Ziel soll es sein (Teil-)Lösungsansätze mit in unsere Softwarelösung zu übernehmen.
+
+**DoD**
+- [x] Es wurde eine AsciiDoc-Datei erstellt in der die Ergbnisse prägnant formuliert sind.
+- [x] Die Ergebnisse wurden dem Team in der Review der Techno-Recherche präsentiert (ca. 10 Minuten).",5,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/5,Closed,Benedikt Beigang,bbeigang,Pascal Fabian Dittes,pdittes,No,No,2023-05-04,2023-04-29 13:45:37,2023-05-30 08:27:04,2023-05-04 12:26:34,👋Sprint_01_0,,Research,0,8100,,
+Technical Research - C#,"Im Rahmen der Analyse des vom Kunden gewünschten Techstacks ist es relevant zu wissen, ob C# eine vom Team verwendbare Programmiersprache ist. Sie würde in Kombination mit ASP.NET verwendet werden. Dazu sollte eine Bewertung stattfinden, die die Erfahrungen der Entwickler berücksichtigt (Im ersten [Protokoll](https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/blob/feature/repoInitialization/Minutes/Sprint0/2023_04_25KickOffMeeting.adoc) ist vermerkt mit welchen Sprachen unsere Entwickler schon gearbeitet haben).
+
+**DoD**
+- [x] Es wurde eine AsciiDoc-Datei erstellt in der die Ergbnisse prägnant formuliert sind.
+- [x] Es sollten (falls vorhanden) Sprachfeatures und Libraies (zB FFMpeg, jedoch nicht ausführlich da von @cneidahl bearbeitet #6) dargestellt werden, die uns bei der Entscheidung helfen, ob C# eine gute Programmiersprache als Backend ist für unser Softwareprojekt.
+- [x] Es sollen (falls ersichtlich) Hürden dargestellt werden, die bei der Verwendung von C# zu berücksichtigen sind.
+- [x] Es wurde eine Einschätzung gegeben wie schwer und geeignet C# für unsere Zwecke ist.
+- [x] Die Ergebnisse wurden dem Team in der Review der Techno-Recherche präsentiert (ca. 10 Minuten).",9,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/9,Closed,Benedikt Beigang,bbeigang,Luca Niklas Franke,lfranke2,No,No,2023-05-04,2023-04-29 14:34:15,2023-05-31 10:55:59,2023-05-04 12:25:51,👋Sprint_01_0,,"Backend,Research",0,7200,,
+Create glossary,"
+Für ein besseres Verständnis welche Bedeutung die im Projekt genutzten Begriff bedeuten, wird ein Glossar benötigt in dem die wichtigsten Begriffe definiert sind.
+
+**DoD**
+
+- [x] Eine erste Version sollte die wichtigsten Begriffe die im Kontext von SCRUM auftauchen definieren.",1,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/1,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-04-29 12:35:03,2023-05-31 11:13:28,2023-04-30 10:14:18,👋Sprint_01_0,,Documentation,0,16200,,
+Ticket Maintenance - Technical Research,"Für die Technorecherche müssen Tickets geschrieben werden, sodass die _Definition of Done_ definiert ist.
+
+**DoD**
+- [x] Alle Tickets der TechnicalResearch wurden geschrieben und geschätzt.",12,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/12,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,2023-04-27,2023-04-29 15:25:30,2023-05-30 08:29:33,2023-04-29 15:28:17,👋Sprint_01_0,,Documentation,0,7200,,
+CustomerTalk_00 - 28.04.2023,"Anlegen des Protokolls für das Kundenmeeting_00 (mit Philipp Platis) am 27.04.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/CustomerTalk/2023_04_28) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",2,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/2,Closed,Benedikt Beigang,bbeigang,Luca Noack,lnoack,No,No,2023-04-28,2023-04-29 13:19:24,2023-06-02 20:18:38,2023-04-29 13:23:00,👋Sprint_01_0,2,"Documentation,Meeting",0,24600,,
+Kick off Meeting - 25.04.2023,"Anlegen des Protokolls für das Kick-Off-Meeting am 25.04.2023. 
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_01_0/2023_04_25KickOffMeeting) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",4,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/4,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-04-29 13:34:02,2023-06-02 20:20:36,2023-04-29 13:40:05,👋Sprint_01_0,2,"Documentation,Meeting",0,67500,,
+1. Design Thinking - 27.04.2023,"Anlegen des Protokolls für das Design-Thinking am 27.04.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_01_0/2023_04_27DesignThinking) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",3,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/3,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-04-29 13:27:25,2023-06-02 20:19:42,2023-04-29 13:33:08,👋Sprint_01_0,2,"Documentation,Meeting",0,85200,,

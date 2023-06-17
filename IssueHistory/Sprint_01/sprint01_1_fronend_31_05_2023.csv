@@ -22,7 +22,7 @@ Wir benötigen ein Angular Repositiory in unserem GitLab in dem wir arbeiten kö
 - [x] Kurzer Bericht wie man mindestes eine IDE verwendet mit diesem Repo
 - [x] Linux-Nutzer mitdenken, Bericht ergänzen was Entwickler die Linux nutzen bedenken und einstellen müssen
 - [x] gitignore
-- [x] gitattributes",9,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/9,Closed,Benedikt Beigang,bbeigang,"Chantal Bley, Finn Johann Romeis","cbley, fromeis",No,No,2023-05-16,2023-05-09 18:13:21,2023-05-28 17:32:54,2023-05-23 15:24:21,🛠Sprint_01_1,2,Frontend,0,0,,
+- [x] gitattributes",9,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/9,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,2023-05-16,2023-05-09 18:13:21,2023-06-02 21:08:58,2023-05-23 15:24:21,🛠Sprint_01_1,2,Frontend,0,12600,,
 Ausgereiftes Wireframe für Kunden,"Als Projektsponsor möchte ich ein Wireframe erstellen lassen, sodass ich mir die Nutzererfahrung frühstmöglich greifbar machen kann. Das Wireframe sollte eine klare Struktur aufweisen und die Benutzerfreundlichkeit berücksichtigen. Es dient als Grundlage für die weitere Entwicklung des Frontends.
 ---
 
@@ -41,4 +41,4 @@ Ausgereiftes Wireframe für Kunden,"Als Projektsponsor möchte ich ein Wireframe
 **DoD**
 
 - [x] Es werden mehrere Wireframes angefertigt mit Hilfe des Protokolls des Kundenmeetings
-- [x] Es soll sich nur auf MVP Aspekte konzentirert werden (Also zB keine Komfortfunktionen, außer Word-Confidence-Color).",11,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/11,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,2023-05-16,2023-05-09 18:31:42,2023-05-27 10:49:57,2023-05-18 10:59:04,🛠Sprint_01_1,3,Frontend,0,0,,
+- [x] Es soll sich nur auf MVP Aspekte konzentirert werden (Also zB keine Komfortfunktionen, außer Word-Confidence-Color).",11,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/11,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,2023-05-16,2023-05-09 18:31:42,2023-06-02 21:13:25,2023-05-18 10:59:04,🛠Sprint_01_1,3,Frontend,0,48600,,

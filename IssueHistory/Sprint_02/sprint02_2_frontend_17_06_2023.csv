@@ -7,7 +7,7 @@ API Endpunkt - Neue Sprechblase (Frontend-Sicht),"Als GUI möchte ich, dass das 
 **DoD**
 - [x] Neue Sprechblasen vom Backend werden entgegengenommen
 - [x] Neue Sprechblasen werden im Frontend visualisiert
-- [x] Confidence-Werte werden abgebildet durch Färben der jeweiligen Wörtern",3,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/3,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,,2023-05-22 08:49:59,2023-06-16 16:13:20,2023-06-14 18:57:51,✏Sprint_02_2,2,Frontend,0,29400,77,Sichtbarkeit
+- [x] Confidence-Werte werden abgebildet durch Färben der jeweiligen Wörtern",3,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/3,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,,2023-05-22 08:49:59,2023-06-17 09:06:41,2023-06-14 18:57:51,✏Sprint_02_2,2,Frontend,0,55200,77,Sichtbarkeit
 API Endpunkt - Aktualisierung einer Sprechblase (Frontend-Sicht),"Als Frontend möchte ich wenn eine Sprechblase Editiert wurde, die Änderungen an das Backend geschickt werden, sodass der Zustand im Backend aktuell bleibt.
 
 ---
@@ -21,7 +21,7 @@ API Endpunkt - Aktualisierung einer Sprechblase (Frontend-Sicht),"Als Frontend m
 - [x] OnFocusOut-Event o.ä. wir verwendet, um einen Rest-Call auszulösen
 - [x] Methode die Frontendobjekte in ein DTO umwandelt
 - [x] Der eigentliche Rest-Call ans Backend wird ausgeführt 
-- [x] UnitTests für die Umwandlung",5,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/5,Closed,Benedikt Beigang,bbeigang,"Chantal Bley, Finn Johann Romeis","cbley, fromeis",No,No,,2023-05-23 18:02:53,2023-06-16 16:12:19,2023-06-14 18:57:40,✏Sprint_02_2,3,Frontend,0,97500,79,Bearbeiten/Navigieren
+- [x] UnitTests für die Umwandlung",5,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/5,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,,2023-05-23 18:02:53,2023-06-17 09:07:10,2023-06-14 18:57:40,✏Sprint_02_2,3,Frontend,0,120000,79,Bearbeiten/Navigieren
 Job Failed #13003 Pipeline Linting,"Job [#13003](https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/jobs/13003) failed for 4d9e8b9cf29b9f811784e008d56de6ce72349f8b:
 
 No Space left on the device

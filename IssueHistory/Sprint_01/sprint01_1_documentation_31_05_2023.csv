@@ -1,0 +1,80 @@
+Title,Description,Issue ID,URL,State,Author,Author Username,Assignee,Assignee Username,Confidential,Locked,Due Date,Created At (UTC),Updated At (UTC),Closed At (UTC),Milestone,Weight,Labels,Time Estimate,Time Spent,Epic ID,Epic Title
+Weekly - 14.05.2023,"Anlegen des Protokolls für das Weekly am 14.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_01_1/2023_05_14Weekly) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",34,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/34,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-04 20:06:04,2023-06-02 20:43:49,2023-05-14 14:02:17,🛠Sprint_01_1,2,"Documentation,Meeting",0,16200,,
+Sprint Planning - 11.05.2023,"Anlegen des Protokolls für das Sprint Planning am 11.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_01_1/2023_05_11SprintPlanning) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",33,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/33,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-04 20:06:04,2023-06-02 20:44:46,2023-05-14 12:24:09,🛠Sprint_01_1,2,"Documentation,Meeting",0,39600,,
+"Glossar um das Thema ""Bootstrap"" erweitern","",31,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/31,Closed,Benedikt Beigang,bbeigang,Luca Noack,lnoack,No,No,,2023-05-10 11:25:27,2023-05-31 11:05:56,2023-05-11 10:11:03,🛠Sprint_01_1,1,Documentation,0,900,,
+Retrospective and Sprint Planning - 09.05.2023,"Anlegen des Protokolls für das die Retrospektive und das Sprint Planning am 09.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_01_0/2023_05_09Retrospective_SprintPlanning) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",20,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/20,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-04 20:06:04,2023-06-11 18:13:57,2023-05-10 14:38:44,🛠Sprint_01_1,2,"Documentation,Meeting",0,88200,,
+Backend Streaming zu Frontend,"Als Entwickler benötige ich ein Verständis davon wie das Frontend mit dem Backend kommuniziert, sodass ich die vom Kunden geforderten Funktionalitäten implementieren kann.
+---
+
+**Anmerkungen**
+- mögliche Lösung zB WebSocket, es gibt aber auch andere Lösungen!!!
+
+**DoD**
+- [x] Kleiner Bericht wie dies umgesetzt wird
+- [x] Kleine Softwaredemonstration wie dies funktionieren könnte, mit
+  - [x] Text
+  - [x] Binärdaten (wie Audio)
+- [x] .adoc-Datei wurde ins Wiki gelegt unter [TechnicalResearch](https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/TechnicalResearch/TechnicalResearch)",37,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/37,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,2023-05-16,2023-05-11 12:23:13,2023-05-30 17:33:04,2023-05-23 15:51:01,🛠Sprint_01_1,5,"Backend,Research",0,0,,
+Statische Codeanalyse in die CI/CD-Pipeline einbauen,"Als Entwickler möchte ich laufend sicher sein können, dass mein geschriebener Code von guter Qualität ist, sodass mein Kunde das bestmögliche Produkt erhält.
+---
+Um dieses Ziel zu erreichen wollen wir eine Statische Quellcode Analyse Software in unseren Code einbauen, sodass wir den aus der User Story gestellten Wunsch erfüllen können.
+
+**Anmerkungen**
+* Es kann sein dass hier eine Abhängigkeit besteht da die CI/CD Pipeline zunächst erstellt sein muss. Es wäre jedoch möglich sich einen Dockercontainer runterzuladen in dem man die Pipeline testen kann. Mit den Bearbeitern der Tickets #27 und #28 sollte sich daher abgesprochen werden.
+* Ticket #26 hat sich schon mit der SQA beschäftigt => bei Fragen @fromeis fragen
+* @lfranke2 kennt sich schon ein wenig mit der Pipeline aus
+
+**DoD**
+- [x] Es wurde für das Backend und das Frontend eine statische Codeanalyse eingebaut in die CI/CD Pipeline.
+- [x] Es wurde getestet dass die Pipeline funktioniert
+- [x] Es wurde erstmal die Standardeinstellung verwendet",26,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/26,Closed,Benedikt Beigang,bbeigang,Luca Niklas Franke,lfranke2,No,No,2023-05-16,2023-05-09 17:59:37,2023-05-31 11:06:01,2023-05-23 15:19:52,🛠Sprint_01_1,3,"Backend,Frontend",0,16200,,
+Frontend zu Backend Kommunikation,"Als Entwickler benötige ich ein Verständis davon wie das Frontend mit dem Backend kommuniziert, sodass ich die vom Kunden geforderten Funktionalitäten implementieren kann.
+---
+
+**Anmerkungen**
+* [Recherche von Amine](https://gitlab.imn.htwk-leipzig.de/projekt2023-u-live-stream-editor-zur-korrektur-von-untertiteln-gbs-gmbh1/documentation/-/wikis/TechnicalResearch/ASPNET_ANGULAR_HTTP)
+* Es existieren eventuell Abhängigkeiten zur Repository-Erstellung
+
+**DoD**
+- [x] Call an die REST-API vom Frontend aus
+- [x] Mithilfe der Antwort der REST-API das UI ändern
+- [x] Kleiner Bericht wie auf beiden Seiten die Syntax funktioniert",36,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/36,Closed,Benedikt Beigang,bbeigang,AMINE JEGANI,ajegani,No,No,2023-05-16,2023-05-11 12:08:49,2023-05-30 08:43:57,2023-05-18 14:24:08,🛠Sprint_01_1,3,Research,0,0,,
+Personas anlegen,"Als Entwickler benötige ich verschiedene Personas, sodass ich mir die Person für die ich meinen Code schreibe vorstellen kann. Sie soll mir dabei helfen bei Entscheidungen die ich treffen muss, die Beste für den Kunden zu treffen.
+---
+
+**DoD**
+- [x] Stenografen
+- [x] Mensch ohne Eigenschaften
+- [x] Anwender von GoSpeech",25,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/25,Closed,Benedikt Beigang,bbeigang,Pascal Fabian Dittes,pdittes,No,No,2023-05-16,2023-05-09 17:32:38,2023-05-30 08:41:31,2023-05-18 11:00:19,🛠Sprint_01_1,2,Documentation,0,14400,,
+CustomerTalk_02 - 17.05.2023,"Anlegen des Protokolls für das Kundenmeeting_00 (mit Philipp Platis) am 17.04.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/CustomerTalk/2023_05_17) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",39,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/39,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-16 20:13:39,2023-06-02 20:59:30,2023-05-18 10:58:46,🛠Sprint_01_1,2,"Documentation,Meeting",0,30600,,
+Review und ProductVision - 16.05.2023,"Anlegen des Protokolls für die Review und Produktvision am 16.05.2023.
+Dazu zählt das Vorbereiten und Nachbereiten des Meetings.
+Außerdem wird hier die Zeit erfasst die für die Teilnahme aufgewendet wurde.
+
+**DoD**
+- [x] Das Meeting hat stattgefunden
+- [x] Das [Protokoll](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Minutes/Sprint_01_1/2023_05_16Review_ProductVision) ist erstellt und beinhaltet alle wichtigen Entscheidungen, Fragen und Antworten, sowie die für das Meeting relevante Agenda",35,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/35,Closed,Benedikt Beigang,bbeigang,Benedikt Beigang,bbeigang,No,No,,2023-05-04 20:06:04,2023-06-02 20:53:48,2023-05-16 20:09:24,🛠Sprint_01_1,2,"Documentation,Meeting",0,64500,,

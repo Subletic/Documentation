@@ -1,0 +1,22 @@
+Title,Description,Issue ID,URL,State,Author,Author Username,Assignee,Assignee Username,Confidential,Locked,Due Date,Created At (UTC),Updated At (UTC),Closed At (UTC),Milestone,Weight,Labels,Time Estimate,Time Spent,Epic ID,Epic Title
+Speicherung und Verarbeitung von Untertiteln/Sprechblasen im Backend,"Als API-Schnittstelle im Backend, benötige ich Zugriff auf die Sprechblasen, sodass ich neue erstellen, bearbeiten und weiterschicken kann.
+
+**Anmerkungen**
+* Die Wahl der richtigen Datenstruktur sollte gut überlegt sein, da diese im Zweifel nicht gut ausgetauscht werden kann.
+* Im Technical Spike vom 24.05.2023 wurde die Architektur, sowie die Schnittstellen entworfen.
+
+**DoD**
+- [x] Es wurde eine Datenstruktur im Backend implementiert, die Sprechblasen speichert mit all den relevanten Daten die zur Verfügung stehen
+- [x] Es wurde ein Algorithmus implementiert, der aus den entgegengenommenen Daten des Mock-Servers sinnvoll große Sprechblasen erstellt bzw auf diese mapped.
+- [x] Klassendiagram erstellen und im Wiki ablegen (Technische Dokumentation)
+- [x] Wurde an Schnittstellenbeschreibung von Speechmatic angepasst",5,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/5,Closed,Benedikt Beigang,bbeigang,Luca Niklas Franke,lfranke2,No,No,2023-06-06,2023-05-22 09:13:25,2023-06-06 16:35:52,2023-06-06 16:35:52,👓Sprint_02_1,5,Backend,0,23400,77,Sichtbarkeit
+API Endpunkt - Neue Sprechblase (Backend-Sicht),"Als Frontend benötige ich Schnittstellen im Backend zur Annahme und Weitergabe der Untertitel und Sprechblasen, sodass ich die Untertitel darstellen kann. Wir benötigen also einen REST Endpunkt (als WebSocket) den das Frontend abbonieren kann um neue Sprechblasen zu erhalten, falls diese Verfügbar sind.
+
+**DoD**
+
+Im Backend existiert ein REST-Endpunkt:
+- [x] WebSockets welche das Frontend abonnieren können, um neue Sprechblasen zu erhalten und diese zu visualisieren
+- [x] Unit-Tests, welche den Endpunkt testen
+
+
+Alle Ergebnisse sind in folgender [AsciiDoc-Datei](https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/TechnicalDocumentation/Doku_API_Endpunkt_neue_Sprechblase)",11,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/11,Closed,Benedikt Beigang,bbeigang,"Luca Niklas Franke, Chantal Bley","lfranke2, cbley",No,No,2023-06-06,2023-05-22 08:37:00,2023-06-10 10:05:36,2023-06-06 16:16:35,👓Sprint_02_1,5,Backend,0,51300,77,Sichtbarkeit

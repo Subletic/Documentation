@@ -5,7 +5,7 @@ API Endpunkt - Aktualisierung einer Sprechblase (Backend-Sicht),"Als Frontend be
 
 Im Backend existieren REST-Endpunkte für:
 - [x] Endpunkt im Backend, der die aktualisierte Sprechblase entgegennimmt und in die interne Datenstruktur des Backends schreibt
-- [x] Unit-Tests, die den Endpunkt testen",9,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/9,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, AMINE JEGANI","fromeis, ajegani",No,No,,2023-05-22 08:37:00,2023-06-14 19:14:22,2023-06-13 17:48:38,✏Sprint_02_2,2,Backend,0,63900,79,Bearbeiten/Navigieren
+- [x] Unit-Tests, die den Endpunkt testen",9,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/9,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, AMINE JEGANI","fromeis, ajegani",No,No,,2023-05-22 08:37:00,2023-06-17 09:05:39,2023-06-13 17:48:38,✏Sprint_02_2,2,Backend,0,67500,79,Bearbeiten/Navigieren
 API Endpunkt - WebSocket Endpunkt von Speechmatics abbonieren,"Als interne Datenverwaltung im Backend benötige ich einen Endpunkt der den WebSocket von Speechmatics abboniert, sodass ich für einen gegebenen Audio-Stream  eine Transkription erhalte.
 
 **Anmerkungen**
