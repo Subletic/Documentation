@@ -20,7 +20,7 @@
 == Pilot
 
 * link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/start-pilot[Lauffähiger Pilot]
-* link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/Pilotbeschreibung[Pilotbeschreibung]
+* link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/ProjectOverview/Pilotbeschreibung[Pilotbeschreibung]
 * link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/container_registry/161[Docker-Dateien-Frontend]
 * link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/container_registry/160[Docker-Dateien-Backend]
 * link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/GitLab-Action[GitLab-Action]
