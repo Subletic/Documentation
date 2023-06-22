@@ -28,7 +28,13 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 |Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/ + 
 Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
-| Erneut auftretende Speicherplatzprobleme in der Ci/Cd-Pipeline, halten die Developer von ihrer Arbeit ab. | Problem | @all | hoch | 11.06.2023 | @lnoack | Immer wieder Anpassung der Pipeline, jetzt noch zusätzliches in verbindung setzten mit den Admins der GitLab Insanz | @lnoack | 15.06.2023
+| Wichtige Architektur-Entscheidung zum Thema: wie handhaben wir Audio im Backend und Frontend birgt Risiko da große Unsicherheit besteht, ob der nun gewählte Weg der langfristig Richtige ist, jedoch die Zeit fehlt sich länger mit der Problematik zu beschäftigen | Bedenken | Produkt | hoch | 22.06.2023 | @bbeigang | Recherche zu möglichen Ansätzen, Bibliotheken, etc. und Verkleinerung des MVPs | @lnoack | offen
+
+| Erstellung eines Poster und Videos mit vielen Anforderungen, kostet viel Zeit | Problem | Produkt | mittel | 21.06.2023 | @bbeigang | @bbeigang kann sich weniger um Software-seitige Probleme der Entwickler kümmern, da Erstellung von Poster und Video sehr aufwändig ist | @bbeigang | offen
+
+| Implementieren der Echtzeit-Audiofunktionalitäten stellt sich als komplizierter als gedacht heraus, da kaum Kenntnisse im Team existieren | Problem | Produkt | hoch | 20.06.2023 | @bbeigang | Recherche zu möglichen Ansätzen, Bibliotheken, etc. und Verkleinerung des MVPs | @lnoack | offen
+
+| Erneut auftretende Speicherplatzprobleme in der Ci/Cd-Pipeline, halten die Developer von ihrer Arbeit ab. | Problem | @all | hoch | 20.06.2023 | @bbeigang | Immer wieder Anpassung der Pipeline, jetzt noch zusätzliches in verbindung setzten mit den Admins der GitLab Insanz | @lnoack | 15.06.2023
 
 | @lnoack kümmert sich um das Deployment unserer Software und die Kommunikation mit den System-Administration | Änderungsantrag | @lnoack | niedrig | 09.06.2023 | @lnoack | keine | @lnoack | 09.06.2023
 
