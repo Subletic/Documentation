@@ -34,6 +34,8 @@ Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortli
 
 | Implementieren der Echtzeit-Audiofunktionalitäten stellt sich als komplizierter als gedacht heraus, da kaum Kenntnisse im Team existieren | Problem | Produkt | hoch | 20.06.2023 | @bbeigang | Recherche zu möglichen Ansätzen, Bibliotheken, etc. und Verkleinerung des MVPs | @lnoack | offen
 
+| Das Exportieren von Issues als CSV im GitLab ist fehlerhaft, wenn mehrere Milestones als Filter gesetzte werden. Dies hat dazu geführt, dass im ersten Sprint Issues nicht exportiert wurden. | Problem | @all | niedrig | 17.06.2023 | @bbeigang | Stakeholder wurden informiert. Issues wurden nachträglich hinzugefügt, fehlen jedoch bei Sprint_01 Tag | @bbeigang | 17.06.2023
+
 | Erneut auftretende Speicherplatzprobleme in der Ci/Cd-Pipeline, halten die Developer von ihrer Arbeit ab. | Problem | @all | hoch | 20.06.2023 | @bbeigang | Immer wieder Anpassung der Pipeline, jetzt noch zusätzliches in verbindung setzten mit den Admins der GitLab Insanz | @lnoack | 15.06.2023
 
 | @lnoack kümmert sich um das Deployment unserer Software und die Kommunikation mit den System-Administration | Änderungsantrag | @lnoack | niedrig | 09.06.2023 | @lnoack | keine | @lnoack | 09.06.2023
