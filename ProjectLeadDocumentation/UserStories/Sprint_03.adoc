@@ -2,7 +2,7 @@
 :frontend: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/
 :backend: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/
 
-= User Stories erstellt in Sprint 2 
+= User Stories erstellt in Sprint 3
 :toc:
 
 == Nicht-Funktionale Anforderungen
