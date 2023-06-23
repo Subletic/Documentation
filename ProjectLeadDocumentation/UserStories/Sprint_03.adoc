@@ -1,0 +1,22 @@
+:doku: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/
+:frontend: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/
+:backend: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/
+
+= User Stories erstellt in Sprint 2 
+:toc:
+
+== Nicht-Funktionale Anforderungen
+
+[options="header"]
+|===
+| MVP Übersicht für Kunden
+| Als Kunde möchte ich eine Übersicht über den geplanten Verlauf des Projekts, sodass ich weiß mit welchen Features ich wann rechnen kann.
+a| 
+* link:{doku}104[MVP Übersicht für Kunden]
+|===
+
+
+
+== Funktionale Anforderungen
+
+
