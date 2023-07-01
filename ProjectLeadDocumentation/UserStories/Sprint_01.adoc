@@ -177,7 +177,7 @@
 
 [options="header"]
 |===
-| Audio-Geschwindigkeits Einstellung
+| Audio-Sprungfunktion
 | Als Anwender benötige ich die Funktionalität, während des Bearbeitens in der Audio zurückzuspringen, sodass ich falls ich unaufmerksam war oder ein Wort schlecht ausgesprochen wurde, das Gesagte noch einmal hören kann.
 |===
 
