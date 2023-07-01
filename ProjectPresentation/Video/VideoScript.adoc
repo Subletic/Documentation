@@ -1,0 +1,38 @@
+= Script für das 6 Minütige Video
+
+== 1. Einleitung (ca. 30 Sekunden)
+* Projekt Thema vorstellen, dabei auch auf das Hauptziel unsere Software eingehen
+* Kurz wer sind wir also unsere Namen
+* Name unseres Kunden
+** Grundig Business Systems oder Grundig Business Systems GmbH & Co. KG
+
+== 2. Problemstellung (ca. 1 Minute)
+* nochmal zeigen was unser Kunde als Problem ausgeschrieben hat, hierbei bin ich mir nicht 100%ig sicher ob wir das brauchen
+* könnte dann allgemeiner sein ("eine Software wie diese gibt es nicht?")
+** hierbei vielleicht noch auf Anwendungsbereiche eingehen: Landtag usw. (macht einen sehr Professionellen eindruck ^^)
+* Anforderungen des Kunden:
+** DSGVO-Konform
+** Mitdenken von Anforderungen von Stenografen
+
+== 3. Lösung (ca. 1 Minute)
+* Wie sieht eine Softwarelösung aus?
+* hervorheben der Wichtigsten Funktionen, welche vlt. auch von Philipp ausgerufen wurden
+* hier erklären wir welche Tools und Libraries sich als hilfreich herausgestellt haben
+** FFMpegCore
+** SignalR
+** Web-Audio-API
+* Hier können wir auch auf die Vorteile unserer Software eingehen
+
+== 4. Entwicklung (ca. 1.5 Minuten)
+* am besten Screenshots der Demos oder so ein Entwicklungsprozess vom Piloten zum MVP
+* vlt. ausgewählte Passagen Quelltext?
+
+== 5. Funktionalität (ca 2 Minuten)
+* eingehen auf die Bestehende Funktionalität was haben wir bisher
+** Wie eine Art "Demo" hauptfunktionalitäten der Software hervorheben
+* wie funktioniert unsere Software für den Endnutzer
+
+== 6. Ausblick (30 Sekunden bis 1 Minute)
+* Hier würde ich sagen gehen wir darauf ein wie wir unsere Software weiter verbessern, weiterentwickeln
+** Hardware Komponenten vielleicht sogar an dem Tag mit bringen zum zeigen?
+
