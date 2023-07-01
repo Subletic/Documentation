@@ -5,6 +5,21 @@ jedem Sprintende aktualisiert.
 
 \{check the items by true or false}
 
+=== Sprint_03
+
+[cols=",",options="header",]
+|===
+|item |score
+|Was a sponsor appointed to the project from the beginning? | true
+|Is the sponsor involved in high-level aspects of the project? | true
+|Is there an effective setup for the project documents? | true
+|Are there enough key team members appointed to the project? | true
+|Were key team members actively involved in planning the project? | true
+|Is the Project Description well formed and useful? | true
+|Is the Follow-Up Register well formed and useful? | true
+|Is the Challenge Register current, well formed and useful? | true
+|===
+
 === Sprint_02
 
 [cols=",",options="header",]

@@ -28,11 +28,11 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 |Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/ + 
 Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
-| Wichtige Architektur-Entscheidung zum Thema: wie handhaben wir Audio im Backend und Frontend birgt Risiko da große Unsicherheit besteht, ob der nun gewählte Weg der langfristig Richtige ist, jedoch die Zeit fehlt sich länger mit der Problematik zu beschäftigen | Bedenken | Produkt | hoch | 22.06.2023 | @bbeigang | Recherche zu möglichen Ansätzen, Bibliotheken, etc. und Verkleinerung des MVPs | @lnoack | offen
+| Wichtige Architektur-Entscheidung zum Thema: wie handhaben wir Audio im Backend und Frontend birgt Risiko, da große Unsicherheit besteht, ob der nun gewählte Weg der langfristig Richtige ist, jedoch die Zeit fehlt sich länger mit der Problematik zu beschäftigen | Bedenken | Produkt | hoch | 22.06.2023 | @bbeigang | Recherche zu möglichen Ansätzen, Bibliotheken, etc. und Verkleinerung des MVPs | @lnoack | 30.06.2023
 
 | Erstellung eines Poster und Videos mit vielen Anforderungen, kostet viel Zeit | Problem | Produkt | mittel | 21.06.2023 | @bbeigang | @bbeigang kann sich weniger um Software-seitige Probleme der Entwickler kümmern, da Erstellung von Poster und Video sehr aufwändig ist | @bbeigang | offen
 
-| Implementieren der Echtzeit-Audiofunktionalitäten stellt sich als komplizierter als gedacht heraus, da kaum Kenntnisse im Team existieren | Problem | Produkt | hoch | 20.06.2023 | @bbeigang | Recherche zu möglichen Ansätzen, Bibliotheken, etc. und Verkleinerung des MVPs | @lnoack | offen
+| Implementieren der Echtzeit-Audiofunktionalitäten stellt sich als komplizierter als gedacht heraus, da kaum Kenntnisse im Team existieren | Problem | Produkt | hoch | 20.06.2023 | @bbeigang | Recherche zu möglichen Ansätzen, Bibliotheken, etc. und Verkleinerung des MVPs | @lnoack | 30.06.2023
 
 | Das Exportieren von Issues als CSV im GitLab ist fehlerhaft, wenn mehrere Milestones als Filter gesetzte werden. Dies hat dazu geführt, dass im ersten Sprint Issues nicht exportiert wurden. | Problem | @all | niedrig | 17.06.2023 | @bbeigang | Stakeholder wurden informiert. Issues wurden nachträglich hinzugefügt, fehlen jedoch bei Sprint_01 Tag | @bbeigang | 17.06.2023
 

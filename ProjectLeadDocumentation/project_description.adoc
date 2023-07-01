@@ -5,7 +5,9 @@
 |===
 a| === Purpose and Expected Benefits
 
-Im Rahmen des Softwareprojekts und Projekt-Management-Praktikum soll den Beteiligten Studierenden die Möglichkeit geboten werden an der Entwicklung einer Software von an Anfang bis Ende zu partizipieren. Unser Projekt entsteht zusammen mit der _Grundig Business GmbH & Co. KG_ (gbs). Es soll ein Livestream-Editor konzipiert und entwickelt werden der es erlaubt Untertitel live zu korrigieren. Bislang hat sich die _gbs_ mit der KI-gestützten Sprachsynthese von Livemitschnitten beschäftigt und dafür das Tool _GoSpeech_ geschaffen. Unser Tool soll nun die Möglichkeit bieten die Schwachstellen von _GoSpeech_ einfach, schnell und intuitiv zu korrigieren, um dem Zuschauer den perfekten Untertitel bieten zu können. Dabei sollen im besonderen beeinträchtigte Menschen mitgedacht werden - auf Anwender und Zuschauer Seite.
+Im Rahmen des Softwareprojekts und Projekt-Management-Praktikum soll den Beteiligten Studierenden die Möglichkeit geboten werden an der Entwicklung einer Software von an Anfang bis Ende zu partizipieren. Unser Projekt entsteht zusammen mit der _Grundig Business GmbH & Co. KG_ (gbs). Es soll ein Livestream-Editor konzipiert und entwickelt werden der es erlaubt Untertitel live zu korrigieren. Bislang hat sich die _gbs_ mit der KI-gestützten Sprachsynthese von Mitschnitten für den Endanwender beschäftigt und dafür das Tool _GoSpeech_ geschaffen. 
+
+Unser Tool soll einen Schritt weiter als _GoSpeech_ gehen indem in Echtzeit-Umgebungen die Möglichkeit geboten wird einfach, schnell und intuitiv generierte Untertitel zu korrigieren. Das Ziel ist dem Zuschauer den perfekten Untertitel bieten zu können, aber gleichzeitig die Arbeit der Untertitelung auf ein Minimum zu reduzieren. Dabei sollen im besonderen beeinträchtigte Menschen mitgedacht werden - auf Anwender und Zuschauer Seite.
 |===
 
 |===
@@ -13,7 +15,7 @@ a| === Expected Cost and Duration
 
 Das Projekt hat eine zeitliche Einschränkung von 1 Jahr, wobei effektiv davon nur 6 Monate genutzt werden können. Grund dafür sind die Semesterferien bei denen auszugehen ist das die Entwicklung pausiert. Darüber hinaus sind alle Beteiligten nicht Vollzeit am Entwicklern, da sie durch andere Module des Studiums gebunden sind. So lässt sich Zeit als wertvollste Ressource identifizieren. 
 
-Positiv hervorzuheben ist dass die Entwickler nicht bezahlt werden müssen, da sie das Projekt im Rahmen des Studiums belegt haben. Wir erwarten ein erstes Minimal-Viable-Product nach drei Monaten, bzw. Ende Juni/Anfang Juli 2023. Zu diesem Zeitpunkt soll die minimalste Umsetzung des Tools entstanden sein, sodass sich in den Folgemonaten auf weitere für den Kunden relevante Features konzentriert werden kann.
+Positiv hervorzuheben ist, dass die Entwickler nicht bezahlt werden müssen, da sie das Projekt im Rahmen des Studiums belegt haben. Wir erwarten ein erstes Minimal-Viable-Product nach drei Monaten, bzw. Ende Juni/Anfang Juli 2023. Zu diesem Zeitpunkt soll die minimalste Umsetzung des Tools entstanden sein, sodass sich in den Folgemonaten auf weitere für den Kunden relevante Features konzentriert werden kann.
 |===
 
 |===
