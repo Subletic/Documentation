@@ -1,12 +1,27 @@
 = Script für das 6 Minütige Video
+:toc:
 
-== 1. Einleitung (ca. 30 Sekunden)
+== 1. Einleitung (ca. 15 Sekunden)
+
+=== Notes
 * Projekt Thema vorstellen, dabei auch auf das Hauptziel unsere Software eingehen
 * Kurz wer sind wir also unsere Namen
 * Name unseres Kunden
 ** Grundig Business Systems oder Grundig Business Systems GmbH & Co. KG
 
+=== Text
+Guten Tag und herzlich willkommen zur Projektpräsentation von Subletic. In diesem Video möchten wir Ihnen unsere innovative Software vorstellen, mit der die korrekte Untertitelung von Live-Streams zu einem Kinderspiel wird. Kommen Sie mit und lernen Sie unseren innovative Software-Lösung kennen.
+
+Tauchen Sie mit uns ein und entdecken Sie, wie Subletic das Korrigieren von Live-Untertiteln vereinfacht und optimiert.
+
+=== Visual
+1. Startfolie (10s)
+1.1 Namen, etc.
+
+
 == 2. Problemstellung (ca. 1 Minute)
+
+=== Notes
 * nochmal zeigen was unser Kunde als Problem ausgeschrieben hat, hierbei bin ich mir nicht 100%ig sicher ob wir das brauchen
 * könnte dann allgemeiner sein ("eine Software wie diese gibt es nicht?")
 ** hierbei vielleicht noch auf Anwendungsbereiche eingehen: Landtag usw. (macht einen sehr Professionellen eindruck ^^)
@@ -14,7 +29,21 @@
 ** DSGVO-Konform
 ** Mitdenken von Anforderungen von Stenografen
 
+=== Text
+
+Alice ist Stenografin für einen Landtag. Sie ist seit einigen Jahren in Ihrem Beruf schon tätig. Seit kurzem hat sie von den großen Fortschritten in der Sprachsynthese gehört und fragt sich ob auch sie davon profitieren kann. Jedoch weiß sie als Stenografin, wie wichtig korrekte Transkriptionen sind in politischen Kontexten und stellt sich deshalb die Frage: "_Kann ich der KI denn blind vertrauen?_". 
+
+Nein, in vielen Kontexten braucht es den Menschen, der der Maschine auf die Finger guckt. Und genau dabei möchte unsere Software Subletic, Alice unterstützen. So hat Sie durch die automatische Sprachsynthese weniger Zeitdruck bei der Stenografie, kann aber gleichzeitig sicher sein, dass die Transkription korrekt ist. 
+
+Gleichzeitig profitieren die Zuschauer zuhause von besseren Untertiteln und müssen sich nicht mit meist schlechten generierten Untertitel zufrieden geben. Und damit die Software auch tatsächlich von Alice in Ihrem Landtag verwendet werden darf, ist sie oben drauf noch DSGVO-konform.
+
+=== Visual
+
+* Crazy Animation von Alice, das alte Haus 💁‍♀️
+
 == 3. Lösung (ca. 1 Minute)
+
+=== Notes
 * Wie sieht eine Softwarelösung aus?
 * hervorheben der Wichtigsten Funktionen, welche vlt. auch von Philipp ausgerufen wurden
 * hier erklären wir welche Tools und Libraries sich als hilfreich herausgestellt haben
@@ -22,6 +51,24 @@
 ** SignalR
 ** Web-Audio-API
 * Hier können wir auch auf die Vorteile unserer Software eingehen
+
+=== Text
+Was macht also unsere Software Subletic?
+Zunächst wird ein beliebiger Live-Stream eingelesen, zum Beispiel von einer Landtagsdebatte, wie bei Alice.[Animation]
+
+Nun erscheinen auf der Benutzeroberfläche nach und nach die erzeugte Transkriptionen, in sogenannten Sprechblasen. In einem festgesetzten Zeitfenster von einer Minute, können nun die fehlerhaften Wörter korrigiert werden.[Software zeigen mit ankommenden Sprechblasen] 
+
+Dabei unterstützt die Software bei der Identifikation von falsch erkannten Wörtern, indem die Wörter, bei denen die Speech-Engine sich unsicher ist, farbig markiert werden. [Umrandung der farbigen Wörter]
+
+Ein weiteres Hilfsmittel, welches Alice schon aus der Stenografie bekannt ist, ist ein Playback des Gesagten, in der vor und zurück gesprungen werden kann. [Audio ein wenig abspielen, in audio springen, audio wieder weg] Somit kann sie sich vergewissern, ob die Transkription korrekt ist.
+
+Fällt eine Sprechblase aus dem Zeitfenster heraus, verschwindet sie von der Benutzeroberfläche und ist damit bereit für die Auslieferung an die Zuschauer.
+
+
+=== Visual
+
+* Video von unserer Software die die genannten Features visualisieren 
+
 
 == 4. Entwicklung (ca. 1.5 Minuten)
 * am besten Screenshots der Demos oder so ein Entwicklungsprozess vom Piloten zum MVP
@@ -32,7 +79,12 @@
 ** Wie eine Art "Demo" hauptfunktionalitäten der Software hervorheben
 * wie funktioniert unsere Software für den Endnutzer
 
+== Text
+
+Homeoffice als Stenografin ist mittels unserer Software kinderleicht. [Zoom auf Monitor mit unserer Software, übergang zur richtigen Software] (Bei switch ins Programm, läuft dann im Hintergrund läuft dann der Ton der Audio) Wie Sie sehen [Lautstärken Anpassung] läuft der Text ohne größere Mühen über den Monitor. Hierbei ist es für Anwender einfach [Korrektur von einem Gelben/Rotem Wort] direkt in Fehlerhaft Übersetzungen einzugreifen und somit Zuschauern ein vernünftigen Untertitel zu liefern. *Denn was ist blöder als Taub zu sein, schließlich schlecht Untertitel*
+
 == 6. Ausblick (30 Sekunden bis 1 Minute)
 * Hier würde ich sagen gehen wir darauf ein wie wir unsere Software weiter verbessern, weiterentwickeln
 ** Hardware Komponenten vielleicht sogar an dem Tag mit bringen zum zeigen?
+*** Vielleicht sogar hierfür Bilder verwenden von den Geräten selbst
 
