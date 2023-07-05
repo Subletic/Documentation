@@ -34,7 +34,7 @@ image:start-folie.png[]
 
 Alice ist Stenografin für einen Landtag. Sie ist seit einigen Jahren in Ihrem Beruf schon tätig. Seit kurzem hat sie von den großen Fortschritten in der Sprachsynthese gehört und fragt sich ob auch sie davon profitieren kann. Jedoch weiß sie als Stenografin, wie wichtig korrekte Transkriptionen sind in politischen Kontexten und stellt sich deshalb die Frage: "_Kann ich der KI denn blind vertrauen?_". 
 
-Nein, in vielen Kontexten braucht es den Menschen, der der Maschine auf die Finger guckt. Und genau dabei möchte unsere Software Subletic, Alice unterstützen. So hat Sie durch die automatische Sprachsynthese weniger Zeitdruck bei der Stenografie, kann aber gleichzeitig sicher sein, dass die Transkription korrekt ist. 
+Nein, in vielen Kontexten braucht es den Menschen, der der Maschine auf die Finger guckt. Und genau dabei möchte unsere Software _Subletic_, Alice unterstützen. So hat Sie durch die automatische Sprachsynthese weniger Zeitdruck wie bei der Stenografie, kann aber gleichzeitig sicher sein, dass die Transkription korrekt ist. 
 
 Gleichzeitig profitieren die Zuschauer zuhause von besseren Untertiteln und müssen sich nicht mit meist schlechten generierten Untertitel zufrieden geben. Und damit die Software auch tatsächlich von Alice in Ihrem Landtag verwendet werden darf, ist sie oben drauf noch DSGVO-konform.
 
@@ -74,7 +74,7 @@ Video von unserer Software die die genannten Features visualisieren
 | 5. | Zeitfenster | Verschwindene Sprechblase zeigen
 |===
 
-== 4. Technologien [50 (185/360)]
+== 4. Technologien [60 (195/360)]
 * Wie sieht eine Softwarelösung aus?
 * hervorheben der Wichtigsten Funktionen, welche vlt. auch von Philipp ausgerufen wurden
 * hier erklären wir welche Tools und Libraries sich als hilfreich herausgestellt haben
@@ -85,6 +85,7 @@ Video von unserer Software die die genannten Features visualisieren
 
 === Text
 
+Nun möchten wir auf die Technologien eingehen die wir verwendet haben.
 Für Subletic haben wir auf ASP.NET 7 im Backend gesetzt, in dem die interne Verwaltung stattfindet. Dazu zählt:
 
 * der reinkommenden Stream
@@ -98,18 +99,30 @@ Angular 16 ist das Gerüst für unser Frontend. SignalR gibt uns dabei die Fähi
 
 Beide Seiten unserer Software werden zunächst getrennt in einem eigenen Docker-Image bereitgestellt und anschließend mit einer Docker-Compose zusammengeführt und deployed. |Dies hat den Hintergrund das wir somit im Development eine klarere Trennung von Frontend und Backend einführen konnten.|
 
-== 5. Architektur ()
+== 5. Architektur [120s (315s/360)]
 
 === Text
+Gehen wir nun ins Detail und betrachten die Architektur und internen Abläufe, welche im Hintergrund stattfinden. Es sind drei relevante Bereiche zu sehen:
 
-|Die in _Subletic_ verwendete Archtietktur sieht dabei wie folgt aus [Öffnen unserer Architektur übersicht]. Hierbei lässt sich auf einen Blick das zusammenspiel von Frontend und Backend erkennen. [Zoom zum Backend] |
+* Das Frontend welches mit Angular gebaut wurde,
+* das Backenend welches unter ASP.NET läuft,
+* und die Außenwelt, mit APIs, Quell- und Ziel-Streams
 
-== x. Entwicklung (ca. 1.5 Minuten)
-* am besten Screenshots der Demos oder so ein Entwicklungsprozess vom Piloten zum MVP
-* vlt. ausgewählte Passagen Quelltext?
+Betrachten wir zunächst das Backend. Bevor ein Untertitel generiert werden kann, wird ein Audio-Stream benötigt, für den eine Untertitel erstellt werden soll. Dieser wird mithilfe von FFMpegCore innerhalb des AV-Processing Services eingelesen und in 1 sekündige Pakete unterteilt. 
 
+Die Audio-Pakete werden dann, nach und nach, an eine externe Speech-Engine geschickt, welche darauffolgend mit der generierten Transkription antwortet. (Zusätzlich trägt die Antwort auch die Information, mit welcher Sicherheit ein Wort erkannt wurde.) Gleichzeitig wird die Audiospur direkt ins Frontend gestreamt, sodass diese gehört werden kann.
 
-== 6. Ausblick (30 Sekunden bis 1 Minute)
+Die erhaltenen Transkriptionen werden nun mithilfe des Word-Processing-Services in sogenannte _Speechbubbles_ umgewandelt. Sie stellen eine kleine Folge von Wörtern da und werden vom Speechbubble-Service verwaltet. 
+
+Um sicherzustellen, dass die eingelesenen Transkriptionen und der angekommene Audio-Stream schließlich das Backend verlassen und dem Endkunden ausgespielt werden, kommt der Buffer-Time-Monitor zum Einsatz. Er überwacht den internen Zustand der Sprechblasen, sowie der Audio und stößt alle notwendigen Lösch- und Export-Prozesse an, sobald Daten aus einem festgelegten Zeitfenster fallen.
+
+Für die Kommunikation mit dem Frontend, verwenden wir den Speechbubble-Controller. Dieser stellt alle notwendigen Schnittstellen zur Verfügung, um neue Speechbubbles anzuzeigen, zu löschen oder korrigierte Speechbubbles entgegenzunehmen.
+
+Das Frontend nimmt die vom Speechbubble-Controller gesendeten SignalR-Streams mit den Sprechblasen an und speichert diese in der Speechbubble-Chain. Sie stellt die Frontend-seitige Datenstruktur da, welche die Speechbubbles in einer Liste vorhält. Diese kann dann dazu genutzt werden, die jeweiligen Speechbubbles in Textboxen zu visualisieren. Werden vom Anwender einige Wörter verändert, löst dies einen Update-Call aus, welcher die geänderte Speechbubble an das Backend schickt. 
+
+(Parallel dazu werden die reinkommenden Audio-Pakete in einem Ring-Buffer abgelegt und verwaltet. So kann das Frontend den Buffer jederzeit verwenden, um die Audiospur auszulesen und zu manipulieren.)
+
+== 6. Ausblick [60s (375/360)]
 === Notes
 * Hier würde ich sagen gehen wir darauf ein wie wir unsere Software weiter verbessern, weiterentwickeln
 ** Hardware Komponenten vielleicht sogar an dem Tag mit bringen zum zeigen?
@@ -117,9 +130,16 @@ Beide Seiten unserer Software werden zunächst getrennt in einem eigenen Docker-
 
 === Text
 
-Mit _Subletic_ haben wir ein Werkzeug geschaffen, mit dem fehlerhaft generierte Untertitel mühelos korrigiert werden können. In einem nächsten Schritt, wollen wir uns dem Ausliefern an den Endkunden widmen. Dabei müssen wir uns auch der Fragen widmen, wie wir die generierten Transkriptionen so portionieren, dass gut lesbare Untertitel auf dem Bildschirm erscheinen.
+Wir haben gesehen wie mit _Subletic_ schon jetzt fehlerhaft generierte Untertitel mühelos korrigiert werden können. In einem nächsten Schritt, wollen wir uns der Auslieferung an den Endkunden widmen. Eine entscheidende Fragestellung ist dabei, wie wir die generierten Transkriptionen so portionieren, dass gut lesbare Untertitel, auf dem Bildschirm erscheinen.
 
-Außerdem wollen wir den Korrektur-Workflow von _Subletic_ weiter optimieren indem wir Alice weitere Hilfen anbieten, um schneller und effizienter zu Korrigieren. Zum Beispiel kann es immer noch zu Stress beim Anwender kommen, wenn eine Audiospur mit schlechter Qualität vorliegt und deshalb die Speech-Engine viele Fehler macht. Perspektivisch möchten wir _Subletic_ mit Wortvorschlägen ergänzen, um kostbare Zeit einzusparen. Diese könnten entweder aus schon korrigierten oder phonetisch ähnlichen Wörtern generiert werden.
+Außerdem wollen wir den Korrektur-Workflow von _Subletic_ optimieren indem wir dem Anwender weitere Hilfen anbieten, um schneller und effizienter zu Korrigieren. Dies ist vor allem in stressigen Situationen von Vorteil, wenn die Speech-Engine viele Fehler macht und daher auch viele Korrekturen notwendig sind. Perspektivisch möchten wir _Subletic_ mit Wortvorschlägen ergänzen, um kostbare Zeit einzusparen. Diese könnten entweder aus schon korrigierten oder phonetisch ähnlichen Wörtern generiert werden.
+Ein weiterer Ansatzpunkt, welchen wir verfolgen möchten ist die Integration von Hand- und Fußschaltern, sodass Stenografen mit bekannten Eingabegeräten arbeiten können. 
 
-Grundsätzlich wollen wir die visuelle Kommunikation mit dem Nutzer verbessern, sodass sich Anwender schneller zurechtfinden und Orientieren können.
+(Grundsätzlich wollen wir die visuelle Kommunikation mit dem Nutzer verbessern, sodass sich Anwender schneller zurechtfinden und orientieren können.)
+
+== 7. Ende [15s (390/360)]
+
+=== Text
+
+Wir hoffen wir konnten Sie von _Subletic_ überzeugen und freuen uns auf ihr Feedback. Sollten noch Fragen offen geblieben sein, sprechen sie uns gerne an. Wir danken allen Beteiligten, im besonderen unserem Projektsponsor, der GRUNDIG Business Systems GmbH & Co. KG.
 
