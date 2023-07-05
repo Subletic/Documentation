@@ -32,7 +32,7 @@ a|
 | Hören der Audio
 | Als Anwender möchte ich den Audio-Stream hören, sodass ich bewerten kann ob ein Untertitel und das gesprochene zusammen passt.
 a| 
-* link:{backend}7[API Endpunkt - Entgegennahme des Videos/Audios-Streams]
+* link:{backend}7[API Endpunkt - Entgegennahme des Audios-Streams]
 * link:{backend}23[Audio Handling im Backend]
 * link:{frontend}24[Datenstruktur für AudioBuffer]
 * link:{frontend}7[Audio abspielen im Browser]
@@ -87,7 +87,7 @@ a|
 | Videoformat unterstützung
 | Als Kunde möchte ich, dass das MVP die gängigsten Videoformate unterstützt, damit ich meine Dateien problemlos hochladen kann.
 a|
-* link:{backend}7[API Endpunkt - Entgegennahme des Videos/Audios-Streams]
+* link:{backend}7[API Endpunkt - Entgegennahme des Audios-Streams]
 |===
 
 [options="header"]

@@ -1,7 +1,7 @@
 = Script für das 6 Minütige Video
 :toc:
 
-== 1. Einleitung (ca. 15 Sekunden)
+== 1. Einleitung [15s (15/360)]
 
 === Notes
 * Projekt Thema vorstellen, dabei auch auf das Hauptziel unsere Software eingehen
@@ -19,7 +19,7 @@ Tauchen Sie mit uns ein und entdecken Sie, wie Subletic das Korrigieren von Live
 1.1 Namen, etc.
 
 
-== 2. Problemstellung (ca. 1 Minute)
+== 2. Problemstellung [60s (75/360)]
 
 === Notes
 * nochmal zeigen was unser Kunde als Problem ausgeschrieben hat, hierbei bin ich mir nicht 100%ig sicher ob wir das brauchen
@@ -37,13 +37,43 @@ Nein, in vielen Kontexten braucht es den Menschen, der der Maschine auf die Fing
 
 Gleichzeitig profitieren die Zuschauer zuhause von besseren Untertiteln und müssen sich nicht mit meist schlechten generierten Untertitel zufrieden geben. Und damit die Software auch tatsächlich von Alice in Ihrem Landtag verwendet werden darf, ist sie oben drauf noch DSGVO-konform.
 
-=== Visual
-
 * Crazy Animation von Alice, das alte Haus 💁‍♀️
 
-== 3. Lösung (ca. 1 Minute)
+== 3. Lösung/Funktionalität [60s (135/360)]
 
 === Notes
+* eingehen auf die Bestehende Funktionalität was haben wir bisher
+** Wie eine Art "Demo" hauptfunktionalitäten der Software hervorheben
+* wie funktioniert unsere Software für den Endnutzer
+
+=== Text
+Was macht also unsere Software _Subletic_?
+
+1. Zunächst wird ein beliebiger Live-Stream eingelesen, zum Beispiel von einer Landtagsdebatte, wie bei Alice.
+2. Nun erscheinen auf der Benutzeroberfläche nach und nach die erzeugte Transkriptionen, in sogenannten Sprechblasen. In einem festgesetzten Zeitfenster von einer Minute, können nun die fehlerhaften Wörter korrigiert werden.
+3. Dabei unterstützt die Software bei der Identifikation von falsch erkannten Wörtern, indem die Wörter, bei denen die Speech-Engine sich unsicher ist, farbig markiert werden. 
+4. Ein weiteres Hilfsmittel, welches Alice schon aus der Stenografie bekannt ist, ist ein Playback des Gesagten, in der vor und zurück gesprungen werden kann. _[break]_ Sie kann sich so vergewissern, ob die Transkription korrekt ist.
+5. Fällt eine Sprechblase aus dem Zeitfenster heraus, verschwindet sie von der Benutzeroberfläche und ist damit bereit für die Auslieferung an die Zuschauer.
+
+Wir sehen dass _Subletic_ ein hilfreiches Werkzeug ist, welches Alice's Arbeit wesentlich vereinfacht.
+
+// Homeoffice als Stenografin ist mittels unserer Software kinderleicht. [Zoom auf Monitor mit unserer Software, übergang zur richtigen Software] (Bei switch ins Programm, läuft dann im Hintergrund läuft dann der Ton der Audio) Wie Sie sehen [Lautstärken Anpassung] läuft der Text ohne größere Mühen über den Monitor. Hierbei ist es für Anwender einfach [Korrektur von einem Gelben/Rotem Wort] direkt in Fehlerhaft Übersetzungen einzugreifen und somit Zuschauern ein vernünftigen Untertitel zu liefern. *Denn was ist blöder als Taub zu sein, schließlich schlecht Untertitel*
+
+=== Visual
+
+Video von unserer Software die die genannten Features visualisieren
+
+[options="header"]
+|===
+| Section | Topic | Visualisation
+| 1. | Stream-einlesen | Animation
+| 2. | Sprechblasen | Ankommenden Sprechblase zeigen
+| 3. | Confidence-Werte | Umrandung der farbigen Wörter
+| 4. | Audio-Spur | In der _[break]_ Audio-Schnippsel abspielen
+| 5. | Zeitfenster | Verschwindene Sprechblase zeigen
+|===
+
+== 4. Technologien [50 (185/360)]
 * Wie sieht eine Softwarelösung aus?
 * hervorheben der Wichtigsten Funktionen, welche vlt. auch von Philipp ausgerufen wurden
 * hier erklären wir welche Tools und Libraries sich als hilfreich herausgestellt haben
@@ -53,38 +83,38 @@ Gleichzeitig profitieren die Zuschauer zuhause von besseren Untertiteln und müs
 * Hier können wir auch auf die Vorteile unserer Software eingehen
 
 === Text
-Was macht also unsere Software Subletic?
-Zunächst wird ein beliebiger Live-Stream eingelesen, zum Beispiel von einer Landtagsdebatte, wie bei Alice.[Animation]
 
-Nun erscheinen auf der Benutzeroberfläche nach und nach die erzeugte Transkriptionen, in sogenannten Sprechblasen. In einem festgesetzten Zeitfenster von einer Minute, können nun die fehlerhaften Wörter korrigiert werden.[Software zeigen mit ankommenden Sprechblasen] 
+Für Subletic haben wir auf ASP.NET 7 im Backend gesetzt, in dem die interne Verwaltung stattfindet. Dazu zählt:
 
-Dabei unterstützt die Software bei der Identifikation von falsch erkannten Wörtern, indem die Wörter, bei denen die Speech-Engine sich unsicher ist, farbig markiert werden. [Umrandung der farbigen Wörter]
+* der reinkommenden Stream
+* die Kommunikation mit der Speech-Engine
+* die Sprechblasen
+* sowie der Export der korrigierten Untertitel
 
-Ein weiteres Hilfsmittel, welches Alice schon aus der Stenografie bekannt ist, ist ein Playback des Gesagten, in der vor und zurück gesprungen werden kann. [Audio ein wenig abspielen, in audio springen, audio wieder weg] Somit kann sie sich vergewissern, ob die Transkription korrekt ist.
+Zudem nutzen wir FFMpegCore, um mit den verschiedenen Video- und Audio-Streams umgehen zu können.
 
-Fällt eine Sprechblase aus dem Zeitfenster heraus, verschwindet sie von der Benutzeroberfläche und ist damit bereit für die Auslieferung an die Zuschauer.
+Angular 16 ist das Gerüst für unser Frontend. SignalR gibt uns dabei die Fähigkeit unsere Sprechblasen, sowie die Audio, in unser Frontend zu streamen. Die Web-Audio-API befähigt uns anschließend mit der Audio-Spur umzugehen, um Features wie das Navigieren in der Audio oder eine anpassbare Lautstärke, bereitzustellen. 
 
+Beide Seiten unserer Software werden zunächst getrennt in einem eigenen Docker-Image bereitgestellt und anschließend mit einer Docker-Compose zusammengeführt und deployed.
 
-=== Visual
+== 5. Architektur ()
 
-* Video von unserer Software die die genannten Features visualisieren 
-
-
-== 4. Entwicklung (ca. 1.5 Minuten)
+== x. Entwicklung (ca. 1.5 Minuten)
 * am besten Screenshots der Demos oder so ein Entwicklungsprozess vom Piloten zum MVP
 * vlt. ausgewählte Passagen Quelltext?
 
-== 5. Funktionalität (ca 2 Minuten)
-* eingehen auf die Bestehende Funktionalität was haben wir bisher
-** Wie eine Art "Demo" hauptfunktionalitäten der Software hervorheben
-* wie funktioniert unsere Software für den Endnutzer
-
-== Text
-
-Homeoffice als Stenografin ist mittels unserer Software kinderleicht. [Zoom auf Monitor mit unserer Software, übergang zur richtigen Software] (Bei switch ins Programm, läuft dann im Hintergrund läuft dann der Ton der Audio) Wie Sie sehen [Lautstärken Anpassung] läuft der Text ohne größere Mühen über den Monitor. Hierbei ist es für Anwender einfach [Korrektur von einem Gelben/Rotem Wort] direkt in Fehlerhaft Übersetzungen einzugreifen und somit Zuschauern ein vernünftigen Untertitel zu liefern. *Denn was ist blöder als Taub zu sein, schließlich schlecht Untertitel*
 
 == 6. Ausblick (30 Sekunden bis 1 Minute)
+=== Notes
 * Hier würde ich sagen gehen wir darauf ein wie wir unsere Software weiter verbessern, weiterentwickeln
 ** Hardware Komponenten vielleicht sogar an dem Tag mit bringen zum zeigen?
 *** Vielleicht sogar hierfür Bilder verwenden von den Geräten selbst
+
+=== Text
+
+Mit _Subletic_ haben wir ein Werkzeug geschaffen, mit dem fehlerhaft generierte Untertitel mühelos korrigiert werden können. In einem nächsten Schritt, wollen wir uns dem Ausliefern an den Endkunden widmen. Dabei müssen wir uns auch der Fragen widmen, wie wir die generierten Transkriptionen so portionieren, dass gut lesbare Untertitel auf dem Bildschirm erscheinen.
+
+Außerdem wollen wir den Korrektur-Workflow von _Subletic_ weiter optimieren indem wir Alice weitere Hilfen anbieten, um schneller und effizienter zu Korrigieren. Zum Beispiel kann es immer noch zu Stress beim Anwender kommen, wenn eine Audiospur mit schlechter Qualität vorliegt und deshalb die Speech-Engine viele Fehler macht. Perspektivisch möchten wir _Subletic_ mit Wortvorschlägen ergänzen, um kostbare Zeit einzusparen. Diese könnten entweder aus schon korrigierten oder phonetisch ähnlichen Wörtern generiert werden.
+
+Grundsätzlich wollen wir die visuelle Kommunikation mit dem Nutzer verbessern, sodass sich Anwender schneller zurechtfinden und Orientieren können.
 
