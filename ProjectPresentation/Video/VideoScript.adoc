@@ -10,7 +10,7 @@
 ** Grundig Business Systems oder Grundig Business Systems GmbH & Co. KG
 
 === Text
-Guten Tag und herzlich willkommen zur Projektpräsentation von Subletic. In diesem Video möchten wir Ihnen unsere innovative Software vorstellen, mit der die korrekte Untertitelung von Live-Streams zu einem Kinderspiel wird. Kommen Sie mit und lernen Sie unseren innovative Software-Lösung kennen.
+Guten Tag und herzlich willkommen zur Projektpräsentation von Subletic. In diesem Video möchten wir Ihnen unsere Software vorstellen, mit der die korrekte Untertitelung von Live-Streams zu einem Kinderspiel wird. Kommen Sie mit und lernen Sie unseren innovative Software-Lösung kennen.
 
 Tauchen Sie mit uns ein und entdecken Sie, wie Subletic das Korrigieren von Live-Untertiteln vereinfacht und optimiert.
 
@@ -18,6 +18,7 @@ Tauchen Sie mit uns ein und entdecken Sie, wie Subletic das Korrigieren von Live
 1. Startfolie (10s)
 1.1 Namen, etc.
 
+image:start-folie.png[]
 
 == 2. Problemstellung [60s (75/360)]
 
@@ -95,9 +96,13 @@ Zudem nutzen wir FFMpegCore, um mit den verschiedenen Video- und Audio-Streams u
 
 Angular 16 ist das Gerüst für unser Frontend. SignalR gibt uns dabei die Fähigkeit unsere Sprechblasen, sowie die Audio, in unser Frontend zu streamen. Die Web-Audio-API befähigt uns anschließend mit der Audio-Spur umzugehen, um Features wie das Navigieren in der Audio oder eine anpassbare Lautstärke, bereitzustellen. 
 
-Beide Seiten unserer Software werden zunächst getrennt in einem eigenen Docker-Image bereitgestellt und anschließend mit einer Docker-Compose zusammengeführt und deployed.
+Beide Seiten unserer Software werden zunächst getrennt in einem eigenen Docker-Image bereitgestellt und anschließend mit einer Docker-Compose zusammengeführt und deployed. |Dies hat den Hintergrund das wir somit im Development eine klarere Trennung von Frontend und Backend einführen konnten.|
 
 == 5. Architektur ()
+
+=== Text
+
+|Die in _Subletic_ verwendete Archtietktur sieht dabei wie folgt aus [Öffnen unserer Architektur übersicht]. Hierbei lässt sich auf einen Blick das zusammenspiel von Frontend und Backend erkennen. [Zoom zum Backend] |
 
 == x. Entwicklung (ca. 1.5 Minuten)
 * am besten Screenshots der Demos oder so ein Entwicklungsprozess vom Piloten zum MVP
