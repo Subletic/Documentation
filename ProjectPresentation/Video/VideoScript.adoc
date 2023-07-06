@@ -10,9 +10,7 @@
 ** Grundig Business Systems oder Grundig Business Systems GmbH & Co. KG
 
 === Text
-Guten Tag und herzlich willkommen zur Projektpräsentation von Subletic. In diesem Video möchten wir Ihnen unsere Software vorstellen, mit der die korrekte Untertitelung von Live-Streams zu einem Kinderspiel wird. Kommen Sie mit und lernen Sie unseren innovative Software-Lösung kennen.
-
-Tauchen Sie mit uns ein und entdecken Sie, wie Subletic das Korrigieren von Live-Untertiteln vereinfacht und optimiert.
+Guten Tag und herzlich willkommen zur Projektpräsentation von Subletic. In diesem Video möchten wir Ihnen unsere Software vorstellen, mit der die korrekte Untertitelung von Live-Streams zu einem Kinderspiel wird. Kommen Sie mit und lernen Sie unsere innovative Software-Lösung kennen.
 
 === Visual
 1. Startfolie (10s)
@@ -32,11 +30,11 @@ image:start-folie.png[]
 
 === Text
 
-Alice ist Stenografin für einen Landtag. Sie ist seit einigen Jahren in Ihrem Beruf schon tätig. Seit kurzem hat sie von den großen Fortschritten in der Sprachsynthese gehört und fragt sich ob auch sie davon profitieren kann. Jedoch weiß sie als Stenografin, wie wichtig korrekte Transkriptionen sind in politischen Kontexten und stellt sich deshalb die Frage: "_Kann ich der KI denn blind vertrauen?_". 
+Alice ist Stenografin für einen Landtag. Sie ist seit einigen Jahren in Ihrem Beruf schon tätig. Seit kurzem hat sie von den großen Fortschritten in der Sprachsynthese gehört und fragt sich, ob auch sie davon profitieren kann. Jedoch weiß sie als Stenografin, wie wichtig korrekte Transkriptionen in politischen Kontexten sind und stellt sich deshalb die Frage: "_Kann ich der KI denn blind vertrauen?_". 
 
-Nein, in vielen Kontexten braucht es den Menschen, der der Maschine auf die Finger guckt. Und genau dabei möchte unsere Software _Subletic_, Alice unterstützen. So hat Sie durch die automatische Sprachsynthese weniger Zeitdruck wie bei der Stenografie, kann aber gleichzeitig sicher sein, dass die Transkription korrekt ist. 
+Nein, auch wenn die heutigen generativen Programme erstaunliches leisten, so ist in vielen Kontexten immer noch ein Mensch erforderlich, der der Maschine auf die Finger guckt. Und genau dabei möchte unsere Software _Subletic_, Alice unterstützen. So hat Sie durch die automatische Sprachsynthese weniger Zeitdruck, den sie gut aus der Stenografie kennt, kann aber gleichzeitig sicher sein, dass die Transkription korrekt ist.
 
-Gleichzeitig profitieren die Zuschauer zuhause von besseren Untertiteln und müssen sich nicht mit meist schlechten generierten Untertitel zufrieden geben. Und damit die Software auch tatsächlich von Alice in Ihrem Landtag verwendet werden darf, ist sie oben drauf noch DSGVO-konform.
+Gleichzeitig profitieren auch die Zuschauer vor den Bildschirmen und müssen sich nicht mit schlechten generierten Untertiteln zufrieden geben. Und damit die Software auch tatsächlich von Alice in Ihrem Landtag verwendet werden darf, ist sie oben drauf noch DSGVO-konform.
 
 * Crazy Animation von Alice, das alte Haus 💁‍♀️
 
@@ -48,12 +46,12 @@ Gleichzeitig profitieren die Zuschauer zuhause von besseren Untertiteln und müs
 * wie funktioniert unsere Software für den Endnutzer
 
 === Text
-Was macht also unsere Software _Subletic_?
+Wie verwende ich _Subletic_?
 
 1. Zunächst wird ein beliebiger Live-Stream eingelesen, zum Beispiel von einer Landtagsdebatte, wie bei Alice.
-2. Nun erscheinen auf der Benutzeroberfläche nach und nach die erzeugte Transkriptionen, in sogenannten Sprechblasen. In einem festgesetzten Zeitfenster von einer Minute, können nun die fehlerhaften Wörter korrigiert werden.
-3. Dabei unterstützt die Software bei der Identifikation von falsch erkannten Wörtern, indem die Wörter, bei denen die Speech-Engine sich unsicher ist, farbig markiert werden. 
-4. Ein weiteres Hilfsmittel, welches Alice schon aus der Stenografie bekannt ist, ist ein Playback des Gesagten, in der vor und zurück gesprungen werden kann. _[break]_ Sie kann sich so vergewissern, ob die Transkription korrekt ist.
+2. Nun erscheinen auf der Benutzeroberfläche nach und nach die erzeugten Transkriptionen, in sogenannten Sprechblasen. In einem festgesetzten Zeitfenster von einer Minute, können nun die fehlerhaften Wörter korrigiert werden.
+3. Dabei unterstützt die Software bei der Identifikation von falsch erkannten Wörtern, indem die Wörter farbig markiert werden, bei denen die Speech-to-Text-Engine sich unsicher ist. 
+4. Ein weiteres Hilfsmittel, welches Alice schon aus der Stenografie bekannt ist, ist ein Playback des Gesagten, in der vor und zurück gesprungen werden kann. _[break]_ So kann sie sich vergewissern, ob die Transkription korrekt ist.
 5. Fällt eine Sprechblase aus dem Zeitfenster heraus, verschwindet sie von der Benutzeroberfläche und ist damit bereit für die Auslieferung an die Zuschauer.
 
 Wir sehen dass _Subletic_ ein hilfreiches Werkzeug ist, welches Alice's Arbeit wesentlich vereinfacht.
@@ -85,19 +83,19 @@ Video von unserer Software die die genannten Features visualisieren
 
 === Text
 
-Nun möchten wir auf die Technologien eingehen die wir verwendet haben.
+Nun möchten wir auf die Technologien eingehen die verwendet wurden.
 Für Subletic haben wir auf ASP.NET 7 im Backend gesetzt, in dem die interne Verwaltung stattfindet. Dazu zählt:
 
-* der reinkommenden Stream
-* die Kommunikation mit der Speech-Engine
+* der eingehende Stream
+* die Kommunikation mit der Speech-to-Text-Engine
 * die Sprechblasen
 * sowie der Export der korrigierten Untertitel
 
 Zudem nutzen wir FFMpegCore, um mit den verschiedenen Video- und Audio-Streams umgehen zu können.
 
-Angular 16 ist das Gerüst für unser Frontend. SignalR gibt uns dabei die Fähigkeit unsere Sprechblasen, sowie die Audio, in unser Frontend zu streamen. Die Web-Audio-API befähigt uns anschließend mit der Audio-Spur umzugehen, um Features wie das Navigieren in der Audio oder eine anpassbare Lautstärke, bereitzustellen. 
+Angular 16 ist das Gerüst für unser Frontend. SignalR gibt uns dabei die Fähigkeit unsere Sprechblasen, sowie das Audio, in unser Frontend zu streamen. Die Web-Audio-API befähigt uns anschließend mit der Audio-Spur umzugehen, um Features wie das Navigieren in der Audio oder eine anpassbare Lautstärke, bereitzustellen. 
 
-Beide Seiten unserer Software werden zunächst getrennt in einem eigenen Docker-Image bereitgestellt und anschließend mit einer Docker-Compose zusammengeführt und deployed. |Dies hat den Hintergrund das wir somit im Development eine klarere Trennung von Frontend und Backend einführen konnten.|
+Beide Seiten unserer Software werden zunächst getrennt in einem eigenen Docker-Image bereitgestellt und anschließend mit einer Docker-Compose zusammengeführt und deployed. Somit erreichen wir im Development eine klarere Trennung von Frontend und Backend.
 
 == 5. Architektur [120s (315s/360)]
 
@@ -106,21 +104,21 @@ Gehen wir nun ins Detail und betrachten die Architektur und internen Abläufe, w
 
 * Das Frontend welches mit Angular gebaut wurde,
 * das Backenend welches unter ASP.NET läuft,
-* und die Außenwelt, mit APIs, Quell- und Ziel-Streams
+* und die Außenwelt, mit APIs, sowie Quell- und Ziel-Streams
 
-Betrachten wir zunächst das Backend. Bevor ein Untertitel generiert werden kann, wird ein Audio-Stream benötigt, für den eine Untertitel erstellt werden soll. Dieser wird mithilfe von FFMpegCore innerhalb des AV-Processing Services eingelesen und in 1 sekündige Pakete unterteilt. 
+Betrachten wir zunächst das Backend. Bevor ein Untertitel generiert werden kann, wird ein Audio-Stream benötigt, für den ein Untertitel erstellt werden soll. Dieser wird mithilfe von FFMpegCore innerhalb des AV-Processing Services eingelesen und in 1 sekündige Pakete unterteilt. 
 
-Die Audio-Pakete werden dann, nach und nach, an eine externe Speech-Engine geschickt, welche darauffolgend mit der generierten Transkription antwortet. (Zusätzlich trägt die Antwort auch die Information, mit welcher Sicherheit ein Wort erkannt wurde.) Gleichzeitig wird die Audiospur direkt ins Frontend gestreamt, sodass diese gehört werden kann.
+Die Audio-Pakete werden dann, nach und nach, an eine externe Speech-to-Text-Engine geschickt, welche daraufhin mit der generierten Transkription antwortet. (Zusätzlich trägt die Antwort auch die Information, mit welcher Sicherheit ein Wort erkannt wurde.) Gleichzeitig wird die Audiospur direkt ins Frontend gestreamt, sodass diese gehört werden kann.
 
-Die erhaltenen Transkriptionen werden nun mithilfe des Word-Processing-Services in sogenannte _Speechbubbles_ umgewandelt. Sie stellen eine kleine Folge von Wörtern da und werden vom Speechbubble-Service verwaltet. 
+Die erhaltenen Transkriptionen werden nun mithilfe des Word-Processing-Services in sogenannte _Sprechblasen_ umgewandelt. Sie stellen eine kleine Folge von Wörtern da und werden vom Speechbubble-Service verwaltet. 
 
-Um sicherzustellen, dass die eingelesenen Transkriptionen und der angekommene Audio-Stream schließlich das Backend verlassen und dem Endkunden ausgespielt werden, kommt der Buffer-Time-Monitor zum Einsatz. Er überwacht den internen Zustand der Sprechblasen, sowie der Audio und stößt alle notwendigen Lösch- und Export-Prozesse an, sobald Daten aus einem festgelegten Zeitfenster fallen.
+Um sicherzustellen, dass die eingelesenen Transkriptionen und der eingegangene Audio-Stream schließlich das Backend verlassen und dem Endkunden ausgespielt werden, kommt der Buffer-Time-Monitor zum Einsatz. Er überwacht den internen Zustand der Sprechblasen, sowie des Audios und stößt alle notwendigen Lösch- und Export-Prozesse an, sobald Daten aus einem festgelegten Zeitfenster fallen.
 
-Für die Kommunikation mit dem Frontend, verwenden wir den Speechbubble-Controller. Dieser stellt alle notwendigen Schnittstellen zur Verfügung, um neue Speechbubbles anzuzeigen, zu löschen oder korrigierte Speechbubbles entgegenzunehmen.
+Für die Kommunikation mit dem Frontend, verwenden wir den Speechbubble-Controller. Dieser stellt alle notwendigen Schnittstellen zur Verfügung, um neue Sprechblasen anzuzeigen, zu löschen oder Korrekturen entgegenzunehmen.
 
-Das Frontend nimmt die vom Speechbubble-Controller gesendeten SignalR-Streams mit den Sprechblasen an und speichert diese in der Speechbubble-Chain. Sie stellt die Frontend-seitige Datenstruktur da, welche die Speechbubbles in einer Liste vorhält. Diese kann dann dazu genutzt werden, die jeweiligen Speechbubbles in Textboxen zu visualisieren. Werden vom Anwender einige Wörter verändert, löst dies einen Update-Call aus, welcher die geänderte Speechbubble an das Backend schickt. 
+Das Frontend nimmt die vom Speechbubble-Controller gesendeten SignalR-Streams mit den Sprechblasen an und speichert diese in der Speechbubble-Chain. Sie stellt die Frontend-seitige Datenstruktur da, welche die Sprechblasen in einer Liste vorhält. Diese kann dann dazu genutzt werden, die jeweiligen Sprechblasen in Textboxen zu visualisieren. Werden vom Anwender einige Wörter verändert, löst dies einen Update-Call aus, welcher die geänderte Sprechblase an das Backend schickt. 
 
-(Parallel dazu werden die reinkommenden Audio-Pakete in einem Ring-Buffer abgelegt und verwaltet. So kann das Frontend den Buffer jederzeit verwenden, um die Audiospur auszulesen und zu manipulieren.)
+(Parallel dazu werden die eingehenden Audio-Pakete in einem Ring-Buffer abgelegt und verwaltet. So kann das Frontend den Buffer jederzeit verwenden, um die Audiospur auszulesen und zu manipulieren.)
 
 == 6. Ausblick [60s (375/360)]
 === Notes
@@ -132,7 +130,7 @@ Das Frontend nimmt die vom Speechbubble-Controller gesendeten SignalR-Streams mi
 
 Wir haben gesehen wie mit _Subletic_ schon jetzt fehlerhaft generierte Untertitel mühelos korrigiert werden können. In einem nächsten Schritt, wollen wir uns der Auslieferung an den Endkunden widmen. Eine entscheidende Fragestellung ist dabei, wie wir die generierten Transkriptionen so portionieren, dass gut lesbare Untertitel, auf dem Bildschirm erscheinen.
 
-Außerdem wollen wir den Korrektur-Workflow von _Subletic_ optimieren indem wir dem Anwender weitere Hilfen anbieten, um schneller und effizienter zu Korrigieren. Dies ist vor allem in stressigen Situationen von Vorteil, wenn die Speech-Engine viele Fehler macht und daher auch viele Korrekturen notwendig sind. Perspektivisch möchten wir _Subletic_ mit Wortvorschlägen ergänzen, um kostbare Zeit einzusparen. Diese könnten entweder aus schon korrigierten oder phonetisch ähnlichen Wörtern generiert werden.
+Außerdem wollen wir den Korrektur-Workflow von _Subletic_ optimieren indem wir dem Anwender weitere Hilfen anbieten, um schneller und effizienter zu Korrigieren. Dies ist vor allem in stressigen Situationen von Vorteil, wenn die Speech-to-Text-Engine viele Fehler macht und daher auch viele Korrekturen notwendig sind. Perspektivisch möchten wir _Subletic_ mit Wortvorschlägen ergänzen, um kostbare Zeit einzusparen. Diese könnten entweder aus schon korrigierten oder phonetisch ähnlichen Wörtern generiert werden.
 Ein weiterer Ansatzpunkt, welchen wir verfolgen möchten ist die Integration von Hand- und Fußschaltern, sodass Stenografen mit bekannten Eingabegeräten arbeiten können. 
 
 (Grundsätzlich wollen wir die visuelle Kommunikation mit dem Nutzer verbessern, sodass sich Anwender schneller zurechtfinden und orientieren können.)
