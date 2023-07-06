@@ -28,6 +28,8 @@ Isuses sind: Änderungen in Roles and Responsibilities, New Risks,
 |Beschreibung |Identifikation |Wirkung auf |Dringlichkeit/ + 
 Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortlicher |Abschluss am
 
+| Ein Teammitglied ist aus familiären Gründen verhindert und kann deshalb sein Issue, welches sich mit der Doxygen-Dokumentation auseinander gesetzt hat, nicht rechtzeitig abschließen  | Problem | Dokumentation | gering | 06.07.2023 | @ajegani | Da die Dokumentation von niemandem dringen benötigt wird, wird das Issue in den nächsten Sprint geschoben | @bbeigang | 06.07.2023
+
 | "No worker can be schedulde because the service is at capacity", Speech Engine auf welche wir angewiesen, schränkt unser Account | Problem | Produkt | sehr hoch | 06.07.2023 | @lnoack | Email an Speechmatics mit Frage wann Service für uns wieder erreichbar ist | @lnoack | 06.07.2023
 
 | GitLab Runner sind wieder nicht erreichbar, behindert Deployment der Software | Problem | Produkt | hoch | 06.07.2023 | @lnoack | Abwarten bis Runner wieder laufen | @lnoack | 
