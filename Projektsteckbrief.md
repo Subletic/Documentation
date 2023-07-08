@@ -107,7 +107,6 @@ Um die Effizienz der Nutzer zu steigern, haben wir Tastenkombinationen implement
 
 Durch die Umsetzung dieser Ziele konnten wir eine leistungsstarke und benutzerfreundliche Webanwendung entwickeln, die die Korrektur von Live-Untertiteln erleichtert und gleichzeitig ästhetischen Ansprüchen gerecht wird. Dabei ist das Ausführen der Features stets intuitiv, was das Korrigieren von Untertiteln spielend leicht macht.
 
-
 ## Umsetzung
 
 Das Projekt wurde als Webanwendung umgesetzt und besteht aus zwei Repositorys, eines für das Frontend mit Angular Version 16 und eines für das Backend mit ASP.NET Version 7. Um diese beiden Repositorys miteinander Kommunizieren zu lassen, werden im Deployment zwei Dockerimages erstellt. Diese Dockerimages werden dann mit einer `Docker-Compose.yml` zusammengeführt. Bei der Umsetzung lag ein besonderer Fokus auf der Einhaltung der Datenschutz-Grundverordnung (DSGVO), um die Privatsphäre und Sicherheit der Benutzer zu gewährleisten. Dies ist auch eine der vom Projektsponsor ausdrücklich wichtigsten Punkte bei der Umsetzung der Webanwendung.
