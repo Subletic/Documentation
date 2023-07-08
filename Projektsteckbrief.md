@@ -60,12 +60,12 @@ Im Rahmen dieses Projekts haben wir uns zusammen mit unserem Projektsponsor Phil
   </div>
 </div>
 
-**Tastenkombination/Shortcuts/Hotkeys:**
+**Ausgabe des Audios in der Anwendung:**
 
-Um die Effizienz der Nutzer zu steigern, haben wir Tastenkombinationen implementiert, um das Starten und Anhalten der Audio-Wiedergabe zu erleichtern. Dadurch können die Anwender schnell reagieren und ihren Fokus auf die Untertitelkorrektur legen.
+Die Ausgabe von Audio in unsere Anwendung spielt eine wichtige Rolle, da sie ein immersives und interaktives Nutzungserlebnis ermöglicht. Durch die Ausgabe des Audios ist es den Anwendern möglich, sich innerhalb des Textes zurechtzufinden und falsch erfasste Wörter zu hören und zu verbessern. Die zuvor erwähnte Hervorhebung von Worten durch deren Konfidenz-Werte liefern dabei eine wichtige Orientierung, aber nur das Einhergehen mit dem Hören der Audio ist es möglich eine gewissenhafte Korrektur vorzunehmen.
 
 Weitere Funktionalitäten sind:
-- Ausgabe des Audios in der Anwendung
+- Hotkey/Shortcuts zum schnellen Ausführen von Aktionen
 - Springen in der Audio-Spur
 - Einstellbarkeit der Lautstärke
 - Einstellbarkeit der Sprungweite 
