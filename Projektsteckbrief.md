@@ -127,7 +127,7 @@ Ein zentraler Bestandteil der Umsetzung ist die Verwendung einer Speech-Engine, 
     </div>
   </div>
 </div>
-<div style="flex:2;">
+<div style="flex:1;">
 </div>
   <div style="flex: 1;">
     <table>
