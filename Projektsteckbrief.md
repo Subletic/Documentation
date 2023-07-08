@@ -1,6 +1,6 @@
 <div style="display: flex;">
     <div style="flex: 1; float: left; align-items:center; margin-top: 30px; margin-right:">
-      <img src="ProjectPresentation\Poster\img\Logo_HTWK.svg" alt="HTWK-Logo">
+      <img src="img/Logo_HTWK.svg" alt="HTWK-Logo">
     </div>
 </div>
 
@@ -41,7 +41,7 @@ Im Rahmen dieses Projekts haben wir uns zusammen mit unserem Projektsponsor Phil
     Unsere Software ermöglicht es den Nutzern, in der Audio-Spur vor- und zurückzuspringen. Zusätzlich wird das Audiosignal innerhalb der Anwendung wiedergegeben, um eine praktische und nahtlose Arbeitsumgebung zu gewährleisten.
   </div>
   <div style="text-align: right;">
-    <img src="ProjectPresentation\Poster\img\springen-audio.png" alt="Springen in der Audio Buttons" width="200">
+    <img src="img/springen-audio.png" alt="Springen in der Audio Buttons" width="200">
   </div>
 </div>
 <br>
@@ -53,7 +53,7 @@ Im Rahmen dieses Projekts haben wir uns zusammen mit unserem Projektsponsor Phil
     Die Software ermöglicht es den Benutzern, die Sprungweite innerhalb der Audio-Spur anzupassen. Dadurch können sie schnell zu bestimmten Stellen springen, um Korrekturen vorzunehmen oder bestimmte Passagen zu überprüfen.
   </div>
   <div style="text-align: right;">
-    <img src="ProjectPresentation\Poster\img\sprung-settings.png" alt="Sprungweiten Einstellung" width="200">
+    <img src="img/sprung-settings.png" alt="Sprungweiten Einstellung" width="200">
   </div>
 </div>
 <br>
@@ -69,7 +69,7 @@ Um die Effizienz der Nutzer zu steigern, haben wir Tastenkombinationen implement
     Unsere Webanwendung ermöglicht es den Nutzern, die Lautstärke des Audios innerhalb der Anwendung anzupassen. Darüber hinaus können sie die Geschwindigkeit der Audio-Wiedergabe an ihre individuellen Bedürfnisse anpassen, dies wurde als eine der wichtigsten Feature beschrieben, da Stenografen meisten die Geschwindigkeit von Audio drosseln, um besser Fehler zu erkennen.
   </div>
   <div style="text-align: right;">
-    <img src="ProjectPresentation\Poster\img\sound-audio.png" alt="Soundeinstellung Audio" width="100">
+    <img src="img/sound-audio.png" alt="Soundeinstellung Audio" width="100">
   </div>
 </div>
 
@@ -82,7 +82,7 @@ Um die Effizienz der Nutzer zu steigern, haben wir Tastenkombinationen implement
     Das Design unserer Webanwendung ist bewusst schlicht gehalten, um eine intuitive und benutzerfreundliche Oberfläche zu bieten. Der Fokus liegt auf der einfachen Bedienbarkeit und dem klaren Layout, um eine effektive Nutzung zu ermöglichen.
   </div>
   <div >
-    <img src="ProjectPresentation\Poster\img\deployed_website.jpg" alt="Webseite">
+    <img src="img/deployed_website.jpg" alt="Webseite">
   </div>
 </div>
 <br>
@@ -98,7 +98,7 @@ Um die Effizienz der Nutzer zu steigern, haben wir Tastenkombinationen implement
     Subletic
   </div>
   <div style="flex: 1; text-align: right;">
-    <img src="ProjectPresentation\Poster\img\logo.svg" alt="Logo-Subletic" width="200">
+    <img src="img/logo.svg" alt="Logo-Subletic" width="200">
   </div>
 </div>
 
@@ -122,7 +122,7 @@ Ein zentraler Bestandteil der Umsetzung ist die Verwendung einer Speech-Engine, 
 <div style="display: flex; flex: 1;">
     <div style="display: flex; align-items: center; justify-content: center;">
   <div>
-    <img src="ProjectPresentation\Poster\img\grundig.svg" alt="Logo Grundig" width="200">
+    <img src="img/grundig.svg" alt="Logo Grundig" width="200">
     <div style="display: flex; justify-content: center;">
       <span>Philipp Platis</span>
     </div>
