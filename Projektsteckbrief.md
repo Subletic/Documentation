@@ -62,7 +62,7 @@ Im Rahmen dieses Projekts haben wir uns zusammen mit unserem Projektsponsor Phil
 
 **Ausgabe des Audios in der Anwendung:**
 
-Die Ausgabe von Audio in unsere Anwendung spielt eine wichtige Rolle, da sie ein immersives und interaktives Nutzungserlebnis ermöglicht. Durch die Ausgabe des Audios ist es den Anwendern möglich, sich innerhalb des Textes zurechtzufinden und falsch erfasste Wörter zu hören und zu verbessern. Die zuvor erwähnte Hervorhebung von Worten durch deren Konfidenz-Werte liefern dabei eine wichtige Orientierung, aber nur das Einhergehen mit dem Hören der Audio ist es möglich eine gewissenhafte Korrektur vorzunehmen.
+Die Ausgabe von Audio in unsere Anwendung spielt eine essenzielle Rolle, da sie ein immersives und interaktives Nutzungserlebnis ermöglicht. Durch die Ausgabe des Audios ist es den Anwendern möglich, sich innerhalb des Textes zurechtzufinden und falsch erfasste Wörter zu hören und zu verbessern. Die Konfidenz-Werte liefern dabei eine wichtige Orientierung, aber nur das Einhergehen mit dem Hören der Audio macht es möglich eine gewissenhafte Korrektur vorzunehmen.
 
 Weitere Funktionalitäten sind:
 - Hotkey/Shortcuts zum schnellen Ausführen von Aktionen
@@ -71,15 +71,13 @@ Weitere Funktionalitäten sind:
 - Einstellbarkeit der Sprungweite 
 
 ### Neben den funktionalen Eigenschaften haben wir auch Wert auf nicht-funktionale Aspekte gelegt:
-
 **Schlichtes Design:**
-
 <div >
   <div style="flex: 1;">
-    Das Design unserer Webanwendung ist bewusst schlicht gehalten, um eine intuitive und benutzerfreundliche Oberfläche zu bieten. Der Fokus liegt auf der einfachen Bedienbarkeit und dem klaren Layout, um eine effektive Nutzung zu ermöglichen. 
+    Das Design unserer Webanwendung ist bewusst schlicht gehalten. Der Fokus liegt auf der einfachen Bedienbarkeit und dem klaren Layout, um eine effektive Nutzung zu ermöglichen. 
   </div>
   <div style="align-text:center; text-align: center;" >
-    <img src="img/deployed_website.jpg" alt="Webseite" width="500px">
+    <img src="img/deployed_website.jpg" alt="Webseite" width="450px">
   </div>
 </div>
 
@@ -87,7 +85,7 @@ Durch die Umsetzung dieser Ziele konnten wir eine leistungsstarke und benutzerfr
 
 ## Umsetzung
 
-Das Projekt wurde als Webanwendung umgesetzt und besteht aus zwei Repositorys, eines für das Frontend mit Angular Version 16 und eines für das Backend mit ASP.NET Version 7. Um diese beiden Repositorys miteinander Kommunizieren zu lassen, werden im Deployment zwei Dockerimages erstellt. Diese Dockerimages werden dann mit einer `Docker-Compose.yml` zusammengeführt. Bei der Umsetzung lag ein besonderer Fokus auf der Einhaltung der Datenschutz-Grundverordnung (DSGVO), um die Privatsphäre und Sicherheit der Benutzer zu gewährleisten.
+Das Projekt wurde als Webanwendung umgesetzt und besteht aus zwei Repositorys, eines für das Frontend mit Angular Version 16 und eines für das Backend mit ASP.NET Version 7. Um diese beiden Repositorys miteinander Kommunizieren zu lassen, werden im Deployment zwei Dockerimages erstellt. Diese Dockerimages werden dann mit einer `Docker-Compose.yml` zusammengeführt. Bei der Umsetzung lag ein besonderer Fokus auf der Einhaltung der Datenschutz-Grundverordnung (DSGVO).
 
 Für die Implementierung wurden verschiedene Komponenten und Technologien verwendet. Im Backend wurden das Framework ASP.NET sowie die Tools FFmpeg und SignalR eingesetzt. FFmpeg ermöglicht die Verarbeitung von Audio- und Videodateien, während SignalR Echtzeitkommunikation zwischen Server und Client ermöglicht.
 
@@ -110,7 +108,6 @@ Ein zentraler Bestandteil der Umsetzung ist die Verwendung einer Speech-Engine, 
     <table>
   <tr>
     <th>Das Team</th>
-    <th></th>
   </tr>
   <tr>
     <td>Benedikt Beigang</td>
