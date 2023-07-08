@@ -29,7 +29,7 @@ Im Rahmen dieses Projekts haben wir uns zusammen mit unserem Projektsponsor Phil
     Um eine verbesserte Korrektur von Live-Untertiteln zu ermöglichen, haben wir eine Funktion implementiert, die Wörter mit geringer Konfidenz farblich markiert. Der Konfidenz-Wert gibt an, wie sicher sich die Speech Engine bei der Erkennung des jeweiligen Wortes ist.
   </div>
   <div style="text-align: right; width:200;">
-    ![Hervorgehobene Wörter](img/confidenz-werte.png)
+    <img src="img/confidenz-werte.png" alt="Hervorgehobene Wörter" width="200">
   </div>
 </div>
 <br>
