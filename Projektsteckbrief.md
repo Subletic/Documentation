@@ -116,7 +116,7 @@ eee
 <div style="display: flex; align-items: center;">
     <div style="display: flex; align-items: center; justify-content: center;">
   <div>
-    <img src="ProjectPresentation\Poster\img\grundig.svg" alt="Bildbeschreibung" width="200">
+    <img src="ProjectPresentation\Poster\img\grundig.svg" alt="Logo Grundig" width="200">
     <div style="display: flex; justify-content: center;">
       <span>Philipp Platis</span>
     </div>
