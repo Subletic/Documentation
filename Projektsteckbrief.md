@@ -50,7 +50,7 @@ Im Rahmen dieses Projekts haben wir uns zusammen mit unserem Projektsponsor Phil
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 1;">
-    Die Software ermöglicht es den Benutzern, die Sprungweite innerhalb der Audio-Spur anzupassen. Dadurch können sie schnell zu bestimmten Stellen springen, um Korrekturen vorzunehmen oder bestimmte Passagen zu überprüfen.
+    Die Software ermöglicht es den Benutzern, außerdem die Sprungweite innerhalb der Audio-Spur anzupassen. Dadurch können die Benutzer ihre Präferenzen zum springen voreinstellen und sich dann wie gewohnt durch die Audiodatei bewegen.
   </div>
   <div style="text-align: right;">
     <img src="img/sprung-settings.png" alt="Sprungweiten Einstellung" width="200">
@@ -69,7 +69,7 @@ Um die Effizienz der Nutzer zu steigern, haben wir Tastenkombinationen implement
     Unsere Webanwendung ermöglicht es den Nutzern, die Lautstärke des Audios innerhalb der Anwendung anzupassen. Darüber hinaus können sie die Geschwindigkeit der Audio-Wiedergabe an ihre individuellen Bedürfnisse anpassen, dies wurde als eine der wichtigsten Feature beschrieben, da Stenografen meisten die Geschwindigkeit von Audio drosseln, um besser Fehler zu erkennen.
   </div>
   <div style="text-align: right;">
-    <img src="img/sound-audio.png" alt="Soundeinstellung Audio" width="100">
+    <img src="img/sound-audio.png" alt="Soundeinstellung Audio" width="50">
   </div>
 </div>
 
@@ -98,7 +98,7 @@ Um die Effizienz der Nutzer zu steigern, haben wir Tastenkombinationen implement
     Subletic
   </div>
   <div style="flex: 1; text-align: right;">
-    <img src="img/logo.svg" alt="Logo-Subletic" width="200">
+    <img src="img/logo.svg" alt="Logo-Subletic" width="150">
   </div>
 </div>
 
