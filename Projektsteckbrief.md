@@ -1,9 +1,3 @@
-<div style="display: flex;">
-    <div style="flex: 1; float: left; align-items:center;">
-      <img src="img/Logo_HTWK.svg" width="400px" alt="HTWK-Logo">
-    </div>
-</div>
-
 <style>
   h1 {
     font-size: 20px;
@@ -12,8 +6,20 @@
   h2 {
     font-size: 16px;
   }
+
+  h3{
+    font-size: 14px;
+  }
   
   p {
+    font-size: 13px;
+  }
+
+  th {
+    font-size: 13px;
+  }
+
+  td {
     font-size: 13px;
   }
   
@@ -21,6 +27,9 @@
     font-size: 13px;
   }
 </style>
+<div style="float:right;">
+    <img src="img/logo.svg" alt="Logo-Subletic" width="100">
+</div>
 
 # Subletic
 
@@ -46,31 +55,20 @@ Im Rahmen dieses Projekts haben wir uns zusammen mit unserem Projektsponsor Phil
   <div style="flex: 1;">
     Um eine verbesserte Korrektur von Live-Untertiteln zu ermöglichen, haben wir eine Funktion implementiert, die Wörter mit geringer Konfidenz farblich markiert. Der Konfidenz-Wert gibt an, wie sicher sich die Speech Engine bei der Erkennung des jeweiligen Wortes ist.
   </div>
-  <div style="text-align: right; width:200;">
+  <div style="text-align: right; width:200; margin-left:10px;">
     <img src="img/confidenz-werte.png" alt="Hervorgehobene Wörter" width="200">
   </div>
 </div>
-<br>
-
-**Ausgabe des Audios in der Anwendung:**
-
-Die Ausgabe von Audio in unsere Anwendung spielt eine wichtige Rolle, da sie ein immersives und interaktives Nutzungserlebnis ermöglicht. Durch die Ausgabe des Audios ist es den Anwendern möglich, sich innerhalb des Textes zurechtzufinden und falsch erfasste Wörter zu hören und zu verbessern. Die zuvor erwähnte Hervorhebung von Worten durch deren Konfidenz-Werte liefern dabei eine wichtige Orientierung, aber nur das Einhergehen mit dem Hören der Audio ist es möglich eine gewissenhafte Korrektur vorzunehmen.
-
-**Springen in der Audio-Spur**
-
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
-    Unsere Software ermöglicht es den Nutzern, in der Audio-Spur vor- und zurückzuspringen. Die Funktionalität lässt sich unter anderem auch konfigurieren, in dem man die Sprungweite einstellen kann.
-  </div>
-  <div style="text-align: right;">
-    <img src="img/springen-audio.png" alt="Springen in der Audio Buttons" width="200">
-  </div>
-</div>
-<br>
 
 **Tastenkombination/Shortcuts/Hotkeys:**
 
 Um die Effizienz der Nutzer zu steigern, haben wir Tastenkombinationen implementiert, um das Starten und Anhalten der Audio-Wiedergabe zu erleichtern. Dadurch können die Anwender schnell reagieren und ihren Fokus auf die Untertitelkorrektur legen.
+
+Weitere Funktionalitäten sind:
+- Ausgabe des Audios in der Anwendung
+- Springen in der Audio-Spur
+- Einstellbarkeit der Lautstärke
+- Einstellbarkeit der Sprungweite 
 
 ### Neben den funktionalen Eigenschaften haben wir auch Wert auf nicht-funktionale Aspekte gelegt:
 
@@ -80,39 +78,20 @@ Um die Effizienz der Nutzer zu steigern, haben wir Tastenkombinationen implement
   <div style="flex: 1;">
     Das Design unserer Webanwendung ist bewusst schlicht gehalten, um eine intuitive und benutzerfreundliche Oberfläche zu bieten. Der Fokus liegt auf der einfachen Bedienbarkeit und dem klaren Layout, um eine effektive Nutzung zu ermöglichen. 
   </div>
-  <div >
-    <img src="img/deployed_website.jpg" alt="Webseite">
+  <div style="align-text:center; text-align: center;" >
+    <img src="img/deployed_website.jpg" alt="Webseite" width="500px">
   </div>
 </div>
-<br>
-
-**Corporate Design:**
-
-<div >
-  <div style="flex: 1;">
-    Um eine einheitliche Markenidentität zu schaffen, welche Anwendern dazu verhilft unsere Software wiederzuerkennen, haben wir ein Corporate Design in unsere Software integriert. Dies beinhaltet ein Logo und unseren Corporate Namen "Subletic", der unser Projekt repräsentiert.
-  </div>
-  <div style="display: flex;">
-  <div style="flex: 1; display: flex; align-items: center; justify-content: center; font-size: 45px; margin-top:20px">
-    Subletic
-  </div>
-  <div style="flex: 1; text-align: center;">
-    <img src="img/logo.svg" alt="Logo-Subletic" width="100">
-  </div>
-</div>
-
-</div>
-<br>
 
 Durch die Umsetzung dieser Ziele konnten wir eine leistungsstarke und benutzerfreundliche Webanwendung entwickeln, die die Korrektur von Live-Untertiteln erleichtert und gleichzeitig ästhetischen Ansprüchen gerecht wird. Dabei ist das Ausführen der Features stets intuitiv, was das Korrigieren von Untertiteln spielend leicht macht.
 
 ## Umsetzung
 
-Das Projekt wurde als Webanwendung umgesetzt und besteht aus zwei Repositorys, eines für das Frontend mit Angular Version 16 und eines für das Backend mit ASP.NET Version 7. Um diese beiden Repositorys miteinander Kommunizieren zu lassen, werden im Deployment zwei Dockerimages erstellt. Diese Dockerimages werden dann mit einer `Docker-Compose.yml` zusammengeführt. Bei der Umsetzung lag ein besonderer Fokus auf der Einhaltung der Datenschutz-Grundverordnung (DSGVO), um die Privatsphäre und Sicherheit der Benutzer zu gewährleisten. Dies ist auch eine der vom Projektsponsor ausdrücklich wichtigsten Punkte bei der Umsetzung der Webanwendung.
+Das Projekt wurde als Webanwendung umgesetzt und besteht aus zwei Repositorys, eines für das Frontend mit Angular Version 16 und eines für das Backend mit ASP.NET Version 7. Um diese beiden Repositorys miteinander Kommunizieren zu lassen, werden im Deployment zwei Dockerimages erstellt. Diese Dockerimages werden dann mit einer `Docker-Compose.yml` zusammengeführt. Bei der Umsetzung lag ein besonderer Fokus auf der Einhaltung der Datenschutz-Grundverordnung (DSGVO), um die Privatsphäre und Sicherheit der Benutzer zu gewährleisten.
 
 Für die Implementierung wurden verschiedene Komponenten und Technologien verwendet. Im Backend wurden das Framework ASP.NET sowie die Tools FFmpeg und SignalR eingesetzt. FFmpeg ermöglicht die Verarbeitung von Audio- und Videodateien, während SignalR Echtzeitkommunikation zwischen Server und Client ermöglicht.
 
-Ein zentraler Bestandteil der Umsetzung ist die Verwendung einer Speech-Engine, die kontinuierlich Audiostreams transkribiert. Dadurch wird eine Echtzeit-Untertitelung ermöglicht, die nahtlos mit der Audioquelle synchronisiert ist. Dieser Stream wird dann wie im unterpunkt _Schlichtes Design_ zu sehen im Frontend Visualisiert. Die Funktionsweise der Speech-Engine sieht wie folgt aus, unser Stream wird 
+Ein zentraler Bestandteil der Umsetzung ist die Verwendung einer Speech-Engine, die kontinuierlich Audiostreams transkribiert. Dadurch wird eine Echtzeit-Untertitelung ermöglicht, die nahtlos mit der Audioquelle synchronisiert ist.
 
 ## Projektsponsor und Team
 
