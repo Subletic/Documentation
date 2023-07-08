@@ -29,7 +29,7 @@ Im Rahmen dieses Projekts haben wir uns zusammen mit unserem Projektsponsor Phil
     Um eine verbesserte Korrektur von Live-Untertiteln zu ermöglichen, haben wir eine Funktion implementiert, die Wörter mit geringer Konfidenz farblich markiert. Der Konfidenz-Wert gibt an, wie sicher sich die Speech Engine bei der Erkennung des jeweiligen Wortes ist.
   </div>
   <div style="text-align: right;">
-    ![Bildbeschreibung](ProjectPresentation\Poster\img\confidenz-werte.png)
+    ![Bildbeschreibung](img/confidenz-werte.png)
     <img src="ProjectPresentation\Poster\img\confidenz-werte.png" alt="Hervorgehobene Wörter" width="200">
   </div>
 </div>
@@ -110,11 +110,17 @@ Durch die Umsetzung dieser Ziele konnten wir eine leistungsstarke und benutzerfr
 
 
 ## Umsetzung
-eee
+
+Das Projekt wurde als Webanwendung umgesetzt und besteht aus zwei Repositorys, eines für das Frontend mit Angular Version 16 und eines für das Backend mit ASP.NET Version 7. Um diese beiden Repositorys miteinander Kommunizieren zu lassen, werden im Deployment zwei Dockerimages erstellt. Diese Dockerimages werden dann mit einer `Docker-Compose.yml` zusammengeführt. Bei der Umsetzung lag ein besonderer Fokus auf der Einhaltung der Datenschutz-Grundverordnung (DSGVO), um die Privatsphäre und Sicherheit der Benutzer zu gewährleisten. Dies ist auch eine der vom Projektsponsor ausdrücklich wichtigsten Punkte bei der Umsetzung der Webanwendung.
+
+Für die Implementierung wurden verschiedene Komponenten und Technologien verwendet. Im Backend wurden das Framework ASP.NET sowie die Tools FFmpeg und SignalR eingesetzt. FFmpeg ermöglicht die Verarbeitung von Audio- und Videodateien, während SignalR Echtzeitkommunikation zwischen Server und Client ermöglicht.
+
+Ein zentraler Bestandteil der Umsetzung ist die Verwendung einer Speech-Engine, die kontinuierlich Audiostreams transkribiert. Dadurch wird eine Echtzeit-Untertitelung ermöglicht, die nahtlos mit der Audioquelle synchronisiert ist. Dieser Stream wird dann wie im unterpunkt _Schlichtes Design_ zu sehen im Frontend Visualisiert. Die Funktionsweise der Speech-Engine sieht wie folgt aus, unser Stream wird 
 
 ## Projektsponsor und Team
 
-<div style="display: flex; align-items: center;">
+
+<div style="display: flex; flex: 1;">
     <div style="display: flex; align-items: center; justify-content: center;">
   <div>
     <img src="ProjectPresentation\Poster\img\grundig.svg" alt="Logo Grundig" width="200">
@@ -122,6 +128,8 @@ eee
       <span>Philipp Platis</span>
     </div>
   </div>
+</div>
+<div style="flex:2;">
 </div>
   <div style="flex: 1;">
     <table>
