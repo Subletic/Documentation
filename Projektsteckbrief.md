@@ -35,7 +35,7 @@
 
 Entdecken Sie die Leistungsfähigkeit und Einfachheit von Subletic und verbessern Sie die Zugänglichkeit Ihrer Veranstaltungen - für ein Publikum, das auf Ihre Worte zählt.
 
-## Motivation
+## <ins>Motivation</ins>
 
 Unsere Motivation für dieses Projekt liegt in der Notwendigkeit, einen realen Bedarf zu erfüllen und eine innovative Lösung zu entwickeln. Unser Projektsponsor, die Grundig Systems GmbH, hat erkannt, dass es einen dringenden Bedarf an einer hochmodernen Webanwendung gibt, die die Korrektur von Live-Untertiteln ermöglicht, um Personen, die auf Untertitel angewiesen sind, auch eine Maß an Stimmigkeit zu bieten. Bisher gibt es keine vergleichbare Software auf dem Markt, die diese speziellen Anforderungen erfüllt und die Barrierefreiheit berücksichtigt.
 
@@ -43,7 +43,7 @@ Um die Relevanz und Bedeutung dieses Projekts zu unterstreichen, möchten folgen
 
 Mit dieser Software wollen wir einen echten Mehrwert schaffen, indem wir eine Lücke schließen. Das Projekt ist nicht nur technisch herausfordernd, sondern hat auch eine soziale Komponente, da es Menschen dabei unterstützt, barrierefrei auf Informationen zuzugreifen und ihre Kommunikation zu verbessern. Hervorzuheben ist auch, dass diese Umsetzung zu jeder Zeit unter Berücksichtigung der DSGVO erfolgt ist.
 
-## Ziele und Vorgehen
+## <ins>Ziele und Vorgehen</ins>
 
 Im Rahmen dieses Projekts haben wir uns zusammen mit unserem Projektsponsor Philipp Platis konkrete Ziele gesetzt, um sowohl funktionale als auch nicht-funktionale Eigenschaften der Software zu realisieren.
 
@@ -83,7 +83,7 @@ Weitere Funktionalitäten sind:
 
 Durch die Umsetzung dieser Ziele konnten wir eine leistungsstarke und benutzerfreundliche Webanwendung entwickeln, die die Korrektur von Live-Untertiteln erleichtert und gleichzeitig ästhetischen Ansprüchen gerecht wird. Dabei ist das Ausführen der Features stets intuitiv, was das Korrigieren von Untertiteln spielend leicht macht.
 
-## Umsetzung
+## <ins>Umsetzung</ins>
 
 Das Projekt wurde als Webanwendung umgesetzt und besteht aus zwei Repositorys, eines für das Frontend mit Angular Version 16 und eines für das Backend mit ASP.NET Version 7. Um diese beiden Repositorys miteinander Kommunizieren zu lassen, werden im Deployment zwei Dockerimages erstellt. Diese Dockerimages werden dann mit einer `Docker-Compose.yml` zusammengeführt. Bei der Umsetzung lag ein besonderer Fokus auf der Einhaltung der Datenschutz-Grundverordnung (DSGVO).
 
@@ -91,7 +91,7 @@ Für die Implementierung wurden verschiedene Komponenten und Technologien verwen
 
 Ein zentraler Bestandteil der Umsetzung ist die Verwendung einer Speech-Engine, die kontinuierlich Audiostreams transkribiert. Dadurch wird eine Echtzeit-Untertitelung ermöglicht, die nahtlos mit der Audioquelle synchronisiert ist.
 
-## Projektsponsor und Team
+## <ins>Projektsponsor und Team</ins>
 
 <div style="display: flex; flex: 1; text-align: center;">
     <div style="display: flex; align-items: center; justify-content: center; text-align: center;">
