@@ -1,6 +1,6 @@
 <div style="display: flex;">
     <div style="flex: 1; float: left; align-items:center; margin-top: 30px; margin-right:">
-      <img src="img/Logo_HTWK.svg" alt="HTWK-Logo">
+      <img src="img/Logo_HTWK.svg" width="400px" alt="HTWK-Logo">
     </div>
 </div>
 
