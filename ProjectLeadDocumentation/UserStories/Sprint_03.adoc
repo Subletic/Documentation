@@ -49,7 +49,7 @@ a|
 [options="header"]
 |===
 | Wiedergabegeschwindigkeit
-| Als Anwender möchte ich die Möglichkeit haben, die Audiogeschwindigkeit anzupassen, sodass ich das Gesagte in der Audio besser verstehen kann. Dabei möchte ich sowohl über ein Pop-Up-Menü, eine "+" und "-" Taste, wie auch mithilfe eines Hotkeys, die Einstellung vornehmen.
+| Als Anwender möchte ich die Möglichkeit haben, die Audiogeschwindigkeit anzupassen, sodass ich das Gesagte in der Audio besser verstehen kann. Dabei möchte ich über ein Pop-Up-Menü die Einstellung vornehmen.
 a|
 * link:{frontend}25[Wiedergabegeschwindigkeit der Audio änderbar]
 |===
