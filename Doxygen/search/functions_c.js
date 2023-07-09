@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['receiveaudiostream_0',['ReceiveAudioStream',['../class_backend_1_1_hubs_1_1_communication_hub.html#a410fd7edbec36ac1d02b3523f426d18f',1,'Backend::Hubs::CommunicationHub']]],
+  ['recognitionstartedmessage_1',['RecognitionStartedMessage',['../class_backend_1_1_data_1_1_speechmatics_messages_1_1_recognition_started_message.html#aeabfed75d07e3a0f676cf7cf32598658',1,'Backend::Data::SpeechmaticsMessages::RecognitionStartedMessage']]],
+  ['recognitionstartedmessage_5flanguagepackinfo_2',['RecognitionStartedMessage_LanguagePackInfo',['../class_backend_1_1_data_1_1_speechmatics_messages_1_1_recognition_started_message___language_pack_info.html#ad6c6e1dc16e4026650ca811eb719e56e',1,'Backend::Data::SpeechmaticsMessages::RecognitionStartedMessage_LanguagePackInfo']]],
+  ['replacespeechbubble_3',['ReplaceSpeechBubble',['../interface_backend_1_1_services_1_1_i_speech_bubble_list_service.html#a37d52f1db661055f6136f15b8e9b6d36',1,'Backend.Services.ISpeechBubbleListService.ReplaceSpeechBubble()'],['../class_backend_1_1_services_1_1_speech_bubble_list_service.html#aea046d02d019f30fb98c1faf32ce1cc5',1,'Backend.Services.SpeechBubbleListService.ReplaceSpeechBubble()']]],
+  ['replacespeechbubble_5fcreationtimedoesntchange_4',['ReplaceSpeechBubble_CreationTimeDoesntChange',['../class_backend_tests_1_1_speech_bubble_list_service_tests.html#a1b76a0c56283a9ee6ea0d6b1e9e6aa8a',1,'BackendTests::SpeechBubbleListServiceTests']]],
+  ['replacespeechbubble_5freplaceintoemptylistaddselementtolist_5',['ReplaceSpeechBubble_ReplaceIntoEmptyListAddsElementToList',['../class_backend_tests_1_1_speech_bubble_list_service_tests.html#a052294d187e14b7824a508fa3629af47',1,'BackendTests::SpeechBubbleListServiceTests']]],
+  ['replacespeechbubble_5freplacesspeechbubblewithsameidhighspeechbubblecount_6',['ReplaceSpeechBubble_ReplacesSpeechBubbleWithSameIdHighSpeechBubbleCount',['../class_backend_tests_1_1_speech_bubble_list_service_tests.html#a63773c50ba653fc90e24015b49c77062',1,'BackendTests::SpeechBubbleListServiceTests']]],
+  ['replacespeechbubble_5freplacesspeechbubblewithsameidlowspeechbubblecount_7',['ReplaceSpeechBubble_ReplacesSpeechBubbleWithSameIdLowSpeechBubbleCount',['../class_backend_tests_1_1_speech_bubble_list_service_tests.html#a58ec3a84f2af6e0cd3b14415871d19e5',1,'BackendTests::SpeechBubbleListServiceTests']]],
+  ['run_8',['Run',['../_program_8cs.html#aaa3dbf02e269c3ef7e8546d290c6b3dd',1,'Program.cs']]]
+];

@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['iavprocessingservice_0',['IAvProcessingService',['../interface_backend_1_1_services_1_1_i_av_processing_service.html',1,'Backend::Services']]],
+  ['iavprocessingservice_2ecs_1',['IAvProcessingService.cs',['../_i_av_processing_service_8cs.html',1,'']]],
+  ['id_2',['id',['../class_backend_1_1_data_1_1_speechmatics_messages_1_1_recognition_started_message.html#a4c7c3ac61702727d541ea7c8334a40ae',1,'Backend::Data::SpeechmaticsMessages::RecognitionStartedMessage']]],
+  ['id_3',['Id',['../class_backend_1_1_data_1_1_speech_bubble.html#a5d7ab482787f3fe4e7e543ef8119826f',1,'Backend.Data.SpeechBubble.Id'],['../struct_backend_1_1_data_1_1_speech_bubble_json.html#abf436ef94868042d4e0f111c511acb51',1,'Backend.Data.SpeechBubbleJson.Id']]],
+  ['if_4',['if',['../_program_8cs.html#a79a944c7f0e25196ca3c5a8638b919b9',1,'if(app.Environment.IsDevelopment()):&#160;Program.cs'],['../_program_8cs.html#af35ceb2a72ac70932ebee677a0213ff5',1,'if(avp is null) throw new InvalidOperationException($&quot;Failed to find a registered :&#160;Program.cs'],['../_program_8cs.html#ab6d638adac640e2088ac599660580d2e',1,'if(doShowcase) audioTranscription:&#160;Program.cs']]],
+  ['infomessage_5',['InfoMessage',['../class_backend_1_1_data_1_1_speechmatics_messages_1_1_info_message.html',1,'Backend.Data.SpeechmaticsMessages.InfoMessage'],['../class_backend_1_1_data_1_1_speechmatics_messages_1_1_info_message.html#a3b02515349a1203b000d10903ffde463',1,'Backend.Data.SpeechmaticsMessages.InfoMessage.InfoMessage()']]],
+  ['infomessage_2ecs_6',['InfoMessage.cs',['../_info_message_8cs.html',1,'']]],
+  ['init_7',['Init',['../class_backend_1_1_services_1_1_av_processing_service.html#a1cd74c805e90ecb32c751d26eaf15c1e',1,'Backend.Services.AvProcessingService.Init()'],['../interface_backend_1_1_services_1_1_i_av_processing_service.html#abfd0d2c9b81c3bc60533ca443c81df74',1,'Backend.Services.IAvProcessingService.Init()']]],
+  ['insert120newwords_5fspeechbubblelistcontains6bubbles_8',['Insert120NewWords_SpeechBubbleListContains6Bubbles',['../class_backend_tests_1_1_word_processing_service_tests.html#a4e03203db31650e578e342636447555f',1,'BackendTests::WordProcessingServiceTests']]],
+  ['insert19newwords_5fspeechbubblelistempty_9',['Insert19NewWords_SpeechBubbleListEmpty',['../class_backend_tests_1_1_word_processing_service_tests.html#aa1cc763168aa23a7cc3ab2e0405ec31f',1,'BackendTests::WordProcessingServiceTests']]],
+  ['insert20newwords_5ffirstspeechbubbleavailable_10',['Insert20NewWords_FirstSpeechBubbleAvailable',['../class_backend_tests_1_1_word_processing_service_tests.html#aec06fc8ea6ebd184fcf17d8eb30b74f6',1,'BackendTests::WordProcessingServiceTests']]],
+  ['insert3wordsdifferentspeakers_5fspeechbubblelistcontains2bubbles_11',['Insert3WordsDifferentSpeakers_SpeechBubbleListContains2Bubbles',['../class_backend_tests_1_1_word_processing_service_tests.html#addbcfb6997cff9b229756d765df70be2',1,'BackendTests::WordProcessingServiceTests']]],
+  ['insert3wordsseperated6seconds_5fspeechbubblelistcontains2bubbles_12',['Insert3WordsSeperated6Seconds_SpeechBubbleListContains2Bubbles',['../class_backend_tests_1_1_word_processing_service_tests.html#a7b7d1d6a70e45585e5ff88f8adba944c',1,'BackendTests::WordProcessingServiceTests']]],
+  ['insert40newwords_5fspeechbubblelistcontains2bubbles_13',['Insert40NewWords_SpeechBubbleListContains2Bubbles',['../class_backend_tests_1_1_word_processing_service_tests.html#af32c68cb4c4b2bffd5cf1d1c63648dd1',1,'BackendTests::WordProcessingServiceTests']]],
+  ['insert4wordsdifferenttimestampsdifferentspeakers_5fspeechbubblelistcontains2bubbles_14',['Insert4WordsDifferentTimeStampsDifferentSpeakers_SpeechBubbleListContains2Bubbles',['../class_backend_tests_1_1_word_processing_service_tests.html#a8153495a19fa99ea9cbf4b3d87081192',1,'BackendTests::WordProcessingServiceTests']]],
+  ['insertcommaafterword_5fonespeechbubblegenerated_15',['InsertCommaAfterWord_OneSpeechBubbleGenerated',['../class_backend_tests_1_1_word_processing_service_tests.html#afa2aa389ebe1d97cdc954a62ae742484',1,'BackendTests::WordProcessingServiceTests']]],
+  ['is_5feos_16',['is_eos',['../class_backend_1_1_data_1_1_speechmatics_messages_1_1_add_transcript_message__result.html#aebefb2354a5e6f22a275d777fe353492',1,'Backend::Data::SpeechmaticsMessages::AddTranscriptMessage_result']]],
+  ['ispeechbubblelistservice_17',['ISpeechBubbleListService',['../interface_backend_1_1_services_1_1_i_speech_bubble_list_service.html',1,'Backend::Services']]],
+  ['ispeechbubblelistservice_2ecs_18',['ISpeechBubbleListService.cs',['../_i_speech_bubble_list_service_8cs.html',1,'']]],
+  ['itn_19',['itn',['../class_backend_1_1_data_1_1_speechmatics_messages_1_1_recognition_started_message___language_pack_info.html#aa9d3d57807c7ad47e63a91dcf935ffdd',1,'Backend::Data::SpeechmaticsMessages::RecognitionStartedMessage_LanguagePackInfo']]],
+  ['iwordprocessingservice_20',['IWordProcessingService',['../interface_backend_1_1_services_1_1_i_word_processing_service.html',1,'Backend::Services']]],
+  ['iwordprocessingservice_2ecs_21',['IWordProcessingService.cs',['../_i_word_processing_service_8cs.html',1,'']]]
+];
