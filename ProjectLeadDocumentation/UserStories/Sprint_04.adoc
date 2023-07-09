@@ -1,0 +1,34 @@
+:doku: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/issues/
+:frontend: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/
+:backend: https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/
+
+= User Stories erstellt in Sprint 3
+:toc:
+
+== Nicht-Funktionale Anforderungen
+
+
+
+== Funktionale Anforderungen
+
+[options="header"]
+|===
+| Positionsmarker in Text
+| Als Anwender möchte ich wissen an welcher Stelle die Audio gerade ist im Text, sodass ich mich leichter orientieren kann.
+|===
+
+[options="header"]
+|===
+| Texthervorhebung
+| Als Anwender möchte ich wissen, welchen Untertitelblock ich aktuell bearbeite, sodass ich mich besser orientieren kann.
+a|
+* link:{frontend}1[Bearbeitungsbox visualisieren und unsichtbar machen]
+|===
+
+[options="header"]
+|===
+| Graue Bearbeitungsbox
+| Als Anwender möchte ich die Option haben, die graue Bearbeitungsbox nicht anzuzeigen, sodass ich während der Untertitelbearbeitung nicht abgelenkt werde.
+a|
+* link:{frontend}1[Bearbeitungsbox visualisieren und unsichtbar machen]
+|===

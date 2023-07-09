@@ -43,5 +43,5 @@ image:img/Productvision.jpg[]
 
 ---
 
-image:img/ArchitectureOverview.jpg[]
+image:img/ArchitectureOverview_v2.jpg[]
 

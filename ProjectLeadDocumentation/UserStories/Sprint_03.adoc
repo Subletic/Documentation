@@ -25,6 +25,14 @@ a|
 * link:{doku}108[Erstellung eines Videos]
 |===
 
+[options="header"]
+|===
+| Übersichtlichkeit
+| Als Anwender muss die Darstellung schlicht sein, sodass ich beim Lesen und Korrigieren den Überblick behalte und nicht abgelenkt werde.
+a| 
+* link:{frontend}27[Anpassung von Frontend an Wireframe-Optik]
+|===
+
 == Funktionale Anforderungen
 
 [options="header"]
@@ -64,22 +72,11 @@ a|
 
 [options="header"]
 |===
-| Sprungweite
+| Sprungweite einstellbar
 | Als erfahrener GoSpeech-Anwender möchte ich die Sekundenzahl, die beim Vor- und Zurückspringen gesprungen wird selbst auf meinen präferierten Wert einstellen können, damit ich möglichst effizient arbeiten kann.
 a|
 * link:{frontend}8[Sprungfunktion der Audio]
-|===
-
-[options="header"]
-|===
-| Übersichtlichkeit
-| Als Anwender muss die Darstellung schlicht sein, sodass ich beim Lesen und Korrigieren den Überblick behalte und nicht abgelenkt werde.
-|===
-
-[options="header"]
-|===
-| Positionsmarker in Text
-| Als Anwender möchte ich wissen an welcher Stelle die Audio gerade ist im Text, sodass ich mich leichter orientieren kann.
+* link:{frontend}32[Änderung Darstellung der Sprungweite im Einstellungsmenü]
 |===
 
 [options="header"]
@@ -88,22 +85,6 @@ a|
 | Als Kunde möchte ich, dass das MVP die gängigsten Videoformate unterstützt, damit ich meine Dateien problemlos hochladen kann.
 a|
 * link:{backend}7[API Endpunkt - Entgegennahme des Audios-Streams]
-|===
-
-[options="header"]
-|===
-| Texthervorhebung
-| Als Anwender möchte ich wissen, welchen Untertitelblock ich aktuell bearbeite, sodass ich mich besser orientieren kann.
-a|
-* link:{frontend}1[Bearbeitungsbox visualisieren und unsichtbar machen]
-|===
-
-[options="header"]
-|===
-| Graue Bearbeitungsbox
-| Als Anwender möchte ich die Option haben, die graue Bearbeitungsbox nicht anzuzeigen, sodass ich während der Untertitelbearbeitung nicht abgelenkt werde.
-a|
-* link:{frontend}1[Bearbeitungsbox visualisieren und unsichtbar machen]
 |===
 
 [options="header"]
@@ -129,4 +110,13 @@ a|
 | Als Ausgabestream welcher die Ausgabe-Audio und die dazugehörigen Untertitel trägt, benötige ich die Untertitel im webvtt-Format, sodass ich die verbesserten Transkriptionen an die Kunden ausliefern kann.
 a|
 * link:{backend}24[Sprechblasen in Untertitelformat exportieren]
+|===
+
+[options="header"]
+|===
+| Reload des Backends
+| Als Anwender der die Software zu Demonstrations-Zwecken ausprobiert, muss ich in der Lage sein das Backend neu zu starten, damit die Test-Audio neu ins Backend geladen wird und die Sprechblasen neu im Frontend erscheinen. Grund dafür ist, dass noch keine externen Streams eingelesen werden (sondern nur eine Datei), da der Kunde noch keine Quellen zur Verfügung gestellt hat.
+a|
+* link:{frontend}29[Test-Stream-Reload Button]
+* link:{backend}26[Test-Stream-Reload Funktion]
 |===
