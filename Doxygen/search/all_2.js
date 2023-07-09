@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['backend_0',['Backend',['../namespace_backend.html',1,'']]],
+  ['backend_2eassemblyinfo_2ecs_1',['Backend.AssemblyInfo.cs',['../_backend_8_assembly_info_8cs.html',1,'']]],
+  ['backend_2eglobalusings_2eg_2ecs_2',['Backend.GlobalUsings.g.cs',['../_backend_8_global_usings_8g_8cs.html',1,'']]],
+  ['backendtests_3',['BackendTests',['../namespace_backend_tests.html',1,'']]],
+  ['backendtests_2eassemblyinfo_2ecs_4',['BackendTests.AssemblyInfo.cs',['../_backend_tests_8_assembly_info_8cs.html',1,'']]],
+  ['backendtests_2eglobalusings_2eg_2ecs_5',['BackendTests.GlobalUsings.g.cs',['../_backend_tests_8_global_usings_8g_8cs.html',1,'']]],
+  ['buffersize_5facceptscorrect_6',['BufferSize_AcceptsCorrect',['../class_backend_tests_1_1_frontend_audio_queue_service_tests.html#ad919ccf46767d1ed88c8e1f694f72cbb',1,'BackendTests::FrontendAudioQueueServiceTests']]],
+  ['buffersize_5frejectswrong_7',['BufferSize_RejectsWrong',['../class_backend_tests_1_1_frontend_audio_queue_service_tests.html#aa6c72786babc05c192b728e92a778497',1,'BackendTests::FrontendAudioQueueServiceTests']]],
+  ['buffertimemonitor_8',['BufferTimeMonitor',['../class_backend_1_1_services_1_1_buffer_time_monitor.html',1,'Backend.Services.BufferTimeMonitor'],['../class_backend_1_1_services_1_1_buffer_time_monitor.html#a8ede67516007081eade2ec023bd81cf1',1,'Backend.Services.BufferTimeMonitor.BufferTimeMonitor()']]],
+  ['buffertimemonitor_2ecs_9',['BufferTimeMonitor.cs',['../_buffer_time_monitor_8cs.html',1,'']]],
+  ['builder_10',['builder',['../_program_8cs.html#a2f78352277081c620fd4cf92a5ce15e5',1,'Program.cs']]],
+  ['bytespersample_11',['bytesPerSample',['../class_backend_1_1_data_1_1_speechmatics_messages_1_1_start_recognition_message___audio_type.html#a880554cad1c19a64a287aab4a98c82a5',1,'Backend::Data::SpeechmaticsMessages::StartRecognitionMessage_AudioType']]],
+  ['controllers_12',['Controllers',['../namespace_backend_1_1_controllers.html',1,'Backend']]],
+  ['data_13',['Data',['../namespace_backend_1_1_data.html',1,'Backend']]],
+  ['hubs_14',['Hubs',['../namespace_backend_1_1_hubs.html',1,'Backend']]],
+  ['services_15',['Services',['../namespace_backend_1_1_services.html',1,'Backend']]],
+  ['speechmaticsmessages_16',['SpeechmaticsMessages',['../namespace_backend_1_1_data_1_1_speechmatics_messages.html',1,'Backend::Data']]]
+];
