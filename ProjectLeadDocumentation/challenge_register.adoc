@@ -32,7 +32,7 @@ Schweregrad |aufgetreten am (absteigend) |erstellt durch |Reaktion |Verantwortli
 
 | "No worker can be schedulde because the service is at capacity", Speech Engine auf welche wir angewiesen, schränkt unser Account | Problem | Produkt | sehr hoch | 06.07.2023 | @lnoack | Email an Speechmatics mit Frage wann Service für uns wieder erreichbar ist | @lnoack | 06.07.2023
 
-| GitLab Runner sind wieder nicht erreichbar, behindert Deployment der Software | Problem | Produkt | hoch | 06.07.2023 | @lnoack | Abwarten bis Runner wieder laufen | @lnoack | 
+| GitLab Runner sind wieder nicht erreichbar, behindert Deployment der Software | Problem | Produkt | hoch | 06.07.2023 | @lnoack | Abwarten bis Runner wieder laufen zusätzliche Mail an Server Admin | @lnoack | 
 
 | Wichtige Architektur-Entscheidung zum Thema: wie handhaben wir Audio im Backend und Frontend birgt Risiko, da große Unsicherheit besteht, ob der nun gewählte Weg der langfristig Richtige ist, jedoch die Zeit fehlt sich länger mit der Problematik zu beschäftigen | Bedenken | Produkt | hoch | 22.06.2023 | @bbeigang | Recherche zu möglichen Ansätzen, Bibliotheken, etc. und Verkleinerung des MVPs | @lnoack | 30.06.2023
 
