@@ -1,0 +1,48 @@
+Title,Description,Issue ID,URL,State,Author,Author Username,Assignee,Assignee Username,Confidential,Locked,Due Date,Created At (UTC),Updated At (UTC),Closed At (UTC),Milestone,Weight,Labels,Time Estimate,Time Spent,Epic ID,Epic Title
+API Endpunkt - Entgegennahme des Audios-Streams,"Als interne Datenverwaltung im Backend benötige ich einen Endpunkt der einen Audio-Stream einließt, sodass ich die Stream-Daten weiter verarbeiten kann.
+
+Der Endpunkt soll einen beliebigen Videostream (zB von YouTube) einlesen. Dabei soll Video wie Audio seperat aufgenommen werden, sodass wir immer den Teil des Audios zum Nutzer schicken, die er grade hören möchte.
+
+**Anmerkung**
+
+* Es muss sich Gedanken gemacht werden wie die Streams ankommen und im Backend gespeichert werden.
+* Die URL muss irgendwie übergeben werden, damit das Backend weiß von wo es der Stream kommen soll.
+
+**DoD**
+
+- [x] Es existiert ein Endpunkt der einen belibiegen Audio-Stream entgegennimmt 
+- [x] Der Stream wird im Backend gebuffert",7,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/7,Closed,Benedikt Beigang,bbeigang,Christoph Neidahl,cneidahl,No,No,,2023-05-22 08:37:00,2023-07-09 16:03:28,2023-07-09 16:03:28,👂Sprint_03_1,5,Backend,0,18000,78,Hören
+API Endpunkt - Geplatzte Sprechblase  (Backend-Sicht),"Als Frontend benötige ich eine Schnittstelle im Backend die ich abbonieren kann, sodass ich immer informiert werde sobald eine Sprechblase aus dem Sprechblasen-Buffer des Backends nicht mehr existiert.
+
+**Anmerkungen**
+* Es existiert schon eine sehr ähnliche [Schnittstelle](https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/blob/feature/newSpeechBubbleProvider/Backend/Controllers/SpeechBubbleController.cs) für das Publizieren neuer Sprechblasen 
+
+**DoD**
+
+- [x] Es existiert ein abbonierbarer Endpoint im Backed, der das Frontend über gelöschte Sprechblasen informiert.
+- [x] Der Endpunkt wird im Speechbubble-Service aufgerufen falls eine Sprechblase geplatzt ist.",10,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/10,Closed,Benedikt Beigang,bbeigang,Pascal Fabian Dittes,pdittes,No,No,,2023-05-22 08:37:00,2023-07-04 15:47:17,2023-07-01 13:55:19,👂Sprint_03_1,2,Backend,0,26100,77,Sichtbarkeit
+Umbauen des WebSocket-Endpoints zu Speechmatics,"
+DoD:
+- [x] Extrahierung der Methode ReceiveMessages Funktionalitäten in neue Methoden.",21,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/21,Closed,Benedikt Beigang,bbeigang,Christoph Neidahl,cneidahl,No,No,,2023-06-14 13:09:03,2023-07-09 18:12:55,2023-07-09 18:12:55,👂Sprint_03_1,2,Backend,0,0,76,MVP Features
+NewWordHandle-Methode in SpeechbubbleController auslagern in neuen Service,"
+DoDs:
+- [x] Alle Methoden die kein Endpunkt sind in einen Service auslagern.",22,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/22,Closed,Benedikt Beigang,bbeigang,Luca Niklas Franke,lfranke2,No,No,,2023-06-14 13:13:31,2023-06-22 14:55:51,2023-06-22 14:55:51,👂Sprint_03_1,2,Backend,0,5400,,
+Audio Handling im Backend,"Als Entwickler benötige ich eine interne Verarbeitung des ankommenden Audiostreams in unserem Backend, sodass der Audiostream im Backend solange vorgehalten werden kann, bis die vom Nutzer bearbeiteten Sprechblasen nicht mehr bearbeitet werden dürfen (aus dem Timeframe fallen). Außerdem muss die Audio zum Frontend geschickt werden, damit der Nutzer das Gesagte hören kann.
+
+**DoD**
+- [x] Audiodaten werden in Backend gehalten in einer Queue oder Ähnlichem
+- [x] Audio an Frontend schicken mit WebStreams",23,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/23,Closed,Benedikt Beigang,bbeigang,Christoph Neidahl,cneidahl,No,No,,2023-06-22 13:56:18,2023-07-09 20:24:30,2023-07-01 12:37:02,👂Sprint_03_1,5,Backend,0,66600,78,Hören
+Sprechblasen in Untertitelformat exportieren,"Als Ausgabestream welcher die Ausgabe-Audio und die dazugehörigen Untertitel trägt, benötige ich die Untertitel im webvtt-Format, sodass ich die verbesserten Transkriptionen an die Kunden ausliefern kann. 
+
+**Anmerkungen**
+* Die im Backend gespeicherten Sprechblasen müssen in das Untertitel-Format konvertiert werden und dann dem Ausgabe-Stream übergeben werden.
+
+**DoD**
+- [x] Neue Klasse die einen Stream im Konstruktor bekommt 
+- [x] Sprechblasen werden zu webvtt-format konvertiert
+- [x] Buffer Time Monitor anpassen und alte Sprechblasen mit Methodenaufruf in stream schreiben",24,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/24,Closed,Benedikt Beigang,bbeigang,AMINE JEGANI,ajegani,No,No,,2023-06-22 14:15:19,2023-07-08 12:36:43,2023-07-04 16:17:47,👂Sprint_03_1,5,Backend,0,75600,76,MVP Features
+Test-Stream-Reload Funktion,"Derzeit läuft der Test-Stream einmal durch. Die Sprechblasen und der Audiostream verschwinden danach, da der Dockercontainer nicht erneut gestartet wird. Wir benötigen eine Reload Funktion die vom Frontend ausgelöst wird und den Audio-Stream wie die Sprechblasen erneut in das Backend schiebt, sodass diese wieder zum Frontend gespielt werden.
+
+**DoD**
+- [x] Es existiert ein API-Endpunkt der vom Frontend aus gecallt werden kann.
+- [x] Der API-Endpunkt kümmert sich darum dass die Audiodatei neu eingelesen wird.",26,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/-/issues/26,Closed,Benedikt Beigang,bbeigang,"Christoph Neidahl, Luca Niklas Franke","cneidahl, lfranke2",No,No,,2023-07-04 20:11:22,2023-07-09 16:22:31,2023-07-09 15:53:58,👂Sprint_03_1,3,Backend,0,7200,76,MVP Features

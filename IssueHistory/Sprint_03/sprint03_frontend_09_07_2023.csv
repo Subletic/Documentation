@@ -1,0 +1,84 @@
+Title,Description,Issue ID,URL,State,Author,Author Username,Assignee,Assignee Username,Confidential,Locked,Due Date,Created At (UTC),Updated At (UTC),Closed At (UTC),Milestone,Weight,Labels,Time Estimate,Time Spent,Epic ID,Epic Title
+Audio abspielen im Browser,"Als Anwender möchte ich den Audio-Stream hören, sodass ich bewerten kann ob ein Untertitel und das gesprochene zusammen passt.
+
+**DoD**
+- [x] Audio wird empfangen, in Buffer verwaltet und eingelesen
+- [x] Dabei geschieht Umwandlung von Int16Array zu Float32Array
+- [x] Die Audio ist im Browser hörbar
+- [x] Die Audio ist pausierbar und setzt sich an der gleichen Stelle fort
+- [x] Die Buttons wurden optisch so angepasst, dass sie fürs MVP angemessen sind",7,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/7,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,,2023-05-24 11:09:50,2023-07-01 12:36:37,2023-07-01 12:36:37,👂Sprint_03_1,3,Frontend,0,64200,78,Hören
+Sprungfunktion der Audio,"Als Anwender möchte ich mit einem bestimmten Tastdruck in der Audio springen, sodass ich mir schon gesagtes noch einmal anhören kann.
+
+**Anmerkungen**
+* Wichtig ist es die Edgecases zu beachten, falls der Nutzer zu weit in der Zeit springt.
+
+---
+
+**DoD**
+- [x] Bei einer Nutzereingabe wird die Audioposition entsprechend verändert
+- [x] Die eingestellte Sprungweite wird berücksichtigt
+- [x] Menu für Sprungfunktion",8,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/8,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,,2023-05-24 11:09:50,2023-07-09 13:35:40,2023-07-05 10:47:37,👂Sprint_03_1,5,Frontend,0,144300,79,Bearbeiten/Navigieren
+API Endpunkt - Geplatzte Sprechblase  (Frontend-Sicht),"Als Frontend benötige ich einen Endpunkt der darüber informiert, sobald eine Sprechblase nicht mehr im Sprechblasen-Buffer des Backends existiert, sodass ich darauf reagieren kann und die veraltete Sprechblase unsichtbar machen kann.
+
+**Anmerkungen**
+* Es existiert schon eine sehr ähnliche [Schnittstelle](https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/blob/dev/src/app/text-box/text-box.component.ts) für das Annehmen neuer Sprechblasen.
+
+**DoD**
+
+- [x] Es existiert ein Endpunkt der den WebSocket, der über gelöschte Sprechblasen informiert, im Backend abboniert
+- [x] Unit-Tests, die den Endpunkt testen",18,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/18,Closed,Benedikt Beigang,bbeigang,Pascal Fabian Dittes,pdittes,No,No,,2023-06-04 15:48:36,2023-07-05 10:44:22,2023-07-04 16:02:55,👂Sprint_03_1,2,Frontend,0,26400,77,Sichtbarkeit
+Verbesserung der Löschfunktion von WordTokens für echte Untertitel,"Löschen von Buchstaben kann in spans kann dazu führen dass leere strings in die datenstruktur wandern. Wir brauchen einen Fix der die unnötigen WordTokens löscht.
+
+DoD:
+- [x] Es werden keine leeren Strings mehr ans Backend geschickt.
+- [x] Struktur, wann Löschen ausgeführt wird, wird optimiert.
+- [x] Struktur, wann und wie bei Aktualisierung gesendet wird, wird optimiert
+- [x] Es wurde ein Test implementiert, dass keine leeren Strings vorhanden sind.",23,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/23,Closed,Benedikt Beigang,bbeigang,Finn Johann Romeis,fromeis,No,No,,2023-06-20 16:53:58,2023-07-09 16:22:24,2023-07-09 16:08:31,👂Sprint_03_1,3,"Bug,Frontend",0,47700,76,MVP Features
+Datenstruktur für AudioBuffer,"Als Entwickler der den Audiostream hörbar machen soll, benötige ich eine Datenstruktur, der den Audiostream hält, sodass ich diesen auslesen kann und für den Nutzer hörbar machen kann.
+
+**DoD**
+- [x] Es ist ein Buffer implementiert der 2 Minuten Audio vorhält
+- [x] Der Buffer wird vom Stream befüllt
+- [x] Audio älter als 2 Minuten wird verworfen
+- [x] Es wurde kommuniziert wie die Audio im buffer gespeichert ist und wie mit der datenstruktur umzugehen ist",24,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/24,Closed,Benedikt Beigang,bbeigang,Luca Niklas Franke,lfranke2,No,No,,2023-06-22 14:26:50,2023-07-07 07:39:39,2023-07-01 12:36:38,👂Sprint_03_1,5,Frontend,0,27000,78,Hören
+Wiedergabegeschwindigkeit der Audio änderbar,"
+
+**DoD**
+- [x] Wiedergabegeschwindigkeit kann verändert werden
+- [x] Es existiert ein Button mit dem die Geschwindigkeit angepasst werden kann",25,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/25,Closed,Benedikt Beigang,bbeigang,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,,2023-06-22 14:49:25,2023-07-09 15:00:41,2023-07-09 15:00:41,👂Sprint_03_1,3,Frontend,0,24600,79,Bearbeiten/Navigieren
+Corporate Design unserer Software,"Als Developer wollen wir einen ordentlichen Auftritt nach außen haben, welcher unser Software repräsentiert. Hierfür benötigen wir ein ansehnliches Logo sowie einen Catchfrase.
+
+**DoD**
+- [x] Das Logo ist so unverkennbar das man nur auf unsere Software schließen kann
+- [x] favico ist auf webseite hinterlegt
+- [x] Corporate Name ist auf Webseite hinterlegt",26,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/26,Closed,Luca Noack,lnoack,Luca Noack,lnoack,No,No,,2023-06-27 14:22:00,2023-07-04 16:51:18,2023-07-04 16:14:05,👂Sprint_03_1,1,"Documentation,Frontend,In dev",0,4920,,
+Anpassung von Frontend an Wireframe-Optik,"Während der Entwicklung haben wir für viele optische Elemente Übergangslösungen erstellt. Diese wollen wir schrittweise so anpassen, dass unser Frontend mehr dem Wireframe entspricht.
+
+**DoD**
+- [x] Scrollbar anpassen
+- [x] Textsheet und Hintergrund anpassen
+- [x] Button Icons einheitlicher gestalten
+- [x] Button Event Images
+- [x] Anpassbares Audio über Regler",27,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/27,Closed,Finn Johann Romeis,fromeis,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,,2023-06-28 12:49:22,2023-07-07 19:44:03,2023-07-04 16:03:04,👂Sprint_03_1,5,Frontend,0,65100,76,MVP Features
+Pausieren und Springen in Audio mit Keyboard-Tasten,"Als Anwender möchte ich meine Nutzereingaben mit der Tastatur machen, sodass ich schnell in der Audio navigieren kann.
+
+DoD:
+- [x] Pause-/Abspiel-Button kann mit der Tastatur betätigt werden
+- [x] Vor-/Zurück-Button kann mit der Tastatur betätigt werden
+- [x] Es wurden falls vorhanden die Short-Cuts von GoSpeech übernommen",28,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/28,Closed,Benedikt Beigang,bbeigang,Pascal Fabian Dittes,pdittes,No,No,,2023-07-01 13:11:06,2023-07-08 12:30:07,2023-07-08 12:30:07,👂Sprint_03_1,2,Frontend,0,7200,79,Bearbeiten/Navigieren
+Test-Stream-Reload Button,"Derzeit läuft der Test-Stream einmal durch. Die Sprechblasen und der Audiostream verschwinden danach, da der Dockercontainer nicht erneut gestartet wird. Wir benötigen eine Reload Funktion die vom Frontend ausgelöst wird und den Audio-Stream wie die Sprechblasen erneut in das Backend schiebt, sodass diese wieder zum Frontend gespielt werden.
+
+**Anmerkungen**
+* Button vielleicht in Options verstecken?
+
+**DoD**
+- [x] Es existiert ein dezenter Button der für das reloaden gedacht ist.
+- [x] Das Drücken des Buttons löst einen Call an das Backend aus.",29,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/29,Closed,Benedikt Beigang,bbeigang,Finn Johann Romeis,fromeis,No,No,,2023-07-04 20:14:03,2023-07-09 16:22:35,2023-07-06 21:01:54,👂Sprint_03_1,1,Frontend,0,10500,76,MVP Features
+Änderung Darstellung der Sprungweite im Einstellungsmenü,"Während unserer MVP-Abnahme hat sich der Kunde bei der Darstellungsform der Änderung der Sprungweite im Einstellungsmenü doch noch einmal umentschieden. Es soll kein Eingabefeld sein, sondern lieber ein Slider (Reichweite von 1 bis 20 Sekunden, Standardwert bei 5 Sekunden)
+
+**DoD**
+- [x] Eingabefeld durch Slider in settings.component ersetzen
+- [x] UnitTests aktualisieren",32,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/32,Closed,Chantal Bley,cbley,Chantal Bley,cbley,No,No,,2023-07-09 13:07:50,2023-07-09 15:58:47,2023-07-09 15:58:47,👂Sprint_03_1,2,Frontend,0,10800,79,Bearbeiten/Navigieren
+Neue Guideline einarbeiten,"**DoD**
+- [x] Anpassung der Tests an die Änderungen in der Datenstruktur aus !30 bzw. #23 
+- [x] Guidelines der getesteten Guard-Changes für Branching einarbeiten",33,https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/-/issues/33,Closed,Finn Johann Romeis,fromeis,"Finn Johann Romeis, Chantal Bley","fromeis, cbley",No,No,,2023-07-09 16:00:42,2023-07-09 21:06:28,2023-07-09 21:06:28,👂Sprint_03_1,2,Frontend,0,36300,76,MVP Features
