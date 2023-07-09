@@ -1,0 +1,12 @@
+== Anmerkungen
+
+* Abnahme des MVP durch den Projektsponsor, dieser hat anschließend die Abnahme des MVP per Mail bestätigt
+* In den Backend- und Frontend-Repositories sind keine Tags für Sprint 1 zu finden, da zu diesem Zeitpunkt diese Repositories noch nicht existiert haben.
+
+== MVP
+
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/start-software[Lauffähiger MVP]
+* link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/MVPbeschreibung[MVPbeschreibung]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/container_registry/161[Docker-Dateien-Frontend]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/container_registry/160[Docker-Dateien-Backend]
+* link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/GitLab-Action[GitLab-Action]
