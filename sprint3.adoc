@@ -30,6 +30,8 @@
 * link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/DesignThinking/ProblemDefinition[Problemdefinition]
 * link:https://miro.com/app/board/uXjVMJfkJ9U=/?share_link_id=102680582842[Produktvision (Miro)]
 * link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/DesignThinking/Wireframe_1[Verwendeter Design-Thinking-Prototyp]
+* link:Projektsteckbrief.md[Projektsteckbrief (Markdown)]
+* link:Projektsteckbrief.pdf[Projektsteckbrief (PDF)]
 * link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/ProjectOverview/MVP_Features.pdf[Geupdatete Feature-Übersicht für MVP]
 * link:ProjectLeadDocumentation[Projektleitdokumentation]
 ** link:ProjectLeadDocumentation/project_description.adoc[Projektbeschreibung]
