@@ -1,4 +1,4 @@
-= Gruppe O - Live Stream Editor zur Korrektur von Untertiteln
+= Gruppe O - Subletic: Live Stream Editor zur Korrektur von Untertiteln
 
 * Projektleiter
 ** Benedikt Beigang (link:https://gitlab.dit.htwk-leipzig.de/bbeigang[@bbeigang])
@@ -19,8 +19,8 @@
 
 == MVP
 
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/start-software[Lauffähiger MVP]
-* link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/MVPbeschreibung[MVPbeschreibung]
+* link:http://d.projekte.swe.htwk-leipzig.de:40110/[Lauffähiger MVP (Falls Deployment Server Online)]
+* link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/MVPbeschreibung[MVP-Benutzeranleitung und Beschreibung der Funktionen]
 * link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/frontend/container_registry/161[Docker-Dateien-Frontend]
 * link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/backend/container_registry/160[Docker-Dateien-Backend]
 * link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/GitLab-Action[GitLab-Action]
@@ -30,6 +30,7 @@
 * link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/DesignThinking/ProblemDefinition[Problemdefinition]
 * link:https://miro.com/app/board/uXjVMJfkJ9U=/?share_link_id=102680582842[Produktvision (Miro)]
 * link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/DesignThinking/Wireframe_1[Verwendeter Design-Thinking-Prototyp]
+* link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/ProjectOverview/MVP_Features.pdf[Geupdatete Feature-Übersicht für MVP]
 * link:ProjectLeadDocumentation[Projektleitdokumentation]
 ** link:ProjectLeadDocumentation/project_description.adoc[Projektbeschreibung]
 ** link:ProjectLeadDocumentation/roles_and_responsibilities.adoc[Rollen und Verantwortlichkeiten]
