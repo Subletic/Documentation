@@ -36,7 +36,7 @@
 ** link:ProjectLeadDocumentation/challenge_register.adoc[Challenge Register]
 ** link:ProjectLeadDocumentation/follow_up_register.adoc[Follow Up Register]
 ** link:ProjectLeadDocumentation/health_register.adoc[Health Register]
-** link:ProjectLeadDocumentation/UserStories/Sprint_02.adoc[User Stories]
+** link:ProjectLeadDocumentation/UserStories/Sprint_03.adoc[User Stories]
 * link:IssueHistory[Exportierte Issues]
 
 image:img/Productvision.jpg[]
