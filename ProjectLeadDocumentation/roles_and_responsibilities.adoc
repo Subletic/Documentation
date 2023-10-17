@@ -73,8 +73,8 @@ a|
 [options="header"]
 |===
 | Teammitglied | Rolle 
-| Benedikt Beigang | Product Owner, SCRUM-Master, Projektleiter
-| Luca Noack | Software Architekt, Quality Assurance, Projektleiter
+| Benedikt Beigang | Software Architekt, Projektleiter
+| Luca Noack | Product Owner, Projektleiter
 | Finn Romeis | Developer 
 | Chantal Bley | Developer 
 | Amine Jegani | Developer
