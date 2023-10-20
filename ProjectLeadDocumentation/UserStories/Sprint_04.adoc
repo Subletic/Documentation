@@ -30,6 +30,12 @@
 
 [options="header"]
 |===
+| Funktionaler Import
+| Als Anwender benötige ich eine möglichkeit Exportierte Untertitel wieder in die Software zu integrieren, sodass ich weiter die Untertitel bearbeiten kann.
+|===
+
+[options="header"]
+|===
 | Positionsmarker auf Audiospur
 | Als Anwender benötige ich eine Lösung mich auf der Audiospur zurecht zufinden, sodass ich leichter einschätzen kann wie weit ich vom Live entfernt bin.
 |===
@@ -37,14 +43,39 @@
 [options="header"]
 |===
 | Gepitchte Audioabspiel geschwindigkeit
-| Als Nutzer möchte ich das die Audio abspiel geschwindigkeit nicht die Stimme des Sprechers verändert, sodass der Sprecher erkennbarer bleibt.
+| Als Anwender möchte ich das die Audio abspiel geschwindigkeit nicht die Stimme des Sprechers verändert, sodass der Sprecher erkennbarer bleibt.
 |===
 
 [options="header"]
 |===
 | Bessere Wort erkennung 2.
-| Als Entwickler möchte ich ein Dictonary haben, welche uns ermöglicht sounds like zu speichern, sodass Namen oder schwierig Wörter mit einer höheren zuverlässigkeit erkannt werden.
+| Als Anwender möchte ich ein Dictonary haben, welche uns ermöglicht sounds like zu speichern, sodass Namen oder schwierig Wörter mit einer höheren zuverlässigkeit erkannt werden.
 |===
+
+[options="header"]
+|===
+| Dynamisches Dictonary
+| Als Anwender möchte ich ein dynamsiches Dictonary haben, welche mir ermöglicht, sodass Namen oder schwierig Wörter mit einer höheren zuverlässigkeit erkannt werden und ich weniger korrigieren muss.
+|===
+
+[options="header"]
+|===
+| Dynamisches Dictonary Einstellung
+| Als Anwender möchte ich, dass das dynamsiches Dictonary leicht zu finden ist, so dass die Einstellungen schnell umgesetzt werden können.
+|===
+
+[options="header"]
+|===
+| Navigieren Via Fußschalter
+| Als Anwender benötige ich die möglichkeit mich mittels USB-Geräten wie einem Fußschalter durch die Software zu bewegen, sodass ich schneller an gewünschte stellen springen kann.
+|===
+
+[options="header"]
+|===
+| Navigieren Via Handschalter
+| Als Anwender benötige ich die möglichkeit mich mittels USB-Geräten wie einem Handschalter durch die Software zu bewegen, sodass ich schneller an gewünschte stellen springen kann.
+|===
+
 
 [options="header"]
 |===
