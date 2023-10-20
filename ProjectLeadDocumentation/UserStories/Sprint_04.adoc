@@ -7,9 +7,44 @@
 
 == Nicht-Funktionale Anforderungen
 
+[options="header"]
+|===
+| Shortcut übersicht
+| Als Anwender benötige ich eine Anständige Übersicht über die aktuellen verfügbaren shortcuts.
+|===
+
+[options="header"]
+|===
+| Bessere Wort erkennung
+| Als Nutzer möchte ich das mein Nachname immer richtig von der Software erkannt wird.
+|===
 
 
 == Funktionale Anforderungen
+
+[options="header"]
+|===
+| Funktionaler Export
+| Als Anwender benötige ich einen Funtkionierenden Export der Untertitel, um diese den Endnutzern zur Verfügungstellen zu können.
+|===
+
+[options="header"]
+|===
+| Positionsmarker auf Audiospur
+| Als Anwender benötige ich eine Lösung mich auf der Audiospur zurecht zufinden, sodass ich leichter einschätzen kann wie weit ich vom Live entfernt bin.
+|===
+
+[options="header"]
+|===
+| Gepitchte Audioabspiel geschwindigkeit
+| Als Nutzer möchte ich das die Audio abspiel geschwindigkeit nicht die Stimme des Sprechers verändert, sodass der Sprecher erkennbarer bleibt.
+|===
+
+[options="header"]
+|===
+| Bessere Wort erkennung 2.
+| Als Entwickler möchte ich ein Dictonary haben, welche uns ermöglicht sounds like zu speichern, sodass Namen oder schwierig Wörter mit einer höheren zuverlässigkeit erkannt werden.
+|===
 
 [options="header"]
 |===
