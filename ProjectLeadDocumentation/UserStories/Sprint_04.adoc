@@ -64,6 +64,12 @@
 | Als Anwender ist es mir wichtig, dass die Audiospur durchläuft, sodass ich mich nach längerer Korrektur zurück zum Live-Ton navigieren kann.
 |===
 
+[options="header"]
+|===
+| Abruf des Exports
+| Als Anwender ist es mir wichtig, dass der Export der korrigierten Untertitel einfach ist, sodass ich diese schnell weiterverarbeiten kann.
+|===
+
 
 
 
