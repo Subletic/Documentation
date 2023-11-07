@@ -26,14 +26,10 @@
 | link:https://gitlab.dit.htwk-leipzig.de/pdittes[@pdittes]
 |===
 
-Unsere Dokumentation, Ergebnisse des Design-Thinkings, Guidelines, Glossar, Produktvision, etc. ist in unserem https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/home[Wiki] zu finden.
+**Dieses Repo enthält sämtliche Dokumentation welche im Wiki nicht richtig angezeigt werden kann.**
 
-== Projektleitdokumentation
-
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/project_description.adoc[Projektbeschreibung]
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/roles_and_responsibilities.adoc[Rollen und Verantwortlichkeiten]
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/challenge_register.adoc[Challenge Register]
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/follow_up_register.adoc[Follow Up Register]
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/health_register.adoc[Health Register]
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectLeadDocumentation/product_backlog.adoc[Product Backlog (beinhaltet User Stories)]
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/IssueHistory[Exportierte Issues]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/Doxygen[Doxygen-Dokumentation]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/VisualResources[Visuelle-Ressourcen]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/VisualResources/openapi.json[OpenAPI]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectPresentation/Poster/Poster.pdf[Poster]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectPresentation/Video/Projektvideo.pdf[Video]

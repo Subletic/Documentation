@@ -1,6 +1,0 @@
-|===
-
-| Arbeitspaket | Bereich  | Startdatum | Enddatum | h | Ergebnis
-| Refactoring | a |16.10.2023  | 23.10.2023 | h | Sauberer Code
-
-|===

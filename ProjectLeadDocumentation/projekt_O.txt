@@ -1,1 +1,0 @@
-https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/tree/main
