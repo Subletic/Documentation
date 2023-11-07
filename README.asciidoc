@@ -30,6 +30,6 @@
 
 * link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/Doxygen[Doxygen-Dokumentation]
 * link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/VisualResources[Visuelle-Ressourcen]
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/VisualResources/openapi.json[OpenAPI]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/TechnicalDocumentation/openapi.json[OpenAPI]
 * link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectPresentation/Poster/Poster.pdf[Poster]
-* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectPresentation/Video/Projektvideo.pdf[Video]
+* link:https://gitlab.dit.htwk-leipzig.de/live-stream-editor-zur-korrektur-von-untertiteln/documentation/-/blob/main/ProjectPresentation/Video/Projektvideo.mp4[Video]
