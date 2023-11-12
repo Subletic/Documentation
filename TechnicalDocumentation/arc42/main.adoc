@@ -1,0 +1,28 @@
+:toc:
+:author: Benedikt Beigang (Software Architekt, Gruppe O)
+= Subletic arc42-Architekturüberblick
+
+
+include::01_IntroductionAndGoals.adoc[]
+
+include::02_Constraints.adoc[]
+
+include::03_Context.adoc[]
+
+include::04_SolutionStrategy.adoc[]
+
+include::05_BuildingBlockView.adoc[]
+
+include::06_RuntimeView.adoc[]
+
+include::07_DeploymentView.adoc[]
+
+include::08_Concepts.adoc[]
+
+include::09_DesignDecisions.adoc[]
+
+include::10_QualityRequirements.adoc[]
+
+include::11_Risks.adoc[]
+
+include::12_Glossary.adoc[]
