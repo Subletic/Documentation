@@ -1,8 +1,111 @@
 == Einführung und Ziele
 
+Dieser Abschnitt führt in die Aufgabenstellung ein und skizziert die Ziele, die Subletic verfolgt.
+
 === Aufgabenstellung
+
+Das Ziel unserer Software ist die teil-automatisierte Transkriptionen für Untertitel in Live-Kontexten, mithilfe von modernen KI-Modellen. Diese sollen dann von geschultem Personal, wie auch Laien zusätzlich überprüft und wenn notwendig korrigiert werden. Die nachträgliche manuelle Korrektur wird besonders bei Kunden notwendig die einen besonderen Wert auf die Richtigkeit der Untertitel legen, wie zum Beispiel bei der Untertitlung von Nachrichtensendungen oder in politischen Kontexten. Mit der Verschmelzung von fortschrittlicher KI und dem Menschen als Korrektur-Instanz, soll eine hohe Qualität der Untertitel gewährleistet werden, bei gleichzeitig minimalem Aufwand für den Menschen. 
+
+==== Features
+
+* **Automatische Transkription** von Sprache zu Text mithilfe eines Services, der durch einen WebSocket aufgerufen wird
+* **Web-Editor** für die Korrektur von Untertiteln
+* **Audio-Player** zum Abspielen des Audio-Streams und Navigieren in diesem
+* Verwendbarkeit von **Stenografen-Equipment**, wie Fuß- und Hand-Schalter
+* **Soundslike-Dictionary** zum beschleunigen der Korrektur
 
 === Qualitätsziele
 
+[options="header"]
+|===
+| Qualitätsziel | Motivation und Erläuterung
+| Benutzerfreundliche Oberfläche | Die Oberfläche zu Korrektur soll schlicht, modern und intuitiv bedienbar sein und dem Benutzer die bestmögliche Orientierung zu bieten.
+| Schnelle Korrektur | Die Korrektur soll möglichst schnell von statten gehen, damit die Korrigierende Person mit dem Sprecher mithalten kann.
+| Schnelle Antwortzeiten | Die Antwortzeiten des Systems sollen möglichst gering sein, damit das System in _Echtzeit-Systemen_ integrierbar ist.
+| Verbreitete Technologien | Die Software soll mit verbreiteten Technologien entwickelt werden, damit die Software auch in Zukunft einfach erweiterbar und wartbar ist.
+| Softwarequalität | Da das Entwicklungsteam aus unerfahrenen Entwicklern besteht, soll die Softwarequalität durch die Verwendung verschiedener Qualitätssicherungs-Systeme und Prozesse sichergestellt werden.
+| Untertitelformate | Die Software soll die gängigen Untertitelformate unterstützen, damit die Software in möglichst vielen Kontexten eingesetzt werden kann.
+|===
+
 === Stakeholder
 
+[options="header"]
+|===
+| Stakeholder | Verantwortlichkeiten
+
+
+| **Software Architekt** +
+Benedikt Beigang 
+a| 
+* Hat die Softwarearchitektur im Blick und steht für technische Fragestellungen als erstes zur Verfügung
+* Hilft beim Entwurf der Schnittstellenbeschreibung, sowie der Komponenten der Software
+* Hilft komplizierte Merge-Requests aufzulösen, Git-Problemen, und technischen Details
+* Kümmert sich um Deployment bzw. Auslieferung unserer Software
+* Erstellt Codereviews für die Entwickler mit der MoSCoW-Methode
+* Behält die CI/CD-Pipeline und deren Einhaltung im Blick
+* Verantwortlich für Durchsetzung eines Styleguides
+
+
+| **Product Owner** +
+Luca Noack
+a|
+* Hält Kontakt mit dem Kunden
+* Vertritt den Kunden im Team und ist bei Fragen an den Kunden erster Ansprechpartner
+* Befüllt und priorisiert das Product-Backlog
+* Grobe Voraus-Planung der Sprints und deren Ziele (Genauer Planung erfolgt durch Team) 
+* Führen der Projektleitdokumentation
+* Leiten der Kunden Meetings
+* Schreibt und verwaltet die Dokumentation, samt Issues (Board), Projektleitdokumentation, Protokolle, Wiki, Übersichten, etc.
+
+
+| **Team-Manager** +
+Benedikt Beigang +
+Luca Noack
+a|
+* Hat die Stimmung im Team im Blick und räumt Schwierigkeiten der Entwickler aus dem Weg (Team-Coach)
+* Gewährleistung der Einhaltung des agilen Manifestes (Timeboxing, SCRUM, etc.) 
+* Ansprechpartner bei allen Fragen die nicht technische Details oder Fragen an den Kunden sind
+* Vorbereiten und Leiten der Retrospektive um Team weiterzuentwickeln
+* Leiten aller Meetings außer Kundenmeeting
+* Projekt-Planung und Organisation
+* Verantwortlich für schwerwiegende Projektentscheidungen
+* Hat Veto-Recht
+* Hat die Einhaltung der Anforderungen im Blick
+
+
+| **Developer** +
+Chantal Bley +
+Pascal Fabian +
+Amine Jegani +
+Christoph Neidahl +
+Luca Niklas +
+Finn Romeis
+a|
+* Teilnahme an offline/online-_Team-Meetings_
+* Programmiertechnische Umsetzung, infolge von _Tickets/Issues_
+* _Selbstständige_ Entwicklungsarbeit und Aufgabenzuteilung innerhalb des Team
+* _Informieren des Teams_ zu Projektfortschritt, bei Problemen und Entscheidungen die getroffen werden müssen in Issue-Kommentaren, Discord oder im Weekly
+* Einhalten der vom Team festgelegten _Definition of Done's_
+* Präsentieren der entwickelten Features spätestens im _Review_
+* _Dokumentieren_ des geschriebenen Codes
+* Schreiben von _Unit-Tests_ zu den implementierten Funktionalitäten
+* Erstellung von _Protokollen_
+* Schreiben von Code-Reviews falls ein anderer Developer dies wünscht
+
+
+| **Philipp Platis**
+a|
+* Mitarbeiter der gbs und Ansprechpartner für Fragen bezüglich der Anforderungen
+
+
+| **Grundig Business GmbH & Co. KG (gbs)**
+a|
+* Kunde (Unternehmen) der unsere Software nutzen und nach Abschluss des Projekts weiterentwickeln möchte
+* Spezialisiert auf die Entwicklung von KI-gestützter Stenografie-Hardware und Software 
+
+
+| **Karsten Weicker**
+a|
+* Zuständiger Professor für das Modul
+* Steht bei Fragen bezüglich der Organisation des Moduls und dessen Abgaben und Prüfungsleistungen zur Verfügung
+|===
