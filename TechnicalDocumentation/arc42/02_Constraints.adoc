@@ -34,7 +34,7 @@ Beim Lösungsentwurf waren zu Beginn verschiedene Randbedingungen zu beachten, s
 [options="header"]
 |===
 | Konvention | Erläuterungen, Hintergrund
-| Architekturdokumentation | Terminologie und Gliederung nach dem deutschen arc42-Template in der Version 6.0
+| Architekturdokumentation | Terminologie und Gliederung größtenteils nach dem arc42-Beispiel https://www.dokchess.de/[DokChess].
 | Code-Style Backend | Es wird der Standard https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options[C#-Code-Style] verwendet, sowie getestet mit https://github.com/DotNetAnalyzers/StyleCopAnalyzers[StyleCopAnalyzers], den https://github.com/dotnet/roslyn-analyzers[Roslyn Analyzers] und einer `.editorconfig`. Außerdem wird Inline-Kommentierung (`///` statt `/**/`) verwendet.
 | Code-Style Frontend | Es wird der Standard TypeScript-Code-Style verwendet.
 | Sprache | Die Software, sowie dessen Kommentare werden in englischer Sprache geschrieben. Die Dokumentation im GitLab wird in deutscher Sprache verfasst.
