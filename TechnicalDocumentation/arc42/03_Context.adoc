@@ -4,7 +4,7 @@ Dieser Abschnitt beschreibt das Umfeld von Subletic. Für welche Benutzer ist es
 
 === Fachlicher Kontext
 
-image::img/FachlicherKontext.svg[Static,80%,align="center"]
+image::img/FachlicherKontext.drawio.svg[Static,80%,align="center"]
 
 ==== Stenograph*in (Benutzer*in)
 
@@ -24,7 +24,7 @@ Bestimmte Namen und Begriffe sind von KI-Modellen schwer zu erkennen. Diese werd
 
 === Technischer Kontext
 
-image::img/TechnischerKontext.svg[Static,80%,align="center"]
+image::img/TechnischerKontext.drawio.svg[Static,80%,align="center"]
 
 ==== Angular (Fremdsystem)
 
