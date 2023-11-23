@@ -1,10 +1,11 @@
+:imagesdir: ./img
 == Kontextabgrenzung
 
 Dieser Abschnitt beschreibt das Umfeld von Subletic. Für welche Benutzer ist es da, und mit welchen Fremdsystemen interagiert es?
 
 === Fachlicher Kontext
 
-image::img/FachlicherKontext.drawio.svg[Static,80%,align="center"]
+image::FachlicherKontext.drawio.svg[Static,80%,align="center"]
 
 ==== Stenograph*in (Benutzer*in)
 
@@ -24,7 +25,7 @@ Bestimmte Namen und Begriffe sind von KI-Modellen schwer zu erkennen. Diese werd
 
 === Technischer Kontext
 
-image::img/TechnischerKontext.drawio.svg[Static,80%,align="center"]
+image::TechnischerKontext.drawio.svg[Static,80%,align="center"]
 
 ==== Angular (Fremdsystem)
 

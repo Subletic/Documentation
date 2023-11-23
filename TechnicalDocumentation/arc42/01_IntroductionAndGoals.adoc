@@ -1,3 +1,5 @@
+:imagesdir: ./img
+[[Introduction_and_Goals]]
 == Einführung und Ziele
 
 Dieser Abschnitt führt in die Aufgabenstellung ein und skizziert die Ziele, die Subletic verfolgt.
@@ -19,12 +21,10 @@ Das Ziel unserer Software ist die teil-automatisierte Transkriptionen für Unter
 [options="header"]
 |===
 | Qualitätsziel | Motivation und Erläuterung
-| Benutzerfreundliche Oberfläche | Die Oberfläche zu Korrektur soll schlicht, modern und intuitiv bedienbar sein und dem Benutzer die bestmögliche Orientierung zu bieten.
-| Schnelle Korrektur | Die Korrektur soll möglichst schnell von statten gehen, damit die Korrigierende Person mit dem Sprecher mithalten kann.
+| Benutzerfreundliche Oberfläche | Die Oberfläche für die Korrektur soll schlicht, modern und intuitiv bedienbar sein, um dem Benutzer die bestmögliche Orientierung zu bieten und das schnellst mögliche Korrigieren zu ermöglichen.
 | Schnelle Antwortzeiten | Die Antwortzeiten des Systems sollen möglichst gering sein, damit das System in _Echtzeit-Systemen_ integrierbar ist.
-| Verbreitete Technologien | Die Software soll mit verbreiteten Technologien entwickelt werden, damit die Software auch in Zukunft einfach erweiterbar und wartbar ist.
-| Softwarequalität | Da das Entwicklungsteam aus unerfahrenen Entwicklern besteht, soll die Softwarequalität durch die Verwendung verschiedener Qualitätssicherungs-Systeme und Prozesse sichergestellt werden.
-| Untertitelformate | Die Software soll die gängigen Untertitelformate unterstützen, damit die Software in möglichst vielen Kontexten eingesetzt werden kann.
+| DSGVO-Konformität | Die Software soll die DSGVO einhalten, damit die Software in Europa betrieben werden darf.
+| Codequalität | Da das Entwicklungsteam aus unerfahrenen Entwicklern besteht, soll die Codequalität durch die Verwendung verschiedener Qualitätssicherungs-Systeme und Prozesse sichergestellt werden.
 |===
 
 === Stakeholder

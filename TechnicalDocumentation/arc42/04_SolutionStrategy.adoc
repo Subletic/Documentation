@@ -1,6 +1,38 @@
 == Lösungsstrategie
 
+Dieser Abschnitt enthält einen stark verdichteten Architekturüberblick. Eine Gegenüberstellung der wichtigsten Ziele und Lösungsansätze.
+
 === Einstieg
+
+[options="header", cols="1,1"]
+|===
+| Qualitätsziel | Dem zuträgliche Ansätze in der Architektur
+| Benutzerfreundliche Oberfläche
+
+a|
+* Nutzen von schon existierenden UI-Komponenten
+* Im Blick halten des Mental-Loads, schon während des Designprozesses
+* Anfertigung von Wireframes/Mockups
+* Orientierung an der 60:30:10 Faustregel 
+
+| Schnelle Antwortzeiten 
+a|
+* Verwendung von Echtzeit-Technologien wie zum Beispiel WebSockets
+* Beschränkung auf Audio-Stream, da Videostream, sowieso nicht genutzt wird
+* Ständige End2End-Tests durch die Entwickler
+
+| DSGVO-Konformität 
+a|
+* Verwendung von frei verfügbaren Bibliotheken
+* Kein Deployment außerhalb der EU
+* Keine Verwendung von Cookies oder Speichern anderer Daten
+
+| Codequalität 
+a|
+* Code-Styleguides: https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options[C#-Code-Style]
+* Analyse-Tools: https://github.com/DotNetAnalyzers/StyleCopAnalyzers[StyleCopAnalyzers], https://github.com/dotnet/roslyn-analyzers[Roslyn Analyzers], IDE mit Hilfe einer `.editorconfig`
+* CI/CD-Pipeline mit Linting und automatisiertem Tests 
+|===
 
 === Aufbau
 
