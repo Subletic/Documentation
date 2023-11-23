@@ -24,7 +24,7 @@ Beim Lösungsentwurf waren zu Beginn verschiedene Randbedingungen zu beachten, s
 | Vorgehensmodell | Grundlegend wird nach dem agilen Manifest gearbeitet, wobei das Scrum-Framework als Leitplanken dient.
 | Entwurfswerkzeuge | Entwürfe entstehen zunächst auf als einfache Zeichnungen auf Papier, Tafel oder Tablet. Später werden ausgearbeitete Wireframes welche mit Figma erstellt wurden dem Kunden präsentiert und mit ihm besprochen.
 | Konfigurations- und Versionsverwaltung | GitLab mit CI/CD Pipeline für die Versionsverwaltung und das automatisierte Testen und Bauen der Software.
-| Testwerkzeuge und -prozesse | nUnit für die Unittests
+| Testwerkzeuge und -prozesse | Es wird nUnit und Jasmine für die Unittests verwendet.
 | Dokumentationswerkzeuge | Die Dokumentation befindet sich größtenteils in unserem Wiki der GitLab-Gruppe. Für versionierte Dokumentation existiert ein zusätzliches _Documentation_-GitLab-Repository.
 | Kommunikationswerkzeuge | Für die Kommunikation innerhalb des Teams nutzen wir Discord, unsere Meetings in der Hochschule oder die Kommentar-Bereiche im GitLab. Die Kommunikation mit dem Kunden erfolgt auf Microsoft Teams.
 | Veröffentlichung als Open Source | Es wird auf keine Technologien oder Bibliotheken zurückgegriffen, die nicht Open Source sind. Die Software wird deshalb nach Beendigung des Projekts unter einer Open-Source Lizenz veröffentlicht.

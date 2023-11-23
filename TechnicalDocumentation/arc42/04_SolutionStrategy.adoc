@@ -31,6 +31,7 @@ a|
 a|
 * Code-Styleguides: https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options[C#-Code-Style]
 * Analyse-Tools: https://github.com/DotNetAnalyzers/StyleCopAnalyzers[StyleCopAnalyzers], https://github.com/dotnet/roslyn-analyzers[Roslyn Analyzers], IDE mit Hilfe einer `.editorconfig`
+* Unit-Tests mit nUnit und Jasmine
 * CI/CD-Pipeline mit Linting und automatisiertem Tests 
 |===
 
