@@ -1,2 +1,18 @@
+:imagesdir: ./img
 == Bausteinsicht
 
+=== Kontextabgrenzung
+
+image::FachlicherKontext.drawio.svg[Static,80%,align="center"]
+
+=== Ebene 1
+
+==== Backend
+
+image::Bausteinsicht_1_Backend.drawio.svg[Static,80%,align="center"]
+
+==== Frontend
+
+=== Ebene 2
+
+image::Bausteinsicht_2.drawio.svg[Static,80%,align="center"]
