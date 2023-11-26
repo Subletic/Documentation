@@ -19,7 +19,6 @@
 
 = Subletic arc42-Architekturüberblick
 
-
 include::01_IntroductionAndGoals.adoc[]
 
 include::02_Constraints.adoc[]
