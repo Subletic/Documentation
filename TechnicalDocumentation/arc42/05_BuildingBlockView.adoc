@@ -1,4 +1,5 @@
 :imagesdir: ./img
+<<<
 == Bausteinsicht
 
 === Kontextabgrenzung

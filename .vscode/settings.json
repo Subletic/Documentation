@@ -27,5 +27,6 @@
         "Weicker",
         "Wireframe",
         "Wireframes"
-    ]
+    ],
+    "asciidoc.antora.enableAntoraSupport": true
 }

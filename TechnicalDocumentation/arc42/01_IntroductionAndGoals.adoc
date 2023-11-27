@@ -1,4 +1,5 @@
 :imagesdir: ./img
+<<<
 [[Introduction_and_Goals]]
 == Einführung und Ziele
 
@@ -6,7 +7,7 @@ Dieser Abschnitt führt in die Aufgabenstellung ein und skizziert die Ziele, die
 
 === Aufgabenstellung
 
-Das Ziel unserer Software ist die teil-automatisierte Transkriptionen für Untertitel in Live-Kontexten, mithilfe von modernen KI-Modellen. Diese sollen dann von geschultem Personal, wie auch Laien zusätzlich überprüft und wenn notwendig korrigiert werden. Die nachträgliche manuelle Korrektur wird besonders bei Kunden notwendig die einen besonderen Wert auf die Richtigkeit der Untertitel legen, wie zum Beispiel bei der Untertitlung von Nachrichtensendungen oder in politischen Kontexten. Mit der Verschmelzung von fortschrittlicher KI und dem Menschen als Korrektur-Instanz, soll eine hohe Qualität der Untertitel gewährleistet werden, bei gleichzeitig minimalem Aufwand für den Menschen. 
+Das Ziel unserer Software ist die Teil-Automatisierung der Erstellung von Untertiteln in Live-Kontexten, unter Zuhilfenahme von modernen KI-Modellen. Diese sollen dann von geschultem Personal, genauso wie von Laien, zusätzlich überprüft und wenn notwendig korrigiert werden. Die nachträgliche manuelle Korrektur wird besonders bei Kunden notwendig die einen besonderen Wert auf die Richtigkeit der Untertitel legen, wie zum Beispiel bei der Untertitlung von Nachrichtensendungen oder in politischen Kontexten. Mit der Verschmelzung von fortschrittlicher KI und dem Menschen als Korrektur-Instanz, soll eine hohe Qualität der Untertitel gewährleistet werden, bei gleichzeitig minimalem Aufwand für den Menschen.
 
 ==== Features
 
