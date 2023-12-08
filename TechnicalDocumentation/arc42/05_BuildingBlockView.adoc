@@ -1,41 +1,54 @@
-:imagesdir: ./img
+include::options.adoc[]
 <<<
+
 == Bausteinsicht
 
-=== Kontextabgrenzung
+Dieser Abschnitt beschreibt die Bausteinsicht der Software _Subletic_. Wir starten mit einem abstrakten Überblick des Datenflusses und gehen vor dort aus, über die Komponenten, bis wir bei der Modulübersicht angelangt sind, welche die detaillierteste Sicht darstellt.
 
-.Kontextabgrenzung von Subletic zu anderen Systemen 
-image::FachlicherKontext.drawio.svg[Static,80%,align="center"]
+=== Daten-Sicht
 
-Subletic interagiert wie im Kapitel Kontextabgrenzung beschrieben, mit zwei Verschiedenen Fremdsystemen und einem Nutzer:
+Um die verschiedenen Bausteine von _Subletic_ zu verstehen, hilft es zunächst einen Blick auf die wichtigsten Daten und deren Verarbeitung zu werfen, welche zur Laufzeit existieren. Sie geben eine abstrakte Übersicht was zur Laufzeit passiert. Für eine Gegebene Audio wird zunächst extern eine Transkription erstellt, die anschließend in die interne Datenstruktur namens _SpeechBubble_ überführt wird. Sie stellt eine frühe Version des Untertitels da und besteht nur aus ein paar Wörtern, die zeitlich betrachtet eine Einheit darstellen. Diese können dann so lange sie existieren, manipuliert werden. Zum Schluss werden die _SpeechBubbles_ zu einem fertigen Untertitel konvertiert, welche ausgeliefert werden können.
 
-1. Der Client möchte für einen Videostream eine Untertitelung erhalten und sendet dazu einen Audiostream an Subletic.
-2. Eine Speech-Engine wird benötigt, welche den Audiostream in Text umwandelt. 
-3. Es wird eine Schnittstelle zur korrigierenden Person benötigt.
+.Datenfluss von Subletic
+image::Datenfluss.drawio.svg[Static,60%,align="center"]
 
-Für die Interaktion mit den beiden Fremdsystemen wird ein Backend benötigt, welches die Kommunikation mit diesen übernimmt. Für die Interaktion mit der korrigierenden Person wird ein Frontend benötigt, welches die Schnittstelle zum Nutzer darstellt. Das Frontend soll dem Nutzer die Möglichkeit geben, die Transkription zu korrigeren, den Audiostream zu hören und Unterstützt die Korrektur auf verschiedene Arten.
+Nachdem geklärt wurde welche Daten verarbeitet werden, betrachten wir im nächsten Schritt welche Fremdsysteme und Benutzer an welchen Daten(-verarbeitungen) beteiligt sind. Dazu werfen wir nochmal einen Blick auf alle Beteiligten und mit welchen Daten sie zu tun haben:
+
+1. Der Client möchte für einen Video-Stream einen **Untertitel** erhalten und sendet dazu einen **Audio**-Stream an Subletic.
+2. Eine Speech-Engine wird benötigt, welche den **Audio**-Stream in eine **Transkription** umwandelt. 
+3. Die korrigierenden Person benötigt eine Schnittstelle zu unserer Software, um die generierten **Transkription** anpassen zu können. Sie möchte dabei den **Audio**-Stream hören.
+
+Da die Audio-Daten von allen Parteien verwendet werden, findet die Verarbeitung in einem Backend statt mit dem alle interagieren können. Da die generierte Transkription, sowie auch der fertige Untertitel, für das direkte Bearbeiten eher unhandlich ist, fügen wir eine neue interne Datenstruktur namens _SpeechBubble_ ein, die als Mittelstück dient. Alle drei Daten-Typen liegen ebenfalls im Backend, um die verschiedenen Parteien verbinden zu können. Anders als bei den Fremdsystemen, benötigt die korrigierende Person ein graphisches Interface, um die _SpeechBubbles_ bearbeiten zu können. Dazu wird ein Frontend verwendet, welches auch das Hören der Audio ermöglicht. Da nun die Software aus zwei Bereichen besteht, benötigen wir nun zusätzliche Schnittstellen, um Frontend und Backend zu verbinden.
 
 === Ebene 1 - Komponenten-Sicht
 
-Mit der Komponenten-Sicht werden die Teilbereiche beider Systeme transparent gemacht. Neben den API-Bereichen die für die Kommunikation mit den Fremdsystemen benötigt werden, tauchen die Domänen: Audio, SpeechBubble und Configuration in Backend und Frontend auf. Sie stellen die Grundpfeiler unserer Software-Architektur dar.
+Wir gehen nun eine Ebene tiefer und betrachten welche Komponenten nötig sind, um die verschiedenen Daten entgegenzunehmen, zu verwalten, zu verarbeiten und weiterzuschicken. Neben den API-Bereichen die für die Kommunikation mit den Fremdsystemen benötigt werden, tauchen die Domänen: Audio, SpeechBubble und Configuration in Backend und Frontend auf. Sie stellen die Grundpfeiler unserer Software-Architektur dar.
 
 ==== Backend
 
 .Komponenten-Sicht des Backends
+
+Unser ASP.NET-Backend besteht aus vier Komponenten. Die _Client-Communication_-API kapselt die Kommunikation mit unserem Client. Sie empfängt den eingehenden Audio-Stream und überträgt den fertigen Untertitel zurück. Die _Audio_-Domäne erhält von der _Client-Communication_-API den Audio-Stream und leitet diesen direkt weiter an unsere Speech-Engine. Diese antwortet mit einer Transkription, welche später als Untertitel dient. Die rohe Transkription wird anschließend an die _SpeechBubble_-Domäne weitergeleitet, wo sie zur internen _SpeechBubble_-Datenstruktur übersetzt wird. Diese stellt eine früher Version der Untertitel dar, welche benötigt wird um Teile des Untertitels zu korrigieren. Nach Ablauf einer bestimmten, einstellbaren Zeit, werden einzelne _SpeechBubbles_ zu einem echten Untertitel umgewandelt und mit Hilfe der _Client-Communication_-API an den Client ausgeliefert. 
+
+.Komponenten-Sicht des Backends
 image::Bausteinsicht_1_Backend.drawio.svg[Static,80%,align="center"]
 
-Unser ASP.NET-Backend besteht aus vier Komponenten. Die _Client-Communication_-API kapselt die Kommunikation mit unserem Clienten. Sie empfängt den eingehenden Audiostream und überträgt den fertigen Untertitel zurück. Die _Audio_-Domäne erhält von der _Client-Communication_-API den Audio-Stream und leitet diesen direkt weiter an unsere Speech-Engine. Diese antwortet mit einer Transkription, welche später als Untertitel dient. Die rohe Transkription wird anschließend an die _SpeechBubble_-Domäne weitergeleitet, wo sie zur internen _SpeechBubble_-Datenstruktur übersetzt wird. Diese stellt eine früher Version der Untertitel dar, welche benötigt wird um Teile des Untertitels zu korrigieren. Nach Ablauf einer bestimmten, einstellbaren Zeit, werden einzelne _SpeechBubbles_ zu einem echten Untertitel umgewandelt und mit Hilfe der _Client-Communication_-API an den Clienten ausgeliefert. 
-
-Dieser Kreislauf läuft autonom ab, kann jedoch durch die korrigierende Person bei Bedarf ergänzt werden. Dazu wird die _Frontend-Communication_-API benötigt, welche die Kommunikation mit dem Frontend übernimmt. Zunächst wird diese durch die _Audio_-Domäne dafür genutzt den Audio-Stream an das Frontend weiter zu leiten, sodass dieser gehört werden kann. Außerdem wird die _Frontend-Communication_-API genutzt um neue SpeechBubbles an das Frontend zu senden, um korrigierte SpeechBubbles zu empfangen und über das Ableben von SpeechBubbles zu informieren.
+Dieser Kreislauf läuft autonom ab, kann jedoch durch die korrigierende Person bei Bedarf ergänzt werden. Dazu wird die _Frontend-Communication_-API benötigt, welche die Kommunikation mit dem Frontend übernimmt. Zunächst wird diese durch die _Audio_-Domäne dafür genutzt den Audio-Stream an das Frontend weiter zu leiten, sodass dieser gehört werden kann. Außerdem wird die _Frontend-Communication_-API genutzt um neue _SpeechBubbles_ an das Frontend zu senden, um korrigierte _SpeechBubbles_ zu empfangen und über das Ableben von _SpeechBubbles_ zu informieren.
 
 ==== Frontend
 
 .Komponenten-Sicht des Frontends
+
+Unser Angular-Frontend besteht aus vier Komponenten. Analog zum Backend, wird die _Backend-Communication_-API genutzt um Daten zum Backend zu Senden oder entgegenzunehmen. Der empfangene Audio-Stream wird innerhalb der _Audio_-Domäne verarbeitet, modifiziert und für die korrigierenden Person abgespielt. Gleiches gilt für die empfangenen SpeechBubbles. Diese werden entgegengenommen und an die _SpeechBubble_-Domäne weitergeleitet. Stößt die korrigierende Person die Bearbeitung einer _SpeechBubble_ an, wird sie über den selben Weg an das Backend zurückgesendet. Wird ein Sprung in der Position des Audio-Streams (und daraus resultierend die Position des Cursors) ausgelöst, wird dies an die _Audio_-Domäne und die _SpeechBubble_-Domäne kommuniziert.
+
+.Komponenten-Sicht des Frontends
 image::Bausteinsicht_1_Frontend.drawio.svg[Static,80%,align="center"]
 
-Unser Angular-Frontend besteht aus vier Komponenten. Analog zum Backend, wird die _Backend-Communication_-API genutzt um Daten zum Backend zu Senden oder entgegenzunehmen. Der empfangene Audio-Stream wird innerhalb der _Audio_-Domäne verarbeitet, modifiziert und für die korrigierenden Person abgespielt. Gleiches gilt für die empfangenen SpeechBubbles. Diese werden entgegengenommen und an die _SpeechBubble_-Domäne weitergeleitet. Stößt die korrigierende Person die Bearbeitung einer SpeechBubbles an, wird sie über den selben Weg an das Backend zurückgesendet. Wird ein Sprung in der Position des Audio-Streams (und daraus resultierend die Position des Cursors) ausgelöst, wird dies an die _Audio_-Domäne und die _SpeechBubble_-Domäne kommuniziert.
-
 Isoliert davon wird die _Configuration_-Domäne genutzt, die Konfiguration der Software beim Start des Korrektur-Prozesses an alle betreffenden Komponenten und Fremdsysteme zu kommunizieren. So kann Initial ein _Soundslike-Dictionary_ als Tabellen-Datei übergeben und bearbeitet werden, um der _SpeechEngine_ bei der Erkennung schwieriger Wörter zu helfen. Außerdem werden _Initiale Parameter_, wie die Länge des Zeitintervalls in der eine Sprechblase existiert, hier übergeben. Die gebündelte Start-Konfiguration wird mit Hilfe der _Backend-Communication_-API an das Backend gesendet und damit die Software, beziehungsweise der Korrektur-Prozess gestartet.
+
+==== Zusammenspiel von Backend und Frontend
+
+
 
 === Ebene 2 - Modul-Sicht
 

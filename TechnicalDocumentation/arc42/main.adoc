@@ -4,20 +4,10 @@
 :sectnums:
 :toclevels: 2
 
-:caution-caption: Achtung
-:important-caption: Wichtig
-:note-caption: Hinweis
-:tip-caption: Tip
-:warning-caption: Warnung
-
-:appendix-caption: Anhang
-:example-caption: Beispiel
-:figure-caption: Abbildung
-:table-caption: Tabelle
-
-:imagesdir: ./img
 
 = Subletic arc42-Architekturüberblick
+
+include::options.adoc[]
 
 include::01_IntroductionAndGoals.adoc[]
 

@@ -1,2 +1,14 @@
+include::options.adoc[]
 <<<
+
 == Laufzeitsicht
+
+Nachdem in der Bausteinsicht ein Überblick über die Bestandteile und deren Zusammenspiel im größeren Kontext gegeben wurde, konzentriert sich dieses Kapitel auf die kleineren Prozesse, um die Funktionsweisen bzw. Kommunikationswege zwischen den Komponenten oder Modulen zu verdeutlichen. Zunächst muss noch klar gestellt werden, dass das Frontend dem Backend unterstellt ist. Das bedeutet, dass das Frontend Einfluss auf das Backend hat, der zentrale Hauptprozess (das Generieren des Untertitels) jedoch im Backend stattfindet.
+
+=== Konfigurations Prozess
+
+=== Transkriptions Prozess
+
+=== SpeechBubble Prozess
+
+=== Audio Prozess
