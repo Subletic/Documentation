@@ -1,2 +1,29 @@
 <<<
+
 == Entscheidungen
+
+Hier werden wichtige Entscheidungen festgehalten, welche im Laufe des Projektes getroffen wurden.
+
+[options="header", cols=","]
+|===
+| Name | Eingabe- und Ausgabe-Format
+| Kontext | Aus Sicht des Clients ist es das Hauptziel unserer Software, Untertitel zu erzeugen. Da wir nach außen Betrachtet einen Service anbieten, müssen wir spezifizieren was wir als Eingabe-Stream akzeptieren und was wir am Ende zurück geben. 
+| Entscheidung | Der WebSocket-Server erwartet einen Video- oder Audio-Stream, solange dieser mit FFmpeg verarbeitet werden kann. Sollte jedoch ein Video-Stream geschickt werden, wird dieser weggeworfen. 
+| Konsequenzen | Es werden ausschließlich reine Untertitel zurück gegeben, es nicht möglich den erzeugten Untertitel in das Video einzubetten und diesen als Video-Stream zurück zu geben.
+|===
+
+[options="header", cols=","]
+|===
+| Name | Untertitelformate
+| Kontext | Es muss spezifiziert werden welche Untertitelformate wir unterstützen.
+| Entscheidung | Wir unterstützen das WebVtt- und SRT-Format.
+| Konsequenzen | Veraltete Systeme, welche nicht die angegeben Formate unterstützen, können nicht mit unserem Service arbeiten.
+|===
+
+[options="header", cols=","]
+|===
+| Name | Wiedergabegeschwindigkeiten und Pitch 
+| Kontext | Unsere Software bietet die Möglichkeit an die Wiedergabegeschwindigkeit zu ändern, in der, der Audio-Stream abgespielt wird. Ändert man die Abspielgeschwindigkeit jedoch, ändert sich durch die Frequenz und damit der Pitch, sodass sich Stimmen quitschig oder zu tief anhören. Die WebAudio-API welche wir für das Abspielen des Sound im Frontend nutzen, korrigiert jedoch nicht in Live-Kontexten den Pitch. Zusätzliche Bibliotheken welche den Pitch korrigieren, sorgen jedoch für Audio-Artefakte.
+| Entscheidung | Mit dem Kunden wurde vereinbart, dass wir die Wiedergabegeschwindigkeit begrenzen auf 0.7 bis 1.3, und den Pitch nicht korrigieren, damit zumindest keine Artefakte entstehen.
+| Konsequenzen | Der Kunde muss sich mit der begrenzten Wiedergabegeschwindigkeit zufrieden geben, sowie mit unnatürlichen Stimmen, je nach Geschwindigkeitsänderung.
+|===
