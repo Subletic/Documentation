@@ -1,0 +1,28 @@
+<<<
+
+== Tagebuch
+
+Hier werden Gedanken und Ziele aus Sicht der Software-Architektur festgehalten.
+
+=== Sprint 4
+* Übersicht über Architektur
+* Als neuer Architekt welcher als Aufgabe hat im Laufe des Semesters eine arc42 Doku zu erstellen, benötige ich einen Überblick über die Architektur und den Code unserer Software. Als ersten Ansatz soll dazu eine Klassen/Komponenten-Übersicht erstellt werden.
+* Nach dem Erstellen eines Klassen-Diagrams mit Hilfe eines Werkzeugs im Backend, ist klar dass dies kaum bei der Übersicht hilft. Stattdessen wäre es besser wenn es eine Komponenten-Übersicht gibt, die die Software bzw deren Klassen in Teilbereiche einteilt.
+
+=== Sprint 5
+* Die Entwickler haben sich darüber beklagt dass es sehr nervig ist, den Mock-Server immer wider neu zu starten, wenn sie etwas im Backend oder Frontend geändert haben.
+* Der Mock-Server wurde umgebaut um automatisch neu eine Verbindung aufzubauen, wenn die Verbindung abbricht, mit dem Backend.
+* Die Komponenten-Übersicht wurde erst einmal pausiert, da klar geworden ist dass im Backend und Frontend noch keine einheitlichen Style-Guides existieren.
+* Es wurden Style-Guides durchgesetzt mit Hilfe von ESLint und Prettier im Frontend, und im Backend mit Hilfe von Analyzer-Cop.
+
+=== Sprint 6
+* Im letzten Semester wurde zum Testen der Software eine Test-Audiodatei im Backend geladen. Nun wurde unsere Software jedoch erweitert, sodass ein WebSocket-Client (zB unser Mock-Server) von Außen einen Stream schicken kann. Jedoch kann dadurch unsere Software nicht mehr so deployed werden wie bisher, sodass der Architekt sich neu einarbeiten muss, und sicherstellen muss das die Software ausgeliefert werden kann.
+* Durch die Anpassung des Deployments ist aufgefallen, dass das Schicken eines Audio-Streams an das Frontend, durch eine geänderte Logik im Frontend, nicht mehr mittels http funktioniert. Stattdessen muss nun https verwendet werden. Dies muss nach implementiert werden.
+* Es gibt nun eine neue Komponenten-Übersicht, die die Software in Teilbereiche einteilt. Diese Übersicht ist jedoch noch nicht vollständig, da neue Komponenten hinzukommen oder refactored werden.
+
+=== Sprint 7
+* Verbesserung der Komponenten-Übersicht
+* Umbau der Backend-zu-Frontend-Kommunikation sodass die Daten/Logik des Backends und der Sende-Prozess im Backend getrennt sind.
+
+=== Sprint 8
+* Die Entwickler wünschen sich eine bessere Aufteilung im Backend, da zB der Service Ordner sehr voll ist. Wir wollen eine neue Strukturierung erreichen, sodass das Backend, besser die Struktur der Komponenten-Sicht entspricht.
