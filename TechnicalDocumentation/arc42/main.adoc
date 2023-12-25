@@ -32,5 +32,3 @@ include::10_QualityRequirements.adoc[]
 include::11_Risks.adoc[]
 
 include::12_Glossary.adoc[]
-
-include::13_Diary.adoc[]

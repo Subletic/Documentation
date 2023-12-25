@@ -37,5 +37,5 @@ Hier werden wichtige Entscheidungen festgehalten, welche im Laufe des Projektes 
 | Kontext | Derzeit verwenden wir einen SignalR-Hub, um die Kommunikation zwischen Backend und Frontend zu realisieren. Dieser Hub wird jedoch von verschiedenen Stellen unseres Backends direkt aufgerufen, bzw. direkt über diesen Daten an das Frontend geschickt. 
 | Entscheidung | Wir wollen einen neuen Service implementieren, welcher die Kommunikation zwischen Backend und Frontend übernimmt. Dieser Service soll die Daten von den verschiedenen Stellen unseres Backends entgegennehmen und diese dann an das Frontend weiterleiten.
 | Konsequenzen | Bessere Kapselung von Aufgaben, sodass Backend-Logik und Sende-Prozesse getrennt werden.
-| Status | pass:[<span style="color: red;">In Planung</span>]
+| Status | pass:[<span style="color: green;">Umgesetzt</span>]
 |===
