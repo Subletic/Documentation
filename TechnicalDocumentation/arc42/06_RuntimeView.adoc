@@ -10,6 +10,11 @@ image::Backend_Frontend_Kommunikation.drawio.svg[Static,60%,align="center"]
 
 === Konfigurations Prozess
 
+.Übersicht über den Konfigurations Prozess
+image::Konfigurations_Prozess.drawio.svg[Static,align="center"]
+
+Vor dem Start der eigentlichen Software kann die korrigierende Person zwei Parameter einstellen, zum einen den _Delay_ zwischen Ankunft einer Sprechblase bis zum Umwandeln und Senden des Untertitels. Der zweiten Parameter ist eine Liste von Wörtern, das _Soundslike-Dictionary_, welche _Speechmatics_ hilft schwierige Wörter zu erkennen. Beide Parameter werden in der Angular-Komponente _StartPage_ vor Beginn der Korrektur eingegeben und an den _ConfigurationService_ übergeben. Der Button "_Weiter zum Live-Stream-Editor_" ruft die _continueToEditor_ Funktion auf die wiederum die Methode _postConfigurationToBackend_ aufruft im _ConfigurationService_. Diese kümmert sich um das Senden der Konfiguration an das Backend. Dazu nutzt sie die _uploadConfiguration_ Methode des _BackendProviderService_, welcher die Kommunikation mit dem Backend kapselt. Ein REST-Call sendet die _json_ welche die Konfiguration enthält an das Backend. Dort wird diese vom _ConfigurationController_ entgegengenommen und an den _ConfigurationService_ weitergeleitet und gespeichert. Nun kann sich der _BufferTimeMonitor_ bei Bedarf den _Delay_ holen und der _SpeechmaticsConnectionService_ erhält nach Übertragung der Konfiguration das _Soundslike-Dictionary_ und leitet es weiter zu _Speechmatics_.
+
 === Transkriptions Prozess
 
 === SpeechBubble Prozess
