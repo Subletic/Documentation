@@ -1419,6 +1419,96 @@ Finn Romeis</p></td>
 </tr>
 </tbody>
 </table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Formate des exportierten <em>Soundslike</em>-Dictionaries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontext</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zur Übertragung des <em>Soundslike</em>-Dictionaries an Speechmatics wird json verwendet. Jedoch ist dies ein unhandliches Datei-Format für unsere User, wenn sie diese lokal bearbeiten und exportieren möchten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entscheidung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Support von verschiedenen Dateiformaten, wie CSV, XLS, XLSX</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Konsequenzen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Es entsteht eine weitere Abstraktionsebene</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color: green;">CSV Umgesetzt</span>, <span style="color: red;">XLS in Planung</span>, <span style="color: red;">XLSX in Planung</span></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Verschiedene Kommunikationswege zwischen Backend und Frontend</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontext</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Historisch gewachsen, verwenden wir für die Kommunikation vom Frontend zum Backend, REST und für die Kommunikation vom Backend zum Frontend, SignalR. Die Frage ist ob es die Wartbarkeit erhöht, wenn wir nur noch einen Kommunikationsweg (SignalR) verwenden.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entscheidung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diese Idee wurde wieder verworfen, da der Aufwand nicht den Nutzen rechtfertigt und der Empfangsprozess im Backend dadurch unnötig verkompliziert wird.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Konsequenzen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Es bleibt bei zwei Art und Weisen Informationen zwischen Backend und Frontend auszutauschen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color: orange;">Verworfen</span></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Aufteilung der Klassen in Komponenten/Ordner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontext</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Durch die fortschreitende Entwicklung unseres Projektes, wächst die Anzahl der Klassen, sodass die bisherige Ordnerstruktur, welche die Klassen nach ihrer Art unterscheidet (Service, Controller, Model, etc.), für Unübersichtlichkeit sorgt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entscheidung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Es sollte eine neue Aufteilung in Ordner geben, die statt der Art der Klasse, die Aufgabe als Teil einer Software-Komponente verwendet. Zum Beispiel Audio, SpeechBubble, etc.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Konsequenzen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das Refactoring bzw. die Umstrukturierung führt zu einer besseren Übersichtlichkeit und Wartbarkeit, jedoch blockiert Sie auch die Weiterentwicklung der Software, da sonst mit komplizierten Merge-Requests zu rechnen ist.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span style="color: red;">Backend in Planung</span>, <span style="color: red;">Frontend in Planung</span></p></td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -1526,7 +1616,7 @@ Finn Romeis</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-01 22:10:27 +0100
+Last updated 2024-01-01 22:36:42 +0100
 </div>
 </div>
 </body>
