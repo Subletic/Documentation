@@ -39,3 +39,30 @@ Hier werden wichtige Entscheidungen festgehalten, welche im Laufe des Projektes 
 | Konsequenzen | Bessere Kapselung von Aufgaben, sodass Backend-Logik und Sende-Prozesse getrennt werden.
 | Status | pass:[<span style="color: green;">Umgesetzt</span>]
 |===
+
+[options="header", cols=","]
+|===
+| Name | Formate des exportierten _Soundslike_-Dictionaries 
+| Kontext | Zur Übertragung des _Soundslike_-Dictionaries an Speechmatics wird json verwendet. Jedoch ist dies ein unhandliches Datei-Format für unsere User, wenn sie diese lokal bearbeiten und exportieren möchten. 
+| Entscheidung | Support von verschiedenen Dateiformaten, wie CSV, XLS, XLSX
+| Konsequenzen | Es entsteht eine weitere Abstraktionsebene
+| Status | pass:[<span style="color: green;">CSV Umgesetzt</span>], pass:[<span style="color: red;">XLS in Planung</span>], pass:[<span style="color: red;">XLSX in Planung</span>]
+|===
+
+[options="header", cols=","]
+|===
+| Name | Verschiedene Kommunikationswege zwischen Backend und Frontend
+| Kontext | Historisch gewachsen, verwenden wir für die Kommunikation vom Frontend zum Backend, REST und für die Kommunikation vom Backend zum Frontend, SignalR. Die Frage ist ob es die Wartbarkeit erhöht, wenn wir nur noch einen Kommunikationsweg (SignalR) verwenden.
+| Entscheidung | Diese Idee wurde wieder verworfen, da der Aufwand nicht den Nutzen rechtfertigt und der Empfangsprozess im Backend dadurch unnötig verkompliziert wird. 
+| Konsequenzen | Es bleibt bei zwei Art und Weisen Informationen zwischen Backend und Frontend auszutauschen.
+| Status | pass:[<span style="color: orange;">Verworfen</span>]
+|===
+
+[options="header", cols=","]
+|===
+| Name | Aufteilung der Klassen in Komponenten/Ordner
+| Kontext | Durch die fortschreitende Entwicklung unseres Projektes, wächst die Anzahl der Klassen, sodass die bisherige Ordnerstruktur, welche die Klassen nach ihrer Art unterscheidet (Service, Controller, Model, etc.), für Unübersichtlichkeit sorgt.
+| Entscheidung | Es sollte eine neue Aufteilung in Ordner geben, die statt der Art der Klasse, die Aufgabe als Teil einer Software-Komponente verwendet. Zum Beispiel Audio, SpeechBubble, etc.
+| Konsequenzen | Das Refactoring bzw. die Umstrukturierung führt zu einer besseren Übersichtlichkeit und Wartbarkeit, jedoch blockiert Sie auch die Weiterentwicklung der Software, da sonst mit komplizierten Merge-Requests zu rechnen ist.
+| Status | pass:[<span style="color: red;">Backend in Planung</span>], pass:[<span style="color: red;">Frontend in Planung</span>]
+|===
