@@ -20,14 +20,20 @@ Vor dem Start der eigentlichen Software kann die korrigierende Person zwei Param
 .Prozessübersicht bei Erstellung einer neuen SpeechBubble
 image::Prozess_SpeechBubble_Publish.drawio.svg[Static,100%,align="center"]
 
+Die Erzeugung einer neuen _SpeechBubble_ beginnt im _WordProcessingService_, nachdem die Transkription erstellt wurde. An zwei Stellen  muss dies kommuniziert werden. Die Erste ist der _SpeechBubbleListService_ welche im Backend die derzeitigen _SpeechBubbles_ vorhält. Die zweite Stelle ist das Frontend, sodass der korrigierenden Person die neue _SpeechBubble_ angezeigt werden kann. Dazu wird der _IFrontendCommunicationService_ genutzt der die Kommunikation mit dem Frontend kapselt und die _PublishSpeechBubble()_-Methode anbietet, um neue Sprechblasen an das Frontend kommunizieren. Dazu wird intern der SignalR-Hub: _FrontendCommunicationHub_ genutzt, der Daten an das Frontend streamt, mithilfe der _newBubble_ Route. Im Frontend endet die Route beim _BackendListenerService_ der die neue _SpeechBubble_ vorhält. Zuvor hat das _TextSheet_ im _BackendListenerService_ die vorgehaltenen _SpeechBubbles_ abonniert, sodass bei Ankunft neuer _SpeechBubbles_ diese direkt entgegengenommen und visualisieren werden.  
+
 === Update-SpeechBubble Prozess
 
 .Prozessübersicht beim Updaten einer SpeechBubble
 image::Prozess_SpeechBubble_Update.drawio.svg[Static,100%,align="center"]
 
+Modifiziert der User eine Sprechblase ändert sich zwar direkt der interne _SpeechBubble_-Kontext (_TextSheet_) im Frontend, jedoch entsteht eine Inkonsistenz mit dem Backend. Um diese aufzulösen muss dem Backend die geänderte _SpeechBubble_ an das Backend kommuniziert werden. Dazu ruft das _TextSheet_ den _BackendProviderService_ mit der _updateSpeechBubbles()_-Methode auf, welcher die Kommunikation mit dem Backend kapselt. Die Route _api/speechbubbles/update_ führt zu einer REST-API, welche durch den _SpeechBubbleController_ realisiert ist. Geänderte  _SpeechBubbles_ werden zum Schluss dem Backend-Kontext im _ISpeechBubbleListService_ bekannt gemacht, mithilfe der _ReplaceSpeechBubble()_-Methode.
+
 === Export-Subtitle Prozess
 
 .Prozessübersicht beim Exportieren der Untertitel
 image::Prozess_Subtitle_Export.drawio.svg[Static,100%,align="center"]
+
+Der Export der finalen Untertitel beginnt im _BufferTimeMonitor_, da hier festgestellt wird wenn eine _SpeechBubble_ veraltet ist und der Inhalt dem _Client_ als Untertitel ausgespielt werden soll. Drei Subprozesse müssen dazu angestoßen werden. Zunächst muss im Backend die _SpeechBubble_ aus der Liste herausgenommen werden, mit Hilfe der _DeleteOldestBubble()_-Methode im _ISpeechBubbleListService_. Mit der herausgenommenen _SpeechBubble_ wird nun der zweite Subprozess gestartet der die _SpeechBubble_ zu einem Untertitel exportiert und an den Client weiterleitet. Dazu steht der _ISubtitleExporterService_ bereit, der mit der _ExportSubtitle_-Methode die _SpeechBubble_ entgegennimmt und die Export-Logik kapselt. Intern nutzt der _ISubtitleExporterService_ den _ISubtitleConverter_, um eine _SpeechBubble_ in ein Untertitelformat zu konvertieren und anschließend mithilfe eines Streams diesen an den Client weiterzuleiten. Der dritte und letzte Subprozess ist das Löschen der _SpeechBubble_ im Frontend. Dazu wird die _DeleteSpeechBubble()_-Methode im _IFrontendCommunicationService_ aufgerufen, analog zum Publish-Prozess. Hier wird jedoch nun die SignalR-Route: _deleteBubble_ verwendet. Im Frontend wird die betreffende _SpeechBubble_-Id über die entsprechende Route vom _BackendListenerService_ entgegengenommen. Das _TextSheet_ kann nun die _SpeechBubble_ aus dem _TextSheet_ entfernen, da zuvor der Endpunkt abonniert wurde.
 
 === Audio Handling Prozess
