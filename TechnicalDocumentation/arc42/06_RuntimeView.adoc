@@ -5,8 +5,8 @@ include::options.adoc[]
 
 Nachdem in der Bausteinsicht ein Überblick über die Bestandteile und deren Zusammenspiel im größeren Kontext gegeben wurde, konzentriert sich dieses Kapitel auf die kleineren Prozesse, um die Funktionsweisen bzw. Kommunikationswege zwischen den Komponenten oder Modulen zu verdeutlichen. Zunächst muss noch klar gestellt werden, dass das Frontend dem Backend unterstellt ist. Das bedeutet, dass das Frontend Einfluss auf das Backend hat, der zentrale Hauptprozess (das Generieren des Untertitels) jedoch im Backend stattfindet.
 
-.Kommunikation zwischen Backend und Frontend
-image::Backend_Frontend_Kommunikation.drawio.svg[Static,60%,align="center"]
+.Übersicht über alle wichtigen Prozesse
+image::Process_Overview.drawio.svg[Static,80%,align="center"]
 
 === Konfigurations Prozess
 
@@ -18,16 +18,16 @@ Vor dem Start der eigentlichen Software kann die korrigierende Person zwei Param
 === Publish-SpeechBubble Prozess
 
 .Prozessübersicht bei Erstellung einer neuen SpeechBubble
-image::Prozess_SpeechBubble_Publish.drawio.svg[Static,align="center"]
+image::Prozess_SpeechBubble_Publish.drawio.svg[Static,100%,align="center"]
 
 === Update-SpeechBubble Prozess
 
 .Prozessübersicht beim Updaten einer SpeechBubble
-image::Prozess_SpeechBubble_Update.drawio.svg[Static,align="center"]
+image::Prozess_SpeechBubble_Update.drawio.svg[Static,100%,align="center"]
 
-=== Export Subtitle Prozess
+=== Export-Subtitle Prozess
 
 .Prozessübersicht beim Exportieren der Untertitel
-image::Prozess_Subtitle_Export.drawio.svg[Static,align="center"]
+image::Prozess_Subtitle_Export.drawio.svg[Static,100%,align="center"]
 
 === Audio Handling Prozess
