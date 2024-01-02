@@ -1,9 +1,8 @@
 :author: Benedikt Beigang (Software Architekt und Team-Manager, Gruppe O)
-:toc:
+:toc: left
 :toc-title: Inhaltsverzeichnis
 :sectnums:
 :toclevels: 2
-
 
 = Subletic arc42-Architekturüberblick
 
