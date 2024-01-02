@@ -2,3 +2,13 @@ include::options.adoc[]
 <<<
 
 == Auslieferungssicht
+
+.Ports
+[options="header", content="center" cols="^,^,^"]
+|===
+| | Container Port | Innerer Port
+s| Backend HTTP 2+| 40114
+s| Backend HTTPS 2+| 40115
+s| Frontend HTTP | 40110 | 80
+s| Frontend HTTPS 2+| 40111
+|===

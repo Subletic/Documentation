@@ -1,2 +1,125 @@
 <<<
+
 == Querschnittliche Konzepte
+
+=== Kommunikation
+
+==== Frontend zu Backend
+
+==== Backend zu Frontend
+
+=== Spezielle Code-Conventions
+
+==== Minimierung der Schachtelung
+
+Die Entwickler sollten das Schachteln von vielen Schleifen und if-Abfragen vermeiden. Dabei können die folgenden Techniken helfen:
+
+.Verwendung von Guard-Clauses:
+[source,cs]
+----
+// Bad:
+if (condition) {
+    if (condition2) {
+        if (condition3) {
+            // do something
+        }
+    }
+}
+
+// Good:
+if (!condition) return;
+if (!condition2) return;
+if (!condition3) return;
+
+----
+
+.Verwendung von 'switch'-Statements:
+[source,cs]
+----
+// Bad:
+if (condition) {
+    // do something
+} else if (condition 2) {
+    // do something
+} else {
+    // do something
+}
+
+// Good:
+switch (condition) {
+    case 1: /*do something*/ break;
+    case 2: /*do something*/ break;
+    default: /*do something*/ break;
+}
+// Or:
+switch (condition) {
+    case 1: /*do something*/ return;
+    case 2: /*do something*/ return;
+    default: /*do something*/ return;
+}
+----
+
+.Innere Schleifen auslagern oder Linq verwenden:
+[source,cs]
+----
+private List<string> textblock = new List<string>();
+
+// Bad:
+private bool TextblockContainsQuestionmark() {
+    foreach (word in textblock) {
+        for (int i = 0; i < word.Length; i++) {
+            if (word[i]).Contains("?") {
+                return true;
+            }
+        }
+    }
+}
+
+// Good:
+private bool TextblockContainsQuestionmark() {
+    foreach (word in textblock) {
+        return WordContainsBla(word);
+    }
+}
+private bool WordContainsQuestionmark(string word) {
+    for (int i = 0; i < word.Length; i++) {
+        if (word[i]).Contains("?") {
+            return true;
+        }
+    }
+}
+
+// Better:
+private bool TextblockContainsQuestionmarkWithLinq() {
+    foreach (word in textblock) {
+        return word.Any(c => c == '?');
+    }
+}
+----
+
+==== Kapselung von Funktionalität und das Facade-Pattern 
+
+* FrontendCommunicationService
+
+==== Dependency Injection
+
+Dependency Injection ist ein Entwurfsmuster, das die Abhängigkeiten zwischen Komponenten eines Systems löst, indem es externe Abhängigkeiten in eine Komponente injiziert, anstatt dass die Komponente sie selbst erstellt. Dazu wird einfach das entsprechende Objekt als Parameter im Konstruktor übergeben. Dies fördert lose Kopplung, erleichtert Testbarkeit und verbessert die Wartbarkeit von Code.
+
+Ein konkretes Beispiel ist die Verwendung eines externen Services im Backend. Erstellen wir zB. einen Service, können wir unseren Umgebungs-Variablen die in der `appsettings` stehen im Konstruktor injizieren, anstatt ihn selbst zu erstellen:
+
+.Dependency Injection am Beispiel eines Services:
+[source,cs]
+----
+private readonly IConfiguration configuration;
+private readonly int appsettings_Variable;
+
+public MyService(IConfiguration configuration)
+{
+    this.configuration = configuration;
+    this.appsettings_Variable = configuration.GetValue<int>("MyServiceSettings:veryImportantVariable");
+}
+----
+
+=== SpeechBubble Manipulation
+
+

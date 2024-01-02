@@ -484,7 +484,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_auslieferungssicht">7. Auslieferungssicht</a></li>
-<li><a href="#_querschnittliche_konzepte">8. Querschnittliche Konzepte</a></li>
+<li><a href="#_querschnittliche_konzepte">8. Querschnittliche Konzepte</a>
+<ul class="sectlevel2">
+<li><a href="#_kommunikation">8.1. Kommunikation</a></li>
+<li><a href="#_spezielle_code_conventions">8.2. Spezielle Code-Conventions</a></li>
+<li><a href="#_speechbubble_manipulation">8.3. SpeechBubble Manipulation</a></li>
+</ul>
+</li>
 <li><a href="#_entscheidungen">9. Entscheidungen</a></li>
 <li><a href="#_qualitätsanforderungen">10. Qualitätsanforderungen</a>
 <ul class="sectlevel2">
@@ -1297,13 +1303,184 @@ Finn Romeis</p></td>
 <div class="sect1">
 <h2 id="_auslieferungssicht">7. Auslieferungssicht</h2>
 <div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Tabelle 1. Ports</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top"></th>
+<th class="tableblock halign-center valign-top">Container Port</th>
+<th class="tableblock halign-center valign-top">Innerer Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Backend HTTP</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">40114</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Backend HTTPS</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">40115</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Frontend HTTP</strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">40110</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">80</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Frontend HTTPS</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">40111</p></td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_querschnittliche_konzepte">8. Querschnittliche Konzepte</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_kommunikation">8.1. Kommunikation</h3>
+<div class="sect3">
+<h4 id="_frontend_zu_backend">8.1.1. Frontend zu Backend</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_backend_zu_frontend">8.1.2. Backend zu Frontend</h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="_spezielle_code_conventions">8.2. Spezielle Code-Conventions</h3>
+<div class="sect3">
+<h4 id="_minimierung_der_schachtelung">8.2.1. Minimierung der Schachtelung</h4>
+<div class="paragraph">
+<p>Die Entwickler sollten das Schachteln von vielen Schleifen und if-Abfragen vermeiden. Dabei können die folgenden Techniken helfen:</p>
+</div>
+<div class="listingblock">
+<div class="title">Verwendung von Guard-Clauses:</div>
+<div class="content">
+<pre class="highlight"><code class="language-cs" data-lang="cs">// Bad:
+if (condition) {
+    if (condition2) {
+        if (condition3) {
+            // do something
+        }
+    }
+}
+
+// Good:
+if (!condition) return;
+if (!condition2) return;
+if (!condition3) return;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Verwendung von 'switch'-Statements:</div>
+<div class="content">
+<pre class="highlight"><code class="language-cs" data-lang="cs">// Bad:
+if (condition) {
+    // do something
+} else if (condition 2) {
+    // do something
+} else {
+    // do something
+}
+
+// Good:
+switch (condition) {
+    case 1: /*do something*/ break;
+    case 2: /*do something*/ break;
+    default: /*do something*/ break;
+}
+// Or:
+switch (condition) {
+    case 1: /*do something*/ return;
+    case 2: /*do something*/ return;
+    default: /*do something*/ return;
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Innere Schleifen auslagern oder Linq verwenden:</div>
+<div class="content">
+<pre class="highlight"><code class="language-cs" data-lang="cs">private List&lt;string&gt; textblock = new List&lt;string&gt;();
+
+// Bad:
+private bool TextblockContainsQuestionmark() {
+    foreach (word in textblock) {
+        for (int i = 0; i &lt; word.Length; i++) {
+            if (word[i]).Contains("?") {
+                return true;
+            }
+        }
+    }
+}
+
+// Good:
+private bool TextblockContainsQuestionmark() {
+    foreach (word in textblock) {
+        return WordContainsBla(word);
+    }
+}
+private bool WordContainsQuestionmark(string word) {
+    for (int i = 0; i &lt; word.Length; i++) {
+        if (word[i]).Contains("?") {
+            return true;
+        }
+    }
+}
+
+// Better:
+private bool TextblockContainsQuestionmarkWithLinq() {
+    foreach (word in textblock) {
+        return word.Any(c =&gt; c == '?');
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_kapselung_von_funktionalität_und_das_facade_pattern">8.2.2. Kapselung von Funktionalität und das Facade-Pattern</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>FrontendCommunicationService</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dependency_injection">8.2.3. Dependency Injection</h4>
+<div class="paragraph">
+<p>Dependency Injection ist ein Entwurfsmuster, das die Abhängigkeiten zwischen Komponenten eines Systems löst, indem es externe Abhängigkeiten in eine Komponente injiziert, anstatt dass die Komponente sie selbst erstellt. Dazu wird einfach das entsprechende Objekt als Parameter im Konstruktor übergeben. Dies fördert lose Kopplung, erleichtert Testbarkeit und verbessert die Wartbarkeit von Code.</p>
+</div>
+<div class="paragraph">
+<p>Ein konkretes Beispiel ist die Verwendung eines externen Services im Backend. Erstellen wir zB. einen Service, können wir unseren Umgebungs-Variablen die in der <code>appsettings</code> stehen im Konstruktor injizieren, anstatt ihn selbst zu erstellen:</p>
+</div>
+<div class="listingblock">
+<div class="title">Dependency Injection am Beispiel eines Services:</div>
+<div class="content">
+<pre class="highlight"><code class="language-cs" data-lang="cs">private readonly IConfiguration configuration;
+private readonly int appsettings_Variable;
+
+public MyService(IConfiguration configuration)
+{
+    this.configuration = configuration;
+    this.appsettings_Variable = configuration.GetValue&lt;int&gt;("MyServiceSettings:veryImportantVariable");
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_speechbubble_manipulation">8.3. SpeechBubble Manipulation</h3>
 <div style="page-break-after: always;"></div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1629,7 +1806,7 @@ Finn Romeis</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-02 11:37:11 +0100
+Last updated 2024-01-02 12:56:54 +0100
 </div>
 </div>
 </body>
