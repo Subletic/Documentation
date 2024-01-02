@@ -1,5 +1,42 @@
+:imagesdir: ./img
 <<<
+
 == Qualitätsanforderungen
 
+Dieser Abschnitt beinhaltet die geforderten Qualitätsanforderungen und betrachtet einige Qualitätsmerkmale genauer.
 
 === Qualitätsbaum
+
+.Datenfluss von Subletic
+image::QualityTree.drawio.svg[Static,80%,align="center"]
+
+=== Modul-Kopplung
+
+=== Code-Komplexität
+
+=== Testabdeckung
+
+=== 60:30:10-Regel
+
+=== Audio-Pitch
+
+.Pitch bei normaler Geschwindigkeit
+audio::audio/Normal-1x.mp3[]
+
+[options="header", content="center" cols="^,^"]
+|===
+| Langsamer | Schneller
+a| .Pitch bei 0.9x
+audio::audio/Langsamer-0_9x.mp3[] 
+a| .Pitch bei 1.1x
+audio::audio/Schneller-1_1x.mp3[] 
+a| .Pitch bei 0.7x
+audio::audio/Langsamer-0_7x.mp3[]
+a| .Pitch bei 1.3x
+audio::audio/Schneller-1_3x.mp3[]
+a| .Pitch bei 0.5x
+audio::audio/Langsamer-0_5x.mp3[]
+a| .Pitch bei 1.5x
+audio::audio/Schneller-1_5x.mp3[]
+|===
+

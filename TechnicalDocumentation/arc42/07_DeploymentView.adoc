@@ -1,9 +1,8 @@
-include::options.adoc[]
 <<<
 
 == Auslieferungssicht
 
-.Ports
+.Reservierte Ports aller Systeme
 [options="header", content="center" cols="^,^,^"]
 |===
 | | Container Port | Innerer Port

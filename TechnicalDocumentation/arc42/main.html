@@ -495,6 +495,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_qualitätsanforderungen">10. Qualitätsanforderungen</a>
 <ul class="sectlevel2">
 <li><a href="#_qualitätsbaum">10.1. Qualitätsbaum</a></li>
+<li><a href="#_modul_kopplung">10.2. Modul-Kopplung</a></li>
+<li><a href="#_code_komplexität">10.3. Code-Komplexität</a></li>
+<li><a href="#_testabdeckung">10.4. Testabdeckung</a></li>
+<li><a href="#_603010_regel">10.5. 60:30:10-Regel</a></li>
+<li><a href="#_audio_pitch">10.6. Audio-Pitch</a></li>
 </ul>
 </li>
 <li><a href="#_risiken">11. Risiken</a></li>
@@ -1304,7 +1309,7 @@ Finn Romeis</p></td>
 <h2 id="_auslieferungssicht">7. Auslieferungssicht</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Tabelle 1. Ports</caption>
+<caption class="title">Tabelle 1. Reservierte Ports aller Systeme</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1345,17 +1350,128 @@ Finn Romeis</p></td>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_kommunikation">8.1. Kommunikation</h3>
+<div class="paragraph">
+<p>Die Kommunikation mit externen Fremdsystemen sollte zum einen gekapselt sein, zum anderen getrennt in eine Klasse die sendet und einen die empfängt. Ist die Verbindung bidirektional, so sollte ein dritter Bereich beide Klassen verbinden und den WebSocket o.ä. verwalten.</p>
+</div>
 <div class="sect3">
 <h4 id="_frontend_zu_backend">8.1.1. Frontend zu Backend</h4>
+<div class="paragraph">
+<p>Kommunikation die vom Frontend zum Backend verläuft, ist in unserem Fall zustandslos, es werden also keine Streams/Echtzeitdaten benötigt. Mithilfe einer REST-API, realisiert durch einen Controller, kann das Frontend Daten an das Backend übermitteln. Ein Controller sollte dabei nur für eine bestimmte Art von Daten zuständig sein, z.B. <em>SpeechBubbles</em>:</p>
+</div>
+<div class="listingblock">
+<div class="title">Erstellen eines Controllers in ASP.NET Core:</div>
+<div class="content">
+<pre class="highlight"><code class="language-csharp" data-lang="csharp">[ApiController]
+[Route("api/")]
+public class MyNewController : ControllerBase
+{
+    public MyNewController(/*Injected Services and Parameters*/)
+    {
+        // Constructor
+    }
 
+    [HttpPost]
+    [Route("domain/endpoint")]
+    public IActionResult HandleUpdatedSpeechBubble([FromBody] DataTransferObject data)
+    {
+        // Handling of the received data
+        return Ok();
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Im <em>BackendProviderService</em> kann anschließend der neue REST-Endpunkt aufgerufen werden:</p>
+</div>
+<div class="listingblock">
+<div class="title">Aufruf des REST-Endpunkts im Frontend:</div>
+<div class="content">
+<pre class="highlight"><code class="language-typescript" data-lang="typescript">export class BackendProviderService {
+    public callNewEndpoint(dto: DTO): void {
+    fetch(environment.BACKEND_URL + '/api/domain/endpoint', {
+      method: 'POST',
+      body: JSON.stringify(dto),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).then((response) =&gt; {
+      console.log(response);
+      if (response.ok) return;
+      console.error('Error Message');
+    });
+  }
+}</code></pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_backend_zu_frontend">8.1.2. Backend zu Frontend</h4>
+<div class="paragraph">
+<p>Kommunikation die vom Backend zum Frontend verläuft, ist teilweise zustandsbehaftet. Mit SignalR ist es dennoch möglich unaufgefordert dem Frontend Daten zu senden. Dazu kann der <code>hubContext</code> im <em>FrontendCommunicationService</em> genutzt werden:</p>
+</div>
+<div class="listingblock">
+<div class="title">Aufruf des SignalR-Endpunkts im Backend:</div>
+<div class="content">
+<pre class="highlight"><code class="language-csharp" data-lang="csharp">public class FrontendCommunicationService : IFrontendCommunicationService
+{
+    private readonly IHubContext&lt;FrontendCommunicationHub&gt; hubContext;
 
+    public FrontendCommunicationService(IHubContext&lt;FrontendCommunicationHub&gt; hubContext)
+    {
+        this.hubContext = hubContext;
+    }
+
+    public async Task SendNewDataWithSignalR(DTO data)
+    {
+        try
+        {
+            var listToSend = new List&lt;DTO&gt;() { data };
+            await hubContext.Clients.All.SendAsync("endpoint", listToSend);
+        }
+        catch (Exception ex)
+        {
+            logger.Error($"Failed to transmit to Frontend: {ex.Message}");
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Im Frontend muss der Endpunkt im <em>backendListenerService</em> erstellt und in der Komponente schließlich abonniert werden:</p>
+</div>
+<div class="listingblock">
+<div class="title">Erstellen und abonnieren eines SignalR-Endpunkts im Frontend:</div>
+<div class="content">
+<pre class="highlight"><code class="language-typescript" data-lang="typescript">export class backendListener {
+  private hubConnection: signalR.HubConnection;
+  public data: Subject&lt;DTO&gt; = new Subject&lt;DTO&gt;();
+
+  constructor() {
+    this.hubConnection = new signalR.HubConnectionBuilder()
+      .withUrl(environment.BACKEND_URL + '/endpoint')
+      .build();
+
+    this.hubConnection.on('newBubble', (data) =&gt; {
+      this.newData.next(data);
+    });
+  }
+}
+
+// Abonnieren des Endpunkts in der Komponente:
+ngOnInit(): void {
+    this.backendListener.newData.subscribe((data) =&gt; {
+      // Do something with the data
+    });
+}</code></pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_spezielle_code_conventions">8.2. Spezielle Code-Conventions</h3>
+<div class="paragraph">
+<p>Auf folgende Conventions wird im besonderen bei Code-Reviews geachtet.</p>
+</div>
 <div class="sect3">
 <h4 id="_minimierung_der_schachtelung">8.2.1. Minimierung der Schachtelung</h4>
 <div class="paragraph">
@@ -1364,7 +1480,7 @@ Finn Romeis</p></td>
 <div class="listingblock">
 <div class="title">Verwendung von Guard-Clauses:</div>
 <div class="content">
-<pre class="highlight"><code class="language-cs" data-lang="cs">// Bad:
+<pre class="highlight"><code class="language-csharp" data-lang="csharp">// Bad:
 if (condition) {
     if (condition2) {
         if (condition3) {
@@ -1382,7 +1498,7 @@ if (!condition3) return;</code></pre>
 <div class="listingblock">
 <div class="title">Verwendung von 'switch'-Statements:</div>
 <div class="content">
-<pre class="highlight"><code class="language-cs" data-lang="cs">// Bad:
+<pre class="highlight"><code class="language-csharp" data-lang="csharp">// Bad:
 if (condition) {
     // do something
 } else if (condition 2) {
@@ -1408,7 +1524,7 @@ switch (condition) {
 <div class="listingblock">
 <div class="title">Innere Schleifen auslagern oder Linq verwenden:</div>
 <div class="content">
-<pre class="highlight"><code class="language-cs" data-lang="cs">private List&lt;string&gt; textblock = new List&lt;string&gt;();
+<pre class="highlight"><code class="language-csharp" data-lang="csharp">private List&lt;string&gt; textblock = new List&lt;string&gt;();
 
 // Bad:
 private bool TextblockContainsQuestionmark() {
@@ -1424,7 +1540,7 @@ private bool TextblockContainsQuestionmark() {
 // Good:
 private bool TextblockContainsQuestionmark() {
     foreach (word in textblock) {
-        return WordContainsBla(word);
+        return WordContainsQuestionmark(word);
     }
 }
 private bool WordContainsQuestionmark(string word) {
@@ -1445,19 +1561,34 @@ private bool TextblockContainsQuestionmarkWithLinq() {
 </div>
 </div>
 <div class="sect3">
-<h4 id="_kapselung_von_funktionalität_und_das_facade_pattern">8.2.2. Kapselung von Funktionalität und das Facade-Pattern</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>FrontendCommunicationService</p>
-</li>
-</ul>
+<h4 id="_lose_kopplung_und_kapseln_von_funktionalität">8.2.2. Lose Kopplung und Kapseln von Funktionalität</h4>
+<div class="paragraph">
+<p>Das Kapseln von Funktionalität ist entscheidend für die Wartbarkeit des Codes, da sie die Komponenten lose koppelt. Das Facade-Pattern oder Interfaces im allgemeinen helfen dabei, die Funktionalität zu kapseln und für eine lose Kopplung zu sorgen. Ein Beispiel ist die Kapselung der Kommunikation zwischen Backend und Frontend. Sobald eine Komponente mit dem jeweils andern System kommunizieren möchte, stellt sie eine Anfrage an eine Facade, zB im Backend der <em>FrontendCommunicationService</em>. Dieser Service kapselt die Kommunikation mit dem Frontend und stellt eine Schnittstelle für die anderen Komponenten bereit. Aber auch das Verwenden eines Interfaces beim Erstellen einer neuen Klasse, hilft dabei auch in Zukunft die Software leicht erweiterbar zu halten:</p>
+</div>
+<div class="listingblock">
+<div class="title">Verwendung eines Interfaces im Kontext der Untertitelerstellung</div>
+<div class="content">
+<pre class="highlight"><code class="language-csharp" data-lang="csharp">public interface ISubtitleConverter
+{
+    public void ConvertSpeechBubble(SpeechBubble speechBubble);
+}
+
+public class WebVttConverter : ISubtitleConverter
+{
+    public WebVttConverter() { }
+
+    public void ConvertSpeechBubble(SpeechBubble speechBubble)
+    {
+        // Convert SpeechBubble to WebVtt
+    }
+}</code></pre>
+</div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_dependency_injection">8.2.3. Dependency Injection</h4>
 <div class="paragraph">
-<p>Dependency Injection ist ein Entwurfsmuster, das die Abhängigkeiten zwischen Komponenten eines Systems löst, indem es externe Abhängigkeiten in eine Komponente injiziert, anstatt dass die Komponente sie selbst erstellt. Dazu wird einfach das entsprechende Objekt als Parameter im Konstruktor übergeben. Dies fördert lose Kopplung, erleichtert Testbarkeit und verbessert die Wartbarkeit von Code.</p>
+<p>Dependency Injection ist ein weiteres Entwurfsmuster, dass die Abhängigkeiten zwischen Komponenten eines Systems löst, indem es externe Abhängigkeiten in eine Komponente injiziert, anstatt dass die Komponente sie selbst erstellt. Dazu wird einfach das entsprechende Objekt als Parameter im Konstruktor übergeben. Dies fördert lose Kopplung, erleichtert Testbarkeit und verbessert die Wartbarkeit von Code.</p>
 </div>
 <div class="paragraph">
 <p>Ein konkretes Beispiel ist die Verwendung eines externen Services im Backend. Erstellen wir zB. einen Service, können wir unseren Umgebungs-Variablen die in der <code>appsettings</code> stehen im Konstruktor injizieren, anstatt ihn selbst zu erstellen:</p>
@@ -1465,7 +1596,7 @@ private bool TextblockContainsQuestionmarkWithLinq() {
 <div class="listingblock">
 <div class="title">Dependency Injection am Beispiel eines Services:</div>
 <div class="content">
-<pre class="highlight"><code class="language-cs" data-lang="cs">private readonly IConfiguration configuration;
+<pre class="highlight"><code class="language-csharp" data-lang="csharp">private readonly IConfiguration configuration;
 private readonly int appsettings_Variable;
 
 public MyService(IConfiguration configuration)
@@ -1705,8 +1836,112 @@ public MyService(IConfiguration configuration)
 <div class="sect1">
 <h2 id="_qualitätsanforderungen">10. Qualitätsanforderungen</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Dieser Abschnitt beinhaltet die geforderten Qualitätsanforderungen und betrachtet einige Qualitätsmerkmale genauer.</p>
+</div>
 <div class="sect2">
 <h3 id="_qualitätsbaum">10.1. Qualitätsbaum</h3>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./img/QualityTree.drawio.svg" alt="Static" width="80%">
+</div>
+<div class="title">Abbildung 11. Datenfluss von Subletic</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_modul_kopplung">10.2. Modul-Kopplung</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_code_komplexität">10.3. Code-Komplexität</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_testabdeckung">10.4. Testabdeckung</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_603010_regel">10.5. 60:30:10-Regel</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_audio_pitch">10.6. Audio-Pitch</h3>
+<div class="audioblock">
+<div class="title">Pitch bei normaler Geschwindigkeit</div>
+<div class="content">
+<audio src="./img/audio/Normal-1x.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top">Langsamer</th>
+<th class="tableblock halign-center valign-top">Schneller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="audioblock">
+<div class="title">Pitch bei 0.9x</div>
+<div class="content">
+<audio src="./img/audio/Langsamer-0_9x.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="audioblock">
+<div class="title">Pitch bei 1.1x</div>
+<div class="content">
+<audio src="./img/audio/Schneller-1_1x.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="audioblock">
+<div class="title">Pitch bei 0.7x</div>
+<div class="content">
+<audio src="./img/audio/Langsamer-0_7x.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="audioblock">
+<div class="title">Pitch bei 1.3x</div>
+<div class="content">
+<audio src="./img/audio/Schneller-1_3x.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="audioblock">
+<div class="title">Pitch bei 0.5x</div>
+<div class="content">
+<audio src="./img/audio/Langsamer-0_5x.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="audioblock">
+<div class="title">Pitch bei 1.5x</div>
+<div class="content">
+<audio src="./img/audio/Schneller-1_5x.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -1714,6 +1949,39 @@ public MyService(IConfiguration configuration)
 <div class="sect1">
 <h2 id="_risiken">11. Risiken</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Die folgenden Risiken wurden zu Beginn und im Laufe dessen als Probleme, die auftreten können, identifiziert.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Risiko</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eigener Text-Editor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Logik der dynamischen Texteingabe wurde selbst implementiert. Es wurde auf keine bereits existierende TextEditor-Library zurückgegriffen, mangels fehlender Features in diesen. Dadurch ist unsere Software hypothetisch anfälliger für Fehler.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verwendung von SignalR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Für das Streamen des Audios an das Frontend wurde am Anfang der Entwicklung sich für SignalR entschieden. Es performed schlechter als WebRTC. Trotzdem wurde es verwendet, da SignalR freundlicher für Einsteiger ist im Vergleich zu WebRTC. Außerdem ist davon auszugehen, dass es für die Anwendung ausreicht.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abhängigkeit zu Speechmatics</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zwar wurde darauf geachtet innerhalb der Software keine großen Abhängigkeit zur Speech-Engine zu haben, jedoch ist dies nicht vollständig vermeidbar, sodass die Software nur solange funktioniert, wie Speechmatics existiert und die API erreichbar ist.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unerfahrene Entwickler</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Entwickler haben wenig bis keine Erfahrung mit der Entwicklung von Anwendungen in größeren Gruppen und Projekten. Dadurch ist die Software anfälliger für Fehler und die Entwicklung dauert länger.</p></td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -1806,7 +2074,7 @@ public MyService(IConfiguration configuration)
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-02 12:56:54 +0100
+Last updated 2024-01-02 18:17:54 +0100
 </div>
 </div>
 </body>

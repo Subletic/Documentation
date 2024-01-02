@@ -1,2 +1,14 @@
 <<<
+    
 == Risiken
+
+Die folgenden Risiken wurden zu Beginn und im Laufe dessen als Probleme, die auftreten können, identifiziert.
+
+[options="header", content="center" cols="1,3"]
+|===
+| Risiko | Beschreibung
+| Eigener Text-Editor | Die Logik der dynamischen Texteingabe wurde selbst implementiert. Es wurde auf keine bereits existierende TextEditor-Library zurückgegriffen, mangels fehlender Features in diesen. Dadurch ist unsere Software hypothetisch anfälliger für Fehler.
+| Verwendung von SignalR | Für das Streamen des Audios an das Frontend wurde am Anfang der Entwicklung sich für SignalR entschieden. Es performed schlechter als WebRTC. Trotzdem wurde es verwendet, da SignalR freundlicher für Einsteiger ist im Vergleich zu WebRTC. Außerdem ist davon auszugehen, dass es für die Anwendung ausreicht.
+| Abhängigkeit zu Speechmatics | Zwar wurde darauf geachtet innerhalb der Software keine großen Abhängigkeit zur Speech-Engine zu haben, jedoch ist dies nicht vollständig vermeidbar, sodass die Software nur solange funktioniert, wie Speechmatics existiert und die API erreichbar ist.
+| Unerfahrene Entwickler | Die Entwickler haben wenig bis keine Erfahrung mit der Entwicklung von Anwendungen in größeren Gruppen und Projekten. Dadurch ist die Software anfälliger für Fehler und die Entwicklung dauert länger.
+|===

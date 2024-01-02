@@ -1,4 +1,4 @@
-include::options.adoc[]
+:imagesdir: ./img
 <<<
 
 == Bausteinsicht
