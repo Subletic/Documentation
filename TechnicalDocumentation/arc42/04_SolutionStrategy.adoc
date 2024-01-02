@@ -3,13 +3,28 @@
 
 Dieser Abschnitt enthält einen stark verdichteten Architekturüberblick. Eine Gegenüberstellung der wichtigsten Ziele und Lösungsansätze.
 
-=== Einstieg
-
 [options="header", cols="1,1"]
 |===
 | Qualitätsziel | Dem zuträgliche Ansätze in der Architektur
-| Benutzerfreundliche Oberfläche
 
+| DSGVO-Konformität
+a|
+* Verwendung von frei verfügbaren Bibliotheken
+* Kein Deployment außerhalb der EU
+* Keine Verwendung von Cookies oder Speichern anderer Daten
+* HTTPS als Verbindungsprotokoll
+
+| Trennung von Datenverarbeitung und Darstellung
+a|
+* Aufteilung von Backend und Frontend (in zwei Projekte/Repos)
+* Also z.B. keine Razor-Page oder Monolithische Anwendung
+
+| Flexible Auslieferung an den Kunden
+a|
+* Web-Technologien statt nativer Apps
+* Docker-Container für einfache Auslieferung
+
+| Benutzerfreundliche Oberfläche
 a|
 * Nutzen von schon existierenden UI-Komponenten
 * Im Blick halten des Mental-Loads, schon während des Designprozesses
@@ -22,12 +37,6 @@ a|
 * Beschränkung auf Audio-Stream, da Videostream, sowieso nicht genutzt wird
 * Ständige End2End-Tests durch die Entwickler
 
-| DSGVO-Konformität 
-a|
-* Verwendung von frei verfügbaren Bibliotheken
-* Kein Deployment außerhalb der EU
-* Keine Verwendung von Cookies oder Speichern anderer Daten
-
 | Codequalität 
 a|
 * Code-Styleguides: https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options[C#-Code-Style]
@@ -35,7 +44,3 @@ a|
 * Unit-Tests mit nUnit und Jasmine
 * CI/CD-Pipeline mit Linting und automatisiertem Tests 
 |===
-
-=== Aufbau
-
-=== Anbindung

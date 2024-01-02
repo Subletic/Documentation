@@ -466,13 +466,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_technischer_kontext">3.2. Technischer Kontext</a></li>
 </ul>
 </li>
-<li><a href="#_lösungsstrategie">4. Lösungsstrategie</a>
-<ul class="sectlevel2">
-<li><a href="#_einstieg">4.1. Einstieg</a></li>
-<li><a href="#_aufbau">4.2. Aufbau</a></li>
-<li><a href="#_anbindung">4.3. Anbindung</a></li>
-</ul>
-</li>
+<li><a href="#_lösungsstrategie">4. Lösungsstrategie</a></li>
 <li><a href="#_bausteinsicht">5. Bausteinsicht</a>
 <ul class="sectlevel2">
 <li><a href="#_daten_sicht">5.1. Daten-Sicht</a></li>
@@ -485,7 +479,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_konfigurations_prozess">6.1. Konfigurations Prozess</a></li>
 <li><a href="#_publish_speechbubble_prozess">6.2. Publish-SpeechBubble Prozess</a></li>
 <li><a href="#_update_speechbubble_prozess">6.3. Update-SpeechBubble Prozess</a></li>
-<li><a href="#_export_subtitle_prozess">6.4. Export-Subtitle Prozess</a></li>
+<li><a href="#_untertitel_export_prozess">6.4. Untertitel-Export Prozess</a></li>
 <li><a href="#_audio_handling_prozess">6.5. Audio Handling Prozess</a></li>
 </ul>
 </li>
@@ -1015,8 +1009,6 @@ Finn Romeis</p></td>
 <div class="paragraph">
 <p>Dieser Abschnitt enthält einen stark verdichteten Architekturüberblick. Eine Gegenüberstellung der wichtigsten Ziele und Lösungsansätze.</p>
 </div>
-<div class="sect2">
-<h3 id="_einstieg">4.1. Einstieg</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1029,6 +1021,51 @@ Finn Romeis</p></td>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DSGVO-Konformität</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Verwendung von frei verfügbaren Bibliotheken</p>
+</li>
+<li>
+<p>Kein Deployment außerhalb der EU</p>
+</li>
+<li>
+<p>Keine Verwendung von Cookies oder Speichern anderer Daten</p>
+</li>
+<li>
+<p>HTTPS als Verbindungsprotokoll</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trennung von Datenverarbeitung und Darstellung</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Aufteilung von Backend und Frontend (in zwei Projekte/Repos)</p>
+</li>
+<li>
+<p>Also z.B. keine Razor-Page oder Monolithische Anwendung</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flexible Auslieferung an den Kunden</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Web-Technologien statt nativer Apps</p>
+</li>
+<li>
+<p>Docker-Container für einfache Auslieferung</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Benutzerfreundliche Oberfläche</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
@@ -1065,22 +1102,6 @@ Finn Romeis</p></td>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DSGVO-Konformität</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
-<ul>
-<li>
-<p>Verwendung von frei verfügbaren Bibliotheken</p>
-</li>
-<li>
-<p>Kein Deployment außerhalb der EU</p>
-</li>
-<li>
-<p>Keine Verwendung von Cookies oder Speichern anderer Daten</p>
-</li>
-</ul>
-</div></div></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Codequalität</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
 <ul>
@@ -1101,15 +1122,7 @@ Finn Romeis</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="sect2">
-<h3 id="_aufbau">4.2. Aufbau</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_anbindung">4.3. Anbindung</h3>
 <div style="page-break-after: always;"></div>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -1125,7 +1138,7 @@ Finn Romeis</p></td>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="./img/Datenfluss.drawio.svg" alt="Static" width="60%">
+<img src="./img/Datenfluss.drawio.svg" alt="Static" width="80%">
 </div>
 <div class="title">Abbildung 1. Datenfluss von Subletic</div>
 </div>
@@ -1264,7 +1277,7 @@ Finn Romeis</p></td>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_export_subtitle_prozess">6.4. Export-Subtitle Prozess</h3>
+<h3 id="_untertitel_export_prozess">6.4. Untertitel-Export Prozess</h3>
 <div class="imageblock text-center">
 <div class="content">
 <img src="./img/Prozess_Subtitle_Export.drawio.svg" alt="Static" width="100%">
@@ -1616,7 +1629,7 @@ Finn Romeis</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-01 22:52:00 +0100
+Last updated 2024-01-02 11:14:52 +0100
 </div>
 </div>
 </body>

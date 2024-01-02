@@ -29,7 +29,7 @@ image::Prozess_SpeechBubble_Update.drawio.svg[Static,100%,align="center"]
 
 Modifiziert der User eine Sprechblase ändert sich zwar direkt der interne _SpeechBubble_-Kontext (_TextSheet_) im Frontend, jedoch entsteht eine Inkonsistenz mit dem Backend. Um diese aufzulösen muss dem Backend die geänderte _SpeechBubble_ an das Backend kommuniziert werden. Dazu ruft das _TextSheet_ den _BackendProviderService_ mit der _updateSpeechBubbles()_-Methode auf, welcher die Kommunikation mit dem Backend kapselt. Die Route _api/speechbubbles/update_ führt zu einer REST-API, welche durch den _SpeechBubbleController_ realisiert ist. Geänderte  _SpeechBubbles_ werden zum Schluss dem Backend-Kontext im _ISpeechBubbleListService_ bekannt gemacht, mithilfe der _ReplaceSpeechBubble()_-Methode.
 
-=== Export-Subtitle Prozess
+=== Untertitel-Export Prozess
 
 .Prozessübersicht beim Exportieren der Untertitel
 image::Prozess_Subtitle_Export.drawio.svg[Static,100%,align="center"]

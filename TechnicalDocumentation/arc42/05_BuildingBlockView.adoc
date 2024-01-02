@@ -10,7 +10,7 @@ Dieser Abschnitt beschreibt die Bausteinsicht der Software _Subletic_. Wir start
 Um die verschiedenen Bausteine von _Subletic_ zu verstehen, hilft es zunächst einen Blick auf die wichtigsten Daten und deren Verarbeitung zu werfen, welche zur Laufzeit existieren. Sie geben eine abstrakte Übersicht was zur Laufzeit passiert. Für eine Gegebene Audio wird zunächst extern eine Transkription erstellt, die anschließend in die interne Datenstruktur namens _SpeechBubble_ überführt wird. Sie stellt eine frühe Version des Untertitels da und besteht nur aus ein paar Wörtern, die zeitlich betrachtet eine Einheit darstellen. Diese können dann so lange sie existieren, manipuliert werden. Zum Schluss werden die _SpeechBubbles_ zu einem fertigen Untertitel konvertiert, welche ausgeliefert werden können.
 
 .Datenfluss von Subletic
-image::Datenfluss.drawio.svg[Static,60%,align="center"]
+image::Datenfluss.drawio.svg[Static,80%,align="center"]
 
 Nachdem geklärt wurde welche Daten verarbeitet werden, betrachten wir im nächsten Schritt welche Fremdsysteme und Benutzer an welchen Daten(-verarbeitungen) beteiligt sind. Dazu werfen wir nochmal einen Blick auf alle Beteiligten und mit welchen Daten sie zu tun haben:
 
