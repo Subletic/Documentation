@@ -1,6 +1,6 @@
 :imagesdir: ./img
 <<<
-[[Introduction_and_Goals]]
+
 == Einführung und Ziele
 
 Dieser Abschnitt führt in die Aufgabenstellung ein und skizziert die Ziele, die Subletic verfolgt.

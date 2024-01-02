@@ -446,7 +446,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Inhaltsverzeichnis</div>
 <ul class="sectlevel1">
-<li><a href="#Introduction_and_Goals">1. Einführung und Ziele</a>
+<li><a href="#_einführung_und_ziele">1. Einführung und Ziele</a>
 <ul class="sectlevel2">
 <li><a href="#_aufgabenstellung">1.1. Aufgabenstellung</a></li>
 <li><a href="#_qualitätsziele">1.2. Qualitätsziele</a></li>
@@ -514,7 +514,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="Introduction_and_Goals">1. Einführung und Ziele</h2>
+<h2 id="_einführung_und_ziele">1. Einführung und Ziele</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Dieser Abschnitt führt in die Aufgabenstellung ein und skizziert die Ziele, die Subletic verfolgt.</p>
@@ -1181,7 +1181,6 @@ Finn Romeis</p></td>
 <div class="sect3">
 <h4 id="_backend">5.2.1. Backend</h4>
 <div class="paragraph">
-<div class="title">Komponenten-Sicht des Backends</div>
 <p>Unser ASP.NET-Backend besteht aus vier Komponenten. Die <em>Client-Communication</em>-API kapselt die Kommunikation mit unserem Client. Sie empfängt den eingehenden Audio-Stream und überträgt den fertigen Untertitel zurück. Die <em>Audio</em>-Domäne erhält von der <em>Client-Communication</em>-API den Audio-Stream und leitet diesen direkt weiter an unsere Speech-Engine. Diese antwortet mit einer Transkription, welche später als Untertitel dient. Die rohe Transkription wird anschließend an die <em>SpeechBubble</em>-Domäne weitergeleitet, wo sie zur internen <em>SpeechBubble</em>-Datenstruktur übersetzt wird. Diese stellt eine früher Version der Untertitel dar, welche benötigt wird um Teile des Untertitels zu korrigieren. Nach Ablauf einer bestimmten, einstellbaren Zeit, werden einzelne <em>SpeechBubbles</em> zu einem echten Untertitel umgewandelt und mit Hilfe der <em>Client-Communication</em>-API an den Client ausgeliefert.</p>
 </div>
 <div class="imageblock text-center">
@@ -1197,7 +1196,6 @@ Finn Romeis</p></td>
 <div class="sect3">
 <h4 id="_frontend">5.2.2. Frontend</h4>
 <div class="paragraph">
-<div class="title">Komponenten-Sicht des Frontends</div>
 <p>Unser Angular-Frontend besteht aus vier Komponenten. Analog zum Backend, wird die <em>Backend-Communication</em>-API genutzt um Daten zum Backend zu Senden oder entgegenzunehmen. Der empfangene Audio-Stream wird innerhalb der <em>Audio</em>-Domäne verarbeitet, modifiziert und für die korrigierenden Person abgespielt. Gleiches gilt für die empfangenen SpeechBubbles. Diese werden entgegengenommen und an die <em>SpeechBubble</em>-Domäne weitergeleitet. Stößt die korrigierende Person die Bearbeitung einer <em>SpeechBubble</em> an, wird sie über den selben Weg an das Backend zurückgesendet. Wird ein Sprung in der Position des Audio-Streams (und daraus resultierend die Position des Cursors) ausgelöst, wird dies an die <em>Audio</em>-Domäne und die <em>SpeechBubble</em>-Domäne kommuniziert.</p>
 </div>
 <div class="imageblock text-center">
@@ -2074,7 +2072,7 @@ Your browser does not support the audio tag.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-02 18:17:54 +0100
+Last updated 2024-01-02 18:31:49 +0100
 </div>
 </div>
 </body>

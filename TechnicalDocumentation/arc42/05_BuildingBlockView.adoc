@@ -26,8 +26,6 @@ Wir gehen nun eine Ebene tiefer und betrachten welche Komponenten nötig sind, u
 
 ==== Backend
 
-.Komponenten-Sicht des Backends
-
 Unser ASP.NET-Backend besteht aus vier Komponenten. Die _Client-Communication_-API kapselt die Kommunikation mit unserem Client. Sie empfängt den eingehenden Audio-Stream und überträgt den fertigen Untertitel zurück. Die _Audio_-Domäne erhält von der _Client-Communication_-API den Audio-Stream und leitet diesen direkt weiter an unsere Speech-Engine. Diese antwortet mit einer Transkription, welche später als Untertitel dient. Die rohe Transkription wird anschließend an die _SpeechBubble_-Domäne weitergeleitet, wo sie zur internen _SpeechBubble_-Datenstruktur übersetzt wird. Diese stellt eine früher Version der Untertitel dar, welche benötigt wird um Teile des Untertitels zu korrigieren. Nach Ablauf einer bestimmten, einstellbaren Zeit, werden einzelne _SpeechBubbles_ zu einem echten Untertitel umgewandelt und mit Hilfe der _Client-Communication_-API an den Client ausgeliefert. 
 
 .Komponenten-Sicht des Backends
@@ -36,8 +34,6 @@ image::Bausteinsicht_1_Backend.drawio.svg[Static,80%,align="center"]
 Dieser Kreislauf läuft autonom ab, kann jedoch durch die korrigierende Person bei Bedarf ergänzt werden. Dazu wird die _Frontend-Communication_-API benötigt, welche die Kommunikation mit dem Frontend übernimmt. Zunächst wird diese durch die _Audio_-Domäne dafür genutzt den Audio-Stream an das Frontend weiter zu leiten, sodass dieser gehört werden kann. Außerdem wird die _Frontend-Communication_-API genutzt um neue _SpeechBubbles_ an das Frontend zu senden, um korrigierte _SpeechBubbles_ zu empfangen und über das Ableben von _SpeechBubbles_ zu informieren.
 
 ==== Frontend
-
-.Komponenten-Sicht des Frontends
 
 Unser Angular-Frontend besteht aus vier Komponenten. Analog zum Backend, wird die _Backend-Communication_-API genutzt um Daten zum Backend zu Senden oder entgegenzunehmen. Der empfangene Audio-Stream wird innerhalb der _Audio_-Domäne verarbeitet, modifiziert und für die korrigierenden Person abgespielt. Gleiches gilt für die empfangenen SpeechBubbles. Diese werden entgegengenommen und an die _SpeechBubble_-Domäne weitergeleitet. Stößt die korrigierende Person die Bearbeitung einer _SpeechBubble_ an, wird sie über den selben Weg an das Backend zurückgesendet. Wird ein Sprung in der Position des Audio-Streams (und daraus resultierend die Position des Cursors) ausgelöst, wird dies an die _Audio_-Domäne und die _SpeechBubble_-Domäne kommuniziert.
 
