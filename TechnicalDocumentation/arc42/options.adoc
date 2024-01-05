@@ -10,3 +10,9 @@
 :table-caption: Tabelle
 
 :imagesdir: ./img
+:data-uri:
+
+:source-highlighter: highlight.js
+:highlightjs-languages: typescript, csharp
+:highlightjsdir: ./assets
+:highlightjs-theme: default

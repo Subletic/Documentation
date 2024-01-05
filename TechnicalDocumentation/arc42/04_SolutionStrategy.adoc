@@ -29,19 +29,20 @@ a|
 a|
 * Nutzen von schon existierenden UI-Komponenten
 * Im Blick halten des Mental-Loads, schon während des Designprozesses
-* Anfertigung von Wireframes/Mockups
-* Orientierung an der 60:30:10 Faustregel 
+* Anfertigung von link:https://gitlab.dit.htwk-leipzig.de/groups/live-stream-editor-zur-korrektur-von-untertiteln/-/wikis/DesignThinking/DesignThinking[Wireframes/Mockups]
+* Orientierung an der link:https://www.youtube.com/watch?v=UWwNIMHFdW4[60:30:10 Faustregel]
 
 | Schnelle Antwortzeiten 
 a|
 * Verwendung von Echtzeit-Technologien wie zum Beispiel WebSockets
 * Beschränkung auf Audio-Stream, da Videostream, sowieso nicht genutzt wird
 * Ständige End2End-Tests durch die Entwickler
+* Parallelität durch Verwendung von link:https://learn.microsoft.com/de-de/dotnet/csharp/language-reference/keywords/async[Async-Funktionen] im Backend und link:https://developer.mozilla.org/en-US/docs/Web/API/Worklet[AudioWorklets] im Frontend
 
 | Codequalität 
 a|
 * Code-Styleguides: https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options[C#-Code-Style]
 * Analyse-Tools: https://github.com/DotNetAnalyzers/StyleCopAnalyzers[StyleCopAnalyzers], https://github.com/dotnet/roslyn-analyzers[Roslyn Analyzers], IDE mit Hilfe einer `.editorconfig`
 * Unit-Tests mit nUnit und Jasmine
-* CI/CD-Pipeline mit Linting und automatisiertem Tests 
+* CI/CD-Pipeline mit Linting und automatisierten Tests 
 |===
