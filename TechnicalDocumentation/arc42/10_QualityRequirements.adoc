@@ -18,6 +18,8 @@ image::QualityTree.drawio.svg[Static,80%,align="center"]
 
 === 60:30:10-Regel
 
+Die 60:30:10 ist eine Faustregel, mit der im UI-Design die Aufteilung von Farben, Schriftarten und Layouts festgelegt wird. Die 60 steht für die dominierende Farbe, die 30 für die sekundäre und die 10 für die Akzentfarbe. Durch die Orientierung an dieser Farbverteilung wird dem User dabei geholfen sich zu orientieren und der Mental Load wird reduziert. Jedoch sollte beachtet werden dass die 60:30:10-Regel nur eine Faustregel ist und nicht immer eingehalten werden kann und muss. Sie sollte eher als Richtlinie gesehen werden, die bei der Entscheidungsfindung hilft.
+
 === Audio-Pitch
 
 .Pitch bei normaler Geschwindigkeit

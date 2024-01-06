@@ -245,7 +245,3 @@ public MyService(IConfiguration configuration)
     this.appsettings_Variable = configuration.GetValue<int>("MyServiceSettings:veryImportantVariable");
 }
 ----
-
-=== SpeechBubble Manipulation
-
-
