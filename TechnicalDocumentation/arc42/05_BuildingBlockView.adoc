@@ -14,9 +14,11 @@ image::Datenfluss.drawio.svg[Static,80%,align="center"]
 
 Nachdem geklärt wurde welche Daten verarbeitet werden, betrachten wir im nächsten Schritt welche Fremdsysteme und Benutzer an welchen Daten(-verarbeitungen) beteiligt sind. Dazu werfen wir nochmal einen Blick auf alle Beteiligten und mit welchen Daten sie zu tun haben:
 
+****
 1. Der Client möchte für einen Video-Stream einen **Untertitel** erhalten und sendet dazu einen **Audio**-Stream an Subletic.
 2. Eine Speech-Engine wird benötigt, welche den **Audio**-Stream in eine **Transkription** umwandelt. 
 3. Die korrigierenden Person benötigt eine Schnittstelle zu unserer Software, um die generierten **Transkription** anpassen zu können. Sie möchte dabei den **Audio**-Stream hören.
+****
 
 Da die Audio-Daten von allen Parteien verwendet werden, findet die Verarbeitung im Backend statt mit dem alle interagieren können. Da die generierte Transkription, sowie auch der fertige Untertitel, für das direkte Bearbeiten eher unhandlich ist, fügen wir eine neue interne Datenstruktur namens _SpeechBubble_ ein, die als Mittelstück dient. Alle drei Daten-Typen liegen ebenfalls im Backend, um die verschiedenen Parteien verbinden zu können. Anders als bei den Fremdsystemen, benötigt die korrigierende Person ein graphisches Interface, um die _SpeechBubbles_ bearbeiten zu können. Dazu wird ein Frontend benötigt, über das auch der Audio-Stream abgespielt werden kann. Da nun die Software aus zwei Bereichen besteht, benötigen wir nun zusätzliche Schnittstellen, um Frontend und Backend zu verbinden.
 
@@ -42,10 +44,6 @@ image::Bausteinsicht_1_Frontend.drawio.svg[Static,80%,align="center"]
 
 Isoliert davon wird die _Configuration_-Domäne genutzt, die Konfiguration der Software beim Start des Korrektur-Prozesses an alle betreffenden Komponenten und Fremdsysteme zu kommunizieren. So kann Initial ein _Soundslike-Dictionary_ als Tabellen-Datei übergeben und bearbeitet werden, um der _SpeechEngine_ bei der Erkennung schwieriger Wörter zu helfen. Außerdem werden _Initiale Parameter_, wie die Länge des Zeitintervalls in der eine Sprechblase existiert, hier übergeben. Die gebündelte Start-Konfiguration wird mit Hilfe der _Backend-Communication_-API an das Backend gesendet und damit die Software, beziehungsweise der Korrektur-Prozess gestartet.
 
-==== Zusammenspiel von Backend und Frontend
-
-
-
 === Ebene 2 - Modul-Sicht
 
 ==== Backend
@@ -53,7 +51,141 @@ Isoliert davon wird die _Configuration_-Domäne genutzt, die Konfiguration der S
 .Modul-Sicht des Backends
 image::Bausteinsicht_2_Backend.drawio.svg[Static,80%,align="center"]
 
+.Client-Communication
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| ClientExchangeController | Hält den WebSocket zum Client
+| IAvReceiverService | Empfängt den Audio-Stream vom Client und leitet ihn an den AvProcessingService weiter
+| ISubtitleExportService | Hält den ISubtitleConverter und leitet die Untertitel an den Client weiter
+| ISubtileConverter | Konvertiert SpeechBubbles zu Subtitles
+|===
+****
+
+.SpeechBubble
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| ISpeechBubbleService | Hält die SpeechBubbles bereit und bietet die Informationen dem Rest des Backends an.
+| BufferTimeMonitor | Überwacht die Lebenszeit der SpeechBubbles und stößt die Konvertierung in Untertitel an, wenn sie abgelaufen sind.
+| IWordProcessingService | Wandelt generierte Transkriptionen der Speech-Engine in SpeechBubbles um und fügt sie dem ISpeechBubbleService hinzu.
+|===
+****
+
+.Frontend-Communication
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung 
+| ConfigurationController | Empfängt die Konfiguration
+| SpeechBubbleController | Empfängt aktualisierte SpeechBubbles
+| FrontendCommunicationService | Stellt Kommunikation mit Frontend ausgehend vom Backend bereit, wie das Bekanntmachen neuer SpeechBubbles. Hält den FrontendCommunicationHub.
+| FrontendCommunicationHub | Kümmert sich um das Senden des Audio-Streams
+|===
+****
+
+.Configuration
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| ConfigurationService | Hält die durch das Frontend bereitgestellte Konfiguration bereit und bietet die Informationen dem Rest des Backends an.
+|===
+****
+
+.Audio
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| AvProcessingService | Kümmert sich um die Verarbeitung des Audio-Streams, wie das Umwandeln in in ein von Speechmatics verarbeitbares Audio-Format.
+|===
+****
+
+.Speech-Engine
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| SpeechmaticsConnectionService | Hält den WebSocketClient zur Speechmatics-API, und initialisiert die Verbindung.
+| SpeechmaticsSendService | Übermittelt den Audio-Stream an die Speechmatics-API.
+| SpeechmaticsResponseService | Empfängt die Transkription von der Speechmatics-API und leitet sie an den WordProcessingService weiter.
+|===
+****
+
 ==== Frontend
 
 .Modul-Sicht des Frontends
 image::Bausteinsicht_2_Frontend.drawio.svg[Static,80%,align="center"]
+
+.SpeechBubble
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| textSheet | 
+| speechbubble |
+| word | 
+|===
+****
+
+.Configuration
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| configuration.service |
+| startPage |
+| start-config |
+| dictionary-editor |
+| dictionary-row |
+| dictionary-fs-loader |
+| dictionary-popup |
+| dictionary-export.interface |
+| continue-popup |
+|===
+****
+
+.Backend-Communication
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| backendListener.service |
+| backendProvider.service |
+|===
+****
+
+.Audio
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| audiohandler |
+| audio.service |
+| soundbox |
+| slider-popup |
+| speed-popup |
+|===
+****
+
+.Device
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| hid-control.service |
+|===
+****
+
+.settings
+****
+[options="header", cols=","]
+|===
+| Modul | Beschreibung
+| settings |
+| settings.service |
+|===
+****

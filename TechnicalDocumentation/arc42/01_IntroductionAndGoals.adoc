@@ -11,11 +11,13 @@ Das Ziel unserer Software ist die Teil-Automatisierung der Erstellung von Untert
 
 ==== Features
 
+****
 * **Automatische Transkription** von Sprache zu Text mithilfe eines Services, der durch einen WebSocket aufgerufen wird
 * **Web-Editor** für die Korrektur von Untertiteln
 * **Audio-Player** zum Abspielen des Audio-Streams und Navigieren in diesem
 * Verwendbarkeit von **Stenografen-Equipment**, wie Fuß- und Hand-Schalter
 * **Soundslike-Dictionary** zum beschleunigen der Korrektur
+****
 
 === Qualitätsziele
 

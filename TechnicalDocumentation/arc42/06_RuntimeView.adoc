@@ -15,33 +15,33 @@ image::ClientCommunication.drawio.svg[Static,100%,align="center"]
 
 Möchte sich ein _Client_ mit dem Backend verbinden, so kann er dies über den ClientExchangeController_ tun. _Subletic_ startet nach dem Programmstart einen WebSocket-Server und wartet auf den Verbindungsaufbau mit einem WebSocket-_Client_. Nachdem dieser erfolgt ist, wird vom _Client_ erwartet, dass dieser eine initiale Message schickt in dem das Untertitel-Format spezifiziert wird. Passiert dies nicht, so wird die Verbindung geschlossen. Und wieder auf eine neue Verbindung gewartet. Wird ein gültiges Format übergeben, kann der richtige _ISubtitleConverter_ gesetzt werden, und _Subletic_ ist bereit für den Entgegennahme von Audio-Paketen. Für jedes ankommende Paket wird die Untertitelerstellung angestoßen, und getrennt von diesem Prozess, bei Fertigstellung des Untertitels an den _Client_ zurück geschickt. Gleichzeitig wird auf das nächste Paket gewartet. Wird die Verbindung vom _Client_ getrennt, bzw. kommen keine Pakete mehr an, so wird nach einem Timeout die Verbindung geschlossen und auf eine neue Verbindung gewartet.
 
-=== Konfigurations Prozess
+=== Konfigurations-Prozess
 
 .Übersicht über den Konfigurations Prozess
 image::Prozess_Konfiguration.drawio.svg[Static,align="center"]
 
 Vor dem Start der eigentlichen Software kann die korrigierende Person zwei Parameter einstellen, zum einen den _Delay_ zwischen Ankunft einer Sprechblase bis zum Umwandeln und Senden des Untertitels. Der zweiten Parameter ist eine Liste von Wörtern, das _Soundslike-Dictionary_, welche _Speechmatics_ hilft schwierige Wörter zu erkennen. Beide Parameter werden in der Angular-Komponente _StartPage_ vor Beginn der Korrektur eingegeben und an den _ConfigurationService_ übergeben. Der Button "_Weiter zum Live-Stream-Editor_" ruft die _continueToEditor_ Funktion auf die wiederum die Methode _postConfigurationToBackend_ aufruft im _ConfigurationService_. Diese kümmert sich um das Senden der Konfiguration an das Backend. Dazu nutzt sie die _uploadConfiguration_ Methode des _BackendProviderService_, welcher die Kommunikation mit dem Backend kapselt. Ein REST-Call sendet die _json_ welche die Konfiguration enthält an das Backend. Dort wird diese vom _ConfigurationController_ entgegengenommen und an den _ConfigurationService_ weitergeleitet und gespeichert. Nun kann sich der _BufferTimeMonitor_ bei Bedarf den _Delay_ holen und der _SpeechmaticsConnectionService_ erhält nach Übertragung der Konfiguration das _Soundslike-Dictionary_ und leitet es weiter zu _Speechmatics_.
 
-=== Publish-SpeechBubble Prozess
+=== Publish-SpeechBubble-Prozess
 
 .Prozessübersicht bei Erstellung einer neuen SpeechBubble
 image::Prozess_SpeechBubble_Publish.drawio.svg[Static,100%,align="center"]
 
 Die Erzeugung einer neuen _SpeechBubble_ beginnt im _WordProcessingService_, nachdem die Transkription erstellt wurde. An zwei Stellen  muss dies kommuniziert werden. Die Erste ist der _SpeechBubbleListService_ welche im Backend die derzeitigen _SpeechBubbles_ vorhält. Die zweite Stelle ist das Frontend, sodass der korrigierenden Person die neue _SpeechBubble_ angezeigt werden kann. Dazu wird der _IFrontendCommunicationService_ genutzt der die Kommunikation mit dem Frontend kapselt und die _PublishSpeechBubble()_-Methode anbietet, um neue Sprechblasen an das Frontend kommunizieren. Dazu wird intern der SignalR-Hub: _FrontendCommunicationHub_ genutzt, der Daten an das Frontend streamt, mithilfe der _newBubble_ Route. Im Frontend endet die Route beim _BackendListenerService_ der die neue _SpeechBubble_ vorhält. Zuvor hat das _TextSheet_ im _BackendListenerService_ die vorgehaltenen _SpeechBubbles_ abonniert, sodass bei Ankunft neuer _SpeechBubbles_ diese direkt entgegengenommen und visualisieren werden.  
 
-=== Update-SpeechBubble Prozess
+=== Update-SpeechBubble-Prozess
 
 .Prozessübersicht beim Updaten einer SpeechBubble
 image::Prozess_SpeechBubble_Update.drawio.svg[Static,100%,align="center"]
 
 Modifiziert der User eine Sprechblase ändert sich zwar direkt der interne _SpeechBubble_-Kontext (_TextSheet_) im Frontend, jedoch entsteht eine Inkonsistenz mit dem Backend. Um diese aufzulösen muss dem Backend die geänderte _SpeechBubble_ an das Backend kommuniziert werden. Dazu ruft das _TextSheet_ den _BackendProviderService_ mit der _updateSpeechBubbles()_-Methode auf, welcher die Kommunikation mit dem Backend kapselt. Die Route _api/speechbubbles/update_ führt zu einer REST-API, welche durch den _SpeechBubbleController_ realisiert ist. Geänderte  _SpeechBubbles_ werden zum Schluss dem Backend-Kontext im _ISpeechBubbleListService_ bekannt gemacht, mithilfe der _ReplaceSpeechBubble()_-Methode.
 
-=== Untertitel-Export Prozess
+=== Untertitel-Export-Prozess
 
 .Prozessübersicht beim Exportieren der Untertitel
 image::Prozess_Subtitle_Export.drawio.svg[Static,100%,align="center"]
 
 Der Export der finalen Untertitel beginnt im _BufferTimeMonitor_, da hier festgestellt wird wenn eine _SpeechBubble_ veraltet ist und der Inhalt dem _Client_ als Untertitel ausgespielt werden soll. Drei Subprozesse müssen dazu angestoßen werden. Zunächst muss im Backend die _SpeechBubble_ aus der Liste herausgenommen werden, mit Hilfe der _DeleteOldestBubble()_-Methode im _ISpeechBubbleListService_. Mit der herausgenommenen _SpeechBubble_ wird nun der zweite Subprozess gestartet der die _SpeechBubble_ zu einem Untertitel exportiert und an den Client weiterleitet. Dazu steht der _ISubtitleExporterService_ bereit, der mit der _ExportSubtitle_-Methode die _SpeechBubble_ entgegennimmt und die Export-Logik kapselt. Intern nutzt der _ISubtitleExporterService_ den _ISubtitleConverter_, um eine _SpeechBubble_ in ein Untertitelformat zu konvertieren und anschließend mithilfe eines Streams diesen an den Client weiterzuleiten. Der dritte und letzte Subprozess ist das Löschen der _SpeechBubble_ im Frontend. Dazu wird die _DeleteSpeechBubble()_-Methode im _IFrontendCommunicationService_ aufgerufen, analog zum Publish-Prozess. Hier wird jedoch nun die SignalR-Route: _deleteBubble_ verwendet. Im Frontend wird die betreffende _SpeechBubble_-Id über die entsprechende Route vom _BackendListenerService_ entgegengenommen. Das _TextSheet_ kann nun die _SpeechBubble_ aus dem _TextSheet_ entfernen, da zuvor der Endpunkt abonniert wurde.
 
-=== Audio Handling Prozess
+=== Audio-Handling-Prozess
 
