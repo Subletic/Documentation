@@ -46,10 +46,12 @@ Isoliert davon wird die _Configuration_-Domäne genutzt, die Konfiguration der S
 
 === Ebene 2 - Modul-Sicht
 
+Auf dieser Ebene werden die Bestandteile der Komponenten aufgelistet und kurz ihr Existenzgrund erläutert.
+
 ==== Backend
 
 .Modul-Sicht des Backends
-image::Bausteinsicht_2_Backend.drawio.svg[Static,80%,align="center"]
+image::Bausteinsicht_2_Backend.drawio.svg[Static,100%,align="center"]
 
 .Client-Communication
 ****
@@ -118,16 +120,16 @@ image::Bausteinsicht_2_Backend.drawio.svg[Static,80%,align="center"]
 ==== Frontend
 
 .Modul-Sicht des Frontends
-image::Bausteinsicht_2_Frontend.drawio.svg[Static,80%,align="center"]
+image::Bausteinsicht_2_Frontend.drawio.svg[Static,100%,align="center"]
 
 .SpeechBubble
 ****
 [options="header", cols=","]
 |===
 | Modul | Beschreibung
-| textSheet | 
-| speechbubble |
-| word | 
+| textSheet | Hauptbereich in dem die SpeechBubbles angezeigt werden.
+| speechbubble | Einzelne SpeechBubble.
+| word | Einzelnes Wort in einer SpeechBubble.
 |===
 ****
 
@@ -136,15 +138,15 @@ image::Bausteinsicht_2_Frontend.drawio.svg[Static,80%,align="center"]
 [options="header", cols=","]
 |===
 | Modul | Beschreibung
-| configuration.service |
-| startPage |
-| start-config |
-| dictionary-editor |
-| dictionary-row |
-| dictionary-fs-loader |
-| dictionary-popup |
-| dictionary-export.interface |
-| continue-popup |
+| configuration.service | Hält die Konfiguration, wie Soundslike-Dictionary und Delay, bereit und bietet die Informationen dem Rest des Frontends an.
+| startPage | Startseite, auf der die Konfiguration eingegeben wird.
+| start-config | Sub-Komponente der Startseite, die Parameter wie den Delay entgegennimmt.
+| continue-popup | Sub-Komponente die erscheint, bevor der User final zum Korrektur-Prozess weitergeleitet wird.
+| dictionary-editor | Sub-Komponente der Startseite, die das Soundslike-Dictionary zum Bearbeiten anbietet.
+| dictionary-row | Einzelne Zeile des Soundslike-Dictionary.
+| dictionary-fs-loader | Sub-Komponente der Startseite, in der Dictionary-Dateien importiert und exportiert werden können, sowie Komfortfunktionen zum Bearbeiten des Dictionaries.
+| dictionary-popup | Sub-Kompontente des dictionary-fs-loader, die das Importieren und Exportieren von Dictionary-Dateien ermöglicht.
+| dictionary-export.interface | Bietet die Schnittstelle für das Exportieren von Dictionary-Dateien und die dazu notwendigen Konvertierungs-Funktionen.
 |===
 ****
 
@@ -153,8 +155,8 @@ image::Bausteinsicht_2_Frontend.drawio.svg[Static,80%,align="center"]
 [options="header", cols=","]
 |===
 | Modul | Beschreibung
-| backendListener.service |
-| backendProvider.service |
+| backendListener.service | Empfängt die vom Backend gesendeten Daten, wie den Audio-Stream und die SpeechBubbles.
+| backendProvider.service | Stellt die Kommunikation mit dem Backend bereit, wie das aktualisieren von SpeechBubbles oder den Configuration-Upload.
 |===
 ****
 
@@ -163,11 +165,11 @@ image::Bausteinsicht_2_Frontend.drawio.svg[Static,80%,align="center"]
 [options="header", cols=","]
 |===
 | Modul | Beschreibung
-| audiohandler |
+| audiohandler | Kümmert sich um das Playback und das Buffering des Audio-Streams.
 | audio.service |
-| soundbox |
-| slider-popup |
-| speed-popup |
+| soundbox | Komponente auf der Hauptseite die für die Manipulation des Audio-Streams zuständig ist.
+| slider-popup | Sub-Komponente der soundbox, die die Lautstärke des Audio-Streams regelt.
+| speed-popup | Sub-Komponente der soundbox, die die Abspielgeschwindigkeit des Audio-Streams regelt.
 |===
 ****
 
@@ -176,7 +178,7 @@ image::Bausteinsicht_2_Frontend.drawio.svg[Static,80%,align="center"]
 [options="header", cols=","]
 |===
 | Modul | Beschreibung
-| hid-control.service |
+| hid-control.service | Regelt die Kommunikation der Eingabegeräte mit dem Frontend.
 |===
 ****
 
@@ -185,7 +187,7 @@ image::Bausteinsicht_2_Frontend.drawio.svg[Static,80%,align="center"]
 [options="header", cols=","]
 |===
 | Modul | Beschreibung
-| settings |
-| settings.service |
+| settings | Komponente auf der Hauptseite, die die Einstellungen des Frontends regelt, wie die Sprungweite des Vorspulens.
+| settings.service | Hält die Einstellungen bereit und bietet die Informationen dem Rest des Frontends an.
 |===
 ****
