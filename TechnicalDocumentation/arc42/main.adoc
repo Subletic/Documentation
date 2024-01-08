@@ -30,4 +30,6 @@ include::10_QualityRequirements.adoc[]
 
 include::11_Risks.adoc[]
 
+include::12_Diary.adoc[]
+
 include::12_Glossary.adoc[]

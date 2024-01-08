@@ -91,3 +91,14 @@ Hier werden wichtige Entscheidungen festgehalten, welche im Laufe des Projektes 
 | Status | pass:[<span style="color: red;">Backend in Planung</span>], pass:[<span style="color: red;">Frontend in Planung</span>]
 |===
 ****
+
+.Senden des _Soundslike_-Dictionaries bei schon bestehender _Client_-Verbindung
+****
+[options="noheader", cols=","]
+|===
+| Kontext | Da das Frontend und das Backend getrennt sind, kann es dazu kommen, dass sich ein _Client_ schon verbunden hat, bevor das Frontend das _Soundslike_-Dictionary an das Backend gesendet hat. Das führt zu einem Problem, da das _Soundslike_-Dictionary an Speechmatics nur initial beim Verbindungsaufbau übertragen wird und nicht nachgereicht werden kann.
+| Entscheidung | 
+| Konsequenzen | 
+| Status | pass:[<span style="color: orange;">Ausstehend</span>]
+|===
+****
