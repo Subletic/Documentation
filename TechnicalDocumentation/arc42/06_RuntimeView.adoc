@@ -5,7 +5,7 @@
 
 Nachdem in der Bausteinsicht ein Überblick über die Bestandteile und deren Zusammenspiel im größeren Kontext gegeben wurde, konzentriert sich dieses Kapitel auf die kleineren Prozesse, um die Funktionsweisen bzw. Kommunikationswege zwischen den Komponenten oder Modulen zu verdeutlichen. Zunächst muss noch klar gestellt werden, dass das Frontend dem Backend unterstellt ist. Das bedeutet, dass das Frontend Einfluss auf das Backend hat, der zentrale Hauptprozess (das Generieren des Untertitels) jedoch im Backend stattfindet.
 
-.Übersicht über alle wichtigen Prozesse
+.Übersicht über die zentralen Prozesse
 image::Process_Overview.drawio.svg[Static,80%,align="center"]
 
 === Kommunikation aus Sicht des Clients
@@ -44,4 +44,7 @@ image::Prozess_Subtitle_Export.drawio.svg[Static,100%,align="center"]
 Der Export der finalen Untertitel beginnt im _BufferTimeMonitor_, da hier festgestellt wird wenn eine _SpeechBubble_ veraltet ist und der Inhalt dem _Client_ als Untertitel ausgespielt werden soll. Drei Subprozesse müssen dazu angestoßen werden. Zunächst muss im Backend die _SpeechBubble_ aus der Liste herausgenommen werden, mit Hilfe der _DeleteOldestBubble()_-Methode im _ISpeechBubbleListService_. Mit der herausgenommenen _SpeechBubble_ wird nun der zweite Subprozess gestartet der die _SpeechBubble_ zu einem Untertitel exportiert und an den Client weiterleitet. Dazu steht der _ISubtitleExporterService_ bereit, der mit der _ExportSubtitle_-Methode die _SpeechBubble_ entgegennimmt und die Export-Logik kapselt. Intern nutzt der _ISubtitleExporterService_ den _ISubtitleConverter_, um eine _SpeechBubble_ in ein Untertitelformat zu konvertieren und anschließend mithilfe eines Streams diesen an den Client weiterzuleiten. Der dritte und letzte Subprozess ist das Löschen der _SpeechBubble_ im Frontend. Dazu wird die _DeleteSpeechBubble()_-Methode im _IFrontendCommunicationService_ aufgerufen, analog zum Publish-Prozess. Hier wird jedoch nun die SignalR-Route: _deleteBubble_ verwendet. Im Frontend wird die betreffende _SpeechBubble_-Id über die entsprechende Route vom _BackendListenerService_ entgegengenommen. Das _TextSheet_ kann nun die _SpeechBubble_ aus dem _TextSheet_ entfernen, da zuvor der Endpunkt abonniert wurde.
 
 === Audio-Handling-Prozess
+
+.Prozessübersicht der Audio-Verarbeitung und Weiterleitung
+image::Prozess_Audio.drawio.svg[Static,100%,align="center"]
 

@@ -16,6 +16,7 @@ Das folgende Glossar erklärt Begriffe welche _Subletic_ und dessen Entwicklung 
 | GoSpeech | Die von unserem Kunden entwickelte Anwendung mit der für Audiodateien, Transkriptionen erstellt und korrigiert werden können.
 | WebVtt | Standardformat für Untertitel, entworfen vom World Wide Web Consortium (W3C) und Weiterentwicklung von SubRip.
 | SubRip / SRT | Standardformat für Untertitel, welches das Vorgängerformat von WebVtt ist.
+| Delay | Einstellbare Dauer von Empfang des Client-Audios, bis zur Übertragung des Untertitels zurück an den Client.
 | Anwender / User, korrigierende Person, Stenograph | Person die mit Hilfe des Frontends die generierten SpeechBubbles korrigiert.
 | Client | Das Fremdsystem welches sich mit Hilfe eines WebSockets mit unserer Anwendung verbindet, einen Audio-Stream sendet und einen generierten (und korrigierten) Untertitel erhält.
 | (Soundslike-)Dictionary | Eine Adjanzenliste, welche Wörter anderen Wörtern zuordnet, die sich ähnlich anhören. Diese wird Speechmatics übergeben, um die Qualität der Transkription zu verbessern.
