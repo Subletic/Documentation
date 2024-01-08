@@ -115,7 +115,7 @@ ngOnInit(): void {
 
 === Spezielle Code-Conventions
 
-Auf folgende Conventions wird im besonderen bei Code-Reviews geachtet.
+Da die Software von unerfahrenen Entwicklern entwickelt wird, muss im Besonderen auf die Softwarequalität geachtet werden. Häufig tun sich neue Entwickler schwer ihren Code so zu schreiben, dass er leicht verständlich und wartbar ist. Viele Schachtelungen, ungünstige angeordnete Abfragen und schlechte Namensgebung sind nur einige Beispiele die die Wartbarkeit des Codes erschweren. Im Folgenden werden einige Code-Conventions aufgeführt, die die Wartbarkeit des Codes verbessern und bei Code-Reviews kontrolliert werden.
 
 ==== Minimierung der Schachtelung
 
