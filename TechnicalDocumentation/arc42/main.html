@@ -509,7 +509,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_risiken">11. Risiken</a></li>
-<li><a href="#_zeitplanung">12. Zeitplanung</a>
+<li><a href="#_zeitplanung_und_tagebuch">12. Zeitplanung und Tagebuch</a>
 <ul class="sectlevel2">
 <li><a href="#_sprint_4">12.1. Sprint 4</a></li>
 <li><a href="#_sprint_5">12.2. Sprint 5</a></li>
@@ -2507,10 +2507,10 @@ Your browser does not support the audio tag.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_zeitplanung">12. Zeitplanung</h2>
+<h2 id="_zeitplanung_und_tagebuch">12. Zeitplanung und Tagebuch</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Im Folgenden wird die Planung und der Ablauf der Arbeit aus Sicht der Architektur skizziert. Nach dem Rollenwechsel der Teamleiter und einem gewissen Abstand nach dem Semesterferien sind Mängel und technische Schulden an verschiedenen Stellen aufgefallen, die im zweiten Semester angegangen werden sollen. Fehlende nicht durchgesetzte Codestyle-Guidelines, fehlende Übersicht über die Architektur bzw. eine Komponenten-Übersicht, zu starke Klassenkopplung, unsicherer Code. Zudem ist während des Erweiterns und Umbauens des Codes aufgefallen, dass das Deployment nicht mehr funktioniert.</p>
+<p>Im Folgenden wird die Planung und der Ablauf der Arbeit aus Sicht der Architektur skizziert. Nach dem Rollenwechsel der Teamleiter, einem gewissen Abstand nach dem Semesterferien und während des Semesters, sind Mängel und technische Schulden an verschiedenen Stellen aufgefallen, die im zweiten Semester angegangen werden sollen.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2527,20 +2527,20 @@ Your browser does not support the audio tag.
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><strong>Sprint 04</strong></p></td>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">16.10 - 09.11</p></td>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock"><strong>Sprint 04</strong></p></td>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">16.10 - 09.11</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Refactoring/Bugfixing</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Export des Untertitels als WebSocket-Service</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Umbau des MockServers für WebSocket-Service und QoL</p></td>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><strong>Sprint 05</strong></p></td>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">09.11 - 20.11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CodeStyle-Guidelines im Backend</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock"><strong>Sprint 05</strong></p></td>
-<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">09.11 - 20.11</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CodeStyle-Guidelines im Backend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Umbau des MockServers für WebSocket-Service und Quality-of-live</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fixen des Deployments</p></td>
@@ -2591,97 +2591,47 @@ Your browser does not support the audio tag.
 <div class="sect2">
 <h3 id="_sprint_4">12.1. Sprint 4</h3>
 <div class="paragraph">
-<p>Als neuer Softwarearchitekt habe ich mir am Anfang des Semesters zunächst einen Überblick verschafft über die aktuelle Situation unserer Codebasis. Bislang gab es keine Übersicht, weder eine Klassen, noch Komponentenübersicht. Da am Ende eine arc42 Dokumentation erstellt worden sein muss, h</p>
-</div>
-<div class="paragraph">
-<p>Deshalb habe ich begonnen eine</p>
+<p>Als neuer Softwarearchitekt habe ich mir am Anfang des Semesters zunächst einen Überblick verschafft über die aktuelle Situation unserer Codebasis. Bislang gab es keine Übersicht, weder eine Klassen, noch Komponenten-Übersicht. Zunächst habe ich ein Klassendiagramm erstellen lassen, die jedoch keine gute Perspektive auf die Architektur gibt, durch ihre Größe und Komplexität. Stattdessen habe ich eine eigene Komponenten-Übersicht aus unserer bisherigen Codebasis abgeleitet. Dadurch sind verschiedene Mängel aufgefallen, die im Laufe des Semesters angegangen werden sollen. Dazu zählen:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Übersicht über Architektur</p>
+<p>Unsere Software ist noch nicht in der Lage die Untertitel nach außen anzubieten. Als Architekt schlage ich vor einen WebSocket zu implementieren, da das Protokoll weit verbreitet ist und ohnehin schon für die Kommunikation mit Speechmatics verwendet wird.</p>
 </li>
 <li>
-<p>Als neuer Architekt welcher als Aufgabe hat im Laufe des Semesters eine arc42 Doku zu erstellen, benötige ich einen Überblick über die Architektur und den Code unserer Software. Als ersten Ansatz soll dazu eine Klassen/Komponenten-Übersicht erstellt werden.</p>
+<p>Viele Klassen machen zu viel auf einmal, ein Beispiel dafür ist der <code>AvProcessingService</code> im Backend, der neben der Verarbeitung der Audio, die Kommunikation mit dem Client und Speechmatics übernimmt.</p>
 </li>
 <li>
-<p>Nach dem Erstellen eines Klassen-Diagrams mit Hilfe eines Werkzeugs im Backend, ist klar dass dies kaum bei der Übersicht hilft. Stattdessen wäre es besser wenn es eine Komponenten-Übersicht gibt, die die Software bzw deren Klassen in Teilbereiche einteilt.</p>
+<p>Es fehlt also eine bessere Aufteilung der Verantwortlichkeiten, sodass die Klassen besser gekapselt sind und weniger Kopplung aufweisen.</p>
 </li>
 <li>
-<p>Erster Sprint wird genutzt, damit wieder alle sich in den Code reindenken können. Es werden Altlasten (Bugs und Refactorings) aus dem ersten Semester die liegen geblieben sind bearbeitet.</p>
+<p>Test-Coverage</p>
+</li>
+<li>
+<p>Fehlende Codestyle-Guidelines</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_sprint_5">12.2. Sprint 5</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Die Entwickler haben sich darüber beklagt dass es sehr nervig ist, den Mock-Server immer wider neu zu starten, wenn sie etwas im Backend oder Frontend geändert haben.</p>
-</li>
-<li>
-<p>Der Mock-Server wurde umgebaut um automatisch neu eine Verbindung aufzubauen, wenn die Verbindung abbricht, mit dem Backend.</p>
-</li>
-<li>
-<p>Die Komponenten-Übersicht wurde erst einmal pausiert, da klar geworden ist dass im Backend und Frontend noch keine einheitlichen Style-Guides existieren.</p>
-</li>
-<li>
-<p>Es wurden Style-Guides durchgesetzt mit Hilfe von ESLint und Prettier im Frontend, und im Backend mit Hilfe von Analyzer-Cop.</p>
-</li>
-<li>
-<p>Amine hat sich darüber beklagt, das ihm die Issues manchmal zu groß sind und ihm nicht ganz klar was gemacht werden soll. Wir versuchen nun im Planning besonders das Verständnis der Issues abzufragen, sodass hoffentlich jeder weiß was gemacht werden muss.</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Um die Untertitlung nach außen anzubieten wurde ein WebSocket-Services implementiert, der einen Audio-Stream einließt und einen Untertitel zurück schickt. Zuvor wurde die Audio aus einer Datei eingelesen. Dadurch ist unser Deployment jedoch zeitweise nicht mehr funktionstüchtig gewesen, sodass dieses gefixed werden musste. Zudem gab es mir als neuer Architekt die Gelegenheit, mich neu in die Materie einzulesen. Zusätzlich musste der Mock-Server auf den neuen WebSocket abgestimmt werden, da sich seit dem letzten Sprint die Entwickler beschwert hatten, diesen immer neu starten zu müssen. Dieser Vorgang ist mühseelig und kostet Zeit.</p>
+</div>
+<div class="paragraph">
+<p>Das zweite große Thema in diesem Sprint war die Durchsetzung von CodeStyle-Guidelines. Dieses Thema wurde priorisiert, da es die ganze Codebasis betrifft und nur mehr Code hinzu kommt. Mithilfe von der Bibliothek StyleCop konnten die Guidelines zunächst im Backend durchgesetzt werden.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_sprint_6">12.3. Sprint 6</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Im letzten Semester wurde zum Testen der Software eine Test-Audiodatei im Backend geladen. Nun wurde unsere Software jedoch erweitert, sodass ein WebSocket-Client (zB unser Mock-Server) von Außen einen Stream schicken kann. Jedoch kann dadurch unsere Software nicht mehr so deployed werden wie bisher, sodass der Architekt sich neu einarbeiten muss, und sicherstellen muss das die Software ausgeliefert werden kann.</p>
-</li>
-<li>
-<p>Durch die Anpassung des Deployments ist aufgefallen, dass das Schicken eines Audio-Streams an das Frontend, durch eine geänderte Logik im Frontend, nicht mehr mittels http funktioniert. Stattdessen muss nun https verwendet werden. Dies muss nach implementiert werden.</p>
-</li>
-<li>
-<p>Es gibt nun eine neue Komponenten-Übersicht, die die Software in Teilbereiche einteilt. Diese Übersicht ist jedoch noch nicht vollständig, da neue Komponenten hinzukommen oder refactored werden.</p>
-</li>
-<li>
-<p>Chantal hat in der letzten Retro geäußert dass Sie mehr programmierarbeit in ihren Issues hätte, da Ihre Issues meist mehr Gestaltung (also HTML/CSS) beinhalten. Sie kümmert sich deshalb nun den Import/Export von Dictionaries.</p>
-</li>
-</ul>
-</div>
+
 </div>
 <div class="sect2">
 <h3 id="_sprint_7">12.4. Sprint 7</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Verbesserung der Komponenten-Übersicht</p>
-</li>
-<li>
-<p>Umbau der Backend-zu-Frontend-Kommunikation sodass die Daten/Logik des Backends und der Sende-Prozess im Backend getrennt sind.</p>
-</li>
-<li>
-<p>Umbau des AvProcessing in getrennte Komponenten für die Entgegennahme des Audio-Streams vom Client, dem AvProcessing und die Kommunikation zu Speechmatics.</p>
-</li>
-<li>
-<p>Exception-Handling und Kontrolliertes Neustarten und Beenden der Software (Kommunikation mit Client und Speechmatics)</p>
-</li>
-</ul>
-</div>
+
 </div>
 <div class="sect2">
 <h3 id="_sprint_8">12.5. Sprint 8</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Die Entwickler wünschen sich eine bessere Aufteilung im Backend, da zB der Service Ordner sehr voll ist. Wir wollen eine neue Strukturierung erreichen, sodass das Backend, besser die Struktur der Komponenten-Sicht entspricht.</p>
-</li>
-</ul>
-</div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -2779,7 +2729,7 @@ Your browser does not support the audio tag.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-10 20:53:15 +0100
+Last updated 2024-01-10 23:22:50 +0100
 </div>
 </div>
 </body>

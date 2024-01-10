@@ -1,9 +1,9 @@
 :imagesdir: ./img/mermaid/
 <<<
 
-== Zeitplanung
+== Zeitplanung und Tagebuch
 
-Im Folgenden wird die Planung und der Ablauf der Arbeit aus Sicht der Architektur skizziert. Nach dem Rollenwechsel der Teamleiter und einem gewissen Abstand nach dem Semesterferien sind Mängel und technische Schulden an verschiedenen Stellen aufgefallen, die im zweiten Semester angegangen werden sollen. Fehlende nicht durchgesetzte Codestyle-Guidelines, fehlende Übersicht über die Architektur bzw. eine Komponenten-Übersicht, zu starke Klassenkopplung, unsicherer Code.
+Im Folgenden wird die Planung und der Ablauf der Arbeit aus Sicht der Architektur skizziert. Nach dem Rollenwechsel der Teamleiter, einem gewissen Abstand nach dem Semesterferien und während des Semesters, sind Mängel und technische Schulden an verschiedenen Stellen aufgefallen, die im zweiten Semester angegangen werden sollen.
 
 [options="header",cols=",,"]
 |===
@@ -45,7 +45,13 @@ s| Sprint_09
 
 === Sprint 4
 
-Als neuer Softwarearchitekt habe ich mir am Anfang des Semesters zunächst einen Überblick verschafft über die aktuelle Situation unserer Codebasis. Bislang gab es keine Übersicht, weder eine Klassen, noch Komponenten-Übersicht. Zunächst habe ich ein Klassendiagramm erstellen lassen, die jedoch keine gute Perspektive auf die Architektur gibt, durch ihre Größe und Komplexität. Stattdessen habe ich eine eigene Komponenten-Übersicht aus unserer bisherigen Codebasis abgeleitet. Dadurch sind verschiedene Mängel aufgefallen, die im Laufe des Semesters angegangen werden sollen.
+Als neuer Softwarearchitekt habe ich mir am Anfang des Semesters zunächst einen Überblick verschafft über die aktuelle Situation unserer Codebasis. Bislang gab es keine Übersicht, weder eine Klassen, noch Komponenten-Übersicht. Zunächst habe ich ein Klassendiagramm erstellen lassen, die jedoch keine gute Perspektive auf die Architektur gibt, durch ihre Größe und Komplexität. Stattdessen habe ich eine eigene Komponenten-Übersicht aus unserer bisherigen Codebasis abgeleitet. Dadurch sind verschiedene Mängel aufgefallen, die im Laufe des Semesters angegangen werden sollen. Dazu zählen:
+
+* Unsere Software ist noch nicht in der Lage die Untertitel nach außen anzubieten. Als Architekt schlage ich vor einen WebSocket zu implementieren, da das Protokoll weit verbreitet ist und ohnehin schon für die Kommunikation mit Speechmatics verwendet wird.
+* Viele Klassen machen zu viel auf einmal, ein Beispiel dafür ist der `AvProcessingService` im Backend, der neben der Verarbeitung der Audio, die Kommunikation mit dem Client und Speechmatics übernimmt. 
+* Es fehlt also eine bessere Aufteilung der Verantwortlichkeiten, sodass die Klassen besser gekapselt sind und weniger Kopplung aufweisen.
+* Test-Coverage
+* Fehlende Codestyle-Guidelines
 
 // * Übersicht über Architektur
 // * Als neuer Architekt welcher als Aufgabe hat im Laufe des Semesters eine arc42 Doku zu erstellen, benötige ich einen Überblick über die Architektur und den Code unserer Software. Als ersten Ansatz soll dazu eine Klassen/Komponenten-Übersicht erstellt werden.
