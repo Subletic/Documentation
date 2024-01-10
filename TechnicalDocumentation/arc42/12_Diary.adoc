@@ -3,10 +3,45 @@
 
 == Zeitplanung
 
-Im Folgenden wird die Planung und der Ablauf der Arbeit aus Sicht der Architektur skizziert.
+Im Folgenden wird die Planung und der Ablauf der Arbeit aus Sicht der Architektur skizziert. Nach dem Rollenwechsel der Teamleiter und einem gewissen Abstand nach dem Semesterferien sind Mängel und technische Schulden an verschiedenen Stellen aufgefallen, die im zweiten Semester angegangen werden sollen. Fehlende nicht durchgesetzte Codestyle-Guidelines, fehlende Übersicht über die Architektur bzw. eine Komponenten-Übersicht, zu starke Klassenkopplung, unsicherer Code. Zudem ist während des Erweiterns und Umbauens des Codes aufgefallen, dass das Deployment nicht mehr funktioniert. 
 
-.Zeitplanung für Verbesserung der Architektur
-image::Zeitplanung.svg[Zeitplanung, align="center"]
+[options="header",cols=",,"]
+|===
+| Sprint | Zeitraum | Aufgaben
+.3+s| Sprint 04
+.3+| 16.10 - 09.11
+| Refactoring/Bugfixing
+| Export des Untertitels als WebSocket-Service
+| Umbau des MockServers für WebSocket-Service und QoL
+
+.2+s| Sprint 05
+.2+| 09.11 - 20.11
+| CodeStyle-Guidelines im Backend
+| Fixen des Deployments
+
+.4+s| Sprint_06
+.4+| 20.11 - 04.12
+| Dictionary-Upload umwandeln zu Configuration-Upload
+| CodeStyle-Guidelines im Frontend
+| Pitch-Analyse
+| Logger im Backend
+
+.3+s| Sprint_07 (+ Ferien)
+.3+| 04.12 - 08.01
+| Saubere Beendigung des Streams
+| Refactoring auf Basis der Komponentensicht
+| Trennen von Verarbeitungs- und Sendelogik im Backend
+
+.3+s| Sprint_08
+.3+| 10.01 - 22.01
+| Saubere Beendigung des Streams
+| Aufteilung des Services als Komponenten im Frontend
+| Umstellung auf HTTPS
+
+s| Sprint_09
+| 22.01 - 05.02
+|
+|===
 
 === Sprint 4
 
