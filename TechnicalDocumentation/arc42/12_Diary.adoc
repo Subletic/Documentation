@@ -28,15 +28,15 @@ Im Folgenden wird die Planung und der Ablauf der Arbeit aus Sicht der Architektu
 
 .3+s| Sprint_07 (+ Ferien)
 .3+| 04.12 - 08.01
+| Refactoring auf Basis der Komponenten-Übersicht
 | Saubere Beendigung des Streams
-| Refactoring auf Basis der Komponentensicht
 | Trennen von Verarbeitungs- und Sendelogik im Backend
 
 .3+s| Sprint_08
 .3+| 10.01 - 22.01
-| Saubere Beendigung des Streams
-| Aufteilung des Services als Komponenten im Frontend
+| Aufteilung des Services als Komponenten im Backend
 | Umstellung auf HTTPS
+| Sendelogik aus ISubtitleConverter werfen
 
 s| Sprint_09
 | 22.01 - 05.02
@@ -60,9 +60,9 @@ Als neuer Softwarearchitekt habe ich mir am Anfang des Semesters zunächst einen
 
 === Sprint 5
 
-Um die Untertitlung nach außen anzubieten wurde ein WebSocket-Services implementiert, der einen Audio-Stream einließt und einen Untertitel zurück schickt. Zuvor wurde die Audio aus einer Datei eingelesen. Dadurch ist unser Deployment jedoch zeitweise nicht mehr funktionstüchtig gewesen, sodass dieses gefixed werden musste. Zudem gab es mir als neuer Architekt die Gelegenheit, mich neu in die Materie einzulesen. Zusätzlich musste der Mock-Server auf den neuen WebSocket abgestimmt werden, da sich seit dem letzten Sprint die Entwickler beschwert hatten, diesen immer neu starten zu müssen. Dieser Vorgang ist mühseelig und kostet Zeit.
+Um die Untertitlung nach außen anzubieten wird ein WebSocket-Services implementiert, der einen Audio-Stream einließt und einen Untertitel zurück schickt. Zuvor wurde die Audio aus einer Datei eingelesen. Dadurch ist unser Deployment jedoch nicht mehr funktionstüchtig, sodass dieses gefixed werden muss. Zudem gab es mir als neuer Architekt die Gelegenheit, mich neu in die Materie einzulesen. Zusätzlich muss der Mock-Server auf den neuen WebSocket abgestimmt werden, da sich seit dem letzten Sprint die Entwickler beschwert hatten, diesen immer neu starten zu müssen. Dieser Vorgang ist mühseelig und kostet Zeit.
 
-Das zweite große Thema in diesem Sprint war die Durchsetzung von CodeStyle-Guidelines. Dieses Thema wurde priorisiert, da es die ganze Codebasis betrifft und nur mehr Code hinzu kommt. Mithilfe von der Bibliothek StyleCop konnten die Guidelines zunächst im Backend durchgesetzt werden.
+Das zweite große Thema in diesem Sprint ist die Durchsetzung von CodeStyle-Guidelines. Dieses Thema wird priorisiert, da es die ganze Codebasis betrifft und nur mehr Code hinzu kommt. Mithilfe von der Bibliothek StyleCop können die Guidelines zunächst im Backend durchgesetzt werden.
 
 // * Die Entwickler haben sich darüber beklagt dass es sehr nervig ist, den Mock-Server immer wider neu zu starten, wenn sie etwas im Backend oder Frontend geändert haben.
 // * Der Mock-Server wurde umgebaut um automatisch neu eine Verbindung aufzubauen, wenn die Verbindung abbricht, mit dem Backend.
@@ -72,6 +72,16 @@ Das zweite große Thema in diesem Sprint war die Durchsetzung von CodeStyle-Guid
 
 === Sprint 6
 
+In diesem Sprint werden nun auch im Frontend Codestyle-Guidelines durchgesetzt. Dazu wird ESLint verwendet.
+
+Zudem habe ich als Architekt darauf hingewiesen, beim Upload des Delays den Endpunkt für das Dictionary wiederzuverwenden, bzw. umzubenennen in Configuration. Da die Daten ohnehin zur selben Zeit an das Frontend gesendet werden, ist diese Kapselung sinnvoll. Zudem wurden technische Schulden des letzten Semesters angegangen.
+
+Die Änderung der Wiedergabegeschwindigkeit führt zu einer Änderung der Tonhöhe/Pitch. Wir konnten jedoch keine gute Lösung für die Korrektur dieser finden, die nicht die Audioqualität erheblich verschlechtert. Wir haben uns mit dem Kunden verständigt, die Korrektur zu vertagen und uns auf wichtigere Features zu konzentrieren.
+
+Beim Fixen des Deployments ist aufgefallen das der Audio-Stream nicht mehr zu hören ist, wenn die Software deployed ist. Das Problem konnte im Frontend identifiziert werden, da die Verwendung von JS-Worklets HTTPS erfordert. 
+
+Zudem wurde ein Logger hinzugefügt, damit Konsolen-Ausgaben, in Zukunft leichter gelogged werden können.
+
 // * Im letzten Semester wurde zum Testen der Software eine Test-Audiodatei im Backend geladen. Nun wurde unsere Software jedoch erweitert, sodass ein WebSocket-Client (zB unser Mock-Server) von Außen einen Stream schicken kann. Jedoch kann dadurch unsere Software nicht mehr so deployed werden wie bisher, sodass der Architekt sich neu einarbeiten muss, und sicherstellen muss das die Software ausgeliefert werden kann.
 // * Durch die Anpassung des Deployments ist aufgefallen, dass das Schicken eines Audio-Streams an das Frontend, durch eine geänderte Logik im Frontend, nicht mehr mittels http funktioniert. Stattdessen muss nun https verwendet werden. Dies muss nach implementiert werden.
 // * Es gibt nun eine neue Komponenten-Übersicht, die die Software in Teilbereiche einteilt. Diese Übersicht ist jedoch noch nicht vollständig, da neue Komponenten hinzukommen oder refactored werden.
@@ -79,11 +89,23 @@ Das zweite große Thema in diesem Sprint war die Durchsetzung von CodeStyle-Guid
 
 === Sprint 7
 
+In diesem Sprint wurden sich weiterer technischen Schulden angenommen. Zunächst wird der `AvProcessingService` refactored. Dieser ist 800 Zeilen lang und macht vier Dinge auf einmal: Die empfangene Kommunikation mit dem _Client_, das eigentliche Verarbeiten/Preprocessing des Audio-Streams, die sendende und empfangene Kommunikation mit _Speechmatics_. Auf Basis der von mir erstellten Komponenten-Übersicht und dem Input von `@cneidahl` wurde eine neue Aufteilung beschlossen, um die Code-Qualität zu verbessern. Die Sende- und Empfang-Logik, sowie das Audio-Processing soll getrennt werden. Dies erhöht die Kapselung und verringert die Kopplung.
+
+Als zweiten Punkt wird die Kommunikation zwischen Frontend und Backend auf beiden Seiten besser gekapselt. Die Sendeaufrufe finden nun in dafür vorgesehene Services statt, die getrennt sind vom Rest der Codebasis. Andere Komponenten können über die Services, mit dem Backend/Frontend kommunizieren. Auch dies erhöht die Kapselung und verringert die Kopplung.
+
+Aufbauend darauf kann die saubere Beendigung des Streams angegangen werden. Im Laufe der Entwicklung haben sich verschiedene, Edge-Cases gefunden, die zu einem Absturz der Software führen können oder zu einem nicht sauberen Beenden der Verbindung mit dem Client. Es wird nun mit Hilfe von `CancelationTokens` eine saubere Beendigung des Streams implementiert.
+
 // * Verbesserung der Komponenten-Übersicht
 // * Umbau der Backend-zu-Frontend-Kommunikation sodass die Daten/Logik des Backends und der Sende-Prozess im Backend getrennt sind.
 // * Umbau des AvProcessing in getrennte Komponenten für die Entgegennahme des Audio-Streams vom Client, dem AvProcessing und die Kommunikation zu Speechmatics.
 // * Exception-Handling und Kontrolliertes Neustarten und Beenden der Software (Kommunikation mit Client und Speechmatics)
 
 === Sprint 8
+
+In diesem Sprint wird die aus Sprint 6 bekannte Problematik mit dem Audio-Stream und der Notwendigkeit für HTTPS angegangen. Dazu wird ein Zertifikat erstellt, bzw selbst signiert und das Frontend auf HTTPS umgestellt.
+
+Durch die Zunahme an Features und dem Refactoring aus den vorangegangenen Sprints, hat sich besonders im Backend der Service Ordner stark gefüllt. Dieser Ordner ist nun sehr unübersichtlich und erschwert die Weiterentwicklung. Deshalb wird auf Basis der erstellten Komponenten-Übersicht, eine neue Aufteilung von Ordnern und Dateien bzw. Klassen vorgenommen. Dies verbessert die Übersichtlichkeit und erleichtert die Weiterentwicklung.
+
+Als dritten Punkt wird der `ISubtitleConverter` angegangen. Dieser, nicht wie man erwarten würde, Konvertiert nur SpeechBubbles zu Subtitles, sondern erhält durch den Konstruktor den WebSocket zum Client und kümmert sich selbst um das Senden der Subtitles. Aus der Methode des Interfaces zum konvertieren, wird dies jedoch nicht ersichtlich. Deshalb wird die Sendelogik aus dem `ISubtitleConverter` entfernt.
 
 // * Die Entwickler wünschen sich eine bessere Aufteilung im Backend, da zB der Service Ordner sehr voll ist. Wir wollen eine neue Strukturierung erreichen, sodass das Backend, besser die Struktur der Komponenten-Sicht entspricht.

@@ -2562,10 +2562,10 @@ Your browser does not support the audio tag.
 <tr>
 <td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><strong>Sprint_07 (+ Ferien)</strong></p></td>
 <td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">04.12 - 08.01</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Saubere Beendigung des Streams</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refactoring auf Basis der Komponenten-Übersicht</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Refactoring auf Basis der Komponentensicht</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Saubere Beendigung des Streams</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Trennen von Verarbeitungs- und Sendelogik im Backend</p></td>
@@ -2573,13 +2573,13 @@ Your browser does not support the audio tag.
 <tr>
 <td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock"><strong>Sprint_08</strong></p></td>
 <td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">10.01 - 22.01</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Saubere Beendigung des Streams</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Aufteilung des Services als Komponenten im Frontend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aufteilung des Services als Komponenten im Backend</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Umstellung auf HTTPS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sendelogik aus ISubtitleConverter werfen</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Sprint_09</strong></p></td>
@@ -2616,22 +2616,53 @@ Your browser does not support the audio tag.
 <div class="sect2">
 <h3 id="_sprint_5">12.2. Sprint 5</h3>
 <div class="paragraph">
-<p>Um die Untertitlung nach außen anzubieten wurde ein WebSocket-Services implementiert, der einen Audio-Stream einließt und einen Untertitel zurück schickt. Zuvor wurde die Audio aus einer Datei eingelesen. Dadurch ist unser Deployment jedoch zeitweise nicht mehr funktionstüchtig gewesen, sodass dieses gefixed werden musste. Zudem gab es mir als neuer Architekt die Gelegenheit, mich neu in die Materie einzulesen. Zusätzlich musste der Mock-Server auf den neuen WebSocket abgestimmt werden, da sich seit dem letzten Sprint die Entwickler beschwert hatten, diesen immer neu starten zu müssen. Dieser Vorgang ist mühseelig und kostet Zeit.</p>
+<p>Um die Untertitlung nach außen anzubieten wird ein WebSocket-Services implementiert, der einen Audio-Stream einließt und einen Untertitel zurück schickt. Zuvor wurde die Audio aus einer Datei eingelesen. Dadurch ist unser Deployment jedoch nicht mehr funktionstüchtig, sodass dieses gefixed werden muss. Zudem gab es mir als neuer Architekt die Gelegenheit, mich neu in die Materie einzulesen. Zusätzlich muss der Mock-Server auf den neuen WebSocket abgestimmt werden, da sich seit dem letzten Sprint die Entwickler beschwert hatten, diesen immer neu starten zu müssen. Dieser Vorgang ist mühseelig und kostet Zeit.</p>
 </div>
 <div class="paragraph">
-<p>Das zweite große Thema in diesem Sprint war die Durchsetzung von CodeStyle-Guidelines. Dieses Thema wurde priorisiert, da es die ganze Codebasis betrifft und nur mehr Code hinzu kommt. Mithilfe von der Bibliothek StyleCop konnten die Guidelines zunächst im Backend durchgesetzt werden.</p>
+<p>Das zweite große Thema in diesem Sprint ist die Durchsetzung von CodeStyle-Guidelines. Dieses Thema wird priorisiert, da es die ganze Codebasis betrifft und nur mehr Code hinzu kommt. Mithilfe von der Bibliothek StyleCop können die Guidelines zunächst im Backend durchgesetzt werden.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_sprint_6">12.3. Sprint 6</h3>
-
+<div class="paragraph">
+<p>In diesem Sprint werden nun auch im Frontend Codestyle-Guidelines durchgesetzt. Dazu wird ESLint verwendet.</p>
+</div>
+<div class="paragraph">
+<p>Zudem habe ich als Architekt darauf hingewiesen, beim Upload des Delays den Endpunkt für das Dictionary wiederzuverwenden, bzw. umzubenennen in Configuration. Da die Daten ohnehin zur selben Zeit an das Frontend gesendet werden, ist diese Kapselung sinnvoll. Zudem wurden technische Schulden des letzten Semesters angegangen.</p>
+</div>
+<div class="paragraph">
+<p>Die Änderung der Wiedergabegeschwindigkeit führt zu einer Änderung der Tonhöhe/Pitch. Wir konnten jedoch keine gute Lösung für die Korrektur dieser finden, die nicht die Audioqualität erheblich verschlechtert. Wir haben uns mit dem Kunden verständigt, die Korrektur zu vertagen und uns auf wichtigere Features zu konzentrieren.</p>
+</div>
+<div class="paragraph">
+<p>Beim Fixen des Deployments ist aufgefallen das der Audio-Stream nicht mehr zu hören ist, wenn die Software deployed ist. Das Problem konnte im Frontend identifiziert werden, da die Verwendung von JS-Worklets HTTPS erfordert.</p>
+</div>
+<div class="paragraph">
+<p>Zudem wurde ein Logger hinzugefügt, damit Konsolen-Ausgaben, in Zukunft leichter gelogged werden können.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_sprint_7">12.4. Sprint 7</h3>
-
+<div class="paragraph">
+<p>In diesem Sprint wurden sich weiterer technischen Schulden angenommen. Zunächst wird der <code>AvProcessingService</code> refactored. Dieser ist 800 Zeilen lang und macht vier Dinge auf einmal: Die empfangene Kommunikation mit dem <em>Client</em>, das eigentliche Verarbeiten/Preprocessing des Audio-Streams, die sendende und empfangene Kommunikation mit <em>Speechmatics</em>. Auf Basis der von mir erstellten Komponenten-Übersicht und dem Input von <code>@cneidahl</code> wurde eine neue Aufteilung beschlossen, um die Code-Qualität zu verbessern. Die Sende- und Empfang-Logik, sowie das Audio-Processing soll getrennt werden. Dies erhöht die Kapselung und verringert die Kopplung.</p>
+</div>
+<div class="paragraph">
+<p>Als zweiten Punkt wird die Kommunikation zwischen Frontend und Backend auf beiden Seiten besser gekapselt. Die Sendeaufrufe finden nun in dafür vorgesehene Services statt, die getrennt sind vom Rest der Codebasis. Andere Komponenten können über die Services, mit dem Backend/Frontend kommunizieren. Auch dies erhöht die Kapselung und verringert die Kopplung.</p>
+</div>
+<div class="paragraph">
+<p>Aufbauend darauf kann die saubere Beendigung des Streams angegangen werden. Im Laufe der Entwicklung haben sich verschiedene, Edge-Cases gefunden, die zu einem Absturz der Software führen können oder zu einem nicht sauberen Beenden der Verbindung mit dem Client. Es wird nun mit Hilfe von <code>CancelationTokens</code> eine saubere Beendigung des Streams implementiert.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_sprint_8">12.5. Sprint 8</h3>
+<div class="paragraph">
+<p>In diesem Sprint wird die aus Sprint 6 bekannte Problematik mit dem Audio-Stream und der Notwendigkeit für HTTPS angegangen. Dazu wird ein Zertifikat erstellt, bzw selbst signiert und das Frontend auf HTTPS umgestellt.</p>
+</div>
+<div class="paragraph">
+<p>Durch die Zunahme an Features und dem Refactoring aus den vorangegangenen Sprints, hat sich besonders im Backend der Service Ordner stark gefüllt. Dieser Ordner ist nun sehr unübersichtlich und erschwert die Weiterentwicklung. Deshalb wird auf Basis der erstellten Komponenten-Übersicht, eine neue Aufteilung von Ordnern und Dateien bzw. Klassen vorgenommen. Dies verbessert die Übersichtlichkeit und erleichtert die Weiterentwicklung.</p>
+</div>
+<div class="paragraph">
+<p>Als dritten Punkt wird der <code>ISubtitleConverter</code> angegangen. Dieser, nicht wie man erwarten würde, Konvertiert nur SpeechBubbles zu Subtitles, sondern erhält durch den Konstruktor den WebSocket zum Client und kümmert sich selbst um das Senden der Subtitles. Aus der Methode des Interfaces zum konvertieren, wird dies jedoch nicht ersichtlich. Deshalb wird die Sendelogik aus dem <code>ISubtitleConverter</code> entfernt.</p>
+</div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
@@ -2729,7 +2760,7 @@ Your browser does not support the audio tag.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-10 23:22:50 +0100
+Last updated 2024-01-11 21:21:12 +0100
 </div>
 </div>
 </body>
