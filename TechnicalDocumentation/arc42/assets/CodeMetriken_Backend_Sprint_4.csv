@@ -1,0 +1,417 @@
+﻿Bereich;Projekt;Namespace;Typ;Member;Wartbarkeitsindex;Zyklomatische Komplexität;Vererbungstiefe;Klassenkopplung;Zeilen von Quellcode;Zeilen von ausführbarem Code
+Assembly;Backend (Debug); ; ; ;84;354;2;164;3455;580
+Typ;Backend (Debug); ;Program; ;37;6;1;42;78;64
+Member;Backend (Debug); ;Program;<Main>$(string[]) : void;46;3;;42;78;32
+Namespace;Backend (Debug);Backend.Controllers; ; ;69;11;2;28;161;31
+Typ;Backend (Debug);Backend.Controllers;ClientExchangeController; ;66;3;2;16;55;15
+Member;Backend (Debug);Backend.Controllers;ClientExchangeController;avReceiverService : IAvReceiverService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Controllers;ClientExchangeController;subtitleExporterService : ISubtitleExporterService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Controllers;ClientExchangeController;ClientExchangeController(ISubtitleExporterService, IAvReceiverService);85;1;;3;10;2
+Member;Backend (Debug);Backend.Controllers;ClientExchangeController;Get() : Task;58;2;;14;29;13
+Typ;Backend (Debug);Backend.Controllers;SpeechBubbleController; ;72;8;2;15;100;16
+Member;Backend (Debug);Backend.Controllers;SpeechBubbleController;speechBubbleListService : ISpeechBubbleListService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Controllers;SpeechBubbleController;applicationLifetime : IHostApplicationLifetime;100;0;;1;1;0
+Member;Backend (Debug);Backend.Controllers;SpeechBubbleController;SpeechBubbleController(ISpeechBubbleListService, IHostApplicationLifetime);85;1;;3;10;2
+Member;Backend (Debug);Backend.Controllers;SpeechBubbleController;HandleUpdatedSpeechBubble(SpeechBubbleChainJson) : IActionResult;71;3;;11;21;5
+Member;Backend (Debug);Backend.Controllers;SpeechBubbleController;HandleRestartRequest() : IActionResult;86;1;;5;12;2
+Member;Backend (Debug);Backend.Controllers;SpeechBubbleController;ParseFrontendResponseToSpeechBubbleList(SpeechBubbleChainJson) : List<SpeechBubble>;65;3;;5;34;7
+Namespace;Backend (Debug);Backend.Data; ; ;91;42;1;14;158;29
+Typ;Backend (Debug);Backend.Data;AudioQueue; ;81;4;1;10;82;12
+Member;Backend (Debug);Backend.Data;AudioQueue;maxQueueCount : int;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data;AudioQueue;audioQueue : Queue<short[]>;90;0;;1;1;1
+Member;Backend (Debug);Backend.Data;AudioQueue;outPipe : PipeWriter;100;0;;1;1;0
+Member;Backend (Debug);Backend.Data;AudioQueue;AudioQueue(PipeWriter);86;1;;2;12;2
+Member;Backend (Debug);Backend.Data;AudioQueue;Enqueue(short[]) : Task;77;2;;3;20;3
+Member;Backend (Debug);Backend.Data;AudioQueue;Dequeue() : Task;70;1;;10;18;5
+Typ;Backend (Debug);Backend.Data;SpeechBubble; ;92;13;1;3;19;6
+Member;Backend (Debug);Backend.Data;SpeechBubble;SpeechBubble(long, int, double, double, List<WordToken>);69;1;;3;9;6
+Member;Backend (Debug);Backend.Data;SpeechBubble;Id : long;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;Id.get() : long;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;Id.set(long) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;Speaker : int;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;Speaker.get() : int;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;Speaker.set(int) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;StartTime : double;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;StartTime.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;StartTime.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;EndTime : double;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;EndTime.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;EndTime.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;CreationTime : DateTime;100;2;;1;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;CreationTime.get() : DateTime;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;CreationTime.set(DateTime) : void;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;SpeechBubbleContent : List<WordToken>;100;2;;2;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;SpeechBubbleContent.get() : List<WordToken>;100;1;;2;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubble;SpeechBubbleContent.set(List<WordToken>) : void;100;1;;2;1;0
+Typ;Backend (Debug);Backend.Data;SpeechBubbleChainJson; ;98;3;1;2;12;1
+Member;Backend (Debug);Backend.Data;SpeechBubbleChainJson;SpeechbubbleChain : List<SpeechBubbleJson>;100;2;;2;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleChainJson;SpeechbubbleChain.get() : List<SpeechBubbleJson>;100;1;;2;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleChainJson;SpeechbubbleChain.set(List<SpeechBubbleJson>) : void;100;1;;2;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleChainJson;SpeechBubbleChainJson(List<SpeechBubbleJson>);96;1;;2;4;1
+Typ;Backend (Debug);Backend.Data;SpeechBubbleJson; ;93;11;1;2;20;5
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;Id : long;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;Id.get() : long;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;Id.set(long) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;Speaker : int;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;Speaker.get() : int;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;Speaker.set(int) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;StartTime : double;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;StartTime.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;StartTime.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;EndTime : double;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;EndTime.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;EndTime.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;SpeechBubbleContent : List<WordToken>;100;2;;2;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;SpeechBubbleContent.get() : List<WordToken>;100;1;;2;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;SpeechBubbleContent.set(List<WordToken>) : void;100;1;;2;1;0
+Member;Backend (Debug);Backend.Data;SpeechBubbleJson;SpeechBubbleJson(long, int, double, double, List<WordToken>);72;1;;2;8;5
+Typ;Backend (Debug);Backend.Data;WordToken; ;93;11;1;0;17;5
+Member;Backend (Debug);Backend.Data;WordToken;WordToken(string, float, double, double, int);72;1;;0;8;5
+Member;Backend (Debug);Backend.Data;WordToken;Word : string;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;Word.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;Word.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;Confidence : float;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;Confidence.get() : float;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;Confidence.set(float) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;StartTime : double;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;StartTime.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;StartTime.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;EndTime : double;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;EndTime.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;EndTime.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;Speaker : int;100;2;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;Speaker.get() : int;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data;WordToken;Speaker.set(int) : void;100;1;;0;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage; ; ;92;10;1;5;91;6
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage; ;92;10;1;5;89;6
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;AddTranscriptMessage(string, AddTranscriptMessage_Metadata, List<AddTranscriptMessage_Result>);79;1;;3;25;3
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;MESSAGE_TYPE : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;message : string;95;3;;2;18;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;message.get() : string;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;message.set(string) : void;90;2;;2;7;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;format : string;100;2;;0;7;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;format.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;format.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;metadata : AddTranscriptMessage_Metadata;100;2;;1;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;metadata.get() : AddTranscriptMessage_Metadata;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;metadata.set(AddTranscriptMessage_Metadata) : void;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;results : List<AddTranscriptMessage_Result>;100;2;;2;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;results.get() : List<AddTranscriptMessage_Result>;100;1;;2;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage;AddTranscriptMessage;results.set(List<AddTranscriptMessage_Result>) : void;100;1;;2;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata; ; ;94;7;1;0;60;3
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata; ;94;7;1;0;58;3
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;AddTranscriptMessage_Metadata(string, double, double);79;1;;0;21;3
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;transcript : string;100;2;;0;7;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;transcript.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;transcript.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;start_time : double;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;start_time.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;start_time.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;end_time : double;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;end_time.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.metadata;AddTranscriptMessage_Metadata;end_time.set(double) : void;100;1;;0;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result; ; ;92;13;1;3;102;9
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result; ;92;13;1;3;100;9
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;AddTranscriptMessage_Result(string, double, double, Nullable<bool>, string?, List<AddTranscriptMessage_Result_Alternative>);62;1;;3;31;9
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;type : string;100;2;;0;7;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;type.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;type.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;start_time : double;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;start_time.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;start_time.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;end_time : double;100;2;;0;7;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;end_time.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;end_time.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;is_eos : Nullable<bool>;100;2;;1;8;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;is_eos.get() : Nullable<bool>;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;is_eos.set(Nullable<bool>) : void;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;attaches_to : string?;100;2;;0;8;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;attaches_to.get() : string?;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;attaches_to.set(string?) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;alternatives : List<AddTranscriptMessage_Result_Alternative>;100;2;;2;9;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;alternatives.get() : List<AddTranscriptMessage_Result_Alternative>;100;1;;2;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result;AddTranscriptMessage_Result;alternatives.set(List<AddTranscriptMessage_Result_Alternative>) : void;100;1;;2;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative; ; ;92;9;1;0;73;6
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative; ;92;9;1;0;71;6
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;AddTranscriptMessage_Result_Alternative(string, double, string?, string?);68;1;;0;24;6
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;content : string;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;content.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;content.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;confidence : double;100;2;;0;7;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;confidence.get() : double;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;confidence.set(double) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;language : string?;100;2;;0;8;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;language.get() : string?;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;language.set(string?) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;speaker : string?;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;speaker.get() : string?;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AddTranscriptMessage.result.alternative;AddTranscriptMessage_Result_Alternative;speaker.set(string?) : void;100;1;;0;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage; ; ;92;6;1;2;71;5
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage;AudioAddedMessage; ;92;6;1;2;69;5
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage;AudioAddedMessage;AudioAddedMessage(ulong);83;1;;0;13;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage;AudioAddedMessage;MESSAGE_TYPE : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage;AudioAddedMessage;message : string;95;3;;2;18;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage;AudioAddedMessage;message.get() : string;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage;AudioAddedMessage;message.set(string) : void;90;2;;2;7;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage;AudioAddedMessage;seq_no : ulong;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage;AudioAddedMessage;seq_no.get() : ulong;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.AudioAddedMessage;AudioAddedMessage;seq_no.set(ulong) : void;100;1;;0;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage; ; ;92;6;1;2;66;5
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage;EndOfStreamMessage; ;92;6;1;2;64;5
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage;EndOfStreamMessage;EndOfStreamMessage(ulong);83;1;;0;13;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage;EndOfStreamMessage;MESSAGE_TYPE : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage;EndOfStreamMessage;message : string;95;3;;2;18;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage;EndOfStreamMessage;message.get() : string;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage;EndOfStreamMessage;message.set(string) : void;90;2;;2;7;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage;EndOfStreamMessage;last_seq_no : ulong;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage;EndOfStreamMessage;last_seq_no.get() : ulong;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfStreamMessage;EndOfStreamMessage;last_seq_no.set(ulong) : void;100;1;;0;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfTranscriptMessage; ; ;92;4;1;2;57;3
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfTranscriptMessage;EndOfTranscriptMessage; ;92;4;1;2;55;3
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfTranscriptMessage;EndOfTranscriptMessage;EndOfTranscriptMessage();100;1;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfTranscriptMessage;EndOfTranscriptMessage;MESSAGE_TYPE : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfTranscriptMessage;EndOfTranscriptMessage;message : string;95;3;;2;18;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfTranscriptMessage;EndOfTranscriptMessage;message.get() : string;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.EndOfTranscriptMessage;EndOfTranscriptMessage;message.set(string) : void;90;2;;2;7;1
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage; ; ;92;10;1;3;87;6
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage; ;92;10;1;3;85;6
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;ErrorMessage(Nullable<int>, string, string);79;1;;1;19;3
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;MESSAGE_TYPE : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;message : string;95;3;;2;18;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;message.get() : string;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;message.set(string) : void;90;2;;2;7;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;code : Nullable<int>;100;2;;1;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;code.get() : Nullable<int>;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;code.set(Nullable<int>) : void;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;type : string;100;2;;0;9;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;type.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;type.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;reason : string;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;reason.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.ErrorMessage;ErrorMessage;reason.set(string) : void;100;1;;0;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage; ; ;91;12;1;3;111;7
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage; ;91;12;1;3;109;7
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;InfoMessage(Nullable<int>, string, string, string?);75;1;;1;24;4
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;MESSAGE_TYPE : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;message : string;95;3;;2;18;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;message.get() : string;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;message.set(string) : void;90;2;;2;7;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;code : Nullable<int>;100;2;;1;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;code.get() : Nullable<int>;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;code.set(Nullable<int>) : void;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;type : string;100;2;;0;18;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;type.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;type.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;reason : string;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;reason.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;reason.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;quality : string?;100;2;;0;8;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;quality.get() : string?;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.InfoMessage;InfoMessage;quality.set(string?) : void;100;1;;0;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage; ; ;92;8;1;3;78;5
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage; ;92;8;1;3;76;5
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;RecognitionStartedMessage(string, RecognitionStartedMessage_LanguagePackInfo);85;1;;1;17;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;MESSAGE_TYPE : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;message : string;95;3;;2;18;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;message.get() : string;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;message.set(string) : void;90;2;;2;7;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;id : string;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;id.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;id.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;language_pack_info : RecognitionStartedMessage_LanguagePackInfo;100;2;;1;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;language_pack_info.get() : RecognitionStartedMessage_LanguagePackInfo;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage;RecognitionStartedMessage;language_pack_info.set(RecognitionStartedMessage_LanguagePackInfo) : void;100;1;;1;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info; ; ;93;11;1;0;81;5
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo; ;93;11;1;0;79;5
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;RecognitionStartedMessage_LanguagePackInfo(bool, bool, string, string, string);72;1;;0;26;5
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;adapted : bool;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;adapted.get() : bool;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;adapted.set(bool) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;itn : bool;100;2;;0;7;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;itn.get() : bool;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;itn.set(bool) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;language_description : string;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;language_description.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;language_description.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;word_delimiter : string;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;word_delimiter.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;word_delimiter.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;writing_direction : string;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;writing_direction.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.RecognitionStartedMessage.language_pack_info;RecognitionStartedMessage_LanguagePackInfo;writing_direction.set(string) : void;100;1;;0;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage; ; ;83;10;1;5;91;7
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage; ;83;10;1;5;89;7
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;StartRecognitionMessage(StartRecognitionMessage_AudioFormat?, StartRecognitionMessage_TranscriptionConfig?);70;3;;3;30;4
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;MESSAGE_TYPE : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;message : string;95;3;;2;18;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;message.get() : string;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;message.set(string) : void;90;2;;2;7;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;audio_format : StartRecognitionMessage_AudioFormat;100;2;;1;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;audio_format.get() : StartRecognitionMessage_AudioFormat;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;audio_format.set(StartRecognitionMessage_AudioFormat) : void;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;transcription_config : StartRecognitionMessage_TranscriptionConfig;100;2;;1;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;transcription_config.get() : StartRecognitionMessage_TranscriptionConfig;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage;StartRecognitionMessage;transcription_config.set(StartRecognitionMessage_TranscriptionConfig) : void;100;1;;1;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format; ; ;74;32;1;5;220;20
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat; ;74;32;1;5;218;20
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;StartRecognitionMessage_AudioFormat(string, string?, Nullable<int>);67;1;;1;22;6
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;audioType : string?;100;0;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;audioEncoding : string?;100;0;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;audioSampleRate : Nullable<int>;100;0;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;type : string;85;6;;3;32;3
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;type.get() : string;84;2;;2;6;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;type.set(string) : void;87;4;;2;13;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;encoding : string?;93;7;;2;32;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;encoding.get() : string?;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;encoding.set(string?) : void;86;6;;2;15;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;sample_rate : Nullable<int>;90;4;;3;19;3
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;sample_rate.get() : Nullable<int>;100;1;;1;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;sample_rate.set(Nullable<int>) : void;81;3;;3;7;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;GetCheckedSampleRate() : int;83;2;;3;14;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;GetEncodingInFFMpegFormat() : string;78;6;;2;29;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.audio_format;StartRecognitionMessage_AudioFormat;GetBytesPerSample() : uint;78;6;;2;29;2
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.transcription_config; ; ;87;5;1;1;56;4
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.transcription_config;StartRecognitionMessage_TranscriptionConfig; ;87;5;1;1;54;4
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.transcription_config;StartRecognitionMessage_TranscriptionConfig;StartRecognitionMessage_TranscriptionConfig(string, Nullable<bool>);73;1;;1;17;4
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.transcription_config;StartRecognitionMessage_TranscriptionConfig;language : string;100;2;;0;8;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.transcription_config;StartRecognitionMessage_TranscriptionConfig;language.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.transcription_config;StartRecognitionMessage_TranscriptionConfig;language.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.transcription_config;StartRecognitionMessage_TranscriptionConfig;enable_partials : Nullable<bool>;100;2;;1;14;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.transcription_config;StartRecognitionMessage_TranscriptionConfig;enable_partials.get() : Nullable<bool>;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.StartRecognitionMessage.transcription_config;StartRecognitionMessage_TranscriptionConfig;enable_partials.set(Nullable<bool>) : void;100;1;;1;1;0
+Namespace;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage; ; ;91;12;1;3;106;7
+Typ;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage; ;91;12;1;3;104;7
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;WarningMessage(Nullable<int>, string, string, Nullable<ulong>);75;1;;1;24;4
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;MESSAGE_TYPE : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;message : string;95;3;;2;18;2
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;message.get() : string;100;1;;0;1;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;message.set(string) : void;90;2;;2;7;1
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;code : Nullable<int>;100;2;;1;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;code.get() : Nullable<int>;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;code.set(Nullable<int>) : void;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;type : string;100;2;;0;16;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;type.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;type.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;reason : string;100;2;;0;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;reason.get() : string;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;reason.set(string) : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;duration_limit : Nullable<ulong>;100;2;;1;6;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;duration_limit.get() : Nullable<ulong>;100;1;;1;1;0
+Member;Backend (Debug);Backend.Data.SpeechmaticsMessages.WarningMessage;WarningMessage;duration_limit.set(Nullable<ulong>) : void;100;1;;1;1;0
+Namespace;Backend (Debug);Backend.Hubs; ; ;76;4;2;7;46;8
+Typ;Backend (Debug);Backend.Hubs;CommunicationHub; ;76;4;2;7;43;8
+Member;Backend (Debug);Backend.Hubs;CommunicationHub;sendingAudioService : FrontendAudioQueueService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Hubs;CommunicationHub;CommunicationHub(FrontendAudioQueueService);96;1;;2;7;1
+Member;Backend (Debug);Backend.Hubs;CommunicationHub;ReceiveAudioStream(CancellationToken) : IAsyncEnumerable<short[]>;69;3;;6;23;7
+Namespace;Backend (Debug);Backend.Services; ; ;84;110;2;95;1461;279
+Typ;Backend (Debug);Backend.Services;AvProcessingService; ;62;47;1;66;737;137
+Member;Backend (Debug);Backend.Services;AvProcessingService;urlRecognitionTemplate : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Services;AvProcessingService;audioFormat : StartRecognitionMessage_AudioFormat;86;0;;2;1;1
+Member;Backend (Debug);Backend.Services;AvProcessingService;jsonOptions : JsonSerializerOptions;87;0;;1;3;1
+Member;Backend (Debug);Backend.Services;AvProcessingService;messageTypeRegex() : Regex;100;1;;2;10;0
+Member;Backend (Debug);Backend.Services;AvProcessingService;_wordProcessingService : IWordProcessingService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;AvProcessingService;_frontendAudioQueueService : FrontendAudioQueueService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;AvProcessingService;apiKey : string?;100;0;;0;1;0
+Member;Backend (Debug);Backend.Services;AvProcessingService;sentNum : ulong;100;0;;0;1;0
+Member;Backend (Debug);Backend.Services;AvProcessingService;seqNum : ulong;100;0;;0;1;0
+Member;Backend (Debug);Backend.Services;AvProcessingService;audioMuxingPipe : Pipe;93;0;;1;1;1
+Member;Backend (Debug);Backend.Services;AvProcessingService;audioQueue : AudioQueue;87;0;;3;1;1
+Member;Backend (Debug);Backend.Services;AvProcessingService;AvProcessingService(IWordProcessingService, FrontendAudioQueueService);80;1;;3;14;3
+Member;Backend (Debug);Backend.Services;AvProcessingService;logSend(string) : void;100;1;;1;10;1
+Member;Backend (Debug);Backend.Services;AvProcessingService;logReceive(string) : void;100;1;;1;10;1
+Member;Backend (Debug);Backend.Services;AvProcessingService;DeserializeMessage<T>(string, string, string) : T;66;2;;6;35;6
+Member;Backend (Debug);Backend.Services;AvProcessingService;Init(string) : bool;70;2;;2;27;6
+Member;Backend (Debug);Backend.Services;AvProcessingService;SendStartRecognition(ClientWebSocket) : Task<bool>;65;1;;14;41;8
+Member;Backend (Debug);Backend.Services;AvProcessingService;ProcessAudioToStream(Stream, PipeWriter) : Task<bool>;56;2;;19;58;15
+Member;Backend (Debug);Backend.Services;AvProcessingService;SendAudio(ClientWebSocket, Stream) : Task<bool>;43;9;;19;99;39
+Member;Backend (Debug);Backend.Services;AvProcessingService;SendEndOfStream(ClientWebSocket) : Task<bool>;65;1;;12;39;8
+Member;Backend (Debug);Backend.Services;AvProcessingService;HandleSpeechmaticsResponse(string) : bool;58;13;;22;123;7
+Member;Backend (Debug);Backend.Services;AvProcessingService;ReceiveMessages(ClientWebSocket) : Task<bool>;57;2;;8;48;15
+Member;Backend (Debug);Backend.Services;AvProcessingService;TranscribeAudio(Stream) : Task<bool>;48;11;;9;73;25
+Typ;Backend (Debug);Backend.Services;AvReceiverService; ;66;5;1;18;73;20
+Member;Backend (Debug);Backend.Services;AvReceiverService;MAXIMUM_READ_SIZE : int;93;0;;0;1;1
+Member;Backend (Debug);Backend.Services;AvReceiverService;avProcessingService : IAvProcessingService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;AvReceiverService;AvReceiverService(IAvProcessingService);96;1;;1;9;1
+Member;Backend (Debug);Backend.Services;AvReceiverService;Start(WebSocket, CancellationTokenSource) : Task;53;4;;17;41;18
+Typ;Backend (Debug);Backend.Services;BufferTimeMonitor; ;65;6;2;20;93;23
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;hubContext : IHubContext<CommunicationHub>;100;0;;2;1;0
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;timedOutSpeechBubbles : List<SpeechBubble>;100;0;;2;1;0
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;speechBubbleListService : ISpeechBubbleListService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;subtitleExporterService : ISubtitleExporterService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;configuration : IConfiguration;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;timeLimitInMinutes : int;100;0;;0;1;0
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;delayMilliseconds : int;100;0;;0;1;0
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;BufferTimeMonitor(IConfiguration, IHubContext<CommunicationHub>, ISpeechBubbleListService, ISubtitleExporterService);66;1;;9;15;7
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;ExecuteAsync(CancellationToken) : Task;58;4;;10;36;13
+Member;Backend (Debug);Backend.Services;BufferTimeMonitor;DeleteSpeechBubbleMessageToFrontend(long) : Task;77;1;;9;16;3
+Typ;Backend (Debug);Backend.Services;FrontendAudioQueueService; ;83;2;2;3;28;2
+Member;Backend (Debug);Backend.Services;FrontendAudioQueueService;Enqueue(short[]) : void;83;2;;3;14;2
+Typ;Backend (Debug);Backend.Services;IAvProcessingService; ;100;2;0;2;7;0
+Member;Backend (Debug);Backend.Services;IAvProcessingService;Init(string) : bool;100;1;;0;2;0
+Member;Backend (Debug);Backend.Services;IAvProcessingService;TranscribeAudio(Stream) : Task<bool>;100;1;;2;1;0
+Typ;Backend (Debug);Backend.Services;IAvReceiverService; ;100;1;0;3;4;0
+Member;Backend (Debug);Backend.Services;IAvReceiverService;Start(WebSocket, CancellationTokenSource) : Task;100;1;;3;1;0
+Typ;Backend (Debug);Backend.Services;ISpeechBubbleListService; ;100;4;0;2;10;0
+Member;Backend (Debug);Backend.Services;ISpeechBubbleListService;GetSpeechBubbles() : LinkedList<SpeechBubble>;100;1;;2;1;0
+Member;Backend (Debug);Backend.Services;ISpeechBubbleListService;AddNewSpeechBubble(SpeechBubble) : void;100;1;;1;1;0
+Member;Backend (Debug);Backend.Services;ISpeechBubbleListService;DeleteOldestSpeechBubble() : void;100;1;;0;1;0
+Member;Backend (Debug);Backend.Services;ISpeechBubbleListService;ReplaceSpeechBubble(SpeechBubble) : void;100;1;;1;1;0
+Typ;Backend (Debug);Backend.Services;ISubtitleConverter; ;100;1;0;1;4;0
+Member;Backend (Debug);Backend.Services;ISubtitleConverter;ConvertSpeechBubble(SpeechBubble) : void;100;1;;1;1;0
+Typ;Backend (Debug);Backend.Services;ISubtitleExporterService; ;100;2;0;4;6;0
+Member;Backend (Debug);Backend.Services;ISubtitleExporterService;Start(WebSocket, CancellationTokenSource) : Task;100;1;;3;1;0
+Member;Backend (Debug);Backend.Services;ISubtitleExporterService;ExportSubtitle(SpeechBubble) : Task;100;1;;2;1;0
+Typ;Backend (Debug);Backend.Services;IWordProcessingService; ;100;1;0;1;4;0
+Member;Backend (Debug);Backend.Services;IWordProcessingService;HandleNewWord(WordToken) : void;100;1;;1;1;0
+Typ;Backend (Debug);Backend.Services;SpeechBubbleListService; ;81;8;1;5;77;14
+Member;Backend (Debug);Backend.Services;SpeechBubbleListService;speechBubbleList : LinkedList<SpeechBubble>;100;0;;2;1;0
+Member;Backend (Debug);Backend.Services;SpeechBubbleListService;SpeechBubbleListService();95;1;;2;7;1
+Member;Backend (Debug);Backend.Services;SpeechBubbleListService;GetSpeechBubbles() : LinkedList<SpeechBubble>;100;1;;2;8;1
+Member;Backend (Debug);Backend.Services;SpeechBubbleListService;AddNewSpeechBubble(SpeechBubble) : void;94;1;;3;9;1
+Member;Backend (Debug);Backend.Services;SpeechBubbleListService;DeleteOldestSpeechBubble() : void;100;1;;2;7;1
+Member;Backend (Debug);Backend.Services;SpeechBubbleListService;ReplaceSpeechBubble(SpeechBubble) : void;61;4;;4;31;10
+Typ;Backend (Debug);Backend.Services;StartupService; ;91;4;1;7;38;6
+Member;Backend (Debug);Backend.Services;StartupService;SPEECHMATICS_API_KEY_ENVVAR : string;93;0;;0;1;1
+Member;Backend (Debug);Backend.Services;StartupService;avProcessingService : IAvProcessingService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;StartupService;StartupService(IAvProcessingService);96;1;;1;4;1
+Member;Backend (Debug);Backend.Services;StartupService;StartAsync(CancellationToken) : Task;78;2;;6;13;3
+Member;Backend (Debug);Backend.Services;StartupService;StopAsync(CancellationToken) : Task;100;1;;2;9;1
+Typ;Backend (Debug);Backend.Services;SubtitleExporterService; ;71;4;1;18;98;21
+Member;Backend (Debug);Backend.Services;SubtitleExporterService;MAXIMUM_READ_SIZE : int;93;0;;0;1;1
+Member;Backend (Debug);Backend.Services;SubtitleExporterService;subtitlePipe : Pipe;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;SubtitleExporterService;subtitleConverter : ISubtitleConverter;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;SubtitleExporterService;SubtitleExporterService();82;1;;5;10;2
+Member;Backend (Debug);Backend.Services;SubtitleExporterService;Start(WebSocket, CancellationTokenSource) : Task;57;2;;13;47;16
+Member;Backend (Debug);Backend.Services;SubtitleExporterService;ExportSubtitle(SpeechBubble) : Task;86;1;;3;10;2
+Typ;Backend (Debug);Backend.Services;WebVttConverter; ;75;7;1;11;85;19
+Member;Backend (Debug);Backend.Services;WebVttConverter;outputStream : Stream;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;WebVttConverter;WebVttConverter(Stream);86;1;;1;11;2
+Member;Backend (Debug);Backend.Services;WebVttConverter;ConvertSpeechBubble(SpeechBubble) : void;96;1;;1;8;1
+Member;Backend (Debug);Backend.Services;WebVttConverter;convertToWebVttFormat(SpeechBubble) : string;57;3;;5;29;13
+Member;Backend (Debug);Backend.Services;WebVttConverter;FormatTime(double) : string;83;1;;1;10;2
+Member;Backend (Debug);Backend.Services;WebVttConverter;WriteToStream(string) : void;88;1;;4;14;1
+Typ;Backend (Debug);Backend.Services;WordProcessingService; ;66;16;1;18;156;37
+Member;Backend (Debug);Backend.Services;WordProcessingService;speechBubbleListService : ISpeechBubbleListService;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;WordProcessingService;hubContext : IHubContext<CommunicationHub>;100;0;;2;1;0
+Member;Backend (Debug);Backend.Services;WordProcessingService;wordTokenBuffer : List<WordToken>;100;0;;2;1;0
+Member;Backend (Debug);Backend.Services;WordProcessingService;nextSpeechBubbleId : long;100;0;;0;1;0
+Member;Backend (Debug);Backend.Services;WordProcessingService;currentSpeaker : Nullable<int>;100;0;;1;1;0
+Member;Backend (Debug);Backend.Services;WordProcessingService;WordProcessingService(IHubContext<CommunicationHub>, ISpeechBubbleListService);75;1;;5;9;4
+Member;Backend (Debug);Backend.Services;WordProcessingService;HandleNewWord(WordToken) : void;55;9;;9;47;14
+Member;Backend (Debug);Backend.Services;WordProcessingService;IsSpeechBubbleFull(WordToken) : bool;62;3;;4;28;9
+Member;Backend (Debug);Backend.Services;WordProcessingService;FlushBufferToNewSpeechBubble() : void;70;1;;8;21;5
+Member;Backend (Debug);Backend.Services;WordProcessingService;SetSpeakerIfSpeakerIsNull(WordToken) : void;94;1;;2;9;1
+Member;Backend (Debug);Backend.Services;WordProcessingService;SendNewSpeechBubbleMessageToFrontend(SpeechBubble) : Task;74;1;;11;18;4
+Namespace;Backend (Debug);System.Text.RegularExpressions.Generated; ; ;77;26;2;12;201;71
+Typ;Backend (Debug);System.Text.RegularExpressions.Generated;messageTypeRegex_0; ;75;1;2;6;178;7
+Member;Backend (Debug);System.Text.RegularExpressions.Generated;messageTypeRegex_0;Instance : messageTypeRegex_0;93;0;;0;1;1
+Member;Backend (Debug);System.Text.RegularExpressions.Generated;messageTypeRegex_0;messageTypeRegex_0();69;1;;5;10;6
+Typ;Backend (Debug);System.Text.RegularExpressions.Generated;messageTypeRegex_0.RunnerFactory; ;100;1;2;3;158;1
+Member;Backend (Debug);System.Text.RegularExpressions.Generated;messageTypeRegex_0.RunnerFactory;CreateInstance() : RegexRunner;100;1;;2;2;1
+Typ;Backend (Debug);System.Text.RegularExpressions.Generated;messageTypeRegex_0.RunnerFactory.Runner; ;52;23;2;3;151;61
+Member;Backend (Debug);System.Text.RegularExpressions.Generated;messageTypeRegex_0.RunnerFactory.Runner;Scan(ReadOnlySpan<char>) : void;73;5;;2;16;4
+Member;Backend (Debug);System.Text.RegularExpressions.Generated;messageTypeRegex_0.RunnerFactory.Runner;TryFindNextPossibleStartingPosition(ReadOnlySpan<char>) : bool;64;3;;3;24;8
+Member;Backend (Debug);System.Text.RegularExpressions.Generated;messageTypeRegex_0.RunnerFactory.Runner;TryMatchAtCurrentPosition(ReadOnlySpan<char>) : bool;40;15;;3;105;49
+Typ;Backend (Debug);System.Text.RegularExpressions.Generated;Utilities; ;84;1;1;5;10;2
+Member;Backend (Debug);System.Text.RegularExpressions.Generated;Utilities;s_defaultTimeout : TimeSpan;85;1;;3;1;1
+Member;Backend (Debug);System.Text.RegularExpressions.Generated;Utilities;s_hasTimeout : bool;87;0;;2;1;1
