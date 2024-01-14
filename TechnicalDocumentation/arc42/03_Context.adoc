@@ -9,13 +9,13 @@ Dieser Abschnitt beschreibt das Umfeld von Subletic. Für welche Benutzer ist es
 
 image::FachlicherKontext.drawio.svg[Static,80%,align="center"]
 
-==== Stenograph*in (Benutzer*in)
+==== Stenograph (Benutzer)
 
-Das Korrigieren der generierten Transkriptionen erfolgt unter anderem durch Stenograph*innen. Diese sind durch Ihre besondere Schulung an besonderes Equipment gewöhnt, welches unterstützt werden müssen muss.
+Das Korrigieren der generierten Transkriptionen erfolgt unter anderem durch Stenographen. Diese sind durch Ihre besondere Schulung an besonderes Equipment gewöhnt, welches unterstützt werden müssen muss.
 
-==== Laie (Benutzer*in)
+==== Laie (Benutzer)
 
-Das Korrigieren der generierten Transkription erfolgt unter anderem durch Laien. Diese benötigen im Gegensatz zu Stenograph*innen eine besonders einfache Bedienung und Hilfen, sodass Sie in einem Live-Kontext mithalten können. Auch die Verwendung _Laien-nahen_ Dateiformaten ist wichtig, wie CSV, XLS oder XLSX, sodass keine zusätzlichen Hürden entstehen.
+Das Korrigieren der generierten Transkription erfolgt unter anderem durch Laien. Diese benötigen im Gegensatz zu Stenographen eine besonders einfache Bedienung und Hilfen, sodass Sie in einem Live-Kontext mithalten können. Auch die Verwendung _Laien-nahen_ Dateiformaten ist wichtig, wie `.csv`, sodass keine zusätzlichen Hürden entstehen.
 
 ==== Externer Videostream (Fremdsystem)
 
@@ -57,7 +57,10 @@ Um eine KI-gestützte Transkription zu ermöglichen, wird die das Tool _Speechma
 
 Unterschiedliche Videostream-Systeme benötigen, abhängig von Anwendungsfall unterschiedliche Untertitelformate. Die zwei gängigsten Formate sind _WebVTT_ und _SRT_. _WebVTT_ ist das modernere Format, welche zum Beispiel Features wie Textformatierung unterstützt. _SRT_ ist das ältere Format, welches von vielen Systemen noch verwendet wird. Beide Formate müssen von unserem System unterstützt werden.
 
-==== CSV/XLS/XLSX (Fremdsystem)
+==== JSON/CSV (Fremdsystem)
 
-Um das _Soundslike-Dictionary_ Importieren und Exportieren zu können, werden gängige Tabellenformate benötigt. Die verbreiteten sind _CSV_, _XLS_ und _XLSX_. Diese Formate müssen von unserem System unterstützt werden.
+Um das _Soundslike-Dictionary_ Importieren und Exportieren zu können, werden Dateiformate benötigt. Besonders verbreitet sind `.json` und `.csv`. Außerdem ist es wichtig, dass auch Tabellen-Formate unterstützt werden, da die Anwender daran gewöhnt sind. Diese Formate müssen von unserem System unterstützt werden.
 
+=== Handschalter / Fußschalter (Fremdsystem)
+
+Um das Bearbeiten komfortabler zu machen und den Korrekturprozess zu beschleunigen, müssen Hand- und/oder Fußschalter von unserem System unterstützt werden. An diese Geräte sind Stenographen gewöhnt und erwarten, dass diese verwendet werden können.
