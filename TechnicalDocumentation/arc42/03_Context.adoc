@@ -27,7 +27,7 @@ Bestimmte Namen und Begriffe sind von KI-Modellen schwer zu erkennen. Diese werd
 
 === Technischer Kontext
 
-image::TechnischerKontext.drawio.svg[Static,80%,align="center"]
+image::TechnischerKontext.drawio.svg[]
 
 ==== Angular (Fremdsystem)
 
