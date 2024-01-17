@@ -102,7 +102,7 @@ Aufbauend darauf kann die saubere Beendigung des Streams angegangen werden. Im L
 
 === Sprint 8
 
-In diesem Sprint wird die aus Sprint 6 bekannte Problematik mit dem Audio-Stream und der Notwendigkeit für HTTPS angegangen. Dazu wird ein Zertifikat erstellt, bzw selbst signiert und das Frontend auf HTTPS umgestellt.
+In diesem Sprint wird die aus Sprint 6 bekannte Problematik mit dem Audio-Stream und der Notwendigkeit für HTTPS angegangen. Dazu wird ein selbst signiertes Zertifikat erstellt und das Frontend wie Backend auf HTTPS umgestellt.
 
 Durch die Zunahme an Features und dem Refactoring aus den vorangegangenen Sprints, hat sich besonders im Backend der Service Ordner stark gefüllt. Dieser Ordner ist nun sehr unübersichtlich und erschwert die Weiterentwicklung. Deshalb wird auf Basis der erstellten Komponenten-Übersicht, eine neue Aufteilung von Ordnern und Dateien bzw. Klassen vorgenommen. Dies verbessert die Übersichtlichkeit und erleichtert die Weiterentwicklung.
 
