@@ -5,13 +5,12 @@
 Diese Sicht beschreibt den Betrieb von Subletic. Es werden die Deployment- und Betriebsartefakte beschrieben, die für den Betrieb von Subletic benötigt werden.
 
 .Reservierte Ports aller Systeme
-[options="header", content="center" cols="^,^,^"]
+[options="header", content="center" cols="^,^,^,^,^"]
 |===
-| | Container Port | Innerer Port
-s| Backend HTTP 2+| 40114
-s| Backend HTTPS 2+| 40115
-s| Frontend HTTP | 40110 | 80
-s| Frontend HTTPS 2+| 40111
+| 2+| Backend 2+| Frontend
+| s| HTTP s| HTTPS s| HTTP s| HTTPS
+s| Container Port .2+| 40114 .2+| 40115 | 40110 | 40111
+s| Innerer Port | 80 | 443
 |===
 
 === Deployment
@@ -28,7 +27,7 @@ Im Frontend muss bei geändertem Deployment-Server die `src/environments/environ
 Möchte sich ein _Client_ verbinden kann er dies über die den Port: 40114 tun. Der Endpunkt für das Erstellen eines Untertitels mit _Subletic_ ist erreichbar unter:
 
 ----
-http://URL_des_Deployment-Servers/transcribe:40114
+https://URL_des_Deployment-Servers/transcribe:40115
 ----
 
 Vor dem Senden der Audio-Daten ist der _Client_ verpflichtet zunächst eine Message zu schicken, welche das gewünschte Untertitel-Format spezifiziert. Möglich ist `webvtt` oder `srt`. Wird keine Format-Message geschickt, bricht _Subletic_ die Verbindung ab. Nach Übermittlung des Formats darf begonnen werden Audio-Pakete zu schicken.
@@ -38,5 +37,5 @@ Vor dem Senden der Audio-Daten ist der _Client_ verpflichtet zunächst eine Mess
 _Subletic_ wird mit Chromium basierten Browsern im Hinterkopf entwickelt. Das Funktionieren aller Features wird jedoch nur mit _Google Chrome_ garantiert. Ein Beispiel sind die Hand- und Fußschalter, welche nur mit _Google Chrome_ nutzbar sind. Andere Browser wie _Mozilla Firefox_ werden nicht unterstützt. Wir empfehlen daher die Verwendung von _Google Chrome_. Das Frontend ist erreichbar unter:
 
 ----
-http://URL_des_Deployment-Servers:40110
+https://URL_des_Deployment-Servers:40111
 ----

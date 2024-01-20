@@ -22,7 +22,7 @@ Hier werden wichtige Entscheidungen festgehalten, welche im Laufe des Projektes 
 | Kontext | Es muss spezifiziert werden welche Untertitelformate wir unterstützen.
 | Entscheidung | Wir unterstützen das WebVtt- und SRT-Format.
 | Konsequenzen | Veraltete Systeme, welche nicht die angegeben Formate unterstützen, können nicht mit unserem Service arbeiten.
-| Status | pass:[<span style="color: green;">WebVtt Umgesetzt</span>], pass:[<span style="color: red;">SRT in Planung</span>]
+| Status | pass:[<span style="color: green;">WebVtt umgesetzt</span>], pass:[<span style="color: green;">SRT umgesetzt</span>]
 |===
 ****
 
@@ -66,7 +66,7 @@ Hier werden wichtige Entscheidungen festgehalten, welche im Laufe des Projektes 
 | Kontext | Zur Übertragung des _Soundslike_-Dictionaries an Speechmatics wird json verwendet. Jedoch ist dies ein unhandliches Datei-Format für unsere User, wenn sie diese lokal bearbeiten und exportieren möchten. 
 | Entscheidung | Support von verschiedenen Dateiformaten, wie CSV, XLS, XLSX
 | Konsequenzen | Es entsteht eine weitere Abstraktionsebene
-| Status | pass:[<span style="color: green;">CSV Umgesetzt</span>], pass:[<span style="color: red;">XLS in Planung</span>], pass:[<span style="color: red;">XLSX in Planung</span>]
+| Status | pass:[<span style="color: green;">CSV umgesetzt</span>], pass:[<span style="color: red;">XLS nicht umgesetzt</span>], pass:[<span style="color: red;">XLSX nicht umgesetzt</span>]
 |===
 ****
 
@@ -88,7 +88,7 @@ Hier werden wichtige Entscheidungen festgehalten, welche im Laufe des Projektes 
 | Kontext | Durch die fortschreitende Entwicklung unseres Projektes, wächst die Anzahl der Klassen, sodass die bisherige Ordnerstruktur, welche die Klassen nach ihrer Art unterscheidet (Service, Controller, Model, etc.), für Unübersichtlichkeit sorgt.
 | Entscheidung | Es sollte eine neue Aufteilung in Ordner geben, die statt der Art der Klasse, die Aufgabe als Teil einer Software-Komponente verwendet. Zum Beispiel Audio, SpeechBubble, etc.
 | Konsequenzen | Das Refactoring bzw. die Umstrukturierung führt zu einer besseren Übersichtlichkeit und Wartbarkeit, jedoch blockiert Sie auch die Weiterentwicklung der Software, da sonst mit komplizierten Merge-Requests zu rechnen ist.
-| Status | pass:[<span style="color: red;">Backend in Planung</span>], pass:[<span style="color: red;">Frontend in Planung</span>]
+| Status | pass:[<span style="color: red;">Backend in Planung</span>], pass:[<span style="color: green;">Frontend umgesetzt</span>]
 |===
 ****
 
@@ -97,8 +97,8 @@ Hier werden wichtige Entscheidungen festgehalten, welche im Laufe des Projektes 
 [options="noheader", cols=","]
 |===
 | Kontext | Da das Frontend und das Backend getrennt sind, kann es dazu kommen, dass sich ein _Client_ schon verbunden hat, bevor das Frontend das _Soundslike_-Dictionary an das Backend gesendet hat. Das führt zu einem Problem, da das _Soundslike_-Dictionary an Speechmatics nur initial beim Verbindungsaufbau übertragen wird und nicht nachgereicht werden kann.
-| Entscheidung | 
-| Konsequenzen | 
-| Status | pass:[<span style="color: orange;">Ausstehend</span>]
+| Entscheidung | Das _Soundslike_-Dictionary wird nur bei erneutem Verbindungsaufbau an Speechmatics gesendet, also wenn sich ein neuer _Client_ verbindet.
+| Konsequenzen | Es ist möglich, dass ein User ein _Soundslike_-Dictionary absendet, welches zwar im Backend hinterlegt wird, jedoch erst an Speechmatics gesendet wird, da bereits eine _Client_-Verbindung besteht.
+| Status | pass:[<span style="color: green;">Umgesetzt</span>]
 |===
 ****

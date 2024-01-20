@@ -1,9 +1,10 @@
 <<<
 
-== Lösungsstrategie
+== Architekturziele
 
 Dieser Abschnitt enthält einen stark verdichteten Architekturüberblick. Eine Gegenüberstellung der wichtigsten Ziele und Lösungsansätze.
 
+.Übersicht über die wichtigsten Architekturziele und Lösungsansätze
 [options="header", cols="1,1"]
 |===
 | Qualitätsziel | Dem zuträgliche Ansätze in der Architektur

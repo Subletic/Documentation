@@ -7,6 +7,7 @@ Beim Lösungsentwurf waren zu Beginn verschiedene Randbedingungen zu beachten, s
 
 === Technisch
 
+.Übersicht über die technischen Randbedingungen
 [options="header"]
 |===
 | Randbedingung | Erläuterungen, Hintergrund
@@ -19,6 +20,7 @@ Beim Lösungsentwurf waren zu Beginn verschiedene Randbedingungen zu beachten, s
 
 === Organisatorisch
 
+.Übersicht über die organisatorischen Randbedingungen
 [options="header"]
 |===
 | Randbedingung | Erläuterungen, Hintergrund
@@ -34,6 +36,7 @@ Beim Lösungsentwurf waren zu Beginn verschiedene Randbedingungen zu beachten, s
 
 === Konventionen
 
+.Übersicht über die (GitLab)-Konventionen
 [options="header"]
 |===
 | Konvention | Erläuterungen, Hintergrund

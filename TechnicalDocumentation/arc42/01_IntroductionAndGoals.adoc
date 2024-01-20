@@ -9,8 +9,7 @@ Dieser Abschnitt führt in die Aufgabenstellung ein und skizziert die Ziele, die
 
 Das Ziel unserer Software ist die Teil-Automatisierung der Erstellung von Untertiteln in Live-Kontexten, unter Zuhilfenahme von modernen KI-Modellen. Diese sollen dann von geschultem Personal, genauso wie von Laien, zusätzlich überprüft und wenn notwendig korrigiert werden. Die nachträgliche manuelle Korrektur wird besonders bei Kunden notwendig die einen besonderen Wert auf die Richtigkeit der Untertitel legen, wie zum Beispiel bei der Untertitlung von Nachrichtensendungen oder in politischen Kontexten. Mit der Verschmelzung von fortschrittlicher KI und dem Menschen als Korrektur-Instanz, soll eine hohe Qualität der Untertitel gewährleistet werden, bei gleichzeitig minimalem Aufwand für den Menschen.
 
-==== Features
-
+.Features
 ****
 * **Automatische Transkription** von Sprache zu Text mithilfe eines Services, der durch einen WebSocket aufgerufen wird
 * **Web-Editor** für die Korrektur von Untertiteln
@@ -21,6 +20,7 @@ Das Ziel unserer Software ist die Teil-Automatisierung der Erstellung von Untert
 
 === Qualitätsziele
 
+.Übersicht über die Qualitätsziele
 [options="header"]
 |===
 | Qualitätsziel | Motivation und Erläuterung
@@ -32,6 +32,7 @@ Das Ziel unserer Software ist die Teil-Automatisierung der Erstellung von Untert
 
 === Stakeholder
 
+.Übersicht über die Stakeholder
 [options="header"]
 |===
 | Stakeholder | Verantwortlichkeiten
