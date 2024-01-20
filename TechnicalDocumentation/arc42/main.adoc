@@ -33,3 +33,5 @@ include::11_Risks.adoc[]
 include::12_Diary.adoc[]
 
 include::13_Glossary.adoc[]
+
+include::14_PackageLicences.adoc[]

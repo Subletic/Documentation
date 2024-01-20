@@ -1,0 +1,64 @@
+<<<
+
+== Lizenzen
+
+[options="header", cols="^,^,^"]
+|===
+| link:https://licenses.nuget.org/MIT[MIT License] 
+| link:https://licenses.nuget.org/Apache-2.0[Apache License 2.0]
+| link:https://spdx.org/licenses/BSD-2-Clause.html[BSD-2-Clause]
+|===
+
+=== nuGet-Paket Lizenzen
+
+[options="header", cols=","]
+|===
+| Paket | Lizenz
+
+| StyleCop.Analyzers | MIT
+| coverlet.collector | MIT
+| FFMpegCore | MIT
+| Microsoft.AspNetCore.OpenApi | MIT
+| Microsoft.Extensions.Configuration | MIT
+| Microsoft.Extensions.Configuration.Binder | MIT
+| Microsoft.Extensions.Configuration.Json | MIT
+| Serilog | Apache 2.0
+| Serilog.AspNetCore | Apache 2.0
+| Serilog.Settings.Configuration | Apache 2.0
+| Serilog.Sinks.Console | Apache 2.0
+| Serilog.Sinks.File | Apache 2.0
+| Swashbuckle.AspNetCore | MIT
+| Microsoft.AspNetCore.SignalR | Apache 2.0
+| Microsoft.AspNetCore.SignalR.Client | MIT
+|===
+
+=== npm-Paket Lizenzen
+
+[options="header", cols=","]
+|===
+| Paket | Lizenz
+
+| @angular-devkit/build-angular | MIT
+| @angular-eslint/builder | MIT
+| @angular-eslint/eslint-plugin | MIT
+| @angular-eslint/eslint-plugin-template | MIT
+| @angular-eslint/schematics | MIT
+| @angular-eslint/template-parser | MIT
+| @angular/cli | MIT
+| @angular/compiler-cli | MIT
+| @stylistic/eslint-plugin | MIT
+| @types/jasmine | MIT
+| @types/jquery | MIT
+| @types/w3c-web-hid | MIT
+| @typescript-eslint/eslint-plugin | MIT
+| @typescript-eslint/parser | BSD-2-Clause
+| eslint | MIT
+| jasmine-core | MIT
+| karma | MIT
+| karma-chrome-launcher | MIT
+| karma-coverage | MIT
+| karma-jasmine | MIT
+| karma-jasmine-html-reporter | MIT
+| prettier | MIT
+| typescript | Apache 2.0
+|===
