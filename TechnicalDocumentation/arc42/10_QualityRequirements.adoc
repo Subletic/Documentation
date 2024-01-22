@@ -19,29 +19,29 @@ Für das Sammeln von Code-Metriken wurde im Backend das eingebaute Analyse-Tool 
 |===
 | Metrik | Durchschnitt | Minimum | Maximum
 | Wartbarkeitsindex [pro Methode] 
-| 76.82
-| 43 
+| 76.77
+| 431
 | 100
 
 | Zyklomatische Komplexität [pro Methode] 
-| pass:[<span style="color: green;">2.04</span>] 
+| pass:[<span style="color: green;">1.99</span>] 
 | 1 
 | pass:[<span style="color: red;">10</span>]
 
 | Ausführbare Zeilen Code [pro Methode] 
 | pass:[<span style="color: green;">6.08</span>] 
 | 1 
-| pass:[<span style="color: orange;">41</span>]
+| pass:[<span style="color: orange;">46</span>]
 
 | Zeilen Code [pro Klasse] 
-| pass:[<span style="color: green;">125.77</span>]
+| pass:[<span style="color: green;">126.05</span>]
 | 32
 | pass:[<span style="color: orange;">338</span>]
 
 | Klassenkopplung [pro Klasse] 
-| 15.36 
+| 15.68
 | 0 
-| pass:[<span style="color: orange;">49</span>]
+| pass:[<span style="color: orange;">54</span>]
 |===
 
 Der _Wartbarkeitsindex_ ist ein von Visual Studio berechneter Wert der die angeben soll, wie leicht der Code zu warten ist. Die Berechnung ist link:https://learn.microsoft.com/de-de/visualstudio/code-quality/code-metrics-maintainability-index-range-and-meaning?view=vs-2022[hier] zu finden. Laut Dokumentation ist ein Wert ab 20 gut, ab 10 akzeptabel und unter 10 schlecht. Wie aussagekräftig jedoch der Wert ist, ist anzuzweifeln. Selbst unser schlechtestes Ergebnis von 43 ist laut der Dokumentation noch gut.
@@ -50,7 +50,7 @@ Interessanter ist die _Zyklomatische Komplexität_ und die _Ausführbaren Zeilen
 
 Als letzte erhobene Code-Metrik sind die Zeilen Code pro Klasse. Hier liegt der Durchschnitt bei 125 Zeilen, was als gut zu bewerten ist. Es gibt jedoch drei Ausreißer: den _ClientExchangeController_ (334), den _SpeechmaticsConnectionService_ (338) und den _SpeechmaticsReceiveService_ (310). Diese Klassen waren alle Teil des großen _AvProcessingService_-Refactorings und sind ein Resultat eines ohnehin schon großen Services. Eine weitere Aufteilung wäre jedoch nicht zielführend, mangels der begrenzten Zeit, sowie der Tatsache, dass die Klassen nicht leicht aufgeteilt werden können.
 
-[options="noheader",cols="^,^",grid=none, frame=none]
+[options="noheader",cols="^,^",grid=topbot, frame=none]
 |===
 a| .Anzahl Klassen und Methoden pro Sprint + 
 image::plots/method_class_count.svg[]
@@ -66,8 +66,8 @@ Insgesamt konnten die Ausreißer jedoch im Vergleich zum ersten Semester reduzie
 [options="header", content="center", cols="^,^,^"]
 |===
 | | Backend | Frontend
-s| Line-Coverage | 62% | 75% 
-s| Branch-Coverage | | 
+s| Line-Coverage | 66% | 74% 
+s| Branch-Coverage | 62% | 53%
 |===
 
 === 60:30:10-Regel

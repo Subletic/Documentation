@@ -32,15 +32,18 @@ Im Folgenden wird die Planung und der Ablauf der Arbeit aus Sicht der Architektu
 | Saubere Beendigung des Streams
 | Trennen von Verarbeitungs- und Sendelogik im Backend
 
-.3+s| Sprint_08
-.3+| 10.01 - 22.01
-| Aufteilung des Services als Komponenten im Backend
+.2+s| Sprint_08
+.2+| 10.01 - 22.01
 | Umstellung auf HTTPS
-| Sendelogik aus ISubtitleConverter werfen
+| Testabdeckung im Backend erhöhen
 
 s| Sprint_09
 | 22.01 - 05.02
-|
+| Aufteilung des Services als Komponenten im Backend
+
+s| Verbleibende technische Schulden
+| 
+| Sendelogik aus ISubtitleConverter werfen
 |===
 
 === Sprint 4
@@ -104,8 +107,14 @@ Aufbauend darauf kann die saubere Beendigung des Streams angegangen werden. Im L
 
 In diesem Sprint wird die aus Sprint 6 bekannte Problematik mit dem Audio-Stream und der Notwendigkeit für HTTPS angegangen. Dazu wird ein selbst signiertes Zertifikat erstellt und das Frontend wie Backend auf HTTPS umgestellt.
 
-Durch die Zunahme an Features und dem Refactoring aus den vorangegangenen Sprints, hat sich besonders im Backend der Service Ordner stark gefüllt. Dieser Ordner ist nun sehr unübersichtlich und erschwert die Weiterentwicklung. Deshalb wird auf Basis der erstellten Komponenten-Übersicht, eine neue Aufteilung von Ordnern und Dateien bzw. Klassen vorgenommen. Dies verbessert die Übersichtlichkeit und erleichtert die Weiterentwicklung.
-
-Als dritten Punkt wird der `ISubtitleConverter` angegangen. Dieser, nicht wie man erwarten würde, Konvertiert nur SpeechBubbles zu Subtitles, sondern erhält durch den Konstruktor den WebSocket zum Client und kümmert sich selbst um das Senden der Subtitles. Aus der Methode des Interfaces zum konvertieren, wird dies jedoch nicht ersichtlich. Deshalb wird die Sendelogik aus dem `ISubtitleConverter` entfernt.
+Durch das Refactoring aus Sprint 7 ist es nun leichter geworden bestimmte Teile unseres Codes die vorher schlecht zu testen waren, zu testen. Deshalb wird nun die Test-Coverage erhöht (Resultat: 35% => 66%).
 
 // * Die Entwickler wünschen sich eine bessere Aufteilung im Backend, da zB der Service Ordner sehr voll ist. Wir wollen eine neue Strukturierung erreichen, sodass das Backend, besser die Struktur der Komponenten-Sicht entspricht.
+
+=== Sprint 9
+
+Durch die Zunahme an Features und dem Refactoring aus den vorangegangenen Sprints, hat sich besonders im Backend der Service Ordner stark gefüllt. Dieser Ordner ist nun sehr unübersichtlich und erschwert die Weiterentwicklung. Deshalb wird auf Basis der erstellten Komponenten-Übersicht, eine neue Aufteilung von Ordnern und Dateien bzw. Klassen vorgenommen. Dies verbessert die Übersichtlichkeit und erleichtert die Weiterentwicklung.
+
+=== Verbleibende technische Schulden
+
+Der `ISubtitleConverter` enthält Logik die man nicht von ihm erwarten würde. Dieser konvertiert nicht nur SpeechBubbles zu Subtitles, sondern erhält durch den Konstruktor den WebSocket zum Client und kümmert sich selbst um das Senden der Subtitles. Aus der Methode des Interfaces zum Konvertieren, wird dies jedoch nicht ersichtlich, ist also `void`. Deshalb sollte die Sendelogik aus dem `ISubtitleConverter` entfernt werden.

@@ -7,7 +7,7 @@
 49,WordToken
 59,FrontendCommunicationHub
 209,AvProcessingService
-116,AvReceiverService
+117,AvReceiverService
 93,BufferTimeMonitor
 83,ConfigurationService
 103,FrontendCommunicationService
@@ -15,8 +15,8 @@
 338,SpeechmaticsConnectionService
 310,SpeechmaticsReceiveService
 93,SpeechmaticsSendService
-92,SrtConverter
+91,SrtConverter
 66,StartupService
 197,SubtitleExporterService
-91,WebVttConverter
+97,WebVttConverter
 152,WordProcessingService

@@ -2,8 +2,14 @@
 
 == Lizenzen
 
-[options="header", cols="^,^,^"]
+In diesem Kapitel werden die Lizenzen der verwendeten Bibliotheken und die von Subletic aufgelistet.
+
+[options="header", cols="^,^,^", frame="none", grid="none"]
 |===
+3+| 
+=== Subletic Lizenz === +
+???
+3+| Paket-Lizenzen
 | link:https://licenses.nuget.org/MIT[MIT License] 
 | link:https://licenses.nuget.org/Apache-2.0[Apache License 2.0]
 | link:https://spdx.org/licenses/BSD-2-Clause.html[BSD-2-Clause]
