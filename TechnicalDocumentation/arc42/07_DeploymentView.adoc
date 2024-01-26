@@ -39,3 +39,5 @@ _Subletic_ wird mit Chromium basierten Browsern im Hinterkopf entwickelt. Das Fu
 ----
 https://URL_des_Deployment-Servers:40111
 ----
+
+Das parallele-Verwenden von Hand und Fußschalter wird nicht unterstützt. Es kann immer nur ein Schalter verwendet werden. 

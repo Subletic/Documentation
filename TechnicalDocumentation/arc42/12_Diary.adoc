@@ -37,9 +37,10 @@ Im Folgenden wird die Planung und der Ablauf der Arbeit aus Sicht der Architektu
 | Umstellung auf HTTPS
 | Testabdeckung im Backend erhöhen
 
-s| Sprint_09
-| 22.01 - 05.02
+.2+s| Sprint_09
+.2+| 22.01 - 05.02
 | Aufteilung des Services als Komponenten im Backend
+| Testen und Bugfixing
 
 s| Verbleibende technische Schulden
 | 
@@ -113,7 +114,9 @@ Durch das Refactoring aus Sprint 7 ist es nun leichter geworden bestimmte Teile 
 
 === Sprint 9
 
-Durch die Zunahme an Features und dem Refactoring aus den vorangegangenen Sprints, hat sich besonders im Backend der Service Ordner stark gefüllt. Dieser Ordner ist nun sehr unübersichtlich und erschwert die Weiterentwicklung. Deshalb wird auf Basis der erstellten Komponenten-Übersicht, eine neue Aufteilung von Ordnern und Dateien bzw. Klassen vorgenommen. Dies verbessert die Übersichtlichkeit und erleichtert die Weiterentwicklung.
+Durch die Zunahme an Features und dem Refactoring aus den vorangegangenen Sprints, hat sich besonders im Backend der Service-Ordner stark gefüllt. Dieser Ordner ist nun sehr unübersichtlich und erschwert die Weiterentwicklung. Deshalb wird auf Basis der erstellten Komponenten-Übersicht, eine neue Aufteilung von Ordnern und Dateien bzw. Klassen vorgenommen. Dies verbessert die Übersichtlichkeit und erleichtert die Weiterentwicklung.
+
+Die restliche verbleibende Zeit wird für das Testen und Bugfixing verwendet, damit die Software in einem stabilen Zustand ausgeliefert final werden kann.
 
 === Verbleibende technische Schulden
 
