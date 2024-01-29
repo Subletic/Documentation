@@ -2,9 +2,9 @@ Da unsere Software von jungen Entwicklern programmiert wird, haben wir von Anfan
 
 ---
 
-Zum Release unserer Software konnten alle Kernfeatures realisiert werden.
+Zum Release unserer Software konnten alle Kernfeatures realisiert werden. Wir bieten einen abonnierbaren WebSocket-Service an, mit dem ein Audio-Stream transkribiert wird. Außerdem haben wir eine Web-Anwendung entwickelt, mit dem die generierten Transkriptionen korrigiert werden können. Diese werden in einer Liste von sogenannten Sprechblasen dargestellt und können editiert werden. Dabei unterstützt unser Tool die korrigierende Person indem Wörter hervorgehoben werden, die vermutlich falsch erkannt wurden. Parallel wird der Audio-Stream für den Anwender abgespielt und ihm visuell angezeigt, welches Wort gerade gesagt wird. Um sich zu vergewissern ob ein Wort richtig erkannt wurde, kann der Nutzer vor und zurück springen und dabei auch die Wiedergabegeschwindigkeit anpassen. Eingabegeräte wie Hand und Fußschalter werden unterstützt, um die Bedienung zu erleichtern. Wörter die häufig falsch erkannt werden, wie zum Beispiel Eigennamen oder Fachbegriffe, können in einem Wörterbuch gespeichert werden und sorgen so für eine verbesserte Worterkennung.
 
-
+---
 
 Unsere Software erlaubt es dem Nutzer, die aus dem Eingabe-Stream generierte Transkriptionen, in sogenannte Sprechblasen, in einer Liste zu sehen und zu editieren. 
 
