@@ -6,18 +6,4 @@ Zum Release unserer Software konnten alle Kernfeatures realisiert werden. Wir bi
 
 ---
 
-Unsere Software erlaubt es dem Nutzer, die aus dem Eingabe-Stream generierte Transkriptionen, in sogenannte Sprechblasen, in einer Liste zu sehen und zu editieren. 
-
-Zudem werden Wörter, bei dem sich die Speech-To-Text Engine unsicher ist, mit sogenannten Konfidenzwerten, farbig markiert. 
-
-Zusätzlich zur reinen visuellen Repräsentation des Gesagten, ist laufend das Audio des Video-Streams zu hören. 
-
-Dies bietet die Grundlage, dass sich der Stenograf vergewissern kann, fehlerhafte Wörter zu korrigieren. 
-
-Außerdem ist möglich, in der Audio vor und zurückzuspringen, um bei Unsicherheiten sich nochmal zu vergewissern. 
-
-Die Zeitspanne, ab wann Sprechblasen und der Audio-Stream aus dem Zeitfenster zur Bearbeitung verschwinden ist durch den Nutzer individuell Anpassbar. 
-
-Des Weiteren besitzt die Software die Möglichkeit häufig fehlerhaft erkannte Wörter in einem sogenannten Dictionary zu speichern und diese an die Speech-Engine zu übertragen. 
-
-Somit ist es von Beginn an möglich potenzielle Fehlerquellen zu eliminieren und dem Stenografen vermehrt Arbeit abzunehmen.
+Unsere Software erlaubt es dem Nutzer, die aus dem Eingabe-Stream generierte Transkriptionen, in sogenannte Sprechblasen, in einer Liste zu sehen und zu editieren. Zudem werden Wörter, bei dem sich die Speech-To-Text Engine unsicher ist, mit sogenannten Konfidenzwerten, farbig markiert. Zusätzlich zur reinen visuellen Repräsentation des Gesagten, ist laufend das Audio des Video-Streams zu hören. Dies bietet die Grundlage, dass sich der Stenograf vergewissern kann, fehlerhafte Wörter zu korrigieren. Außerdem ist möglich, in der Audio vor und zurückzuspringen, um bei Unsicherheiten sich nochmal zu vergewissern. Die Zeitspanne, ab wann Sprechblasen und der Audio-Stream aus dem Zeitfenster zur Bearbeitung verschwinden ist durch den Nutzer individuell Anpassbar. Des Weiteren besitzt die Software die Möglichkeit häufig fehlerhaft erkannte Wörter in einem sogenannten Dictionary zu speichern und diese an die Speech-Engine zu übertragen. Somit ist es von Beginn an möglich potenzielle Fehlerquellen zu eliminieren und dem Stenografen vermehrt Arbeit abzunehmen.
