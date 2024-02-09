@@ -19,36 +19,36 @@ Für das Sammeln von Code-Metriken wurde im Backend das eingebaute Analyse-Tool 
 |===
 | Metrik | Durchschnitt | Minimum | Maximum
 | Wartbarkeitsindex [pro Methode] 
-| 76.77
-| 431
+| 76.55
+| 41
 | 100
 
 | Zyklomatische Komplexität [pro Methode] 
-| pass:[<span style="color: green;">1.99</span>] 
+| pass:[<span style="color: green;">2</span>] 
 | 1 
-| pass:[<span style="color: red;">10</span>]
+| pass:[<span style="color: red;">11</span>]
 
 | Ausführbare Zeilen Code [pro Methode] 
-| pass:[<span style="color: green;">6.08</span>] 
+| pass:[<span style="color: green;">6.23</span>] 
 | 1 
 | pass:[<span style="color: orange;">46</span>]
 
 | Zeilen Code [pro Klasse] 
-| pass:[<span style="color: green;">126.05</span>]
+| pass:[<span style="color: green;">134.81</span>]
 | 32
-| pass:[<span style="color: orange;">338</span>]
+| pass:[<span style="color: orange;">41</span>]
 
 | Klassenkopplung [pro Klasse] 
-| 15.68
+| 15.84
 | 0 
 | pass:[<span style="color: orange;">54</span>]
 |===
 
 Der _Wartbarkeitsindex_ ist ein von Visual Studio berechneter Wert der die angeben soll, wie leicht der Code zu warten ist. Die Berechnung ist link:https://learn.microsoft.com/de-de/visualstudio/code-quality/code-metrics-maintainability-index-range-and-meaning?view=vs-2022[hier] zu finden. Laut Dokumentation ist ein Wert ab 20 gut, ab 10 akzeptabel und unter 10 schlecht. Wie aussagekräftig jedoch der Wert ist, ist anzuzweifeln. Selbst unser schlechtestes Ergebnis von 43 ist laut der Dokumentation noch gut.
 
-Interessanter ist die _Zyklomatische Komplexität_ und die _Ausführbaren Zeilen Code_ pro Methode. Hier liegen die Werte bei 2.04 und 6.08. Dies spricht für eine gute Lesbarkeit des Codes, da die Werte sehr niedrig sind. Andererseits gibt es einige Ausreißer. So gibt es einzelne Methoden mit besonders hoher Pfaddichte wie zB die `UploadCustomDictionary`. Diese hat viele Guard-Clauses mit vielen Bedingungen. Ein weiterer Ausreißer verursacht die `Program`-Klasse, die mit 49 Verweisen auf andere Klassen die größte Kopplung hat. In dieser Datei werden viele Services initialisiert und die Software im allgemeinen konfiguriert. Es ist jedoch schwer dies in andere Klassen auszulagern.
+Interessanter ist die _Zyklomatische Komplexität_ und die _Ausführbaren Zeilen Code_ pro Methode. Hier liegen die Werte bei 2 und 6.23. Dies spricht für eine gute Lesbarkeit des Codes, da die Werte sehr niedrig sind. Andererseits gibt es einige Ausreißer. So gibt es einzelne Methoden mit besonders hoher Pfaddichte wie zB die `UploadCustomDictionary`. Diese hat viele Guard-Clauses mit vielen Bedingungen. Ein weiterer Ausreißer verursacht die `Program`-Klasse, die mit 54 Verweisen auf andere Klassen die größte Kopplung hat. In dieser Datei werden viele Services initialisiert und die Software im allgemeinen konfiguriert. Es ist jedoch schwer dies in andere Klassen auszulagern.
 
-Als letzte erhobene Code-Metrik sind die Zeilen Code pro Klasse. Hier liegt der Durchschnitt bei 125 Zeilen, was als gut zu bewerten ist. Es gibt jedoch drei Ausreißer: den _ClientExchangeController_ (334), den _SpeechmaticsConnectionService_ (338) und den _SpeechmaticsReceiveService_ (310). Diese Klassen waren alle Teil des großen _AvProcessingService_-Refactorings und sind ein Resultat eines ohnehin schon großen Services. Eine weitere Aufteilung wäre jedoch nicht zielführend, mangels der begrenzten Zeit, sowie der Tatsache, dass die Klassen nicht leicht aufgeteilt werden können.
+Als letzte erhobene Code-Metrik sind die Zeilen Code pro Klasse. Hier liegt der Durchschnitt bei 134 Zeilen, was als gut zu bewerten ist. Es gibt jedoch drei Ausreißer: den _ClientExchangeController_ (341), den _SpeechmaticsConnectionService_ (338) und den _SpeechmaticsReceiveService_ (318). Diese Klassen waren alle Teil des großen _AvProcessingService_-Refactorings und sind ein Resultat eines ohnehin schon großen Services. Eine weitere Aufteilung wäre jedoch nicht zielführend, mangels der begrenzten Zeit, sowie der Tatsache, dass die Klassen nicht leicht aufgeteilt werden können.
 
 [options="noheader",cols="^,^",grid=topbot, frame=none]
 |===
@@ -66,8 +66,8 @@ Insgesamt konnten die Ausreißer jedoch im Vergleich zum ersten Semester reduzie
 [options="header", content="center", cols="^,^,^"]
 |===
 | | Backend | Frontend
-s| Line-Coverage | 66% | 74% 
-s| Branch-Coverage | 62% | 53%
+s| Line-Coverage | 65% | 71% 
+s| Branch-Coverage | 62% | 46%
 |===
 
 === 60:30:10-Regel
@@ -82,4 +82,4 @@ a|.Screenshot der Hauptseite auf der korrigiert werden kann +
 image::Frontend_mainpage.png[]
 |===
 
-Anhand der Bilder ist zu erkennen das unsere primäre Farbe Weiß ist, welches durch einen leicht grauen Hintergrund die Bearbeitungs-Seite hervorhebt. Die sekundäre Farbe ist Schwarz, welches als Schriftfarbe verwendet wird und den Blick auf das Wesentliche lenkt. Als Akzentfarbe verwenden wir ein kräftiges Blau, welches die zentralen Knöpfe und Informationen markiert. Dazu gesellen sich vereinzelt rot und orange, die bei den Wörtern zu finden sind mit niedrigem Confidence-Wert. Somit wird der User direkt auf Wörter gelenkt, die er nochmal überprüfen sollte. 
+Anhand der Bilder ist zu erkennen das unsere primäre Farbe Weiß ist, welches durch einen leicht grauen Hintergrund die Bearbeitungs-Seite hervorhebt. Die sekundäre Farbe ist Schwarz, welches als Schriftfarbe verwendet wird und den Blick auf das Wesentliche lenkt. Als Akzentfarbe verwenden wir ein kräftiges Blau, welches die zentralen Knöpfe und Informationen markiert. Dazu gesellen sich vereinzelt Rot und Orange, die bei den Wörtern zu finden sind mit niedrigem Confidence-Wert. Somit wird der User direkt auf Wörter gelenkt, die er nochmal überprüfen sollte. 

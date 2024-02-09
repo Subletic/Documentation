@@ -8,7 +8,7 @@ In diesem Kapitel werden die Lizenzen der verwendeten Bibliotheken und die von S
 |===
 3+| 
 === Subletic Lizenz === +
-???
+link:https://licenses.nuget.org/MIT[MIT License]
 3+| Paket-Lizenzen
 | link:https://licenses.nuget.org/MIT[MIT License] 
 | link:https://licenses.nuget.org/Apache-2.0[Apache License 2.0]

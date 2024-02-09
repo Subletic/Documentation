@@ -88,7 +88,7 @@ Hier werden wichtige Entscheidungen festgehalten, welche im Laufe des Projektes 
 | Kontext | Durch die fortschreitende Entwicklung unseres Projektes, wächst die Anzahl der Klassen, sodass die bisherige Ordnerstruktur, welche die Klassen nach ihrer Art unterscheidet (Service, Controller, Model, etc.), für Unübersichtlichkeit sorgt.
 | Entscheidung | Es sollte eine neue Aufteilung in Ordner geben, die statt der Art der Klasse, die Aufgabe als Teil einer Software-Komponente verwendet. Zum Beispiel Audio, SpeechBubble, etc.
 | Konsequenzen | Das Refactoring bzw. die Umstrukturierung führt zu einer besseren Übersichtlichkeit und Wartbarkeit, jedoch blockiert Sie auch die Weiterentwicklung der Software, da sonst mit komplizierten Merge-Requests zu rechnen ist.
-| Status | pass:[<span style="color: red;">Backend in Planung</span>], pass:[<span style="color: green;">Frontend umgesetzt</span>]
+| Status | pass:[<span style="color: green;">Backend umgesetzt</span>], pass:[<span style="color: green;">Frontend umgesetzt</span>]
 |===
 ****
 
