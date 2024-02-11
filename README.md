@@ -17,4 +17,4 @@
 ![Backend_1](https://github.com/Subletic/Documentation/blob/main/img/Bausteinsicht_1_Backend.drawio.svg)
 
 ## Frontend-Component-View
-![Frontend_1](https://github.com/Subletic/Documentation/blob/main/img/Bausteinsicht_1_Frontend.drawio.svg)|
+![Frontend_1](https://github.com/Subletic/Documentation/blob/main/img/Bausteinsicht_1_Frontend.drawio.svg)
